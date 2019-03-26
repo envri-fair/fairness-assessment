@@ -1,0 +1,73 @@
+---
+survey:
+    date: 2019-03-19
+    contact: 
+        name: Johannes Peterseil
+        email: johannes.peterseil@umweltbundesamt.at
+infrastructure: eLTER
+    data-repositories:
+        - name: EUDAT/FZJ B2SHARE
+          software: Zenodo
+          identifier: 
+              kind: PID
+              system: Handle.Net
+              assigned: Automatically
+              provider: EUDAT/FZJ B2HANDLE
+              includes-attributes: Yes
+          certification: 
+              available: Yes
+              method: Null
+          policy: Null
+          registry: Null
+          persistency-policy: Null
+        - name: eLTER Central Data Node
+          software: 52°North SOS Server
+          identifier:
+              kind: Null
+              system: Null
+              assigned: Null
+              provider: Null
+              includes-attributes: Null
+          certification: 
+              available: Null
+              method: Null
+          policy: No
+          registry: Null
+          persistency-policy: Null
+        - name: DEIMS-SDR
+          software: Null
+          identifier:
+              kind: ID
+              system: DEIMS.id
+              assigned: Automatically
+              provider: DEIMS-SDR
+              includes-attributes: Null
+          certification: 
+              available: Null
+              method: Null
+          policy: Null
+          registry: re3data
+          persistency-policy: Null
+    metadata-repositories:
+        - name: DEIMS-SDR
+          software: Null
+          identifier:
+              kind: ID
+              system: DEIMS.id
+              assigned: Automatically
+              provider: DEIMS-SDR
+              includes-attributes: Null
+          certification: 
+              available: Null
+              method: Null
+          policy: Null
+          registry: re3data
+          persistency-policy: Null
+        
+    
+
+
+
+
+
+
