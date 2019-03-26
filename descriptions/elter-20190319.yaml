@@ -1,10 +1,11 @@
----
 survey:
     date: 2019-03-19
-    contact: 
+    version: latest
+    creator: 
         name: Johannes Peterseil
         email: johannes.peterseil@umweltbundesamt.at
-infrastructure: eLTER
+infrastructure:
+    label: eLTER
     data-repositories:
         - name: EUDAT/FZJ B2SHARE
           software: Zenodo
@@ -63,11 +64,3 @@ infrastructure: eLTER
           policy: Null
           registry: re3data
           persistency-policy: Null
-        
-    
-
-
-
-
-
-
