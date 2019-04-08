@@ -1,66 +1,171 @@
 survey:
     date: 2019-03-19
-    version: latest
+    version: 1
     creator: 
         name: Johannes Peterseil
         email: johannes.peterseil@umweltbundesamt.at
 infrastructure:
-    label: eLTER
-    data-repositories:
-        - name: EUDAT/FZJ B2SHARE
+    acronym: eLTER
+    name: Integrated European Long-Term Ecosystem & Socio-Ecological Research Infrastructure
+    recognized authority IRI: http://www.lter-europe.net/elter
+    repositories: 1..*
+        - IRI:NULL
+          name: EUDAT/FZJ B2SHARE
+          kind: data repository
           software: Zenodo
           identifier: 
+              IRI: NULL
               kind: PID
-              system: Handle.Net
-              assigned: Automatically
-              provider: EUDAT/FZJ B2HANDLE
-              includes-attributes: Yes
+              system: Handle
+              assigned: automatically
+              provider: Handle??
+              includes-attributes: yes
           certification: 
-              available: Yes
-              method: Null
-          policy: Null
-          registry: Null
-          persistency-policy: Null
-        - name: eLTER Central Data Node
-          software: 52°North SOS Server
-          identifier:
-              kind: Null
-              system: Null
-              assigned: Null
-              provider: Null
-              includes-attributes: Null
-          certification: 
-              available: Null
-              method: Null
-          policy: No
-          registry: Null
-          persistency-policy: Null
-        - name: DEIMS-SDR
-          software: Null
-          identifier:
-              kind: ID
-              system: DEIMS.id
-              assigned: Automatically
+              available: NULL
+              method: NULL
+          policy: NULL
+          registry: NULL
+          persistency-policy document IRI: NULL
+          persistency-policy: planned
+          access mechanisms: 
+              authentication method: people can request accounts, which are managed centrally ??
+              access protocol URL: NULL
+              protocol open: bool
+              protocol royalty free: bool
+              own user database maintained: yes??
+              ORCID used in AAI: no
+              major access technology supported: local LDAP??
+              authorisation needed for: upload data??
+              authorization for accessing content needed: no
+              access content process description IRI: NULL
+              access licenses in use: VOID
+              data license IRI:
+              metadata openly available: yes
+        - IRI: https://deims.org/   
+          name: DEIMS-SDR
+          kind: metadata repository
+          software: NULL
+          identifier: 
+              IRI: NULL
+              kind: local ID
+              system: local system
+              assigned: automatically
               provider: DEIMS-SDR
-              includes-attributes: Null
+              includes-attributes: yes
           certification: 
-              available: Null
-              method: Null
-          policy: Null
+              available: NULL
+              method: NULL
+          policy: NULL
           registry: re3data
-          persistency-policy: Null
-    metadata-repositories:
-        - name: DEIMS-SDR
-          software: Null
-          identifier:
-              kind: ID
-              system: DEIMS.id
-              assigned: Automatically
-              provider: DEIMS-SDR
-              includes-attributes: Null
+          persistency-policy document IRI: NULL
+          persistency-policy: planned
+          access mechanisms: 
+              authentication method: people can request accounts, which are managed centrally ??
+              access protocol URL: NULL
+              protocol open: bool
+              protocol royalty free: bool
+              own user database maintained: yes
+              ORCID used in AAI: no
+              major access technology supported: local LDAP??
+              authorisation needed for: upload data??
+              authorization for accessing content needed: no
+              access content process description IRI: 
+              access licenses in use: CC-BY-NC 4.0
+              data license IRI:
+              metadata openly available: yes
+        - IRI: NULL 
+          name: eLTER CDN
+          kind: data repository
+          software: 52°NORTH SOS 
+          identifier: 
+              IRI: NULL
+              kind: NULL
+              system: NULL
+              assigned: NULL
+              provider: NULL
+              includes-attributes: NULL
           certification: 
-              available: Null
-              method: Null
-          policy: Null
-          registry: re3data
-          persistency-policy: Null
+              available: NULL
+              method: NULL
+          policy: NULL
+          registry: NULL
+          persistency-policy document IRI: NULL
+          persistency-policy: planned
+          access mechanisms: 
+              authentication method: NULL
+              access protocol URL: NULL
+              protocol open: bool
+              protocol royalty free: bool
+              own user database maintained: NULL
+              ORCID used in AAI: NULL
+              major access technology supported: NULL
+              authorisation needed for: NULL
+              authorization for accessing content needed: NULL
+              access content process description IRI: 
+              access licenses in use: NULL
+              data license IRI:
+              metadata openly available: yes
+    data:
+        data type used: structured data
+            preferred data formats: CSV
+                 file format IRI:
+                 metadata headers included: no
+                 which metadata: 1..*/rl?
+                 registered data schema: bool
+         search on data: yes
+         search engine URL: NULL
+    metadata: 1..*
+            metadata schema IRI: 
+            metadata schema used: ISO19115
+            metadata schema used: ISO19139
+            metadata schema used: INSPIRE EF
+            metadata schema used: EML 2.2.0
+            metadata schema used: SensorML
+            categories defined in registries: not all
+            provenance fields included: ID
+            PIDs included: partially
+            primary storage format: DEIMS-SDR
+            metadata longevity plan URL: NULL
+            format IRI: 
+            export format supported: XML
+            exchange/harvesting method: OAI-PMH
+            exchange/harvesting method: OGC CSW
+            local search engine type in use: SolR
+            external search engine type supported: CSW endpoint
+            access policy statements included: yes
+            machine actionable: yes
+    data management plans:
+            specific DMP tools used: no
+            data publishing steps applied: planned
+    data processing:
+            workflow frameworks applied: no
+            distributed worklfows tools used: no
+                tool type: none
+            other analysis services offered: none
+            data products offered: mesoclimate
+            data products offered: vegetation
+            data products offered: deposition
+    semantics: 
+            vocabularies used: yes
+            vocabularies: 1..*
+                    vocabulary IRI: http://vocabs.lter-europe.net/EnvThes/
+                    vocabulary type: domain vocabulary
+                    vocabulary name: EnvThes
+                    specification language URL: https://www.w3.org/2004/02/skos/
+                    registry URL: none          
+    fairness: 
+            data findable: yes
+            gaps: 1..*
+                gap type: none
+            data accessible: partially
+            gaps: 1..*
+                gap type: online distribution link
+            data interoperable: yes
+            gaps: 1..*
+                gap type: format checking
+                gap type: data quality control
+            data re-usable: yes
+            gaps: 1..*
+                gap type: none
+            
+

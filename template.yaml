@@ -1,0 +1,123 @@
+attributes could be filled:
+          : free text (nothing speficied)
+        rl: reference list
+        bool: yes/no
+        yyyy-mm-dd: date
+        if no answer is given: NULL
+        if no answer can be given: VOID
+        if the answer is that it is planned to provide a solution: planned
+        if the answer is negativ and a reference list is used: none
+        if answer is defined bool, it is also possible to use: partially
+per attribute you could have one or more answers:
+            : only one (nothing specified)
+        1..*: more than one possible
+        ?: still to be decided
+nested attribute definitions: each indentation means that for each attribute value we need additional specifications.      
+ 
+
+---------------------------------------------------
+
+survey:
+    date: yyyy-mm-dd
+    version: 
+    creator: 
+        name: 
+        email: 
+infrastructure:
+    acronym: 
+    name:
+    recognized authority IRI:
+    repositories: 1..*
+          IRI:
+          name:
+          kind: rl
+          software: rl
+          identifier: 
+              IRI: 
+              kind: rl
+              system: rl
+              assigned: rl
+              provider: rl
+              includes-attributes: bool
+          certification: 
+              available: bool
+              method: rl
+          policy: rl
+          registry: rl
+          persistency-policy document IRI:
+          persistency-policy: rl?
+          access mechanisms: 1..*
+              authentication method: rl
+              access protocol URL:
+              protocol open: bool
+              protocol royalty free: bool
+              own user database maintained: bool
+              ORCID used in AAI: bool
+              major access technology supported: rl
+              authorisation needed for: rl
+              authorization for accessing content needed: bool
+              access content process description IRI: 
+              access licenses in use: rl
+              data license IRI:
+              metadata openly available: bool
+    data:
+        data type used: 1..*/rf
+            preferred data formats: 1..*/rf
+                 file format IRI
+                 metadata headers included: bool
+                 which metadata: 1..*/rl?
+                 registered data schema: bool
+         search on data: bool
+         search engine URL:
+    metadata: 1..*
+            metadata schema IRI: 
+            metadata schema used: rf
+            categories defined in registries: 1..*
+            provenance fields included: 1..*
+            PIDs included: bool
+            primary storage format: rl
+            metadata longevity plan URL:
+            format IRI:
+            export format supported: 1..*/rl
+            exchange/harvesting method: rl
+            local search engine type in use: rl
+            external search engine type supported: rl
+            access policy statements included: bool/rl?
+            machine actionable: bool
+    data management plans:
+            specific DMP tools used: bool
+            data publishing steps applied: 
+    data processing:
+            workflow frameworks applied: bool
+            distributed worklfows tools used: bool
+                tool type: rl
+            other analysis services offered: rf
+            data products offered: rf
+    semantics: 
+            vocabularies used: bool
+            vocabularies: 1..*
+                    vocabulary IRI:
+                    vocabulary type: rl
+                    vocabulary name:
+                    specification language URL:
+                    registry URL:           
+    fairness: 
+            data findable: bool
+            gaps: 1..*
+                gap type: rl
+            data accessible: bool
+            gaps: 1..*
+                gap type: rl
+            data interoperable: bool
+            gaps: 1..*
+                gap type: rl
+            data re-usable: bool
+            gaps: 1..*
+                gap type: rl
+            
+                   
+            
+            
+            
+            
+         
