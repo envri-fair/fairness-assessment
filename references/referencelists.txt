@@ -1,0 +1,130 @@
+ repository kind:
+    metadata repository
+    data repository
+    site repository
+
+
+repository software:
+    Zenodo
+    52°NORTH SOS 
+
+identifier kind:
+    PID
+    local ID
+    DOI
+
+identifier system:
+    Handle
+    local system
+    
+
+identifier assigned: 
+    automatically
+    manually
+
+identifier provider:
+    DataCite
+    Handle
+    local service
+    ePIC service
+
+certification method: 
+    Cor Trust Seal
+    GoFAIR Implementation Network
+    Data Seal of Approval
+
+published repository policy:
+    persistency
+    number of automatic copies
+    openness levels
+    metadata creation
+    PID creation
+
+repository registry:
+    re3data
+    WDS
+    DataCite
+    
+persistency-policy:
+    10 years
+    20 xears
+    50 years
+
+authentification method:
+    Shibboleth paried with eduGain
+    OAuth
+
+access technology:
+    local LDAP
+    OpenID
+    SAML based SSO
+    SAML2
+    Shibboleth
+    API via Basic HTTP
+
+access license:
+    CC-BY-NC 4.0
+    CC-BY 4.0
+    CC-BY 3.0
+    Code of Conduct
+
+authorisation needed for:
+    access content
+    upload data
+    upload metadata
+    query data
+
+data types:
+    binary data
+    spatial data
+    time series data
+    file-based data
+
+data formats:
+    csv
+    txt
+    xls
+    ASCII
+    NetCDF
+    shp
+    GDB
+
+metadata fields in data headers:
+
+metadata schemas:
+    ISO19115
+    ISO10139
+    EML 2.2.0
+    INSPIRE EF
+    SensorML
+
+primary metadata storage format:
+
+metadata export format:
+
+metadata exchange/harvesting method:
+        
+local search engine type:
+
+exernal search engine type:
+
+data processing tool type:
+
+analysis services:
+
+data products:
+
+vocabulary type:
+    general
+    domain specific
+    project specific
+    provenance specific
+
+data findability gap:
+
+data accessibility gap:
+
+data interoperability gap:
+
+data re-usability gap:
+   
