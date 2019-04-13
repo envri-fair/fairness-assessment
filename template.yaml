@@ -60,30 +60,38 @@ infrastructure:
               access licenses in use: rl
               data license IRI:
               metadata openly available: bool
-    data:
-        data type used: 1..*/rf
-            preferred data formats: 1..*/rf
-                 file format IRI
-                 metadata headers included: bool
-                 which metadata: 1..*/rl?
-                 registered data schema: bool
-         search on data: bool
-         search engine URL:
-    metadata: 1..*
-            metadata schema IRI: 
-            metadata schema used: rf
-            categories defined in registries: 1..*
-            provenance fields included: 1..*
-            PIDs included: bool
-            primary storage format: rl
-            metadata longevity plan URL:
-            format IRI:
-            export format supported: 1..*/rl
-            exchange/harvesting method: rl
-            local search engine type in use: rl
-            external search engine type supported: rl
-            access policy statements included: bool/rl?
-            machine actionable: bool
+          data:
+              data type used: 1..*/rf
+                preferred data formats: 1..*/rf
+                     file format IRI
+                     metadata headers included: bool
+                     which metadata: 1..*/rl?
+                     registered data schema: bool
+              search on data: bool
+              search engine URL:
+          metadata: 1..*
+             metadata schema IRI: 
+             metadata schema used: rf
+             categories defined in registries: 1..*
+             provenance fields included: 1..*
+             PIDs included: bool
+             primary storage format: rl
+             metadata longevity plan URL:
+             format IRI:
+                export format supported: 1..*/rl
+                exchange/harvesting method: rl
+                local search engine type in use: rl
+                external search engine type supported: rl
+                access policy statements included: bool/rl?
+                machine actionable: bool
+          semantics: 
+                vocabularies used: bool
+                vocabularies: 1..*
+                        vocabulary IRI:
+                        vocabulary type: rl
+                        vocabulary name:
+                        specification language URL:
+                        registry URL:    
     data management plans:
             specific DMP tools used: bool
             data publishing steps applied: 
@@ -93,14 +101,6 @@ infrastructure:
                 tool type: rl
             other analysis services offered: rf
             data products offered: rf
-    semantics: 
-            vocabularies used: bool
-            vocabularies: 1..*
-                    vocabulary IRI:
-                    vocabulary type: rl
-                    vocabulary name:
-                    specification language URL:
-                    registry URL:           
     fairness: 
             data findable: bool
             gaps: 1..*
