@@ -1,0 +1,135 @@
+attributes could be filled:
+          : free text (nothing speficied)
+        rl: reference list
+        bool: yes/no
+        yyyy-mm-dd: date
+        if no answer is given: NULL
+        if no answer can be given: VOID
+        if the answer is that it is planned to provide a solution: planned
+        if the answer is negativ and a reference list is used: none
+        if answer is defined bool, it is also possible to use: partially
+per attribute you could have one or more answers:
+            : only one (nothing specified)
+        1..*: more than one possible
+        ?: still to be decided
+nested attribute definitions: each indentation means that for each attribute value we need additional specifications.      
+ 
+
+---------------------------------------------------
+
+survey:
+    date: 2019-03-29
+    version: 
+    creator: 
+        name: 
+        email: Peter Thysse
+infrastructure:
+    acronym: SDN
+    name: SeaDataNet
+    recognized authority IRI: www.seadatanet.org
+    repositories: 1..*
+          IRI: www.seadatanet.org/products
+          name: Data Products Catalogue
+          kind: data repository
+          software: Sextant, Geonetwork
+          identifier: 
+              IRI: 
+              kind: DOI
+              system: NULL
+              assigned: manually
+              provider: NULL/DataCite
+              includes-attributes: NULL
+          certification: 
+              available: no
+              method: none
+          policy: data access
+          registry: no
+          persistency-policy document IRI: VOID
+          persistency-policy: no
+          access mechanisms: 1..*
+              access protocol URL:
+              protocol open: bool
+              protocol royalty free: bool
+              own user database maintained: yes
+              ORCID used in AAI: no
+              major access technology supported: CAS
+              authorisation technique: OAUTH
+              authorisation needed for: download data
+              authorization for accessing content needed: no
+              access content process description IRI: 
+              access licenses in use: local licence
+              data license IRI:
+              metadata openly available: yes
+            data:
+                data type used: binary
+                    preferred data formats: netCDF
+                         file format IRI:
+                         metadata headers included: yes
+                         which metadata: parameters measured
+                         which metadata: date time
+                         which metadata: depth
+                         registered data schema: yes
+                 search on data: planned
+                 search engine URL:  none             
+                 data type used: ASCII
+                    preferred data formats: ODV
+                         file format IRI:
+                         metadata headers included: yes
+                         which metadata: parameters measured
+                         which metadata: date time
+                         which metadata: depth                       
+                         registered data schema: yes
+                 search on data: no
+                 search engine URL: none
+    metadata: 1..*
+            metadata schema IRI: 
+            metadata schema used: ISO11939 extended with community profile
+            categories defined in registries: no
+            provenance fields included: data lineage
+            PIDs included: bool
+            primary storage format: rl
+            metadata longevity plan URL:
+            format IRI:
+            export format supported: 1..*/rl
+            exchange/harvesting method: rl
+            local search engine type in use: rl
+            external search engine type supported: rl
+            access policy statements included: bool/rl?
+            machine actionable: bool
+    data management plans:
+            specific DMP tools used: bool
+            data publishing steps applied: 
+    data processing:
+            workflow frameworks applied: bool
+            distributed worklfows tools used: bool
+                tool type: rl
+            other analysis services offered: rf
+            data products offered: rf
+    semantics: 
+            vocabularies used: bool
+            vocabularies: 1..*
+                    vocabulary IRI:
+                    vocabulary type: rl
+                    vocabulary name:
+                    specification language URL:
+                    registry URL:           
+    fairness: 
+            data findable: bool
+            gaps: 1..*
+                gap type: rl
+            data accessible: bool
+            gaps: 1..*
+                gap type: rl
+            data interoperable: bool
+            gaps: 1..*
+                gap type: rl
+            data re-usable: bool
+            gaps: 1..*
+                gap type: rl
+            
+                   
+            
+            
+            
+            
+         

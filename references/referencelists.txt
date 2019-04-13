@@ -39,6 +39,7 @@ published repository policy:
     openness levels
     metadata creation
     PID creation
+    data access
 
 repository registry:
     re3data
@@ -61,12 +62,15 @@ access technology:
     SAML2
     Shibboleth
     API via Basic HTTP
+    CAS
+    OAUTH2
 
 access license:
     CC-BY-NC 4.0
     CC-BY 4.0
     CC-BY 3.0
     Code of Conduct
+    local license
 
 authorisation needed for:
     access content
