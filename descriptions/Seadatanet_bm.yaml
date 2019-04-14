@@ -61,7 +61,7 @@ infrastructure:
                     registered data schema: yes
                 search on data: no
                 search engine URL: none            
-        metadata: 
+        metadata: ?
             metadata schema IRI: VOID
             metadata schema used: VOID
             categories defined in registries: VOID
@@ -77,69 +77,6 @@ infrastructure:
             external search engine type supported: VOID
             access policy statements included: VOID
             machine actionable: VOID
-    repositories: 1..*
-        IRI: 1.5
-        name: 1.6
-        kind: rl
-        software: 1.7 rl
-        identifier: 
-            IRI: 2.5
-            persistency-policy document IRI: 2.6
-            kind: 1.9 rl
-            system: 1.9 rl
-            assigned: 1.10 rl
-            provider: 1.11 rl
-            includes-attributes: 1.12 bool
-        certification method: 1.13 rl
-        policy: 1.14 rl
-        registry: 1.15 rl
-        persistency-guaranty: 1.16 rl
-        access mechanisms: 
-            authentication method: 1.33 rl
-            access protocol URL: 2.13
-            protocol open: 2.14 bool
-            protocol royalty free: 2.15 bool
-            own user database maintained: 1.34 bool
-            ORCID used in AAI: 1.35 bool
-            major access technology supported: 1.36 rl
-            authorisation technique: 1.37 rl
-            authorisation needed for: 1.37 rl
-            authorization for accessing content needed: 2.16 bool
-            access content process description IRI: 2.17
-            data licenses in use: 1.38 rl
-            data license IRI: 2.22
-            metadata openly available: 1.39 bool
-        data:
-            data type used: 1.17 1..*/rl
-                preferred data formats: 1.18 1..*/rl
-                file format IRI: 
-                metadata headers included: 1.19 bool
-                metadata types included: 1.19 1..*/rl?
-                registered data schema: 1.21 bool
-            search on data: 1.20 bool
-            search engine URL:  
-            metadata: 1..*
-            metadata schema IRI: http://www.isotc211.org/2005/gmd/gmd.xsd 
-            metadata schema IRI: http://www.isotc211.org/2005/gmx 
-            metadata schema IRI: http://www.isotc211.org/2005/gmx/gmx.xsd
-            metadata schema IRI: http://www.isotc211.org/2005/srv 
-            metadata schema IRI: http://schemas.opengis.net/iso/19139/20060504
-            metadata schema used: ISO 19139 extended with community profile
-            categories defined in registries: partially
-            registries used: partly
-            provenance fields included: partially?
-            PIDs included: yes
-            primary storage format: XML
-            metadata longevity plan URL: 2.18
-            format IRI: 2.8
-            export format supported: HTML
-            export format supported: XML
-            export format supported: PDF
-            exchange/harvesting method: CSW
-            local search engine type in use: https://sextant.ifremer.fr/en/web/seadatanet/catalogue;jsessionid=772FD259F528687D1F4C643DF5DCC977#/search?from=1&to=20
-            external search engine type supported: GEOPortal
-            access policy statements included: yes
-            machine actionable: no
         semantics: 
             vocabularies used: yes
             vocabularies: 
@@ -147,33 +84,123 @@ infrastructure:
                 vocabulary type: ISO
                 vocabulary name: ISO 19115 and ISO 1939
                 specification language URL: XML
-                vocabulary IRI: https://www.seadatanet.org/Standards/Common-Vocabularies
+                vocabulary IRI:  https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/
                 vocabulary type: domain specific
-                vocabulary name: SDN vocabulary
+                vocabulary name: NERC vocabulary service
                 specification language URL: XML
+        fairness: 
+            data findable:  yes
+                gaps: 
+                gap type: none
+            data accessible: partly
+                gaps: 
+                gap type: problems with FTP access
+            data interoperable: partly
+                gaps: 
+                gap type: none
+            data re-usable: partly
+                gaps: 
+                gap type: provenance information
+                gap type: quality description
+    repositories: 1..*
+        IRI: http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp
+        name: SDN metadata
+        kind: metadata repository
+        software: NULL
+        identifier: 
+            IRI: 2.5
+            persistency-policy document IRI: 2.6
+            kind: PID
+            system: planned
+            assigned: NULL
+            provider: planned
+            includes-attributes: planned
+        certification method: none
+        policy: none
+        registry: none
+        persistency-guaranty: none
+        access mechanisms: 
+            authentication method: Marine.id
+            access protocol URL: 2.13
+            protocol open: 2.14 bool
+            protocol royalty free: 2.15 bool
+            own user database maintained: yes
+            ORCID used in AAI: no
+            major access technology supported: CAS
+            authorisation technique: Marine.id
+            authorisation needed for: NULL
+            authorization for accessing content needed: 2.16 bool
+            access content process description IRI: 2.17
+            data licenses in use: local
+            data license IRI: 2.22
+            metadata openly available: yes
+        data:
+            data type used: VOID
+                preferred data formats: VOID
+                file format IRI: VOID
+                metadata headers included: VOID
+                metadata types included: VOID
+                registered data schema: VOID
+            search on data: VOID
+            search engine URL: VOID
+        metadata: ?
+            metadata schema IRI: http://www.isotc211.org/2005/gmd/gmd.xsd 
+            metadata schema IRI: http://www.isotc211.org/2005/gmx 
+            metadata schema IRI: http://www.isotc211.org/2005/gmx/gmx.xsd
+            metadata schema IRI: http://www.isotc211.org/2005/srv 
+            metadata schema IRI: http://schemas.opengis.net/iso/19139/20060504
+            metadata schema IRI: http://schemas.seadatanet.org/Standards-Software/Metadata-formats/SDN2_CDI_ISO19139_10.0.1.sch
+            metadata schema used: ISO 19139 extended with community profile
+            categories defined in registries: yes
+            registries used: yes
+            provenance fields included: partially
+            PIDs included: partially
+            primary storage format: XML
+            metadata longevity plan URL: 2.18
+            format IRI: 2.8
+            export format supported: HTML
+            export format supported: XML
+            exchange/harvesting method: CSW
+            local search engine type in use: yes
+            external search engine type supported: GEOPortal
+            access policy statements included: yes
+            machine actionable: partially
+        semantics: 
+            vocabularies used: yes
+            vocabularies: 
+                vocabulary IRI: http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml
+                vocabulary type: ISO
+                vocabulary name: ISO 19115 and ISO 1939
+                specification language URL: XML
+                vocabulary IRI:  https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/
+                vocabulary type: domain specific
+                vocabulary name: NERC vocabulary service
+                specification language URL: XML
+        fairness: 
+            data findable:  yes
+                gaps: 
+                gap type: PID
+                gap type: uptake in central resources
+            data accessible: partly
+                gaps: 
+                gap type: machine accessibility
+            data interoperable: yes
+                gaps: 
+                gap type: none
+            data re-usable: partly
+                gaps: 
+                gap type: provenance information
+                gap type: usage license
     data management plans:
         specific DMP tools used: no
         data publishing steps applied: yes
     data processing:
-        special data processing steps applied: ODV aggregation
+        special data processing steps applied: Datacenters validate the metadata before publishing
         workflow frameworks applied: none
         distributed workflows tools used: none
-        other analysis services offered: DIVA
-        data products offered: interpolations
-    fairness: 
-        data findable:  yes
-            gaps: 
-            gap type: none
-        data accessible: partly
-            gaps: 
-            gap type: problems with FTP access
-        data interoperable: partly
-            gaps: 
-            gap type: none
-        data re-usable: partly
-            gaps: 
-            gap type: provenance information
-            gap type: quality description
+        other analysis services offered: planned
+        data products offered: temperature
+        data products offered: salinity
     test fairness:
         URL/IRI of dataset: https://www.seadatanet.org/Products#/metadata/8c3bd19b-9687-429c-a232-48b10478581c
         URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
