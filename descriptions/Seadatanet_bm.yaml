@@ -88,6 +88,16 @@ infrastructure:
                 vocabulary type: domain specific
                 vocabulary name: NERC vocabulary service
                 specification language URL: XML
+        data management plans:
+            specific DMP tools used: no
+            data publishing steps applied: yes
+        data processing:
+            special data processing steps applied: Datacenters validate the metadata before publishing
+            workflow frameworks applied: none
+            distributed workflows tools used: none
+            other analysis services offered: planned
+            data products offered: temperature
+            data products offered: salinity
         fairness: 
             data findable:  yes
                 gaps: 
@@ -102,6 +112,14 @@ infrastructure:
                 gaps: 
                 gap type: provenance information
                 gap type: quality description
+         test fairness:
+            URL/IRI of dataset: https://www.seadatanet.org/Products#/metadata/8c3bd19b-9687-429c-a232-48b10478581c
+            URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
+            IRI of machine readable metadata of dataset: 2.7
+            URL to linkset describing resource: 2.21
+            IRI for the vocabulary used to descripe citational provenance: 2.23
+            IRI for the vocabulary used to descripe contextual provenance: 2.24
+            IRI of compliance certification: 2.25
     repositories: 1..*
         IRI: http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp
         name: SDN metadata
@@ -191,21 +209,21 @@ infrastructure:
                 gaps: 
                 gap type: provenance information
                 gap type: usage license
-    data management plans:
-        specific DMP tools used: no
-        data publishing steps applied: yes
-    data processing:
-        special data processing steps applied: Datacenters validate the metadata before publishing
-        workflow frameworks applied: none
-        distributed workflows tools used: none
-        other analysis services offered: planned
-        data products offered: temperature
-        data products offered: salinity
-    test fairness:
-        URL/IRI of dataset: https://www.seadatanet.org/Products#/metadata/8c3bd19b-9687-429c-a232-48b10478581c
-        URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
-        IRI of machine readable metadata of dataset: 2.7
-        URL to linkset describing resource: 2.21
-        IRI for the vocabulary used to descripe citational provenance: 2.23
-        IRI for the vocabulary used to descripe contextual provenance: 2.24
-        IRI of compliance certification: 2.25
+        data management plans:
+            specific DMP tools used: no
+            data publishing steps applied: yes
+        data processing:
+            special data processing steps applied: Datacenters validate the metadata before publishing
+            workflow frameworks applied: none
+            distributed workflows tools used: none
+            other analysis services offered: planned
+            data products offered: temperature
+            data products offered: salinity
+        test fairness:
+            URL/IRI of dataset: https://www.seadatanet.org/Products#/metadata/8c3bd19b-9687-429c-a232-48b10478581c
+            URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
+            IRI of machine readable metadata of dataset: 2.7
+            URL to linkset describing resource: 2.21
+            IRI for the vocabulary used to descripe citational provenance: 2.23
+            IRI for the vocabulary used to descripe contextual provenance: 2.24
+            IRI of compliance certification: 2.25
