@@ -1,0 +1,15 @@
+attributes could be filled:
+          : free text (nothing speficied)
+        rl: reference list
+        bool: yes/no
+        yyyy-mm-dd: date
+        if no answer is given: NULL
+        if no answer can be given: VOID
+        if the answer is that it is planned to provide a solution: planned
+        if you should use a reference list but your answer is negative: none
+        if answer is defined bool, it is also possible to use: partially
+per attribute you could have one or more answers:
+            : only one (nothing specified)
+        1..*: more than one possible
+        ?: still to be decided
+nested attribute definitions: each indentation means that for each attribute value we need additional specifications.     

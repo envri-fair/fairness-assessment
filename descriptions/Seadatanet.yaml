@@ -1,28 +1,9 @@
-attributes could be filled:
-          : free text (nothing speficied)
-        rl: reference list
-        bool: yes/no
-        yyyy-mm-dd: date
-        if no answer is given: NULL
-        if no answer can be given: VOID
-        if the answer is that it is planned to provide a solution: planned
-        if the answer is negativ and a reference list is used: none
-        if answer is defined bool, it is also possible to use: partially
-per attribute you could have one or more answers:
-            : only one (nothing specified)
-        1..*: more than one possible
-        ?: still to be decided
-nested attribute definitions: each indentation means that for each attribute value we need additional specifications.      
- 
-
----------------------------------------------------
-
 survey:
     date: 2019-03-29
-    version: 
+    version: 1
     creator: 
-        name: 
-        email: Peter Thysse
+        name: Peter Thijsse
+        email: peter@maris.nl
 infrastructure:
     acronym: SDN
     name: SeaDataNet
@@ -83,53 +64,59 @@ infrastructure:
                  search engine URL: none
     metadata: 1..*
             metadata schema IRI: 
-            metadata schema used: ISO11939 extended with community profile
+            metadata schema used: http://www.isotc211.org/2005/gmd/gmd.xsd 
+            metadata schema used: http://www.isotc211.org/2005/gmx 
+            metadata schema used: http://www.isotc211.org/2005/gmx/gmx.xsd
+            metadata schema used: http://www.isotc211.org/2005/srv 
+            metadata schema used: http://schemas.opengis.net/iso/19139/20060504
             categories defined in registries: no
-            provenance fields included: data lineage
-            PIDs included: bool
-            primary storage format: rl
-            metadata longevity plan URL:
-            format IRI:
-            export format supported: 1..*/rl
-            exchange/harvesting method: rl
-            local search engine type in use: rl
-            external search engine type supported: rl
-            access policy statements included: bool/rl?
-            machine actionable: bool
-    data management plans:
-            specific DMP tools used: bool
-            data publishing steps applied: 
-    data processing:
-            workflow frameworks applied: bool
-            distributed worklfows tools used: bool
-                tool type: rl
-            other analysis services offered: rf
-            data products offered: rf
+            provenance fields included: data lineage             
+            PIDs included: 1.25 bool
+            primary storage format: 1.26 rl
+            metadata longevity plan URL: 2.18
+            format IRI: 2.8
+            export format supported: 1.27 1..*/rl
+            exchange/harvesting method: 1.28 1..*/rl
+            local search engine type in use: 1.29 rl
+            external search engine type supported: 1.30 rl
+            access policy statements included: 1.31 bool/rl?
+            machine actionable: 1.32 bool
     semantics: 
-            vocabularies used: bool
+            vocabularies used: 1.47 bool
             vocabularies: 1..*
-                    vocabulary IRI:
-                    vocabulary type: rl
-                    vocabulary name:
-                    specification language URL:
-                    registry URL:           
+                vocabulary IRI: *URL* 2.20
+                vocabulary type: 1.48 rl
+                vocabulary name: 1.48
+                specification language URL: 2.19
+                registry URL: 1.47 2.20
+    data management plans:
+          specific DMP tools used: 1.40 bool
+          data publishing steps applied: 1.41 bool
+    data processing:
+          special data processing steps applied: 1.42 bool
+          workflow frameworks applied: 1.43 rl
+          distributed workflows tools used: 1.44 rl
+          other analysis services offered: 1.45 rf
+          data products offered: 1.46 rf
     fairness: 
-            data findable: bool
+          data findable: 1.50 bool
             gaps: 1..*
-                gap type: rl
-            data accessible: bool
+            gap type:1.50 rl
+          data accessible: 1.51 bool
             gaps: 1..*
-                gap type: rl
-            data interoperable: bool
+            gap type: 1.51 rl
+          data interoperable: 1.52 bool
             gaps: 1..*
-                gap type: rl
-            data re-usable: bool
+            gap type: 1.52 rl
+          data re-usable: 1.53 bool
             gaps: 1..*
-                gap type: rl
-            
-                   
-            
-            
-            
-            
+            gap type: 1.53 rl
+    test fairness:
+         URL/IRI of dataset: https://www.seadatanet.org/Products#/metadata/8c3bd19b-9687-429c-a232-48b10478581c
+         URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
+         IRI of machine readable metadata of dataset: 2.7
+         URL to linkset describing resource: 2.21
+         IRI for the vocabulary used to descripe citational provenance: 2.23
+         IRI for the vocabulary used to descripe contextual provenance: 2.24
+         IRI of compliance certification: 2.25
          

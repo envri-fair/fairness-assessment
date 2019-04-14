@@ -1,0 +1,127 @@
+survey:
+    date: 2019-03-29
+    version: 1
+    creator: 
+        name: Peter Thijsse
+        email: peter@maris.nl
+infrastructure:   
+    acronym: SDN
+    name: SeaDataNet
+    recognized authority IRI: www.seadatanet.org
+    repositories: 1..*
+        IRI: www.seadatanet.org/products
+        name: Data Products Catalogue
+        kind: data repository
+        software: Sextant-Si?
+        identifier:
+            IRI: 2.5
+            persistency-policy document IRI: 2.6
+            kind: DOI
+            system: NULL
+            assigned: manually
+            provider: DataCite?
+            includes-attributes: yes
+        certification method: none
+        policy: none
+        registry: none
+        persistency-guaranty: none
+        access mechanisms: 
+            authentication method: Marine-ID
+            access protocol URL: 2.13
+            protocol open: 2.14 bool
+            protocol royalty free: 2.15 bool
+            own user database maintained: yes
+            ORCID used in AAI: no
+            major access technology supported: CAS
+            authorisation technique: OAUTH
+            authorisation needed for: download data
+            authorization for accessing content needed: yes
+            access content process description IRI: 2.17
+            data licenses in use: local
+            data license IRI: 2.22
+            metadata openly available: yes
+        data:
+            data type used: binary
+                preferred data formats: netCDF
+                    file format IRI:
+                    metadata headers included: yes
+                    which metadata: parameters measured
+                    which metadata: date time
+                    which metadata: depth
+                    registered data schema: yes
+                search on data: planned
+                search engine URL:  none           
+            data type used: ASCII
+                preferred data formats: ODV
+                    file format IRI:
+                    metadata headers included: yes
+                    which metadata: parameters measured
+                    which metadata: date time
+                    which metadata: depth                       
+                    registered data schema: yes
+                search on data: no
+                search engine URL: none            
+        metadata: 1..*
+            metadata schema IRI: http://www.isotc211.org/2005/gmd/gmd.xsd 
+            metadata schema IRI: http://www.isotc211.org/2005/gmx 
+            metadata schema IRI: http://www.isotc211.org/2005/gmx/gmx.xsd
+            metadata schema IRI: http://www.isotc211.org/2005/srv 
+            metadata schema IRI: http://schemas.opengis.net/iso/19139/20060504
+            metadata schema used: ISO 19139 extended with community profile
+            categories defined in registries: partially
+            registries used: partly
+            provenance fields included: partially?
+            PIDs included: yes
+            primary storage format: XML
+            metadata longevity plan URL: 2.18
+            format IRI: 2.8
+            export format supported: HTML
+            export format supported: XML
+            export format supported: PDF
+            exchange/harvesting method: CSW
+            local search engine type in use: https://sextant.ifremer.fr/en/web/seadatanet/catalogue;jsessionid=772FD259F528687D1F4C643DF5DCC977#/search?from=1&to=20
+            external search engine type supported: GEOPortal
+            access policy statements included: yes
+            machine actionable: no
+        semantics: 
+            vocabularies used: yes
+            vocabularies: 
+                vocabulary IRI: http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml
+                vocabulary type: ISO
+                vocabulary name: ISO 19115 and ISO 1939
+                specification language URL: XML
+                vocabulary IRI: https://www.seadatanet.org/Standards/Common-Vocabularies
+                vocabulary type: domain specific
+                vocabulary name: SDN vocabulary
+                specification language URL: XML
+    data management plans:
+        specific DMP tools used: no
+        data publishing steps applied: yes
+    data processing:
+        special data processing steps applied: ODV aggregation
+        workflow frameworks applied: none
+        distributed workflows tools used: none
+        other analysis services offered: DIVA
+        data products offered: interpolations
+    fairness: 
+        data findable:  yes
+            gaps: 
+            gap type: none
+        data accessible: partly
+            gaps: 
+            gap type: problems with FTP access
+        data interoperable: partly
+            gaps: 
+            gap type: none
+        data re-usable: partly
+            gaps: 
+            gap type: provenance information
+            gap type: quality description
+    test fairness:
+        URL/IRI of dataset: https://www.seadatanet.org/Products#/metadata/8c3bd19b-9687-429c-a232-48b10478581c
+        URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
+        IRI of machine readable metadata of dataset: 2.7
+        URL to linkset describing resource: 2.21
+        IRI for the vocabulary used to descripe citational provenance: 2.23
+        IRI for the vocabulary used to descripe contextual provenance: 2.24
+        IRI of compliance certification: 2.25

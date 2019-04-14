@@ -32,6 +32,7 @@ certification method:
     Cor Trust Seal
     GoFAIR Implementation Network
     Data Seal of Approval
+    none
 
 published repository policy:
     persistency
@@ -45,6 +46,7 @@ repository registry:
     re3data
     WDS
     DataCite
+    none
     
 persistency-policy:
     10 years
@@ -70,7 +72,7 @@ access license:
     CC-BY 4.0
     CC-BY 3.0
     Code of Conduct
-    local license
+    local 
 
 authorisation needed for:
     access content
@@ -111,8 +113,13 @@ metadata exchange/harvesting method:
 local search engine type:
 
 exernal search engine type:
+    GEOPortal
+
+workflow frameworks type:
+    none
 
 data processing tool type:
+    none
 
 analysis services:
 
