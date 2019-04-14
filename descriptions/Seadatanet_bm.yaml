@@ -62,6 +62,40 @@ infrastructure:
                 search on data: no
                 search engine URL: none            
         metadata: 1..*
+            metadata schema IRI: 1..*
+            metadata schema used: 1.22?
+            categories defined in registries: 1.23 bool
+            registries used: 1.23 1..*
+            provenance fields included: 1.24 1..*
+            PIDs included: 1.25 bool
+            primary storage format: 1.26 rl
+            metadata longevity plan URL: 2.18
+            format IRI: 2.8
+            export format supported: 1.27 1..*/rl
+            exchange/harvesting method: 1.28 1..*/rl
+            local search engine type in use: 1.29 rl
+            external search engine type supported: 1.30 rl
+            access policy statements included: 1.31 bool/rl?
+            machine actionable: 1.32 bool
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            metadata: 1..*
             metadata schema IRI: http://www.isotc211.org/2005/gmd/gmd.xsd 
             metadata schema IRI: http://www.isotc211.org/2005/gmx 
             metadata schema IRI: http://www.isotc211.org/2005/gmx/gmx.xsd
