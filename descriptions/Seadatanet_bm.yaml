@@ -90,14 +90,13 @@ infrastructure:
                 specification language URL: XML
         data management plans:
             specific DMP tools used: no
-            data publishing steps applied: yes
+            data publishing steps applied: aggregated data curated by experts via ODV software
         data processing:
-            special data processing steps applied: Datacenters validate the metadata before publishing
+            special data processing steps applied: ODV aggregation
             workflow frameworks applied: none
             distributed workflows tools used: none
-            other analysis services offered: planned
-            data products offered: temperature
-            data products offered: salinity
+            other analysis services offered: DIVA
+            data products offered: interpolations
         fairness: 
             data findable:  yes
                 gaps: 
@@ -194,6 +193,16 @@ infrastructure:
                 vocabulary type: domain specific
                 vocabulary name: NERC vocabulary service
                 specification language URL: XML
+        data management plans:
+            specific DMP tools used: no
+            data publishing steps applied: datacenters validate before publishing
+        data processing:
+            special data processing steps applied: none
+            workflow frameworks applied: none
+            distributed workflows tools used: none
+            other analysis services offered: planned
+            data products offered: temperature
+            data products offered: salinity
         fairness: 
             data findable:  yes
                 gaps: 
@@ -208,20 +217,10 @@ infrastructure:
             data re-usable: partly
                 gaps: 
                 gap type: provenance information
-                gap type: usage license
-        data management plans:
-            specific DMP tools used: no
-            data publishing steps applied: yes
-        data processing:
-            special data processing steps applied: Datacenters validate the metadata before publishing
-            workflow frameworks applied: none
-            distributed workflows tools used: none
-            other analysis services offered: planned
-            data products offered: temperature
-            data products offered: salinity
+                gap type: usage license         
         test fairness:
-            URL/IRI of dataset: https://www.seadatanet.org/Products#/metadata/8c3bd19b-9687-429c-a232-48b10478581c
-            URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
+            URL/IRI of dataset: http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?n_code=2849446
+            URL of discovery portal: http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp
             IRI of machine readable metadata of dataset: 2.7
             URL to linkset describing resource: 2.21
             IRI for the vocabulary used to descripe citational provenance: 2.23
