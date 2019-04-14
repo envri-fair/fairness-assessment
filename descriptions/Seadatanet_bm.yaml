@@ -61,22 +61,22 @@ infrastructure:
                     registered data schema: yes
                 search on data: no
                 search engine URL: none            
-        metadata: 1..*
-            metadata schema IRI: none
-            metadata schema used: 1.22?
-            categories defined in registries: 1.23 bool
-            registries used: 1.23 1..*
-            provenance fields included: 1.24 1..*
-            PIDs included: 1.25 bool
-            primary storage format: 1.26 rl
-            metadata longevity plan URL: 2.18
-            format IRI: 2.8
-            export format supported: 1.27 1..*/rl
-            exchange/harvesting method: 1.28 1..*/rl
-            local search engine type in use: 1.29 rl
-            external search engine type supported: 1.30 rl
-            access policy statements included: 1.31 bool/rl?
-            machine actionable: 1.32 bool
+        metadata: 
+            metadata schema IRI: VOID
+            metadata schema used: VOID
+            categories defined in registries: VOID
+            registries used: VOID
+            provenance fields included: VOID
+            PIDs included: VOID
+            primary storage format: VOID
+            metadata longevity plan URL: VOID
+            format IRI: VOID
+            export format supported: VOID
+            exchange/harvesting method: VOID
+            local search engine type in use: VOID
+            external search engine type supported: VOID
+            access policy statements included: VOID
+            machine actionable: VOID
     repositories: 1..*
         IRI: 1.5
         name: 1.6
