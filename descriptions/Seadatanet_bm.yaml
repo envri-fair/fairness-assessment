@@ -62,7 +62,7 @@ infrastructure:
                 search on data: no
                 search engine URL: none            
         metadata: 1..*
-            metadata schema IRI: 1..*
+            metadata schema IRI: none
             metadata schema used: 1.22?
             categories defined in registries: 1.23 bool
             registries used: 1.23 1..*
@@ -77,24 +77,47 @@ infrastructure:
             external search engine type supported: 1.30 rl
             access policy statements included: 1.31 bool/rl?
             machine actionable: 1.32 bool
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+    repositories: 1..*
+        IRI: 1.5
+        name: 1.6
+        kind: rl
+        software: 1.7 rl
+        identifier: 
+            IRI: 2.5
+            persistency-policy document IRI: 2.6
+            kind: 1.9 rl
+            system: 1.9 rl
+            assigned: 1.10 rl
+            provider: 1.11 rl
+            includes-attributes: 1.12 bool
+        certification method: 1.13 rl
+        policy: 1.14 rl
+        registry: 1.15 rl
+        persistency-guaranty: 1.16 rl
+        access mechanisms: 
+            authentication method: 1.33 rl
+            access protocol URL: 2.13
+            protocol open: 2.14 bool
+            protocol royalty free: 2.15 bool
+            own user database maintained: 1.34 bool
+            ORCID used in AAI: 1.35 bool
+            major access technology supported: 1.36 rl
+            authorisation technique: 1.37 rl
+            authorisation needed for: 1.37 rl
+            authorization for accessing content needed: 2.16 bool
+            access content process description IRI: 2.17
+            data licenses in use: 1.38 rl
+            data license IRI: 2.22
+            metadata openly available: 1.39 bool
+        data:
+            data type used: 1.17 1..*/rl
+                preferred data formats: 1.18 1..*/rl
+                file format IRI: 
+                metadata headers included: 1.19 bool
+                metadata types included: 1.19 1..*/rl?
+                registered data schema: 1.21 bool
+            search on data: 1.20 bool
+            search engine URL:  
             metadata: 1..*
             metadata schema IRI: http://www.isotc211.org/2005/gmd/gmd.xsd 
             metadata schema IRI: http://www.isotc211.org/2005/gmx 
