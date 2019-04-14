@@ -72,6 +72,19 @@ infrastructure:
                 vocabulary type: 1.48 rl
                 vocabulary name: 1.48
                 specification language URL: 2.19
+        fairness: 
+            data findable: 1.50 bool
+                gaps: 1..*
+                gap type: 1.50 rl
+            data accessible: 1.51 bool
+                gaps: 1..*
+                gap type: 1.51 rl
+            data interoperable: 1.52 bool
+                gaps: 1..*
+                gap type: 1.52 rl
+            data re-usable: 1.53 bool
+                gaps: 1..*
+                gap type: 1.53 rl
     data management plans:
         specific DMP tools used: 1.40 bool
         data publishing steps applied: 1.41 bool
@@ -81,19 +94,6 @@ infrastructure:
         distributed workflows tools used: 1.44 rl
         other analysis services offered: 1.45 rf
         data products offered: 1.46 rf
-    fairness: 
-        data findable: 1.50 bool
-            gaps: 1..*
-            gap type: 1.50 rl
-        data accessible: 1.51 bool
-            gaps: 1..*
-            gap type: 1.51 rl
-        data interoperable: 1.52 bool
-            gaps: 1..*
-            gap type: 1.52 rl
-        data re-usable: 1.53 bool
-            gaps: 1..*
-            gap type: 1.53 rl
     test fairness:
         URL/IRI of dataset: 1.4/2.4
         URL of discovery portal: 1.5
