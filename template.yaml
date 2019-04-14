@@ -87,7 +87,7 @@ infrastructure:
                 gap type: 1.53 rl
         data management plans:
             specific DMP tools used: 1.40 bool
-            data publishing steps applied: 1.41 bool
+            data publishing steps applied: 1.41 rl
         data processing:
             special data processing steps applied: 1.42 rl
             workflow frameworks applied: 1.43 rl
