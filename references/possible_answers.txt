@@ -6,7 +6,7 @@ attributes could be filled:
         if no answer is given: NULL
         if no answer can be given: VOID
         if the answer is that it is planned to provide a solution: planned
-        if the answer is negativ and a reference list is used: none
+        if you should use a reference list but your answer is negative: none
         if answer is defined bool, it is also possible to use: partially
 per attribute you could have one or more answers:
             : only one (nothing specified)
