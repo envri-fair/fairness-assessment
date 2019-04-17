@@ -6,13 +6,17 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-envri:G8-mWKZ {
-    envri:G8-mWKZ dcterms:creator [ foaf:mbox "johannes.peterseil@umweltbundesamt.at" ;
-                foaf:name "Johannes Peterseil" ] ;
-        dcterms:date "2019-03-19"^^xsd:dateTime ;
-        dcterms:hasVersion "latest" .
+envri:GXmORO4 {
+    envri:GXmORO4 dcterms:creator [ foaf:mbox "peter@maris.nl" ;
+                foaf:name "Peter Thijsse" ] ;
+        dcterms:date "2019-03-29"^^xsd:dateTime ;
+        dcterms:hasVersion 1 .
+}
 
-    [] a <http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure> ;
-        rdfs:label "eLTER" .
+envri:GXipmI4 {
+    envri:GXipmI4 dcterms:creator [ foaf:mbox "peter@maris.nl" ;
+                foaf:name "Peter Thijsse" ] ;
+        dcterms:date "2019-03-29"^^xsd:dateTime ;
+        dcterms:hasVersion 1 .
 }
 
