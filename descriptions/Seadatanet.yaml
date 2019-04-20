@@ -69,11 +69,12 @@ infrastructure:
       search on data: no
       search engine URL: none            
     metadata: 
-      schema IRI: VOID
-      schema name: VOID
+      schema:
+      - IRI: VOID
+        name: VOID
+        registries used: VOID
+        provenance fields included: VOID
       categories defined in registries: VOID
-      registries used: VOID
-      provenance fields included: VOID
       PIDs included: VOID
       primary storage format: VOID
       metadata longevity plan URL: VOID
@@ -164,17 +165,16 @@ infrastructure:
       search on data: VOID
       search engine URL: VOID
     metadata: 
-      schema IRI: 
-      - http://www.isotc211.org/2005/gmd/gmd.xsd 
-      - http://www.isotc211.org/2005/gmx 
-      - http://www.isotc211.org/2005/gmx/gmx.xsd
-      - http://www.isotc211.org/2005/srv 
-      - http://schemas.opengis.net/iso/19139/20060504
-      - http://schemas.seadatanet.org/Standards-Software/Metadata-formats/SDN2_CDI_ISO19139_10.0.1.sch
-      schema name: ISO 19139 extended with community profile
+      schema:
+      - IRI: http://schemas.opengis.net/iso/19139/20060504
+        name:  ISO 19139
+        registries used: NULL
+        provenance fields included: NULL
+      - IRI: http://schemas.seadatanet.org/Standards-Software/Metadata-formats/SDN2_CDI_ISO19139_10.0.1.sch
+        name: SDN community profiel
+        registries used: yes
+        provenance fields included: partially
       categories defined in registries: yes
-      registries used: yes
-      provenance fields included: partially
       PIDs included: partially
       primary storage format: XML
       metadata longevity plan URL: 2.18
@@ -200,8 +200,9 @@ infrastructure:
       workflow frameworks applied: none
       distributed workflows tools used: none
       other analysis services offered: planned
-      data products offered: temperature
-      data products offered: salinity
+      data products offered: 
+      - temperature
+      - salinity
     fairness: 
       data findability:  
         data findable: yes
