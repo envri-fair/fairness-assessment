@@ -54,11 +54,12 @@ infrastructure:
       search on data: 1.20 bool
       search engine URL:
     metadata: 
-      schema IRI: 
-      schema name: 1.22
+      schema:
+        IRI: 
+        name: 1.22
+        registries used: 1.23 
+        provenance fields included: 1.24 
       categories defined in registries: 1.23 bool
-      registries used: 1.23 
-      provenance fields included: 1.24 
       PIDs included: 1.25 bool
       primary storage format: 1.26 
       metadata longevity plan U: 2.18
@@ -73,7 +74,7 @@ infrastructure:
       IRI: 2.20
       type: 1.48 
       name: 1.48
-      specification language U: 2.19        
+      specification language URL: 2.19        
     data processing:
       special data processing steps applied: 1.42 
       workflow frameworks applied: 1.43 
