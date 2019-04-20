@@ -1,107 +1,108 @@
 survey:
-    date: 1.0 yyyy-mm-dd
-    version: 
-    creator: 
-        name: 1.1
-        email: 1.2
+  date: 1.0 yyyy-mm-dd
+  version: 
+  creator: 
+    name: 1.1
+    email: 1.2
 infrastructure:
-    acronym: 
-    name: 1.3
-    recognized authority IRI: 
-    repositories: 1..*
-        IRI: 1.5
-        name: 1.6
-        kind: rl
-        software: 1.7 rl
-        identifier: 
-            IRI: 2.5
-            persistency-policy document IRI: 2.6
-            kind: 1.9 rl
-            system: 1.9 rl
-            assigned: 1.10 rl
-            provider: 1.11 rl
-            includes-attributes: 1.12 bool
-        certification method: 1.13 rl
-        policy: 1.14 rl
-        registry: 1.15 rl
-        persistency-guaranty: 1.16 rl
-        access mechanisms: 
-            authentication method: 1.33 rl
-            access protocol URL: 2.13
-            protocol open: 2.14 bool
-            protocol royalty free: 2.15 bool
-            own user database maintained: 1.34 bool
-            ORCID used in AAI: 1.35 bool
-            major access technology supported: 1.36 rl
-            authorisation technique: 1.37 rl
-            authorisation needed for: 1.37 rl
-            authorization for accessing content needed: 2.16 bool
-            access content process description IRI: 2.17
-            data licenses in use: 1.38 rl
-            data license IRI: 2.22
-            metadata openly available: 1.39 bool
-        data:
-            data type used: 1.17 1..*/rl
-                preferred data formats: 1.18 1..*/rl
-                file format IRI: 
-                metadata headers included: 1.19 bool
-                metadata types included: 1.19 1..*/rl?
-                registered data schema: 1.21 bool
-            search on data: 1.20 bool
-            search engine URL:
-        metadata: 1..*
-            metadata schema IRI: 1..*
-            metadata schema used: 1.22?
-            categories defined in registries: 1.23 bool
-            registries used: 1.23 1..*
-            provenance fields included: 1.24 1..*
-            PIDs included: 1.25 bool
-            primary storage format: 1.26 rl
-            metadata longevity plan URL: 2.18
-            format IRI: 2.8
-            export format supported: 1.27 1..*/rl
-            exchange/harvesting method: 1.28 1..*/rl
-            local search engine type in use: 1.29 rl
-            external search engine type supported: 1.30 rl
-            access policy statements included: 1.31 bool/rl?
-            machine actionable: 1.32 bool
-        semantics: 
-            vocabularies used: 1.47 bool
-            vocabularies: 1..*
-                vocabulary IRI: *URL* 2.20
-                vocabulary type: 1.48 rl
-                vocabulary name: 1.48
-                specification language URL: 2.19
-        fairness: 
-            data findable: 1.50 bool
-                gaps: 1..*
-                gap type: 1.50 rl
-            data accessible: 1.51 bool
-                gaps: 1..*
-                gap type: 1.51 rl
-            data interoperable: 1.52 bool
-                gaps: 1..*
-                gap type: 1.52 rl
-            data re-usable: 1.53 bool
-                gaps: 1..*
-                gap type: 1.53 rl
-        data management plans:
-            specific DMP tools used: 1.40 bool
-            data publishing steps applied: 1.41 rl
-        data processing:
-            special data processing steps applied: 1.42 rl
-            workflow frameworks applied: 1.43 rl
-            distributed workflows tools used: 1.44 rl
-            other analysis services offered: 1.45 rf
-            data products offered: 1.46 rf
-        test fairness:
-            URL/IRI of dataset: 1.4/2.4
-            URL of discovery portal: 1.5
-            IRI of machine readable metadata of dataset: 2.7
-            URL to linkset describing resource: 2.21
-            IRI for the vocabulary used to descripe citational provenance: 2.23
-            IRI for the vocabulary used to descripe contextual provenance: 2.24
-            IRI of compliance certification: 2.25
+  acronym: 
+  name: 1.3
+  recognized authority IRI: 
+  data management plans:
+    specific DMP tools used: 1.40 bool
+    data publishing steps applied: 1.41 
+  repositories: 
+    IRI: 1.5
+    name: 1.6
+    kind: 
+    software: 1.7 
+    identifier: 
+      IRI: 2.5
+      persistency-policy document IRI: 2.6
+      kind: 1.9 
+      system: 1.9 
+      assigned: 1.10 
+      provider: 1.11 
+      includes-attributes: 1.12 bool
+    certification method: 1.13 
+    policy: 1.14 
+    registry: 1.15 
+    persistency-guaranty: 1.16 
+    access mechanisms: 
+      authentication method: 1.33 
+      access protocol URI: 2.13
+      protocol open: 2.14 bool
+      protocol royalty free: 2.15 bool
+      own user database maintained: 1.34 bool
+      ORCID used in AAI: 1.35 bool
+      major access technology supported: 1.36 
+      authorisation technique: 1.37 
+      authorisation needed for: 1.37 
+      authorization for accessing content needed: 2.16 bool
+      access content process description IRI: 2.17
+      data licenses in use: 1.38 
+      data license IRI: 2.22
+      metadata openly available: 1.39 bool
+    data:
+      type name: 1.17 
+      preferred formats: 
+        format name: 1.18 
+        metadata included:
+          metadata headers: 1.19 bool
+          which metadata types: 1.19 
+      registered data schema: 1.21 bool
+      search on data: 1.20 bool
+      search engine URL:
+    metadata: 
+      schema IRI: 
+      schema name: 1.22
+      categories defined in registries: 1.23 bool
+      registries used: 1.23 
+      provenance fields included: 1.24 
+      PIDs included: 1.25 bool
+      primary storage format: 1.26 
+      metadata longevity plan U: 2.18
+      format IRI: 2.8
+      export format supported: 1.27 
+      exchange/harvesting method: 1.28 
+      local search engine type in use: 1.29 
+      external search engine type supported: 1.30 
+      access policy statements included: 1.31 bool
+      machine actionable: 1.32 bool
+    vocabularies: 
+      IRI: 2.20
+      type: 1.48 
+      name: 1.48
+      specification language U: 2.19        
+    data processing:
+      special data processing steps applied: 1.42 
+      workflow frameworks applied: 1.43 
+      distributed workflows tools used: 1.44 
+      other analysis services offered: 1.45 
+      data products offered: 1.46 
+    fairness: 
+      data findability:  
+        data findable: 1.50 bool 
+        gaps: 1.50
+      data accessibility: 
+        data accessible: 1.51 bool
+        gaps: 1.51
+      data interoperability: 
+        data interoperable: 1.52 bool
+        gaps: 1.52 
+      data re-usability: 
+        data reusable: 1.53 bool
+        gaps: 1.53 
+    test fairness:
+      URI/IRI of dataset: 1.4/2.4
+      URI of discovery portal: 1.5
+      IRI of machine readable metadata of dataset: 2.7
+      URI to linkset describing resource: 2.21
+      IRI for the vocabulary used to descripe citational provenance: 2.23
+      IRI for the vocabulary used to descripe contextual provenance: 2.24
+      IRI of compliance certification: 2.25
+ 
+
             
             
             
