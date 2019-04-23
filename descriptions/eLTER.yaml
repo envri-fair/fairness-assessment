@@ -18,7 +18,7 @@ infrastructure:
     software: Zenodo
     identifier: 
       IRI: NULL
-      persistency-policy document IRI: NULL
+      persistency-policy document IRI: 2.6
       kind: PID
       system: Handle
       assigned: automatically
@@ -45,8 +45,8 @@ infrastructure:
       metadata openly available: yes
     data:
       type name: structured data
-      preferred formats: CSV
-        format name: NULL
+      preferred formats: 
+        format name: CSV
         metadata included:
           metadata headers: no
           which metadata types: none
@@ -144,7 +144,7 @@ infrastructure:
       registered data schema: 1.21 bool
       search on data: 1.20 bool
       search engine URL:
-    metadata: 1..*
+    metadata: 
       schema:
       - IRI: http://schemas.opengis.net/iso/19139/20060504
         name: ISO 1939
@@ -219,7 +219,7 @@ infrastructure:
     software: 52°NORTH SOS 
     identifier: 
       IRI: NULL
-      persistency-policy document IRI: NULL
+      persistency-policy document IRI: 2.6
       kind: NULL
       system: NULL
       assigned: NULL
