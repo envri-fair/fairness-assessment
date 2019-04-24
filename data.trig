@@ -6,17 +6,52 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-envri:G4hgaRx {
-    envri:G4hgaRx dcterms:creator [ foaf:mbox "johannes.peterseil@umweltbundesamt.at" ;
+envri:GbQeIvL {
+    envri:GbQeIvL dcterms:creator [ foaf:mbox "johannes.peterseil@umweltbundesamt.at" ;
                 foaf:name "Johannes Peterseil" ] ;
-        dcterms:date "2019-03-19"^^xsd:dateTime ;
+        dcterms:date "2019-03-19"^^xsd:date ;
         dcterms:hasVersion 1 .
+
+    [] a <http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure> ;
+        rdfs:label "Integrated European Long-Term Ecosystem & Socio-Ecological Research Infrastructure" ;
+        envri:acronym "eLTER" ;
+        envri:hasDataManagementPlans [ envri:appliedDataPublishinSteps "planned" ;
+                envri:usesSpecificDataManagementPlanTools "false"^^xsd:bool ] ;
+        envri:hasRepository [ a envri:DataRepository,
+                    envri:Repository ;
+                rdfs:label "eLTER CDN" ;
+                envri:usesSoftware <http://envri.eu/ns/52NORTHSOS> ],
+            [ a envri:DataRepository,
+                    envri:Repository ;
+                rdfs:label "EUDAT/FZJ B2SHARE" ;
+                envri:usesSoftware envri:Zenodo ],
+            [ a envri:MetadataRepository,
+                    envri:Repository ;
+                rdfs:label "DEIMS-SDR" ;
+                envri:url <https://deims.org/> ] ;
+        envri:url <http://www.lter-europe.net/elter> .
 }
 
-envri:G4hILEx {
-    envri:G4hILEx dcterms:creator [ foaf:mbox "peter@maris.nl" ;
+envri:GCQoarL {
+    envri:GCQoarL dcterms:creator [ foaf:mbox "peter@maris.nl" ;
                 foaf:name "Peter Thijsse" ] ;
-        dcterms:date "2019-03-29"^^xsd:dateTime ;
+        dcterms:date "2019-03-29"^^xsd:date ;
         dcterms:hasVersion 1 .
+
+    [] a <http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure> ;
+        rdfs:label "SeaDataNet" ;
+        envri:acronym "SDN" ;
+        envri:hasDataManagementPlans [ envri:appliedDataPublishinSteps "aggregated data curated by experts via ODV software" ;
+                envri:usesSpecificDataManagementPlanTools "false"^^xsd:bool ] ;
+        envri:hasRepository [ a envri:MetadataRepository,
+                    envri:Repository ;
+                rdfs:label "SDN metadata" ;
+                envri:url <http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp> ],
+            [ a envri:DataRepository,
+                    envri:Repository ;
+                rdfs:label "Data Products Catalogue" ;
+                envri:url <www.seadatanet.org/products> ;
+                envri:usesSoftware <http://envri.eu/ns/Sextant-Si?> ] ;
+        envri:url <www.seadatanet.org> .
 }
 
