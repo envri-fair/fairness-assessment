@@ -1,15 +1,28 @@
 attributes could be filled:
-          : free text (nothing speficied)
-        rl: reference list
+        free: free text (literal)
+        URL/IRI: website address
+        list: use "-" for the first entry of a list
         bool: yes/no
-        yyyy-mm-dd: date
+        date: yyyy-mm-dd
+        ref: reference list (no spaces allowed: e.g. "local_system"). Please add new entries in the referencelists.txt!
         if no answer is given: NULL
         if no answer can be given: VOID
         if the answer is that it is planned to provide a solution: planned
         if you should use a reference list but your answer is negative: none
         if answer is defined bool, it is also possible to use: partially
-per attribute you could have one or more answers:
-            : only one (nothing specified)
-        1..*: more than one possible
-        ?: still to be decided
-nested attribute definitions: each indentation means that for each attribute value we need additional specifications.     
+        
+        ---
+        ONLY in dev accepted: 
+        '?' behind the answer indicating that this has to be checked
+        indication of question number like 2.1 
+        
+        -> in descriptions: 
+        ? has to be deleted, decide whether NULL or just the answer as given
+        question number has to be replaced by NULL
+                
+        ---
+        Thus: important to review are following answers:
+        - NULL
+        - ?
+
+

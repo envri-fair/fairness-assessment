@@ -14,173 +14,157 @@ infrastructure:
   repositories: 
   - IRI: NULL
     name: EUDAT/FZJ B2SHARE
-    kind: data repository
+    kind: data_repository
     software: Zenodo
     identifier: 
       IRI: NULL
-      persistency-policy document IRI: 2.6
+      persistency-policy document IRI: NULL
       kind: PID
       system: Handle
       assigned: automatically
-      provider: Handle??
+      provider: Handle
       includes-attributes: yes
     certification method: NULL
     policy: NULL
     registry: NULL
     persistency-guaranty: planned
     access mechanisms: 
-      authentication method: people can request accounts, which are managed centrally ??
+      authentication method: people can request accounts, which are managed centrally 
       access protocol URI: NULL
       protocol open: bool
       protocol royalty free: bool
-      own user database maintained: yes??
+      own user database maintained: yes
       ORCID used in AAI: no
-      major access technology supported: local LDAP??
+      major access technology supported: local_LDAP 
       authorisation technique: NULL 
-      authorisation needed for: upload data??
+      authorisation needed for: 
+      - upload_data 
       authorization for accessing content needed: no
       access content process description IRI: NULL
       access licenses in use: VOID
       data license IRI:
       metadata openly available: yes
     data:
-      type name: structured data
+    - type name: structured_data
       preferred formats: 
-        format name: CSV
+      - format name: CSV
         metadata included:
           metadata headers: no
           which metadata types: none
       registered data schema: bool
       search on data: yes
       search engine URL: NULL
-    metadata: 
-      schema:
-        IRI: 
-        name: 1.22
-        registries used: 1.23 
-        provenance fields included: 1.24 
-      categories defined in registries: 1.23 bool
-      PIDs included: 1.25 bool
-      primary storage format: 1.26 
-      metadata longevity plan U: 2.18
-      format IRI: 2.8
-      export format supported: 1.27 
-      exchange/harvesting method: 1.28 
-      local search engine type in use: 1.29 
-      external search engine type supported: 1.30 
-      access policy statements included: 1.31 bool
-      machine actionable: 1.32 bool
+    metadata: VOID
     vocabularies: 
-      IRI: http://vocabs.lter-europe.net/EnvThes/
-      type: thesaurus 
+    - IRI: http://vocabs.lter-europe.net/EnvThes/
+      type: thesaurus
+      topic: domain-specific 
       name: EnvThes
       specification language URL: https://www.w3.org/2004/02/skos/     
-    data processing:
-      special data processing steps applied: 1.42 
-      workflow frameworks applied: 1.43 
-      distributed workflows tools used: 1.44 
-      other analysis services offered: 1.45 
-      data products offered: 1.46 
+    data processing: VOID
     fairness: 
       data findability:  
-        data findable: 1.50 bool 
-        gaps: 1.50
+        data findable: NULL 
+        gaps: NULL
       data accessibility: 
-        data accessible: 1.51 bool
-        gaps: 1.51
+        data accessible: NULL
+        gaps: NULL
       data interoperability: 
-        data interoperable: 1.52 bool
-        gaps: 1.52 
+        data interoperable: NULL
+        gaps: NULL 
       data re-usability: 
-        data reusable: 1.53 bool
-        gaps: 1.53 
+        data reusable: NULL
+        gaps: NULL
     test fairness:
-      URI/IRI of dataset: 1.4/2.4
-      URI of discovery portal: 1.5
-      IRI of machine readable metadata of dataset: 2.7
-      URI to linkset describing resource: 2.21
-      IRI for the vocabulary used to descripe citational provenance: 2.23
-      IRI for the vocabulary used to descripe contextual provenance: 2.24
-      IRI of compliance certification: 2.25
+      URI/IRI of dataset: NULL
+      URI of discovery portal: NULL
+      IRI of machine readable metadata of dataset: NULL
+      URI to linkset describing resource: NULL
+      IRI for the vocabulary used to descripe citational provenance: NULL
+      IRI for the vocabulary used to descripe contextual provenance: NULL
+      IRI of compliance certification: NULL
   - IRI: https://deims.org/   
     name: DEIMS-SDR
-    kind: metadata repository
+    kind: metadata_repository
     software: NULL
     identifier: 
       IRI: NULL
       persistency-policy document IRI: NULL
-      kind: local ID
-      system: local system
+      kind: local_ID
+      system: local_system
       assigned: automatically
-      provider: DEIMS-SDR
+      provider: local_service
       includes-attributes: yes
     certification method: NULL
     policy: NULL
     registry: re3data
-    persistency-policy document IRI: NULL
-    persistency-guarantee: planned
+    persistency-guaranty: planned
     access mechanisms: 
-      authentication method: people can request accounts, which are managed centrally ??
+      authentication method: people can request accounts, which are managed centrally 
       access protocol URL: NULL
       protocol open: bool
       protocol royalty free: bool
       own user database maintained: yes
       ORCID used in AAI: no
-      major access technology supported: local LDAP??
+      major access technology supported: local_LDAP
       authorisation technique: NULL
-      authorisation needed for: upload data
+      authorisation needed for: 
+      - upload_data
       authorization for accessing content needed: no
       access content process description IRI: 
-      access licenses in use: CC-BY-NC 4.0
+      access licenses in use: CC-BY-NC4.0
       data license IRI:
       metadata openly available: yes
     data:
-      type name: 1.17 
+    - type name: NULL 
       preferred formats: 
-        format name: 1.18 
+      - format name: NULL 
         metadata included:
-          metadata headers: 1.19 bool
-          which metadata types: 1.19 
-      registered data schema: 1.21 bool
-      search on data: 1.20 bool
+          metadata headers: NULL
+          which metadata types: NULL 
+      registered data schema: NULL
+      search on data: NULL
       search engine URL:
     metadata: 
       schema:
       - IRI: http://schemas.opengis.net/iso/19139/20060504
-        name: ISO 1939
+        name: ISO_10139
         registry used: NULL
         provenance fields included: NULL
       - IRI:
-        name: ISO 19115
+        name: ISO_19115
         registry used: NULL
         provenance fields included: NULL
       - IRI: 
-        name: INSPIRE EF
+        name: INSPIRE_EF
         registry used: NULL
         provenance fields included: NULL
       - IRI:
-        name: EML 2.2.0
+        name: EML2.0
         registry used: NULL
         provenance fields included: NULL        
       - IRI:
         name: SensorML
         registry used: NULL
         provenance fields included: NULL
-      categories defined in registries: not all
+      categories defined in registries: partially
       PIDs included: partially
       primary storage format: DEIMS-SDR
       metadata longevity plan URL: NULL
       format IRI: 
-      export format supported: XML
-      exchange/harvesting method: OAI-PMH
-      exchange/harvesting method: OGC CSW
-      local search engine type in use: SolR
-      external search engine type supported: CSW endpoint
+      export format supported: 
+      - XML
+      exchange/harvesting method: 
+      - OAI-PMH
+        OGC_CSW
+      local search engine URL: https://deims.org/ 
+      external search engine type supported: CSW_endpoint
       access policy statements included: yes
       machine actionable: yes
     vocabularies: 
-      IRI: http://vocabs.lter-europe.net/EnvThes/
+    - IRI: http://vocabs.lter-europe.net/EnvThes/
       type: thesaurus 
+      topic: domain-specific
       name: EnvThes
       specification language URL: https://www.w3.org/2004/02/skos/       
     data processing:
@@ -190,36 +174,36 @@ infrastructure:
       other analysis services offered: none 
       data products offered:
       - mesoclimate
-      - vegetation
-      - deposition
+        vegetation
+        deposition
     fairness: 
       data findability:  
-        data findable: 1.50 bool 
-        gaps: 1.50
+        data findable: NULL 
+        gaps: NULL
       data accessibility: 
-        data accessible: 1.51 bool
-        gaps: 1.51
+        data accessible: NULL
+        gaps: NULL
       data interoperability: 
-        data interoperable: 1.52 bool
-        gaps: 1.52 
+        data interoperable: NULL
+        gaps: NULL 
       data re-usability: 
-        data reusable: 1.53 bool
-        gaps: 1.53 
+        data reusable: NULL
+        gaps: NULL 
     test fairness:
-      URI/IRI of dataset: 1.4/2.4
-      URI of discovery portal: 1.5
-      IRI of machine readable metadata of dataset: 2.7
-      URI to linkset describing resource: 2.21
-      IRI for the vocabulary used to descripe citational provenance: 2.23
-      IRI for the vocabulary used to descripe contextual provenance: 2.24
-      IRI of compliance certification: 2.25      
+      URI/IRI of dataset: NULL
+      URI of discovery portal: NULL
+      IRI of machine readable metadata of dataset: NULL
+      URI to linkset describing resource: NULL
+      IRI for the vocabulary used to descripe citational provenance: NULL
+      IRI for the vocabulary used to descripe contextual provenance: NULL
+      IRI of compliance certification: NULL    
   - IRI: NULL 
     name: eLTER CDN
-    kind: data repository
-    software: 52°NORTH SOS 
+    kind: data_repository
+    software: 52_NORTH_SOS 
     identifier: 
       IRI: NULL
-      persistency-policy document IRI: 2.6
+      persistency-policy document IRI: NULL
       kind: NULL
       system: NULL
       assigned: NULL
@@ -240,68 +224,49 @@ infrastructure:
       authorisation technique: NULL
       authorisation needed for: NULL
       authorization for accessing content needed: NULL
-      access content process description IRI: 
+      access content process description IRI: NULL
       access licenses in use: NULL
       data license IRI:
       metadata openly available: yes
     data:
-      type name: 1.17 
+    - type name: NULL 
       preferred formats: 
-        format name: 1.18 
+      - format name: NULL 
         metadata included:
-          metadata headers: 1.19 bool
-          which metadata types: 1.19 
-      registered data schema: 1.21 bool
-      search on data: 1.20 bool
+          metadata headers: NULL
+          which metadata types: NULL 
+      registered data schema: NULL
+      search on data: NULL
       search engine URL:
-    metadata: 
-      schema:
-        IRI: 
-        name: 1.22
-        registries used: 1.23 
-        provenance fields included: 1.24 
-      categories defined in registries: 1.23 bool
-      PIDs included: 1.25 bool
-      primary storage format: 1.26 
-      metadata longevity plan U: 2.18
-      format IRI: 2.8
-      export format supported: 1.27 
-      exchange/harvesting method: 1.28 
-      local search engine type in use: 1.29 
-      external search engine type supported: 1.30 
-      access policy statements included: 1.31 bool
-      machine actionable: 1.32 bool
+    metadata: VOID
     vocabularies: 
-      IRI: http://vocabs.lter-europe.net/EnvThes/
+    - IRI: http://vocabs.lter-europe.net/EnvThes/
       type: thesaurus 
+      topic: domain_specific
       name: EnvThes
       specification language URL: https://www.w3.org/2004/02/skos/     
-    data processing:
-      special data processing steps applied: 1.42 
-      workflow frameworks applied: 1.43 
-      distributed workflows tools used: 1.44 
-      other analysis services offered: 1.45 
-      data products offered: 1.46 
+    data processing: VOID
     fairness: 
       data findability:  
         data findable: yes 
         gaps: none
       data accessibility: 
         data accessible: partially
-        gaps: only distribution link
+        gaps: 
+        - distribution_link
       data interoperability: 
         data interoperable: yes
         gaps: 
-        - format checking
-        - data quality controlo
+        - format_checking
+          data_quality_controll
       data re-usability: 
         data reusable: yes
         gaps: none 
     test fairness:
-      URI/IRI of dataset: 1.4/2.4
-      URI of discovery portal: 1.5
-      IRI of machine readable metadata of dataset: 2.7
-      URI to linkset describing resource: 2.21
-      IRI for the vocabulary used to descripe citational provenance: 2.23
-      IRI for the vocabulary used to descripe contextual provenance: 2.24
-      IRI of compliance certification: 2.25        
+      URI/IRI of dataset: NULL
+      URI of discovery portal: NULL
+      IRI of machine readable metadata of dataset: NULL
+      URI to linkset describing resource: NULL
+      IRI for the vocabulary used to descripe citational provenance: NULL
+      IRI for the vocabulary used to descripe contextual provenance: NULL
+      IRI of compliance certification: NULL        
