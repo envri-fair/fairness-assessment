@@ -15,7 +15,7 @@ infrastructure:
   - IRI: www.seadatanet.org/products
     name: Data Products Catalogue
     kind: data repository
-    software: Sextant-Si?
+    software: Sextant-Si ?
     identifier:
       IRI: 2.5
       persistency-policy document IRI: 2.6
@@ -37,7 +37,8 @@ infrastructure:
       ORCID used in AAI: no
       major access technology supported: CAS
       authorisation technique: OAUTH
-      authorisation needed for: download data
+      authorisation needed for: 
+      - download data
       authorization for accessing content needed: yes
       access content process description IRI: 2.17
       data licenses in use: local
@@ -46,7 +47,7 @@ infrastructure:
     data type:
     - type name: binary
       preferred formats:
-        format name: netCDF
+      - format name: netCDF
         metadata included:
           metadata headers: yes
           which metadata types: 
@@ -68,23 +69,7 @@ infrastructure:
       registered data schema: yes
       search on data: no
       search engine URL: none            
-    metadata: 
-      schema:
-      - IRI: VOID
-        name: VOID
-        registries used: VOID
-        provenance fields included: VOID
-      categories defined in registries: VOID
-      PIDs included: VOID
-      primary storage format: VOID
-      metadata longevity plan URL: VOID
-      format IRI: VOID
-      export format supported: VOID
-      exchange/harvesting method: VOID
-      local search engine type in use: VOID
-      external search engine type supported: VOID
-      access policy statements included: VOID
-      machine actionable: VOID
+    metadata: VOID
     vocabularies:
     - IRI: http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml
       type: ISO
@@ -99,19 +84,21 @@ infrastructure:
       workflow frameworks applied: none
       distributed workflows tools used: none
       other analysis services offered: DIVA
-      data products offered: interpolations
+      data products offered: 
+      - interpolations
     fairness: 
       data findability:  
         data findable: yes
         gaps: none
       data accessibility: 
         data accessible: partially
-        gaps: problems with FTP access
+        gaps: 
+        - problems with FTP access
       data interoperability: 
         data interoperable: partially
         gaps: none
       data re-usability: 
-        data reusable: partly
+        data reusable: partially
         gaps: 
         - provenance information
         - quality description
@@ -155,9 +142,9 @@ infrastructure:
       data license IRI: 2.22
       metadata openly available: yes
     data type:
-      type name: VOID
+    - type name: VOID
       preferred formats: 
-        format name: ODV
+      - format name: ODV
         metadata included:         
           metadata headers: VOID
           which metadata types: VOID
@@ -171,7 +158,7 @@ infrastructure:
         registries used: NULL
         provenance fields included: NULL
       - IRI: http://schemas.seadatanet.org/Standards-Software/Metadata-formats/SDN2_CDI_ISO19139_10.0.1.sch
-        name: SDN community profiel
+        name: SDN community profile
         registries used: yes
         provenance fields included: partially
       categories defined in registries: yes
@@ -179,8 +166,9 @@ infrastructure:
       primary storage format: XML
       metadata longevity plan URL: 2.18
       format IRI: 2.8
-      export format supported: HTML
-      export format supported: XML
+      export format supported: 
+      - HTML
+      - XML
       exchange/harvesting method: CSW
       local search engine type in use: yes
       external search engine type supported: GEOPortal
@@ -211,7 +199,8 @@ infrastructure:
         - uptake in central resources
       data accessibility: 
         data accessible: partially
-        gaps: machine accessibility
+        gaps: 
+        - machine accessibility
       data interoperability: 
          data interoperable: yes
          gaps: none

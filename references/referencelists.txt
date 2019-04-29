@@ -1,141 +1,184 @@
- repository kind:
-    metadata repository
-    data repository
-    site repository
+repository kind:
+    metadata_repository
+    data_repository
+    site_repository
 
-
-repository software:
+infrastructure acronym:
+    SDN
+    eLTER
+    
+1.7 repository software:
     Zenodo
-    52°NORTH SOS 
+    52_NORTH_SOS 
+    Sextant-Si
 
-identifier kind:
+1.9 identifier kind:
     PID
-    local ID
+    local_ID
     DOI
 
-identifier system:
+1.9 identifier system:
     Handle
-    local system
+    local_system
     
 
-identifier assigned: 
+1.10 identifier assigned: 
     automatically
     manually
 
-identifier provider:
+1.11 identifier provider:
     DataCite
     Handle
-    local service
-    ePIC service
+    local_service
+    ePIC_service
 
-certification method: 
-    Cor Trust Seal
-    GoFAIR Implementation Network
-    Data Seal of Approval
-    none
+1.13 certification method: 
+    CoreTrustSeal
+    GoFAIR_Implementation_Network
+    Data_Seal_of_Approval
 
-published repository policy:
+
+1.14 published repository policy:
     persistency
-    number of automatic copies
-    openness levels
-    metadata creation
-    PID creation
-    data access
+    number_of_automatic_copies
+    openness_levels
+    metadata_creation
+    PID_creation
+    data_access
 
-repository registry:
+1.15 repository registry:
     re3data
     WDS
     DataCite
-    none
     
-persistency-policy:
-    10 years
-    20 xears
-    50 years
+1.16 persistency-policy:
+    10_years
+    20_years
+    50_years
 
-authentification method:
-    Shibboleth paried with eduGain
+1.33 authentification method:
+    Shibboleth_paried_with_eduGain
     OAuth
+    Marine-ID
 
-access technology:
-    local LDAP
+1.36 access technology:
+    local_LDAP
     OpenID
-    SAML based SSO
+    SAMLbasedSSO
     SAML2
     Shibboleth
-    API via Basic HTTP
+    APIviaBasicHTTP
     CAS
     OAUTH2
+    
+1.37 authorisation technique: 
+    OAUTH
 
-access license:
-    CC-BY-NC 4.0
-    CC-BY 4.0
-    CC-BY 3.0
-    Code of Conduct
-    local 
+1.37 authorisation needed for:
+    access_content
+    upload_data
+    upload_metadata
+    query_data
+    download_data
+    
+1.38 access license:
+    CC-BY-NC4.0
+    CC-BY4.0
+    CC-BY3.0
+    Code_of_Conduct
+    local_license
 
-authorisation needed for:
-    access content
-    upload data
-    upload metadata
-    query data
+1.17 data types:
+    binary_data
+    spatial_data
+    time_series_data
+    file-based_data
+    text_data
+    structured_data
 
-data types:
-    binary data
-    spatial data
-    time series data
-    file-based data
-
-data formats:
-    csv
+1.18 data formats:
+    CSV
     txt
     xls
     ASCII
     NetCDF
     shp
     GDB
+    ODV
 
-metadata fields in data headers:
+1.19 metadata types in data headers:
+    parameters_measured
+    date_time
+    depth 
 
-metadata schemas:
+1.22 metadata schema name:
     ISO19115
     ISO10139
-    EML 2.2.0
-    INSPIRE EF
+    ISO19115_10139
+    EML2.0
+    INSPIRE_EF
     SensorML
 
-primary metadata storage format:
+1.24 provenance fields:
+    
+1.26 primary metadata storage format:
+    DEIMS-SDR
 
-metadata export format:
+1.27 metadata export format:
+    HTML
+    XML
+    RDF
 
-metadata exchange/harvesting method:
-        
-local search engine type:
+1.28 metadata exchange/harvesting method:
+    CSW
+    OAI-PMH
+    OGC_CSW
 
-exernal search engine type:
+1.30 exernal search engine type:
     GEOPortal
+    CSW_endpoint
 
-workflow frameworks type:
-    none
+1.48 vocabulary type:
+    codelist
+    thesaurus
+    ontology
 
-data processing tool type:
-    none
-
-analysis services:
-
-data products:
-
-vocabulary type:
+1.48 vocabulary topic:
     general
-    domain specific
-    project specific
-    provenance specific
+    domain_specific
+    project_specific
+    provenance_specific
 
-data findability gap:
-
-data accessibility gap:
-
-data interoperability gap:
-
-data re-usability gap:
+1.43 workflow frameworks type:
    
+
+1.44 data processing tool type:
+ 
+
+1.45 analysis services:
+
+
+1.46 data products:
+    salinity
+    temperature
+    mesoclimate
+    vegetation
+    deposition
+
+1.50 data findability gap:
+    PIDs
+    uptake_in_central_resources
+
+1.51 data accessibility gap:
+    problems_with_FTP_access
+    machine_accessibility
+    distribution_link
+
+1.52 data interoperability gap:
+    format_checking
+    data_quality_controll
+
+1.53 data re-usability gap:
+    provenance_information
+    quality_description
+    usage_license 
