@@ -52,8 +52,8 @@ infrastructure:
           metadata headers: yes
           which metadata types: 
           - parameters_measured
-            date_time
-            depth 
+          - date_time
+          - depth 
       registered data schema: yes
       search on data: planned
       search engine URL: none           
@@ -64,8 +64,8 @@ infrastructure:
           metadata headers: yes
           which metadata types: 
           - parameters_measured
-            date_time
-            depth                
+          - date_time
+          - depth                
       registered data schema: yes
       search on data: no
       search engine URL: none            
@@ -103,7 +103,7 @@ infrastructure:
         data reusable: partially
         gaps: 
         - provenance_information
-          quality_description
+        - quality_description
     test fairness:
       URL/IRI of dataset: https://www.seadatanet.org/Products#/metadata/8c3bd19b-9687-429c-a232-48b10478581c
       URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
@@ -170,7 +170,7 @@ infrastructure:
       format IRI: NULL
       export format supported: 
       - HTML
-        XML
+      - XML
       exchange/harvesting method: 
       - CSW
       local search engine URL: NULL
@@ -201,7 +201,7 @@ infrastructure:
         data findable: yes
         gaps: 
         - PIDs
-          uptake_in_central_resources
+        - uptake_in_central_resources
       data accessibility: 
         data accessible: partially
         gaps: 
@@ -213,7 +213,7 @@ infrastructure:
          data re-usable: partially
          gaps: 
          - provenance_information
-           usage_license         
+         - usage_license         
     test fairness:
       URL/IRI of dataset: http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?n_code=2849446
       URL of discovery portal: http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp
