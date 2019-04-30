@@ -12,7 +12,7 @@ infrastructure:
     specific DMP tools used: 1.40 ref
     data publishing steps applied: 1.41 free
   repositories: 
-    IRI: 1.5 list ref
+    IRI: 1.5 list 
     name: 1.6 free
     kind: ref
     software: 1.7 ref
