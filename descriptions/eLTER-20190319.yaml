@@ -156,7 +156,7 @@ infrastructure:
       - XML
       exchange/harvesting method: 
       - OAI-PMH
-        OGC_CSW
+      - OGC_CSW
       local search engine URL: https://deims.org/ 
       external search engine type supported: CSW_endpoint
       access policy statements included: yes
@@ -174,8 +174,8 @@ infrastructure:
       other analysis services offered: none 
       data products offered:
       - mesoclimate
-        vegetation
-        deposition
+      - vegetation
+      - deposition
     fairness: 
       data findability:  
         data findable: NULL 
@@ -258,7 +258,7 @@ infrastructure:
         data interoperable: yes
         gaps: 
         - format_checking
-          data_quality_controll
+        - data_quality_controll
       data re-usability: 
         data reusable: yes
         gaps: none 
