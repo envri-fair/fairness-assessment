@@ -1,7 +1,7 @@
 attributes could be filled:
         free: free text (literal)
         URL/IRI: website address
-        list: use "-" for the first entry of a list
+        list: use "-" for each entry of a list
         bool: yes/no
         date: yyyy-mm-dd
         ref: reference list (no spaces allowed: e.g. "local_system"). Please add new entries in the referencelists.txt!
