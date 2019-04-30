@@ -9,7 +9,7 @@ infrastructure:
   name: 1.3 free
   recognized authority IRI: 
   data management plans:
-    specific DMP tools used: 1.40 bool
+    specific DMP tools used: 1.40 ref
     data publishing steps applied: 1.41 free
   repositories: 
     IRI: 1.5 list ref
