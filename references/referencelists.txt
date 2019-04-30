@@ -164,6 +164,7 @@ infrastructure acronym:
     mesoclimate
     vegetation
     deposition
+    interpolations
 
 1.50 data findability gap:
     PIDs

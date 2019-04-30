@@ -14,11 +14,11 @@ infrastructure:
   repositories: 
   - IRI: www.seadatanet.org/products
     name: Data Products Catalogue
-    kind: data repository
-    software: Sextant-Si?
+    kind: data_repository
+    software: Sextant-Si
     identifier:
-      IRI: 2.5
-      persistency-policy document IRI: 2.6
+      IRI: NULL
+      persistency-policy document IRI: NULL
       kind: DOI
       system: NULL
       assigned: manually
@@ -30,106 +30,95 @@ infrastructure:
     persistency-guaranty: none
     access mechanisms: 
       authentication method: Marine-ID
-      access protocol URL: 2.13
-      protocol open: 2.14 bool
-      protocol royalty free: 2.15 bool
+      access protocol URL: NULL
+      protocol open: NULL
+      protocol royalty free: NULL
       own user database maintained: yes
       ORCID used in AAI: no
       major access technology supported: CAS
       authorisation technique: OAUTH
-      authorisation needed for: download data
+      authorisation needed for: 
+      - download_data
       authorization for accessing content needed: yes
-      access content process description IRI: 2.17
-      data licenses in use: local
-      data license IRI: 2.22
+      access content process description IRI: NULL
+      data licenses in use: local_license
+      data license IRI: NULL
       metadata openly available: yes
-    data type:
-    - type name: binary
+    data:
+    - type name: binary_data
       preferred formats:
-        format name: netCDF
+      - format name: NetCDF
         metadata included:
           metadata headers: yes
           which metadata types: 
-          - parameters measured
-          - date time
-          - depth
+          - parameters_measured
+          - date_time
+          - depth 
       registered data schema: yes
       search on data: planned
       search engine URL: none           
-    - type name: ASCII
+    - type name: text_data
       preferred formats: 
-        format name: ODV
+      - format name: ODV
         metadata included:
           metadata headers: yes
           which metadata types: 
-          - parameters measured
-          - date time
+          - parameters_measured
+          - date_time
           - depth                
       registered data schema: yes
       search on data: no
       search engine URL: none            
-    metadata: 
-      schema:
-      - IRI: VOID
-        name: VOID
-        registries used: VOID
-        provenance fields included: VOID
-      categories defined in registries: VOID
-      PIDs included: VOID
-      primary storage format: VOID
-      metadata longevity plan URL: VOID
-      format IRI: VOID
-      export format supported: VOID
-      exchange/harvesting method: VOID
-      local search engine type in use: VOID
-      external search engine type supported: VOID
-      access policy statements included: VOID
-      machine actionable: VOID
+    metadata: VOID
     vocabularies:
     - IRI: http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml
-      type: ISO
-      name: ISO 19115/1939
-      specification language URL: XML
+      type: codelist
+      topic: INSPIRE
+      name: ISO19115_10139
+      specification language URL: https://www.w3.org/XML/
     - IRI: https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/
-      type: domain specific
+      type: thesaurus
+      topic: domain_specific
       name: NERC vocabulary service
-      specification language URL: XML
+      specification language URL: https://www.w3.org/XML/
     data processing:
       special data processing steps applied: ODV aggregation
       workflow frameworks applied: none
       distributed workflows tools used: none
       other analysis services offered: DIVA
-      data products offered: interpolations
+      data products offered: 
+      - interpolations
     fairness: 
       data findability:  
         data findable: yes
         gaps: none
       data accessibility: 
         data accessible: partially
-        gaps: problems with FTP access
+        gaps: 
+        - problems_with_FTP_access
       data interoperability: 
         data interoperable: partially
         gaps: none
       data re-usability: 
-        data reusable: partly
+        data reusable: partially
         gaps: 
-        - provenance information
-        - quality description
+        - provenance_information
+        - quality_description
     test fairness:
       URL/IRI of dataset: https://www.seadatanet.org/Products#/metadata/8c3bd19b-9687-429c-a232-48b10478581c
       URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
-      IRI of machine readable metadata of dataset: 2.7
-      URL to linkset describing resource: 2.21
-      IRI for the vocabulary used to descripe citational provenance: 2.23
-      IRI for the vocabulary used to descripe contextual provenance: 2.24
-      IRI of compliance certification: 2.25
+      IRI of machine readable metadata of dataset: NULL
+      URL to linkset describing resource: NULL
+      IRI for the vocabulary used to descripe citational provenance: NULL
+      IRI for the vocabulary used to descripe contextual provenance: NULL
+      IRI of compliance certification: NULL
   - IRI: http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp
     name: SDN metadata
-    kind: metadata repository
+    kind: metadata_repository
     software: NULL
     identifier: 
-      IRI: 2.5
-      persistency-policy document IRI: 2.6
+      IRI: NULL
+      persistency-policy document IRI: NULL
       kind: PID
       system: planned
       assigned: NULL
@@ -141,20 +130,20 @@ infrastructure:
     persistency-guaranty: none
     access mechanisms: 
       authentication method: Marine.id
-      access protocol URL: 2.13
-      protocol open: 2.14 bool
-      protocol royalty free: 2.15 bool
+      access protocol URL: NULL
+      protocol open: NULL
+      protocol royalty free: NULL
       own user database maintained: yes
       ORCID used in AAI: no
       major access technology supported: CAS
       authorisation technique: Marine.id
       authorisation needed for: NULL
-      authorization for accessing content needed: 2.16 bool
-      access content process description IRI: 2.17
+      authorization for accessing content needed: NULL
+      access content process description IRI: NULL
       data licenses in use: local
-      data license IRI: 2.22
+      data license IRI: NULL
       metadata openly available: yes
-    data type:
+    data: 
       type name: VOID
       preferred formats: 
         format name: ODV
@@ -163,38 +152,42 @@ infrastructure:
           which metadata types: VOID
       registered data schema: VOID
       search on data: VOID
-      search engine URL: VOID
+      search engine URL: VOID    
     metadata: 
       schema:
       - IRI: http://schemas.opengis.net/iso/19139/20060504
-        name:  ISO 19139
+        name:  ISO19139
         registries used: NULL
         provenance fields included: NULL
       - IRI: http://schemas.seadatanet.org/Standards-Software/Metadata-formats/SDN2_CDI_ISO19139_10.0.1.sch
-        name: SDN community profiel
+        name: SDN community profile
         registries used: yes
         provenance fields included: partially
       categories defined in registries: yes
       PIDs included: partially
       primary storage format: XML
-      metadata longevity plan URL: 2.18
-      format IRI: 2.8
-      export format supported: HTML
-      export format supported: XML
-      exchange/harvesting method: CSW
-      local search engine type in use: yes
+      metadata longevity plan URL: NULL
+      format IRI: NULL
+      export format supported: 
+      - HTML
+      - XML
+      exchange/harvesting method: 
+      - CSW
+      local search engine URL: NULL
       external search engine type supported: GEOPortal
       access policy statements included: yes
       machine actionable: partially
     vocabularies: 
     - IRI: http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml
-      type: ISO
-      name: ISO 19115/1939
-      specification language URL: XML
-    - IRI:  https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/
-      type: domain specific
+      type: codelist
+      topic: INSPIRE
+      name: ISO19115_ISO10139
+      specification language URL: https://www.w3.org/XML/
+    - IRI: https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/
+      type: thesaurus
+      topic: domain_specific
       name: NERC vocabulary service
-      specification language URL: XML
+      specification language URL: https://www.w3.org/XML/
     data processing:
       special data processing steps applied: none
       workflow frameworks applied: none
@@ -202,29 +195,30 @@ infrastructure:
       other analysis services offered: planned
       data products offered: 
       - temperature
-      - salinity
+        salinity
     fairness: 
       data findability:  
         data findable: yes
         gaps: 
-        - PID
-        - uptake in central resources
+        - PIDs
+        - uptake_in_central_resources
       data accessibility: 
         data accessible: partially
-        gaps: machine accessibility
+        gaps: 
+        - machine_accessibility
       data interoperability: 
          data interoperable: yes
          gaps: none
       data re-usability: 
          data re-usable: partially
          gaps: 
-         - provenance information
-         - usage license         
+         - provenance_information
+         - usage_license         
     test fairness:
       URL/IRI of dataset: http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?n_code=2849446
       URL of discovery portal: http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp
-      IRI of machine readable metadata of dataset: 2.7
-      URL to linkset describing resource: 2.21
-      IRI for the vocabulary used to descripe citational provenance: 2.23
-      IRI for the vocabulary used to descripe contextual provenance: 2.24
-      IRI of compliance certification: 2.25
+      IRI of machine readable metadata of dataset: NULL
+      URL to linkset describing resource: NULL
+      IRI for the vocabulary used to descripe citational provenance: NULL
+      IRI for the vocabulary used to descripe contextual provenance: NULL
+      IRI of compliance certification: NULL
