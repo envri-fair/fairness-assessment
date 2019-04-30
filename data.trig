@@ -6,52 +6,23 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-envri:GbQeIvL {
-    envri:GbQeIvL dcterms:creator [ foaf:mbox "johannes.peterseil@umweltbundesamt.at" ;
-                foaf:name "Johannes Peterseil" ] ;
+envri:Gjq1c6z {
+    envri:Gjq1c6z dcterms:creator [ foaf:mbox <johannes.peterseil@umweltbundesamt.at> ;
+                foaf:name "Johannes Peterseil"^^xsd:string ] ;
         dcterms:date "2019-03-19"^^xsd:date ;
-        dcterms:hasVersion 1 .
+        dcterms:hasVersion "1"^^xsd:string .
 
     [] a <http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure> ;
-        rdfs:label "Integrated European Long-Term Ecosystem & Socio-Ecological Research Infrastructure" ;
-        envri:acronym "eLTER" ;
-        envri:hasDataManagementPlans [ envri:appliedDataPublishinSteps "planned" ;
-                envri:usesSpecificDataManagementPlanTools "false"^^xsd:bool ] ;
-        envri:hasRepository [ a envri:DataRepository,
-                    envri:Repository ;
-                rdfs:label "eLTER CDN" ;
-                envri:usesSoftware <http://envri.eu/ns/52NORTHSOS> ],
-            [ a envri:DataRepository,
-                    envri:Repository ;
-                rdfs:label "EUDAT/FZJ B2SHARE" ;
-                envri:usesSoftware envri:Zenodo ],
-            [ a envri:MetadataRepository,
-                    envri:Repository ;
-                rdfs:label "DEIMS-SDR" ;
-                envri:url <https://deims.org/> ] ;
-        envri:url <http://www.lter-europe.net/elter> .
+        rdfs:label "Integrated European Long-Term Ecosystem & Socio-Ecological Research Infrastructure"^^xsd:string .
 }
 
-envri:GCQoarL {
-    envri:GCQoarL dcterms:creator [ foaf:mbox "peter@maris.nl" ;
-                foaf:name "Peter Thijsse" ] ;
+envri:G-I9fkz {
+    envri:G-I9fkz dcterms:creator [ foaf:mbox <peter@maris.nl> ;
+                foaf:name "Peter Thijsse"^^xsd:string ] ;
         dcterms:date "2019-03-29"^^xsd:date ;
-        dcterms:hasVersion 1 .
+        dcterms:hasVersion "1"^^xsd:string .
 
     [] a <http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure> ;
-        rdfs:label "SeaDataNet" ;
-        envri:acronym "SDN" ;
-        envri:hasDataManagementPlans [ envri:appliedDataPublishinSteps "aggregated data curated by experts via ODV software" ;
-                envri:usesSpecificDataManagementPlanTools "false"^^xsd:bool ] ;
-        envri:hasRepository [ a envri:MetadataRepository,
-                    envri:Repository ;
-                rdfs:label "SDN metadata" ;
-                envri:url <http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp> ],
-            [ a envri:DataRepository,
-                    envri:Repository ;
-                rdfs:label "Data Products Catalogue" ;
-                envri:url <www.seadatanet.org/products> ;
-                envri:usesSoftware <http://envri.eu/ns/Sextant-Si?> ] ;
-        envri:url <www.seadatanet.org> .
+        rdfs:label "SeaDataNet"^^xsd:string .
 }
 
