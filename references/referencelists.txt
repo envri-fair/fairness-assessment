@@ -1,12 +1,20 @@
 repository kind:
     metadata_repository
     data_repository
+    metadata_data_repository
     site_repository
 
 infrastructure acronym:
     SDN
     eLTER
-    
+
+1.40 DMP tools:
+
+
+1.41 data publishing steps:
+    QA_QC_manual
+    QA-QC_automatic
+
 1.7 repository software:
     Zenodo
     52_NORTH_SOS 
@@ -17,9 +25,11 @@ infrastructure acronym:
     local_ID
     DOI
 
+
 1.9 identifier system:
     Handle
     local_system
+    SEANOE
     
 
 1.10 identifier assigned: 
@@ -31,6 +41,7 @@ infrastructure acronym:
     Handle
     local_service
     ePIC_service
+    SEANOE
 
 1.13 certification method: 
     CoreTrustSeal
@@ -148,6 +159,11 @@ infrastructure acronym:
     domain_specific
     project_specific
     provenance_specific
+
+1.49 vocabulary name:
+    EnvThes
+    NERC_vocabularies
+    ISO19115_10139
     
 1.42 processing steps:
     QA_QC
@@ -160,6 +176,7 @@ infrastructure acronym:
  
 
 1.45 analysis services:
+    DIVA
 
 
 1.46 data products:
@@ -168,6 +185,7 @@ infrastructure acronym:
     mesoclimate
     vegetation
     deposition
+    interpolations
 
 1.50 data findability gap:
     PIDs

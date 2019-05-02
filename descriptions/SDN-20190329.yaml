@@ -10,19 +10,20 @@ infrastructure:
   recognized authority IRI: www.seadatanet.org
   data management plans:
     specific DMP tools used: no
-    data publishing steps applied: aggregated data curated by experts via ODV software
+    data publishing steps applied: 
+    - QA_QC_manual
   repositories: 
   - IRI: www.seadatanet.org/products
     name: Data Products Catalogue
-    kind: data_repository
-    software: Sextant-Si
+    kind: metadata_data_repository
+    software: Sextant
     identifier:
       IRI: NULL
       persistency-policy document IRI: NULL
       kind: DOI
-      system: NULL
+      system: SEANOE
       assigned: manually
-      provider: DataCite
+      provider: SEANOE
       includes-attributes: yes
     certification method: none
     policy: none
@@ -67,7 +68,7 @@ infrastructure:
           - date_time
           - depth                
       registered data schema: yes
-      search on data: no
+      search on data: planned
       search engine URL: none            
     metadata: VOID
     vocabularies:
@@ -79,13 +80,16 @@ infrastructure:
     - IRI: https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/
       type: thesaurus
       topic: domain_specific
-      name: NERC vocabulary service
+      name: NERC_vocabularies
       specification language URL: https://www.w3.org/XML/
     data processing:
-      special data processing steps applied: ODV aggregation
+      special data processing steps applied: 
+      - ODV_aggregation
+      - QA_QC
       workflow frameworks applied: none
       distributed workflows tools used: none
-      other analysis services offered: DIVA
+      other analysis services offered: 
+      - DIVA
       data products offered: 
       - interpolations
     fairness: 
@@ -109,8 +113,8 @@ infrastructure:
       URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
       IRI of machine readable metadata of dataset: NULL
       URL to linkset describing resource: NULL
-      IRI for the vocabulary used to descripe citational provenance: NULL
-      IRI for the vocabulary used to descripe contextual provenance: NULL
+      IRI for the vocabulary used to describe citational provenance: NULL
+      IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL
   - IRI: http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp
     name: SDN metadata
@@ -144,7 +148,7 @@ infrastructure:
       data license IRI: NULL
       metadata openly available: yes
     data: 
-      type name: VOID
+      type name: text_data
       preferred formats: 
         format name: ODV
         metadata included:         
@@ -192,7 +196,8 @@ infrastructure:
       special data processing steps applied: none
       workflow frameworks applied: none
       distributed workflows tools used: none
-      other analysis services offered: planned
+      other analysis services offered: 
+      - planned
       data products offered: 
       - temperature
         salinity
@@ -219,6 +224,6 @@ infrastructure:
       URL of discovery portal: http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp
       IRI of machine readable metadata of dataset: NULL
       URL to linkset describing resource: NULL
-      IRI for the vocabulary used to descripe citational provenance: NULL
-      IRI for the vocabulary used to descripe contextual provenance: NULL
+      IRI for the vocabulary used to describe citational provenance: NULL
+      IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL
