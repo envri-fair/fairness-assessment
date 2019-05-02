@@ -148,6 +148,10 @@ infrastructure acronym:
     domain_specific
     project_specific
     provenance_specific
+    
+1.42 processing steps:
+    QA_QC
+    ODV_aggregation
 
 1.43 workflow frameworks type:
    
