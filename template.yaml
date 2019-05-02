@@ -10,11 +10,7 @@ infrastructure:
   recognized authority IRI: 
   data management plans:
     specific DMP tools used: 1.40 ref
-<<<<<<< HEAD
-    data publishing steps applied: 1.41 list
-=======
-    data publishing steps applied: 1.41 free
->>>>>>> 360da590aebc4673fc4948e7349b64f6f71fe0cd
+    data publishing steps applied: 1.41 list ref
   repositories: 
     IRI: 1.5 list 
     name: 1.6 free
@@ -77,10 +73,10 @@ infrastructure:
       IRI: 2.20 list
       type: 1.48 ref
       topic: 1.48 ref
-      name: 1.48 free
+      name: 1.48 ref
       specification language URL: 2.19        
     data processing:
-      special data processing steps applied: 1.42 ref list
+      special data processing steps applied: 1.42 list ref
       workflow frameworks applied: 1.43 ref
       distributed workflows tools used: 1.44 list ref
       other analysis services offered: 1.45 list ref
@@ -103,8 +99,8 @@ infrastructure:
       URI of discovery portal: 1.5
       IRI of machine readable metadata of dataset: 2.7
       URI to linkset describing resource: 2.21
-      IRI for the vocabulary used to descripe citational provenance: 2.23
-      IRI for the vocabulary used to descripe contextual provenance: 2.24
+      IRI for the vocabulary used to describe citational provenance: 2.23
+      IRI for the vocabulary used to describe contextual provenance: 2.24
       IRI of compliance certification: 2.25
  
 

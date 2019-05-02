@@ -10,7 +10,8 @@ infrastructure:
   recognized authority IRI: http://www.lter-europe.net/elter
   data management plans:
     specific DMP tools used: no
-    data publishing steps applied: planned
+    data publishing steps applied: 
+    - planned
   repositories: 
   - IRI: NULL
     name: EUDAT/FZJ B2SHARE
@@ -30,7 +31,7 @@ infrastructure:
     persistency-guaranty: planned
     access mechanisms: 
       authentication method: people can request accounts, which are managed centrally 
-      access protocol URI: NULL
+      access protocol URL: NULL
       protocol open: bool
       protocol royalty free: bool
       own user database maintained: yes
@@ -41,7 +42,7 @@ infrastructure:
       - upload_data 
       authorization for accessing content needed: no
       access content process description IRI: NULL
-      access licenses in use: VOID
+      data licenses in use: VOID
       data license IRI:
       metadata openly available: yes
     data:
@@ -129,23 +130,18 @@ infrastructure:
       schema:
       - IRI: http://schemas.opengis.net/iso/19139/20060504
         name: ISO_10139
-        registry used: NULL
         provenance fields included: NULL
       - IRI:
         name: ISO_19115
-        registry used: NULL
         provenance fields included: NULL
       - IRI: 
         name: INSPIRE_EF
-        registry used: NULL
         provenance fields included: NULL
       - IRI:
         name: EML2.0
-        registry used: NULL
         provenance fields included: NULL        
       - IRI:
         name: SensorML
-        registry used: NULL
         provenance fields included: NULL
       categories defined in registries: partially
       PIDs included: partially
@@ -194,8 +190,8 @@ infrastructure:
       URI of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
       URI to linkset describing resource: NULL
-      IRI for the vocabulary used to descripe citational provenance: NULL
-      IRI for the vocabulary used to descripe contextual provenance: NULL
+      IRI for the vocabulary used to describe citational provenance: NULL
+      IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL    
   - IRI: NULL 
     name: eLTER CDN
@@ -225,7 +221,7 @@ infrastructure:
       authorisation needed for: NULL
       authorization for accessing content needed: NULL
       access content process description IRI: NULL
-      access licenses in use: NULL
+      data licenses in use: NULL
       data license IRI:
       metadata openly available: yes
     data:
@@ -267,6 +263,6 @@ infrastructure:
       URI of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
       URI to linkset describing resource: NULL
-      IRI for the vocabulary used to descripe citational provenance: NULL
-      IRI for the vocabulary used to descripe contextual provenance: NULL
+      IRI for the vocabulary used to describe citational provenance: NULL
+      IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL        
