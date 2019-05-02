@@ -10,7 +10,11 @@ infrastructure:
   recognized authority IRI: 
   data management plans:
     specific DMP tools used: 1.40 ref
+<<<<<<< HEAD
+    data publishing steps applied: 1.41 list
+=======
     data publishing steps applied: 1.41 free
+>>>>>>> 360da590aebc4673fc4948e7349b64f6f71fe0cd
   repositories: 
     IRI: 1.5 list 
     name: 1.6 free
