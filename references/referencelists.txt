@@ -3,6 +3,7 @@ repository kind:
     data_repository
     metadata_data_repository
     site_repository
+    taxonomic_repository
 
 infrastructure acronym:
     SDN
@@ -96,6 +97,7 @@ infrastructure acronym:
     upload_metadata
     query_data
     download_data
+    advanced_editing
     
 1.38 access license:
     CC-BY-NC4.0
@@ -103,6 +105,7 @@ infrastructure acronym:
     CC-BY3.0
     Code_of_Conduct
     local_license
+    creative_commons
 
 1.17 data types:
     binary_data
@@ -111,6 +114,7 @@ infrastructure acronym:
     file-based_data
     text_data
     structured_data
+    tabular_data
 
 1.18 data formats:
     CSV
@@ -121,6 +125,7 @@ infrastructure acronym:
     shp
     GDB
     ODV
+    xls
 
 1.19 metadata types in data headers:
     parameters_measured
