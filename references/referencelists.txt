@@ -19,17 +19,21 @@ infrastructure acronym:
     Zenodo
     52_NORTH_SOS 
     Sextant-Si
+    MS_SQL
+    
 
 1.9 identifier kind:
     PID
     local_ID
     DOI
+    UUID
 
 
 1.9 identifier system:
     Handle
     local_system
     SEANOE
+    MDA_ID
     
 
 1.10 identifier assigned: 
@@ -56,6 +60,7 @@ infrastructure acronym:
     metadata_creation
     PID_creation
     data_access
+    terms_of_use
 
 1.15 repository registry:
     re3data
