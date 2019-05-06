@@ -148,7 +148,7 @@ infrastructure:
       data license IRI: NULL
       metadata openly available: yes
     data: 
-      type name: text_data
+    - type name: text_data
       preferred formats: 
         format name: ODV
         metadata included:         
