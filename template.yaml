@@ -9,10 +9,10 @@ infrastructure:
   name: 1.3 free
   recognized authority IRI: 
   data management plans:
-    specific DMP tools used: 1.40 bool
-    data publishing steps applied: 1.41 free
+    specific DMP tools used: 1.40 ref
+    data publishing steps applied: 1.41 list ref
   repositories: 
-    IRI: 1.5 list ref
+    IRI: 1.5 list 
     name: 1.6 free
     kind: ref
     software: 1.7 ref
@@ -30,7 +30,7 @@ infrastructure:
     persistency-guaranty: 1.16 ref
     access mechanisms: 
       authentication method: 1.33 ref
-      access protocol URI: 2.13 ref
+      access protocol URL: 2.13 ref
       protocol open: 2.14 bool
       protocol royalty free: 2.15 bool
       own user database maintained: 1.34 bool
@@ -57,7 +57,6 @@ infrastructure:
       schema:
         IRI: list
         name: 1.22 ref
-        registries used: 1.23 bool
         provenance fields included: 1.24 list ref
       categories defined in registries: 1.23 bool
       PIDs included: 1.25 bool
@@ -74,10 +73,10 @@ infrastructure:
       IRI: 2.20 list
       type: 1.48 ref
       topic: 1.48 ref
-      name: 1.48 free
+      name: 1.48 ref
       specification language URL: 2.19        
     data processing:
-      special data processing steps applied: 1.42 free
+      special data processing steps applied: 1.42 list ref
       workflow frameworks applied: 1.43 ref
       distributed workflows tools used: 1.44 list ref
       other analysis services offered: 1.45 list ref
@@ -100,8 +99,8 @@ infrastructure:
       URI of discovery portal: 1.5
       IRI of machine readable metadata of dataset: 2.7
       URI to linkset describing resource: 2.21
-      IRI for the vocabulary used to descripe citational provenance: 2.23
-      IRI for the vocabulary used to descripe contextual provenance: 2.24
+      IRI for the vocabulary used to describe citational provenance: 2.23
+      IRI for the vocabulary used to describe contextual provenance: 2.24
       IRI of compliance certification: 2.25
  
 

@@ -1,81 +1,104 @@
 survey:
-  date: 2019-03-19
+  date: 2019-04-30
   version: 1
   creator: 
-    name: Johannes Peterseil
-    email: johannes.peterseil@umweltbundesamt.at
+    name: Klaas Deneudt
+    email: klaas.deneudt@vliz.be
 infrastructure:
-  acronym: eLTER
-  name: Integrated European Long-Term Ecosystem & Socio-Ecological Research Infrastructure
-  recognized authority IRI: http://www.lter-europe.net/elter
+  acronym: LifeWatch 
+  name: LifeWatch (marine)
+  recognized authority IRI: http://www.lifewatch.be
   data management plans:
-    specific DMP tools used: no
+    specific DMP tools used: planned
     data publishing steps applied: 
-    - planned
+    - none
   repositories: 
-  - IRI: NULL
-    name: EUDAT/FZJ B2SHARE
+  - IRI: http://www.marinedataarchive.org
+    name: Marine Data Archive
     kind: data_repository
-    software: Zenodo
+    software: MS_SQL
     identifier: 
       IRI: NULL
       persistency-policy document IRI: NULL
-      kind: PID
-      system: Handle
+      kind: UUID
+      system: MDA_ID
       assigned: automatically
-      provider: Handle
-      includes-attributes: yes
-    certification method: NULL
-    policy: NULL
-    registry: NULL
-    persistency-guaranty: planned
+      provider: local_system
+      includes-attributes: no
+    certification method: CoreTrustSeal?
+    policy: terms_of_use
+    registry: none
+    persistency-guaranty: none
     access mechanisms: 
-      authentication method: people can request accounts, which are managed centrally 
+      authentication method: account and login 
       access protocol URL: NULL
       protocol open: bool
       protocol royalty free: bool
       own user database maintained: yes
       ORCID used in AAI: no
-      major access technology supported: local_LDAP 
+      major access technology supported: NULL 
       authorisation technique: NULL 
       authorisation needed for: 
-      - upload_data 
+      - advanced_editing 
       authorization for accessing content needed: no
       access content process description IRI: NULL
-      data licenses in use: VOID
+      data licenses in use: creative_commons
       data license IRI:
       metadata openly available: yes
     data:
-    - type name: structured_data
+    - type name: text_data
       preferred formats: 
-      - format name: CSV
+      - format name: ASCII
         metadata included:
           metadata headers: no
           which metadata types: none
-      registered data schema: bool
+      registered data schema: no
       search on data: yes
       search engine URL: NULL
+    - type name: images
+      preferred formats: 
+      - format name: NULL
+        metadata included:
+          metadata headers: no
+          which metadata types: none
+      registered data schema: no
+      search on data: yes
+      search engine URL: NULL  
+    - type name: tabular_data
+      preferred formats: 
+      - format name: xls
+        metadata included:
+          metadata headers: no
+          which metadata types: none
+      registered data schema: no
+      search on data: yes
+      search engine URL: NULL 
     metadata: VOID
     vocabularies: 
-    - IRI: http://vocabs.lter-europe.net/EnvThes/
+    - IRI: http://marinespecies.org
+      type: taxonomy
+      topic: domain-specific 
+      name: WORMS
+      specification language URL: https://www.mysql.com   
+    - IRI: http://marineregions.org
       type: thesaurus
       topic: domain-specific 
-      name: EnvThes
-      specification language URL: https://www.w3.org/2004/02/skos/     
+      name: marine regions
+      specification language URL: NULL   
     data processing: VOID
     fairness: 
       data findability:  
-        data findable: NULL 
+        data findable: yes 
         gaps: NULL
       data accessibility: 
-        data accessible: NULL
+        data accessible: yes
         gaps: NULL
       data interoperability: 
-        data interoperable: NULL
-        gaps: NULL 
+        data interoperable: partially
+        gaps: format_checking 
       data re-usability: 
-        data reusable: NULL
-        gaps: NULL
+        data reusable: partially
+        gaps: quality_description
     test fairness:
       URI/IRI of dataset: NULL
       URI of discovery portal: NULL
@@ -84,10 +107,10 @@ infrastructure:
       IRI for the vocabulary used to descripe citational provenance: NULL
       IRI for the vocabulary used to descripe contextual provenance: NULL
       IRI of compliance certification: NULL
-  - IRI: https://deims.org/   
-    name: DEIMS-SDR
-    kind: metadata_repository
-    software: NULL
+  - IRI: https://www.vliz.be/en/taxonomic-register-marine-species   
+    name: ALPHIA (WoRMS) 
+    kind: taxonomic_repository
+    software: MS_SQL
     identifier: 
       IRI: NULL
       persistency-policy document IRI: NULL

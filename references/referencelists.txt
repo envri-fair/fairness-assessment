@@ -1,25 +1,40 @@
 repository kind:
     metadata_repository
     data_repository
+    metadata_data_repository
     site_repository
+    taxonomic_repository
 
 infrastructure acronym:
     SDN
     eLTER
-    
+
+1.40 DMP tools:
+
+
+1.41 data publishing steps:
+    QA_QC_manual
+    QA-QC_automatic
+
 1.7 repository software:
     Zenodo
     52_NORTH_SOS 
     Sextant-Si
+    MS_SQL
+    
 
 1.9 identifier kind:
     PID
     local_ID
     DOI
+    UUID
+
 
 1.9 identifier system:
     Handle
     local_system
+    SEANOE
+    MDA_ID
     
 
 1.10 identifier assigned: 
@@ -31,6 +46,7 @@ infrastructure acronym:
     Handle
     local_service
     ePIC_service
+    SEANOE
 
 1.13 certification method: 
     CoreTrustSeal
@@ -45,6 +61,7 @@ infrastructure acronym:
     metadata_creation
     PID_creation
     data_access
+    terms_of_use
 
 1.15 repository registry:
     re3data
@@ -80,6 +97,7 @@ infrastructure acronym:
     upload_metadata
     query_data
     download_data
+    advanced_editing
     
 1.38 access license:
     CC-BY-NC4.0
@@ -87,6 +105,7 @@ infrastructure acronym:
     CC-BY3.0
     Code_of_Conduct
     local_license
+    creative_commons
 
 1.17 data types:
     binary_data
@@ -95,6 +114,7 @@ infrastructure acronym:
     file-based_data
     text_data
     structured_data
+    tabular_data
 
 1.18 data formats:
     CSV
@@ -105,6 +125,7 @@ infrastructure acronym:
     shp
     GDB
     ODV
+    xls
 
 1.19 metadata types in data headers:
     parameters_measured
@@ -149,6 +170,15 @@ infrastructure acronym:
     project_specific
     provenance_specific
 
+1.49 vocabulary name:
+    EnvThes
+    NERC_vocabularies
+    ISO19115_10139
+    
+1.42 processing steps:
+    QA_QC
+    ODV_aggregation
+
 1.43 workflow frameworks type:
    
 
@@ -156,6 +186,7 @@ infrastructure acronym:
  
 
 1.45 analysis services:
+    DIVA
 
 
 1.46 data products:
@@ -164,6 +195,7 @@ infrastructure acronym:
     mesoclimate
     vegetation
     deposition
+    interpolations
 
 1.50 data findability gap:
     PIDs
