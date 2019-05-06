@@ -8,7 +8,6 @@ repository kind:
 infrastructure acronym:
     SDN
     eLTER
-    EPOS
 
 1.40 DMP tools:
 
