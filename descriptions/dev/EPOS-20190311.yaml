@@ -9,8 +9,8 @@ infrastructure:
   name: EPOS INGV
   recognized authority IRI: 
   data management plans:
-    specific DMP tools used: 1.40 ref
-    data publishing steps applied: 1.41 list ref
+    specific DMP tools used: no
+    data publishing steps applied: VOID
   repositories: 
     IRI: 1.5 list 
     name: 1.6 free
