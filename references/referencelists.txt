@@ -108,13 +108,13 @@ infrastructure acronym:
     creative_commons
 
 1.17 data types:
-    binary_data
-    spatial_data
-    time_series_data
-    file-based_data
-    text_data
-    structured_data
-    tabular_data
+    binary
+    spatial
+    time_series
+    file-based
+    text
+    structured
+    tabular
 
 1.18 data formats:
     CSV
@@ -139,6 +139,7 @@ infrastructure acronym:
     EML2.0
     INSPIRE_EF
     SensorML
+    ISO_TC2011
 
 1.24 provenance fields:
     
