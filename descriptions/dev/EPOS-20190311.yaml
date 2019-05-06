@@ -1,12 +1,12 @@
 survey:
   date: 2019-03-11
-  version: number
+  version: 1
   creator: 
-    name: 1.1 free
-    email: 1.2
+    name: Manuela Sbarra
+    email: manuela.sbarra@ingv.it
 infrastructure:
-  acronym: ref
-  name: 1.3 free
+  acronym: EPOS
+  name: EPOS INGV
   recognized authority IRI: 
   data management plans:
     specific DMP tools used: 1.40 ref
