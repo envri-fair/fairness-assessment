@@ -46,7 +46,7 @@ infrastructure:
       data license IRI: NULL
       metadata openly available: yes
     data:
-    - type name: binary_data
+    - type name: binary
       preferred formats:
       - format name: NetCDF
         metadata included:
@@ -58,7 +58,7 @@ infrastructure:
       registered data schema: yes
       search on data: planned
       search engine URL: none           
-    - type name: text_data
+    - type name: text
       preferred formats: 
       - format name: ODV
         metadata included:
@@ -70,7 +70,26 @@ infrastructure:
       registered data schema: yes
       search on data: planned
       search engine URL: none            
-    metadata: VOID
+    metadata: 
+      schema:
+       - IRI: http://www.isotc211.org 
+        name: ISO_TC211
+        provenance fields included: 
+        - text_only
+      categories defined in registries: 1.23 partially
+      PIDs included: yes
+      primary storage format: XML
+      metadata longevity plan URL: none
+      format IRI: XML
+      export format supported: 
+      - XML
+      - HTML
+      - PDF
+      exchange/harvesting method: 1.28 ref
+      local search engine URL: 1.29 
+      external search engine type supported: 1.30 ref
+      access policy statements included: 1.31 bool
+      machine actionable: 1.32 bool    
     vocabularies:
     - IRI: http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml
       type: codelist

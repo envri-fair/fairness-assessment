@@ -11,7 +11,7 @@ infrastructure:
   data management plans:
     specific DMP tools used: no
     data publishing steps applied: 
-    - planned
+    - manual
   repositories: 
   - IRI: NULL
     name: EUDAT/FZJ B2SHARE
