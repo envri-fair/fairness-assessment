@@ -150,7 +150,7 @@ infrastructure:
     data: 
     - type name: text_data
       preferred formats: 
-        format name: ODV
+      - format name: ODV
         metadata included:         
           metadata headers: VOID
           which metadata types: VOID
