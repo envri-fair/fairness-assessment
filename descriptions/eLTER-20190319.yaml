@@ -16,6 +16,8 @@ infrastructure:
   - IRI: NULL
     name: EUDAT/FZJ B2SHARE
     kind: data repository
+    data repository type: central
+    metadata repository type: central
     software: Zenodo
     identifier: 
       IRI: NULL
@@ -86,6 +88,8 @@ infrastructure:
   - IRI: https://deims.org/   
     name: DEIMS-SDR
     kind: metadata repository
+    data repository type: central
+    metadata repository type: central    
     software: NULL
     identifier: 
       IRI: NULL
@@ -194,6 +198,8 @@ infrastructure:
   - IRI: NULL 
     name: eLTER CDN
     kind: data repository
+    data repository type: central
+    metadata repository type: central
     software: 52NORTH SOS 
     identifier: 
       IRI: NULL
