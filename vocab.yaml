@@ -137,6 +137,7 @@ SensorML: http://envri.eu/ns/SensorML
 SDN community profile: http://envri.eu/ns/SeaDataNetCommunityProfile
 local: http://envri.eu/ns/Local
 local_license: http://envri.eu/ns/LocalLicense
+local license: http://envri.eu/ns/LocalLicense
 download_data: http://envri.eu/ns/DataDownload
 download data: http://envri.eu/ns/DataDownload
 upload_data: http://envri.eu/ns/DataUpload
@@ -207,3 +208,5 @@ usage license: http://envri.eu/ns/UsageLicense
 distribution link: http://envri.eu/ns/DistributionLink
 format checking: http://envri.eu/ns/FormatChecking
 data quality control: http://envri.eu/ns/QA_QC
+data licenses in use: http://envri.eu/ns/dataLicensesInUse
+CC-BY-NC4.0: http://envri.eu/ns/CC-BY-NC4.0
