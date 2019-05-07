@@ -48,10 +48,8 @@ infrastructure:
     data:
     - type name: text_data
       preferred formats: 
-      - format name: ASCII
-        metadata included:
-          metadata headers: no
-          which metadata types: none
+        format name: ASCII
+        metadata types in data headers: no
       registered data schema: no
       search on data: yes
       search engine URL: NULL
@@ -142,10 +140,8 @@ infrastructure:
     data:
     - type name: NULL 
       preferred formats: 
-      - format name: NULL 
-        metadata included:
-          metadata headers: NULL
-          which metadata types: NULL 
+        format name: NULL
+        metadata types in data headers: Null
       registered data schema: NULL
       search on data: NULL
       search engine URL:
@@ -213,6 +209,7 @@ infrastructure:
       URI of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
       URI to linkset describing resource: NULL
+      Search query: NULL
       IRI for the vocabulary used to describe citational provenance: NULL
       IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL    
@@ -286,6 +283,7 @@ infrastructure:
       URI of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
       URI to linkset describing resource: NULL
+      Search query: NULL
       IRI for the vocabulary used to describe citational provenance: NULL
       IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL        
