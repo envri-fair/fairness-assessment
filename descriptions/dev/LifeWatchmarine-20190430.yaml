@@ -16,6 +16,8 @@ infrastructure:
   - IRI: http://www.marinedataarchive.org
     name: Marine Data Archive
     kind: data_repository
+    data repository type: central
+    metadata repository type: relational database
     software: MS_SQL
     identifier: 
       IRI: NULL
@@ -108,6 +110,8 @@ infrastructure:
   - IRI: https://www.vliz.be/en/taxonomic-register-marine-species   
     name: ALPHIA (WoRMS) 
     kind: taxonomic_repository
+    data repository type: central
+    metadata repository type: relational database
     software: MS_SQL
     identifier: 
       IRI: NULL
@@ -170,9 +174,9 @@ infrastructure:
       export format supported: 
       - XML
       exchange/harvesting method: 
-      - OAI-PMH
-      - OGC_CSW
-      local search engine URL: https://deims.org/ 
+      - OAI PMH
+      - OGC CSW
+      local search engine URL: none
       external search engine type supported: CSW_endpoint
       access policy statements included: yes
       machine actionable: yes
@@ -214,7 +218,7 @@ infrastructure:
       IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL    
   - IRI: NULL 
-    name: eLTER CDN
+    name: NULL
     kind: data_repository
     software: 52_NORTH_SOS 
     identifier: 
