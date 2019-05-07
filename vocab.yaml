@@ -79,6 +79,8 @@ metadataTypes: http://envri.eu/ns/metadataTypes
 dataSchemaIsRegistered: http://envri.eu/ns/dataSchemaIsRegistered
 searchOnData: http://envri.eu/ns/searchOnData
 hasSearchEngineUrl: http://envri.eu/ns/hasSearchEngineUrl
+hasDataRepositoryType: http://envri.eu/ns/hasDataRepositoryType
+hasMetadataRepositoryType: http://envri.eu/ns/hasMetadataRepositoryType
 hasSchema: http://envri.eu/ns/hasSchema
 hasIri: http://envri.eu/ns/hasIri
 hasName: http://envri.eu/ns/hasName
@@ -210,3 +212,5 @@ format checking: http://envri.eu/ns/FormatChecking
 data quality control: http://envri.eu/ns/QA_QC
 data licenses in use: http://envri.eu/ns/dataLicensesInUse
 CC-BY-NC4.0: http://envri.eu/ns/CC-BY-NC4.0
+central: http://envri.eu/ns/CentralDataRepository
+relational database: http://envri.eu/ns/RelationalDatabase
