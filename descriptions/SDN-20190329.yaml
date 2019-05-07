@@ -85,7 +85,8 @@ infrastructure:
       - XML
       - HTML
       - PDF
-      exchange/harvesting method: CSW
+      exchange/harvesting method: 
+      - CSW
       local search engine URL: https://www.seadatanet.org/Products#/search?from=1&to=20  
       external search engine type supported: GEOPortal
       access policy statements included: yes
@@ -199,7 +200,8 @@ infrastructure:
       export format supported: 
       - HTML
       - XML
-      exchange/harvesting method: CSW
+      exchange/harvesting method: 
+      - CSW
       local search engine URL: NULL
       external search engine type supported: GEOPortal
       access policy statements included: yes
