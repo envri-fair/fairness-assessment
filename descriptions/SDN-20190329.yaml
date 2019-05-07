@@ -16,6 +16,8 @@ infrastructure:
   - IRI: www.seadatanet.org/products
     name: Data Products Catalogue
     kind: metadata data repository
+    data repository type: central
+    metadata repository type: relational database
     software: Sextant
     identifier:
       IRI: https://www.w3.org/wiki/UriSchemes/http
@@ -137,6 +139,8 @@ infrastructure:
   - IRI: http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp
     name: SDN CDI
     kind: metadata data repository
+    data repository type: central
+    metadata repository type: relational database
     software: CDI system
     identifier: 
       IRI: https://sextant.ifremer.fr/record/90ae7a06-8b08-4afe-83dd-ca92bc99f5c0/
