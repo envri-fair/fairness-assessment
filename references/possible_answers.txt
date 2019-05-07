@@ -4,7 +4,7 @@ attributes could be filled:
         list: use "-" for each entry of a list
         bool: yes/no
         date: yyyy-mm-dd
-        ref: reference list (no spaces allowed: e.g. "local_system"). Please add new entries in the referencelists.txt!
+        ref: reference list - Please add new entries in the referencelists.txt!
         if no answer is given: NULL
         if no answer can be given: VOID
         if the answer is that it is planned to provide a solution: planned

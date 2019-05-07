@@ -1,41 +1,61 @@
-repository kind:
-    metadata_repository
-    data_repository
-    metadata_data_repository
-    site_repository
-    taxonomic_repository
-
 infrastructure acronym:
     SDN
     eLTER
+    EMSO
+    EPOS
+
+repository kind:
+    metadata repository
+    data repository
+    metadata data repository
+    site repository
+    taxonomic repository
+
+1.6 data repository type:
+    local
+    domain
+    central
+    
+1.7 repository software:
+    Zenodo
+    52NORTH SOS 
+    Sextant-Si
+    MS SQL
+    D-SPace
+    Fedora
+    CDI system
+
+1.8 metadata repository type:
+    central
+    relational database
+    spreadsheets
 
 1.40 DMP tools:
+    DMP template
+    quality management framework
+    data policy document
 
 
 1.41 data publishing steps:
-    QA_QC_manual
-    QA-QC_automatic
+    QA QC manually
+    QA QC automatically
 
-1.7 repository software:
-    Zenodo
-    52_NORTH_SOS 
-    Sextant-Si
-    MS_SQL
-    
 
 1.9 identifier kind:
     PID
-    local_ID
+    local ID
     DOI
     UUID
+    NetCDF Oceansites ID
+    NetCDF EGO ID
 
 
 1.9 identifier system:
     Handle
-    local_system
+    local system
     SEANOE
-    MDA_ID
-    
+    MDA ID
+    URL    
 
 1.10 identifier assigned: 
     automatically
@@ -44,42 +64,45 @@ infrastructure acronym:
 1.11 identifier provider:
     DataCite
     Handle
-    local_service
-    ePIC_service
+    local service
+    ePIC service
     SEANOE
+    PANGAEA
 
 1.13 certification method: 
     CoreTrustSeal
-    GoFAIR_Implementation_Network
-    Data_Seal_of_Approval
+    GoFAIR Implementation Network
+    Data Seal of Approval
 
 
 1.14 published repository policy:
     persistency
-    number_of_automatic_copies
-    openness_levels
-    metadata_creation
-    PID_creation
-    data_access
-    terms_of_use
+    number of automatic copies
+    openness levels
+    metadata creation
+    PID creation
+    data access
+    terms of use
 
 1.15 repository registry:
     re3data
     WDS
     DataCite
+    EMODNet
+    data.gov.ie
     
 1.16 persistency-policy:
-    10_years
-    20_years
-    50_years
+    10 years
+    20 years
+    50 years
 
-1.33 authentification method:
-    Shibboleth_paried_with_eduGain
+1.33 authentication method:
+    Shibboleth paried with eduGain
     OAuth
     Marine-ID
 
 1.36 access technology:
-    local_LDAP
+    local LDAP
     OpenID
     SAMLbasedSSO
     SAML2
@@ -92,29 +115,41 @@ infrastructure acronym:
     OAUTH
 
 1.37 authorisation needed for:
-    access_content
-    upload_data
-    upload_metadata
-    query_data
-    download_data
-    advanced_editing
+    access content
+    upload data
+    upload metadata
+    query data
+    download data
+    advanced editing
     
 1.38 access license:
     CC-BY-NC4.0
     CC-BY4.0
     CC-BY3.0
-    Code_of_Conduct
-    local_license
-    creative_commons
+    Code of Conduct
+    local license
+    creative commons
 
 1.17 data types:
-    binary_data
-    spatial_data
-    time_series_data
-    file-based_data
-    text_data
-    structured_data
-    tabular_data
+    binary
+    spatial
+    time series
+    file-based
+    text
+    structured
+    tabular
+    media recordings
+    sound
+    profiles
+    trajectories
+    model forecast data
+    CTD
+    vessel underway
+    fisheries effort
+    bathymetry
+    image
+    video
+
 
 1.18 data formats:
     CSV
@@ -126,38 +161,64 @@ infrastructure acronym:
     GDB
     ODV
     xls
+    WAV
+    JSON
+    MSEED
 
 1.19 metadata types in data headers:
-    parameters_measured
-    date_time
-    depth 
+    parameters measured
+    date 
+    time
+    depth
+    location
+    data centre
+    NetCDF Oceansites Profile metadata
+    NetCDF EGO format metadata
+    standard NetCDF CF headers
 
 1.22 metadata schema name:
-    ISO19115
-    ISO10139
-    ISO19115_10139
-    EML2.0
-    INSPIRE_EF
+    ISO 19115
+    ISO 19139
+    ISO 19115/19139
+    EML 2.0
+    INSPIRE EF
     SensorML
+    ISO TC2011
+    NetCDF
 
 1.24 provenance fields:
+    text only
     
 1.26 primary metadata storage format:
     DEIMS-SDR
+    RDF
+    JSON
+    JSON-LD
+    XML
+    database
+    OWL
 
 1.27 metadata export format:
     HTML
     XML
     RDF
+    JSON
+    JSON-LD
+    OWL
 
 1.28 metadata exchange/harvesting method:
     CSW
-    OAI-PMH
-    OGC_CSW
-
+    OAI PMH
+    OGC CSW
+    REST
+    SOAP
+    LDP
+    FDP
+    RESTful_API
+    
 1.30 exernal search engine type:
     GEOPortal
-    CSW_endpoint
+    CSW endpoint
 
 1.48 vocabulary type:
     codelist
@@ -166,18 +227,18 @@ infrastructure acronym:
 
 1.48 vocabulary topic:
     general
-    domain_specific
-    project_specific
-    provenance_specific
+    domain specific
+    project specific
+    provenance specific
 
 1.49 vocabulary name:
     EnvThes
-    NERC_vocabularies
-    ISO19115_10139
+    NERC vocabulary service
+    ISO19115 10139
     
 1.42 processing steps:
-    QA_QC
-    ODV_aggregation
+    QA QC
+    ODV aggregation
 
 1.43 workflow frameworks type:
    
@@ -196,21 +257,22 @@ infrastructure acronym:
     vegetation
     deposition
     interpolations
+    climatologies
 
 1.50 data findability gap:
     PIDs
-    uptake_in_central_resources
+    uptake in central resources
 
 1.51 data accessibility gap:
-    problems_with_FTP_access
-    machine_accessibility
-    distribution_link
+    problems with FTP access
+    machine accessibility
+    distribution link
 
 1.52 data interoperability gap:
-    format_checking
-    data_quality_controll
+    format checking
+    data quality control
 
 1.53 data re-usability gap:
-    provenance_information
-    quality_description
-    usage_license 
+    provenance information
+    quality description
+    usage license 

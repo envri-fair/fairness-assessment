@@ -16,6 +16,8 @@ infrastructure:
   - IRI: http://www.marinedataarchive.org
     name: Marine Data Archive
     kind: data_repository
+    data repository type: central
+    metadata repository type: relational database
     software: MS_SQL
     identifier: 
       IRI: NULL
@@ -48,10 +50,8 @@ infrastructure:
     data:
     - type name: text_data
       preferred formats: 
-      - format name: ASCII
-        metadata included:
-          metadata headers: no
-          which metadata types: none
+        format name: ASCII
+        metadata types in data headers: no
       registered data schema: no
       search on data: yes
       search engine URL: NULL
@@ -110,6 +110,8 @@ infrastructure:
   - IRI: https://www.vliz.be/en/taxonomic-register-marine-species   
     name: ALPHIA (WoRMS) 
     kind: taxonomic_repository
+    data repository type: central
+    metadata repository type: relational database
     software: MS_SQL
     identifier: 
       IRI: NULL
@@ -142,10 +144,8 @@ infrastructure:
     data:
     - type name: NULL 
       preferred formats: 
-      - format name: NULL 
-        metadata included:
-          metadata headers: NULL
-          which metadata types: NULL 
+        format name: NULL
+        metadata types in data headers: Null
       registered data schema: NULL
       search on data: NULL
       search engine URL:
@@ -174,9 +174,9 @@ infrastructure:
       export format supported: 
       - XML
       exchange/harvesting method: 
-      - OAI-PMH
-      - OGC_CSW
-      local search engine URL: https://deims.org/ 
+      - OAI PMH
+      - OGC CSW
+      local search engine URL: none
       external search engine type supported: CSW_endpoint
       access policy statements included: yes
       machine actionable: yes
@@ -213,11 +213,12 @@ infrastructure:
       URI of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
       URI to linkset describing resource: NULL
+      Search query: NULL
       IRI for the vocabulary used to describe citational provenance: NULL
       IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL    
   - IRI: NULL 
-    name: eLTER CDN
+    name: NULL
     kind: data_repository
     software: 52_NORTH_SOS 
     identifier: 
@@ -286,6 +287,7 @@ infrastructure:
       URI of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
       URI to linkset describing resource: NULL
+      Search query: NULL
       IRI for the vocabulary used to describe citational provenance: NULL
       IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL        

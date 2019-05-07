@@ -11,11 +11,13 @@ infrastructure:
   data management plans:
     specific DMP tools used: no
     data publishing steps applied: 
-    - planned
+    - manual
   repositories: 
   - IRI: NULL
     name: EUDAT/FZJ B2SHARE
-    kind: data_repository
+    kind: data repository
+    data repository type: central
+    metadata repository type: central
     software: Zenodo
     identifier: 
       IRI: NULL
@@ -39,7 +41,7 @@ infrastructure:
       major access technology supported: local_LDAP 
       authorisation technique: NULL 
       authorisation needed for: 
-      - upload_data 
+      - upload data 
       authorization for accessing content needed: no
       access content process description IRI: NULL
       data licenses in use: VOID
@@ -48,10 +50,8 @@ infrastructure:
     data:
     - type name: structured_data
       preferred formats: 
-      - format name: CSV
-        metadata included:
-          metadata headers: no
-          which metadata types: none
+        - format name: CSV
+        metadata types in data headers: none
       registered data schema: bool
       search on data: yes
       search engine URL: NULL
@@ -59,7 +59,7 @@ infrastructure:
     vocabularies: 
     - IRI: http://vocabs.lter-europe.net/EnvThes/
       type: thesaurus
-      topic: domain-specific 
+      topic: domain specific 
       name: EnvThes
       specification language URL: https://www.w3.org/2004/02/skos/     
     data processing: VOID
@@ -81,12 +81,15 @@ infrastructure:
       URI of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
       URI to linkset describing resource: NULL
+      Search query: NULL      
       IRI for the vocabulary used to descripe citational provenance: NULL
       IRI for the vocabulary used to descripe contextual provenance: NULL
       IRI of compliance certification: NULL
   - IRI: https://deims.org/   
     name: DEIMS-SDR
-    kind: metadata_repository
+    kind: metadata repository
+    data repository type: central
+    metadata repository type: central    
     software: NULL
     identifier: 
       IRI: NULL
@@ -101,16 +104,16 @@ infrastructure:
     registry: re3data
     persistency-guaranty: planned
     access mechanisms: 
-      authentication method: people can request accounts, which are managed centrally 
+      authentication method: NULL
       access protocol URL: NULL
       protocol open: bool
       protocol royalty free: bool
       own user database maintained: yes
       ORCID used in AAI: no
-      major access technology supported: local_LDAP
+      major access technology supported: local LDAP
       authorisation technique: NULL
       authorisation needed for: 
-      - upload_data
+      - upload data
       authorization for accessing content needed: no
       access content process description IRI: 
       access licenses in use: CC-BY-NC4.0
@@ -120,25 +123,23 @@ infrastructure:
     - type name: NULL 
       preferred formats: 
       - format name: NULL 
-        metadata included:
-          metadata headers: NULL
-          which metadata types: NULL 
+        metadata types in data headers: none
       registered data schema: NULL
       search on data: NULL
       search engine URL:
     metadata: 
       schema:
       - IRI: http://schemas.opengis.net/iso/19139/20060504
-        name: ISO_10139
+        name: ISO 19139
         provenance fields included: NULL
       - IRI:
-        name: ISO_19115
+        name: ISO 19115
         provenance fields included: NULL
       - IRI: 
-        name: INSPIRE_EF
+        name: INSPIRE EF
         provenance fields included: NULL
       - IRI:
-        name: EML2.0
+        name: EML 2.0
         provenance fields included: NULL        
       - IRI:
         name: SensorML
@@ -151,8 +152,8 @@ infrastructure:
       export format supported: 
       - XML
       exchange/harvesting method: 
-      - OAI-PMH
-      - OGC_CSW
+      - OAI PMH
+      - OGC CSW
       local search engine URL: https://deims.org/ 
       external search engine type supported: CSW_endpoint
       access policy statements included: yes
@@ -160,7 +161,7 @@ infrastructure:
     vocabularies: 
     - IRI: http://vocabs.lter-europe.net/EnvThes/
       type: thesaurus 
-      topic: domain-specific
+      topic: domain specific
       name: EnvThes
       specification language URL: https://www.w3.org/2004/02/skos/       
     data processing:
@@ -190,13 +191,16 @@ infrastructure:
       URI of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
       URI to linkset describing resource: NULL
+      Search query: NULL
       IRI for the vocabulary used to describe citational provenance: NULL
       IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL    
   - IRI: NULL 
     name: eLTER CDN
-    kind: data_repository
-    software: 52_NORTH_SOS 
+    kind: data repository
+    data repository type: central
+    metadata repository type: central
+    software: 52NORTH SOS 
     identifier: 
       IRI: NULL
       persistency-policy document IRI: NULL
@@ -228,9 +232,7 @@ infrastructure:
     - type name: NULL 
       preferred formats: 
       - format name: NULL 
-        metadata included:
-          metadata headers: NULL
-          which metadata types: NULL 
+        metadata types in data headers: none
       registered data schema: NULL
       search on data: NULL
       search engine URL:
@@ -238,7 +240,7 @@ infrastructure:
     vocabularies: 
     - IRI: http://vocabs.lter-europe.net/EnvThes/
       type: thesaurus 
-      topic: domain_specific
+      topic: domain specific
       name: EnvThes
       specification language URL: https://www.w3.org/2004/02/skos/     
     data processing: VOID
@@ -249,12 +251,12 @@ infrastructure:
       data accessibility: 
         data accessible: partially
         gaps: 
-        - distribution_link
+        - distribution link
       data interoperability: 
         data interoperable: yes
         gaps: 
-        - format_checking
-        - data_quality_controll
+        - format checking
+        - data quality control
       data re-usability: 
         data reusable: yes
         gaps: none 
@@ -263,6 +265,7 @@ infrastructure:
       URI of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
       URI to linkset describing resource: NULL
+      Search query: NULL
       IRI for the vocabulary used to describe citational provenance: NULL
       IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL        
