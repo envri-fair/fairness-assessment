@@ -242,7 +242,7 @@ infrastructure:
          data interoperable: yes
          gaps: none
       data re-usability: 
-         data re-usable: partially
+         data reusable: partially
          gaps: 
          - provenance information
          - usage license         

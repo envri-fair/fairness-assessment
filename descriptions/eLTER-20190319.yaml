@@ -77,13 +77,13 @@ infrastructure:
         data reusable: NULL
         gaps: NULL
     test fairness:
-      URI/IRI of dataset: NULL
-      URI of discovery portal: NULL
+      URL/IRI of dataset: NULL
+      URL of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
-      URI to linkset describing resource: NULL
+      URL to linkset describing resource: NULL
       Search query: NULL      
-      IRI for the vocabulary used to descripe citational provenance: NULL
-      IRI for the vocabulary used to descripe contextual provenance: NULL
+      IRI for the vocabulary used to describe citational provenance: NULL
+      IRI for the vocabulary used to describe contextual provenance: NULL
       IRI of compliance certification: NULL
   - IRI: https://deims.org/   
     name: DEIMS-SDR
@@ -187,10 +187,10 @@ infrastructure:
         data reusable: NULL
         gaps: NULL 
     test fairness:
-      URI/IRI of dataset: NULL
-      URI of discovery portal: NULL
+      URL/IRI of dataset: NULL
+      URL of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
-      URI to linkset describing resource: NULL
+      URL to linkset describing resource: NULL
       Search query: NULL
       IRI for the vocabulary used to describe citational provenance: NULL
       IRI for the vocabulary used to describe contextual provenance: NULL
@@ -261,10 +261,10 @@ infrastructure:
         data reusable: yes
         gaps: none 
     test fairness:
-      URI/IRI of dataset: NULL
-      URI of discovery portal: NULL
+      URL/IRI of dataset: NULL
+      URL of discovery portal: NULL
       IRI of machine readable metadata of dataset: NULL
-      URI to linkset describing resource: NULL
+      URL to linkset describing resource: NULL
       Search query: NULL
       IRI for the vocabulary used to describe citational provenance: NULL
       IRI for the vocabulary used to describe contextual provenance: NULL

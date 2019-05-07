@@ -95,10 +95,10 @@ infrastructure:
         data reusable: 1.53 bool
         gaps: 1.53 list ref
     test fairness:
-      URI/IRI of dataset: 1.4/2.4/2.10
-      URI of discovery portal: 1.5
+      URL/IRI of dataset: 1.4/2.4/2.10
+      URL of discovery portal: 1.5
       IRI of machine readable metadata of dataset: 2.7/2.9 F2A
-      URI to linkset describing resource: 2.21 I3
+      URL to linkset describing resource: 2.21 I3
       Search query: 2.12 F4
       IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
       IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
