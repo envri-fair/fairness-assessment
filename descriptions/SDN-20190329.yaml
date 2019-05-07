@@ -50,7 +50,7 @@ infrastructure:
     data:
     - type name: binary
       preferred formats:
-        - format name: NetCDF
+      - format name: NetCDF
         metadata types in data headers:        
         - parameters measured
         - date 
@@ -61,7 +61,7 @@ infrastructure:
       search engine URL: http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp           
     - type name: text
       preferred formats: 
-        - format name: ODV
+      - format name: ODV
         metadata types in data headers: 
         - parameters measured
         - date 
@@ -72,7 +72,7 @@ infrastructure:
       search engine URL: none            
     metadata: 
       schema:
-       - IRI: http://www.isotc211.org 
+      - IRI: http://www.isotc211.org 
         name: ISO TC211
         provenance fields included: 
         - text only
@@ -132,7 +132,7 @@ infrastructure:
       URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
       IRI of machine readable metadata of dataset:  http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?n_code=2626292
       URL to linkset describing resource: planned
-      Search query: free search: 2626292
+      Search query: free search:2626292
       IRI for the vocabulary used to describe citational provenance: VOID
       IRI for the vocabulary used to describe contextual provenance: http://vocab.nerc.ac.uk/collection/V22/current/ 
       IRI of compliance certification: www.seadatanet.org
@@ -172,7 +172,7 @@ infrastructure:
     data: 
     - type name: text
       preferred formats: 
-        - format name: ODV
+      - format name: ODV
         metadata types in data headers: 
         - date
         - time
