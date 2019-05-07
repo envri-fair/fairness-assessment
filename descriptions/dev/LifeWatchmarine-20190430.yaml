@@ -10,25 +10,24 @@ infrastructure:
   recognized authority IRI: http://www.lifewatch.be
   data management plans:
     specific DMP tools used: planned
-    data publishing steps applied: 
-    - none
+    data publishing steps applied: none
   repositories: 
   - IRI: http://www.marinedataarchive.org
     name: Marine Data Archive
-    kind: data_repository
+    kind: data repository
     data repository type: central
     metadata repository type: relational database
-    software: MS_SQL
+    software: MS SQL
     identifier: 
       IRI: NULL
       persistency-policy document IRI: NULL
       kind: UUID
-      system: MDA_ID
+      system: MDA ID
       assigned: automatically
-      provider: local_system
-      includes-attributes: no
+      provider: local system
+      includes-attributes: none
     certification method: CoreTrustSeal?
-    policy: terms_of_use
+    policy: terms of use
     registry: none
     persistency-guaranty: none
     access mechanisms: 
@@ -41,10 +40,10 @@ infrastructure:
       major access technology supported: NULL 
       authorisation technique: NULL 
       authorisation needed for: 
-      - advanced_editing 
+      - advanced editing 
       authorization for accessing content needed: no
       access content process description IRI: NULL
-      data licenses in use: creative_commons
+      data licenses in use: creative commons
       data license IRI:
       metadata openly available: yes
     data:
@@ -135,7 +134,7 @@ infrastructure:
       major access technology supported: local_LDAP
       authorisation technique: NULL
       authorisation needed for: 
-      - upload_data
+      - upload data
       authorization for accessing content needed: no
       access content process description IRI: 
       access licenses in use: CC-BY-NC4.0
@@ -152,7 +151,7 @@ infrastructure:
     metadata: 
       schema:
       - IRI: http://schemas.opengis.net/iso/19139/20060504
-        name: ISO_10139
+        name: ISO 19139
         provenance fields included: NULL
       - IRI:
         name: ISO_19115
