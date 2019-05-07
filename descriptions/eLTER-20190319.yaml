@@ -116,7 +116,7 @@ infrastructure:
       - upload data
       authorization for accessing content needed: no
       access content process description IRI: 
-      access licenses in use: CC-BY-NC4.0
+      data licenses in use: CC-BY-NC4.0
       data license IRI:
       metadata openly available: yes
     data:
