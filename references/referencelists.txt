@@ -18,7 +18,7 @@ repository kind:
     
 1.7 repository software:
     Zenodo
-    52 NORTH SOS 
+    52NORTH SOS 
     Sextant-Si
     MS SQL
     D-SPace
@@ -180,7 +180,7 @@ repository kind:
     ISO 19115
     ISO 19139
     ISO 19115/19139
-    EML2.0
+    EML 2.0
     INSPIRE EF
     SensorML
     ISO TC2011
@@ -208,7 +208,7 @@ repository kind:
 
 1.28 metadata exchange/harvesting method:
     CSW
-    OAI-PMH
+    OAI PMH
     OGC CSW
     REST
     SOAP
