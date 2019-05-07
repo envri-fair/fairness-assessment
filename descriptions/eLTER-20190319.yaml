@@ -51,7 +51,7 @@ infrastructure:
     - type name: structured_data
       preferred formats: 
         - format name: CSV
-        metadata types in data headers: none
+          metadata types in data headers: none
       registered data schema: bool
       search on data: yes
       search engine URL: NULL
@@ -122,8 +122,8 @@ infrastructure:
     data:
     - type name: NULL 
       preferred formats: 
-      - format name: NULL 
-        metadata types in data headers: none
+        - format name: NULL 
+          metadata types in data headers: none
       registered data schema: NULL
       search on data: NULL
       search engine URL:
@@ -231,8 +231,8 @@ infrastructure:
     data:
     - type name: NULL 
       preferred formats: 
-      - format name: NULL 
-        metadata types in data headers: none
+        - format name: NULL 
+          metadata types in data headers: none
       registered data schema: NULL
       search on data: NULL
       search engine URL:
