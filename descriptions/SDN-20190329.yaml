@@ -164,7 +164,8 @@ infrastructure:
       ORCID used in AAI: no
       major access technology supported: CAS
       authorisation technique: Marine.id
-      authorisation needed for: access content
+      authorisation needed for: 
+      - access content
       authorization for accessing content needed: yes
       access content process description IRI: NULL
       data licenses in use: local
@@ -177,7 +178,7 @@ infrastructure:
         metadata types in data headers: 
         - date
         - time
-        - loation
+        - location
         - data centre
       registered data schema: VOID    
       search on data: VOID
