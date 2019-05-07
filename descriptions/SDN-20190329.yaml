@@ -7,13 +7,13 @@ survey:
 infrastructure:   
   acronym: SDN
   name: SeaDataNet
-  recognized authority IRI: www.seadatanet.org
+  recognized authority IRI: http://www.seadatanet.org
   data management plans:
     specific DMP tools used: no
     data publishing steps applied: 
     - QA QC manual
   repositories: 
-  - IRI: www.seadatanet.org/products
+  - IRI: http://www.seadatanet.org/products
     name: Data Products Catalogue
     kind: metadata data repository
     data repository type: central
