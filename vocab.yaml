@@ -1,0 +1,209 @@
+Bag: http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag
+li: http://www.w3.org/1999/02/22-rdf-syntax-ns#li
+ResearchInfrastructure: http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure
+Repository: http://envri.eu/ns/Repository
+data_repository: http://envri.eu/ns/DataRepository
+data repository: http://envri.eu/ns/DataRepository
+metadata_repository: http://envri.eu/ns/MetadataRepository
+metadata repository: http://envri.eu/ns/MetadataRepository
+metadata_data_repository: http://envri.eu/ns/MetadataRepository
+metadata data repository: http://envri.eu/ns/MetadataRepository
+site_repository: http://envri.eu/ns/SiteRepository
+taxonomic_repository: http://envri.eu/ns/TaxonomicRepository
+Data: http://envri.eu/ns/Data
+text_data: http://envri.eu/ns/TextData
+images: http://envri.eu/ns/Images
+tabular_data: http://envri.eu/ns/TabularData
+binary_data: http://envri.eu/ns/BinaryData
+binary: http://envri.eu/ns/BinaryData
+structured_data: http://envri.eu/ns/StructuredData
+PreferredFormat: http://envri.eu/ns/PreferredFormat
+Metadata: http://envri.eu/ns/Metadata
+codelist: http://envri.eu/ns/Codelist
+thesaurus: http://envri.eu/ns/Thesaurus
+Identifier: http://envri.eu/ns/Identifier
+LocalIdentifier: http://envri.eu/ns/LocalIdentifier
+local_ID: http://envri.eu/ns/LocalIdentifier
+PersistentIdentifier: http://envri.eu/ns/PersistentIdentifier
+PID: http://envri.eu/ns/PersistentIdentifier
+PIDs: http://envri.eu/ns/PersistentIdentifiers
+UUID: http://envri.eu/ns/UniversallyUniqueIdentifier
+DigitalObjectIdentifier: http://envri.eu/ns/DigitalObjectIdentifier
+MDA_ID: http://envri.eu/ns/MDA_ID
+DOI: http://envri.eu/ns/DigitalObjectIdentifier
+AccessMechanism: http://envri.eu/ns/AccessMechanism
+date: http://purl.org/dc/terms/date
+version: http://purl.org/dc/terms/hasVersion
+creator: http://purl.org/dc/terms/creator
+name: http://xmlns.com/foaf/0.1/name
+email: http://xmlns.com/foaf/0.1/mbox
+label: http://www.w3.org/2000/01/rdf-schema#label
+acronym: http://envri.eu/ns/acronym
+url: http://envri.eu/ns/url
+hasDataManagementPlans: http://envri.eu/ns/hasDataManagementPlans
+usesSpecificDataManagementPlanTools: http://envri.eu/ns/usesSpecificDataManagementPlanTools
+appliedDataPublishingSteps: http://envri.eu/ns/appliedDataPublishingSteps
+hasRepository: http://envri.eu/ns/hasRepository
+usesSystem: http://envri.eu/ns/usesSystem
+usesIdentifier: http://envri.eu/ns/usesIdentifier
+usesProvider: http://envri.eu/ns/usesProvider
+isAssigned: http://envri.eu/ns/isAssigned
+hasCertificationMethod: http://envri.eu/ns/hasCertificationMethod
+hasPolicy: http://envri.eu/ns/hasPolicy
+inRegistry: http://envri.eu/ns/inRegistry
+hasPersistentPolicy: http://envri.eu/ns/hasPersistentPolicy
+hasPersistencyGuaranty: http://envri.eu/ns/hasPersistencyGuaranty
+hasAccessMechanisms: http://envri.eu/ns/hasAccessMechanisms
+hasAuthenticationMethod: http://envri.eu/ns/hasAuthenticationMethod
+hasAccessProtocolUrl: http://envri.eu/ns/hasAccessProtocolUrl
+protocolIsOpen: http://envri.eu/ns/protocolIsOpen
+protocolIsRoyaltyFree: http://envri.eu/ns/protocolIsRoyaltyFree
+maintainsOwnUserDatabase: http://envri.eu/ns/maintainsOwnUserDatabase
+usesORCIDinAAI: http://envri.eu/ns/usesORCIDinAAI
+supportsMajorAccessTechnology: http://envri.eu/ns/supportsMajorAccessTechnology
+usesAuthorisationTechnique: http://envri.eu/ns/usesAuthorisationTechnique
+usesAuthorisationFor: http://envri.eu/ns/usesAuthorisationFor
+authorisationRequired: http://envri.eu/ns/authorisationRequired
+hasAccessConcentProcessDescriptionUri: http://envri.eu/ns/hasAccessConcentProcessDescriptionUri
+usesDataLicenses: http://envri.eu/ns/usesDataLicenses
+dataLicenseIri: http://envri.eu/ns/dataLicenseIri
+openAccessMetadata: http://envri.eu/ns/openAccessMetadata
+hasData: http://envri.eu/ns/hasData
+hasMetadata: http://envri.eu/ns/hasMetadata
+hasPreferredFormat: http://envri.eu/ns/hasPreferredFormat
+hasFormatName: http://envri.eu/ns/hasFormatName
+hasDataHeaderMetadataTypes: http://envri.eu/ns/hasDataHeaderMetadataTypes
+includedMetadata: http://envri.eu/ns/includedMetadata
+hasMetadataHeaders: http://envri.eu/ns/hasMetadataHeaders
+metadataTypes: http://envri.eu/ns/metadataTypes
+dataSchemaIsRegistered: http://envri.eu/ns/dataSchemaIsRegistered
+searchOnData: http://envri.eu/ns/searchOnData
+hasSearchEngineUrl: http://envri.eu/ns/hasSearchEngineUrl
+hasSchema: http://envri.eu/ns/hasSchema
+hasIri: http://envri.eu/ns/hasIri
+hasName: http://envri.eu/ns/hasName
+includesProvenanceFields: http://envri.eu/ns/includesProvenanceFields
+categoriesAreDefinedInRegistries: http://envri.eu/ns/categoriesAreDefinedInRegistries
+persistentIdentifiersAreIncluded: http://envri.eu/ns/persistentIdentifiersAreIncluded
+hasPrimaryStorageFormat: http://envri.eu/ns/hasPrimaryStorageFormat
+hasMetadataLongevityPlan: http://envri.eu/ns/hasMetadataLongevityPlan
+hasFormat: http://envri.eu/ns/hasFormat
+supportedExportFormats: http://envri.eu/ns/supportedExportFormats
+hasHarvestingMethod: http://envri.eu/ns/hasHarvestingMethod
+hasLocalSearchEngine: http://envri.eu/ns/hasLocalSearchEngine
+supportsExternalSearchEngineType: http://envri.eu/ns/supportsExternalSearchEngineType
+includesAccessPolicyStatements: http://envri.eu/ns/includesAccessPolicyStatements
+isMachineActionable: http://envri.eu/ns/isMachineActionable
+hasVocabularies: http://envri.eu/ns/hasVocabularies
+hasTopic: http://envri.eu/ns/hasTopic
+hasSpecificationLanguage: http://envri.eu/ns/hasSpecificationLanguage
+hasDataProcessing: http://envri.eu/ns/hasDataProcessing
+specialDataProcessingStepsApplied: http://envri.eu/ns/specialDataProcessingStepsApplied
+workflowFrameworksApplied: http://envri.eu/ns/workflowFrameworksApplied
+distributedWorkflowsToolsUsed: http://envri.eu/ns/distributedWorkflowsToolsUsed
+otherAnalysisServicesOffered: http://envri.eu/ns/otherAnalysisServicesOffered
+dataProductsOffered: http://envri.eu/ns/dataProductsOffered
+fairness: http://envri.eu/ns/fairness
+dataFindability: http://envri.eu/ns/dataFindability
+dataAccessibility: http://envri.eu/ns/dataAccessibility
+dataInteroperability: http://envri.eu/ns/dataInteroperability
+dataReusability: http://envri.eu/ns/dataReusability
+dataIsFindable: http://envri.eu/ns/dataIsFindable
+dataIsAccessible: http://envri.eu/ns/dataIsAccessible
+dataIsInteroperable: http://envri.eu/ns/dataIsInteroperable
+dataIsReusable: http://envri.eu/ns/dataIsReusable
+gaps: http://envri.eu/ns/gaps
+hasDataset: http://envri.eu/ns/hasDataset
+hasDiscoveryPortal: http://envri.eu/ns/hasDiscoveryPortal
+hasMachineReadableDatasetMetadata: http://envri.eu/ns/hasMachineReadableDatasetMetadata
+hasLinksetDescribingResource: http://envri.eu/ns/hasLinksetDescribingResource
+hasSearchQuery: http://envri.eu/ns/hasSearchQuery
+hasCitationalProvenanceVocabulary: http://envri.eu/ns/hasCitationalProvenanceVocabulary
+hasContextualProvenanceVocabulary: http://envri.eu/ns/hasContextualProvenanceVocabulary
+hasComplianceCertification: http://envri.eu/ns/hasComplianceCertification
+domain specific: http://envri.eu/ns/DomainSpecific
+ISO_10139: http://envri.eu/ns/ISO_19139
+ISO 19139: http://envri.eu/ns/ISO_19139
+ISO_19115: http://envri.eu/ns/ISO_19115
+ISO 19115: http://envri.eu/ns/ISO_19115
+ISO19139: http://envri.eu/ns/ISO_19139
+ISO TC211: http://envri.eu/ns/ISO_TC211
+INSPIRE_EF: http://envri.eu/ns/INSPIRE_EF
+INSPIRE EF: http://envri.eu/ns/INSPIRE_EF
+INSPIRE: http://envri.eu/ns/INSPIRE
+EML2.0: http://envri.eu/ns/EML2.0
+EML 2.0: http://envri.eu/ns/EML2.0
+SensorML: http://envri.eu/ns/SensorML
+SDN community profile: http://envri.eu/ns/SeaDataNetCommunityProfile
+local: http://envri.eu/ns/Local
+local_license: http://envri.eu/ns/LocalLicense
+download_data: http://envri.eu/ns/DataDownload
+download data: http://envri.eu/ns/DataDownload
+upload_data: http://envri.eu/ns/DataUpload
+upload data: http://envri.eu/ns/DataUpload
+advanced_editing: http://envri.eu/ns/AdvancedEditing
+Marine.id: http://envri.eu/ns/Marine.id
+OAUTH: http://envri.eu/ns/OAUTH
+CAS: http://envri.eu/ns/CAS
+Zenodo: http://envri.eu/ns/Zenodo
+planned: http://envri.eu/ns/Planned
+Sextant-Si: http://envri.eu/ns/Sextant-Si
+Sextant: http://envri.eu/ns/Sextant
+52_NORTH_SOS: http://envri.eu/ns/52NORTH_SOS
+52NORTH SOS: http://envri.eu/ns/52NORTH_SOS
+SEANOE: http://envri.eu/ns/SEANOE
+MS_SQL: http://envri.eu/ns/MS_SQL
+Handle: http://envri.eu/ns/Handle
+local_system: http://envri.eu/ns/LocalSystem
+local_service: http://envri.eu/ns/LocalService
+local_LDAP: http://envri.eu/ns/LocalLDAP
+local LDAP: http://envri.eu/ns/LocalLDAP
+DEIMS-SDR: http://envri.eu/ns/DEIMS-SDR
+DataCite: http://envri.eu/ns/DataCite
+re3data: http://envri.eu/ns/re3data
+ASCII: http://envri.eu/ns/ASCII
+xls: http://envri.eu/ns/xls
+NetCDF: http://envri.eu/ns/NetCDF
+ODV: http://envri.eu/ns/OceanDataView
+CSV: http://envri.eu/ns/CommaSeparatedValues
+XML: http://envri.eu/ns/ExtensibleMarkupLanguage
+HTML: http://envri.eu/ns/HyperTextMarkupLanguage
+PDF: http://envri.eu/ns/PortableDocumentFormat
+text: http://envri.eu/ns/Text
+text only: http://envri.eu/ns/TextOnly
+OAI-PMH: http://envri.eu/ns/OAI-PMH
+OAI PMH: http://envri.eu/ns/OAI-PMH
+OGC_CSW: http://envri.eu/ns/OGC_CSW
+OGC CSW: http://envri.eu/ns/OGC_CSW
+CSW: http://envri.eu/ns/OGC_CSW
+CSW_endpoint: http://envri.eu/ns/OGC_CSW
+GEOPortal: http://envri.eu/ns/GEOPortal
+CDI system: http://envri.eu/ns/CDISystem
+parameters_measured: http://envri.eu/ns/ParametersMeasured
+parameters measured: http://envri.eu/ns/ParametersMeasured
+access content: http://envri.eu/ns/AccessContent
+data centre: http://envri.eu/ns/DataCentre
+date_time: http://envri.eu/ns/DateTime
+time: http://envri.eu/ns/Time
+location: http://envri.eu/ns/Location
+temperature: http://envri.eu/ns/Temperature
+vegetation: http://envri.eu/ns/Vegetation
+salinity: http://envri.eu/ns/Salinity
+depth: http://envri.eu/ns/Depth
+climatologies: http://envri.eu/ns/Climatologies
+deposition: http://envri.eu/ns/Deposition
+mesoclimate: http://envri.eu/ns/Mesoclimate
+ODV aggregation: http://envri.eu/ns/ODVAggregation
+QA QC: http://envri.eu/ns/QA_QC
+DIVA: http://envri.eu/ns/DIVA
+creative_commons: http://envri.eu/ns/CreativeCommons
+interpolations: http://envri.eu/ns/Interpolations
+uptake in central resources: http://envri.eu/ns/UptakeInCentralResources
+problem with FTP access: http://envri.eu/ns/FTPAccessProblems
+provenance information: http://envri.eu/ns/ProvenanceInformation
+quality description: http://envri.eu/ns/QualityDescription
+machine accessibility: http://envri.eu/ns/MachineAccessibility
+usage license: http://envri.eu/ns/UsageLicense
+distribution link: http://envri.eu/ns/DistributionLink
+format checking: http://envri.eu/ns/FormatChecking
+data quality control: http://envri.eu/ns/QA_QC
