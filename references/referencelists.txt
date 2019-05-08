@@ -45,7 +45,7 @@ repository kind:
     PID
     local ID
     DOI
-    UUID
+    MDA ID
     NetCDF Oceansites ID
     NetCDF EGO ID
 
@@ -54,7 +54,7 @@ repository kind:
     Handle
     local system
     SEANOE
-    MDA ID
+    UUID
     URL    
 
 1.10 identifier assigned: 
@@ -73,6 +73,7 @@ repository kind:
     CoreTrustSeal
     GoFAIR Implementation Network
     Data Seal of Approval
+    IODE certified
 
 
 1.14 published repository policy:
@@ -83,6 +84,7 @@ repository kind:
     PID creation
     data access
     terms of use
+    FAQ
 
 1.15 repository registry:
     re3data
@@ -126,6 +128,7 @@ repository kind:
     CC-BY-NC4.0
     CC-BY4.0
     CC-BY3.0
+    CC-BY.CC 0
     Code of Conduct
     local license
     creative commons
