@@ -9,20 +9,20 @@ infrastructure:
   name: LifeWatch (marine)
   recognized authority IRI: http://www.lifewatch.be
   data management plans:
-    specific DMP tools used: planned
+    specific DMP tools used: DMP template
     data publishing steps applied: none
   repositories: 
   - IRI: http://www.marinedataarchive.org
     name: Marine Data Archive
     kind: data repository
     data repository type: central
-    metadata repository type: relational database
+    metadata repository type: relational database?
     software: MS SQL
     identifier: 
       IRI: NULL
-      persistency-policy document IRI: NULL
-      kind: UUID
-      system: MDA ID
+      persistency-policy document IRI: VOID
+      kind: MDA ID
+      system: UUID
       assigned: automatically
       provider: local system
       includes-attributes: none
@@ -31,10 +31,10 @@ infrastructure:
     registry: none
     persistency-guaranty: none
     access mechanisms: 
-      authentication method: account and login 
-      access protocol URL: NULL
-      protocol open: bool
-      protocol royalty free: bool
+      authentication method: NULL 
+      access protocol URL: https://www.gbif.org/standards
+      protocol open: yes
+      protocol royalty free: yes
       own user database maintained: yes
       ORCID used in AAI: no
       major access technology supported: NULL 
@@ -43,250 +43,72 @@ infrastructure:
       - advanced editing 
       authorization for accessing content needed: no
       access content process description IRI: NULL
-      data licenses in use: creative commons
-      data license IRI:
+      data licenses in use: CC-BY.CC 0?
+      data license IRI: http://www.eurobis.org/citation
       metadata openly available: yes
     data:
-    - type name: text_data
+    - type name: text
       preferred formats: 
-        format name: ASCII
-        metadata types in data headers: no
-      registered data schema: no
+        - format name: ASCII
+          metadata types in data headers: none
+      registered data schema: 1.21 bool I1
       search on data: yes
       search engine URL: NULL
-    - type name: images
+    - type name: image
       preferred formats: 
-      - format name: NULL
-        metadata included:
-          metadata headers: no
-          which metadata types: none
-      registered data schema: no
+        - format name: NULL
+          metadata types in data headers: none
+      registered data schema: VOID
       search on data: yes
-      search engine URL: NULL  
-    - type name: tabular_data
-      preferred formats: 
-      - format name: xls
-        metadata included:
-          metadata headers: no
-          which metadata types: none
-      registered data schema: no
-      search on data: yes
-      search engine URL: NULL 
-    metadata: VOID
-    vocabularies: 
-    - IRI: http://marinespecies.org
-      type: taxonomy
-      topic: domain-specific 
-      name: WORMS
-      specification language URL: https://www.mysql.com   
-    - IRI: http://marineregions.org
-      type: thesaurus
-      topic: domain-specific 
-      name: marine regions
-      specification language URL: NULL   
-    data processing: VOID
-    fairness: 
-      data findability:  
-        data findable: yes 
-        gaps: NULL
-      data accessibility: 
-        data accessible: yes
-        gaps: NULL
-      data interoperability: 
-        data interoperable: partially
-        gaps: format_checking 
-      data re-usability: 
-        data reusable: partially
-        gaps: quality_description
-    test fairness:
-      URI/IRI of dataset: NULL
-      URI of discovery portal: NULL
-      IRI of machine readable metadata of dataset: NULL
-      URI to linkset describing resource: NULL
-      IRI for the vocabulary used to descripe citational provenance: NULL
-      IRI for the vocabulary used to descripe contextual provenance: NULL
-      IRI of compliance certification: NULL
-  - IRI: https://www.vliz.be/en/taxonomic-register-marine-species   
-    name: ALPHIA (WoRMS) 
-    kind: taxonomic_repository
-    data repository type: central
-    metadata repository type: relational database
-    software: MS_SQL
-    identifier: 
-      IRI: NULL
-      persistency-policy document IRI: NULL
-      kind: local_ID
-      system: local_system
-      assigned: automatically
-      provider: local_service
-      includes-attributes: yes
-    certification method: NULL
-    policy: NULL
-    registry: re3data
-    persistency-guaranty: planned
-    access mechanisms: 
-      authentication method: people can request accounts, which are managed centrally 
-      access protocol URL: NULL
-      protocol open: bool
-      protocol royalty free: bool
-      own user database maintained: yes
-      ORCID used in AAI: no
-      major access technology supported: local_LDAP
-      authorisation technique: NULL
-      authorisation needed for: 
-      - upload data
-      authorization for accessing content needed: no
-      access content process description IRI: 
-      access licenses in use: CC-BY-NC4.0
-      data license IRI:
-      metadata openly available: yes
-    data:
-    - type name: NULL 
-      preferred formats: 
-        format name: NULL
-        metadata types in data headers: Null
-      registered data schema: NULL
-      search on data: NULL
-      search engine URL:
+      search engine URL: NULL
     metadata: 
-      schema:
-      - IRI: http://schemas.opengis.net/iso/19139/20060504
-        name: ISO 19139
-        provenance fields included: NULL
-      - IRI:
-        name: ISO_19115
-        provenance fields included: NULL
-      - IRI: 
-        name: INSPIRE_EF
-        provenance fields included: NULL
-      - IRI:
-        name: EML2.0
-        provenance fields included: NULL        
-      - IRI:
-        name: SensorML
-        provenance fields included: NULL
-      categories defined in registries: partially
-      PIDs included: partially
-      primary storage format: DEIMS-SDR
-      metadata longevity plan URL: NULL
-      format IRI: 
-      export format supported: 
-      - XML
-      exchange/harvesting method: 
-      - OAI PMH
-      - OGC CSW
-      local search engine URL: none
-      external search engine type supported: CSW_endpoint
-      access policy statements included: yes
-      machine actionable: yes
-    vocabularies: 
-    - IRI: http://vocabs.lter-europe.net/EnvThes/
-      type: thesaurus 
-      topic: domain-specific
-      name: EnvThes
-      specification language URL: https://www.w3.org/2004/02/skos/       
+      schema: 
+        - IRI: NULL 
+        name: 1.22 ref I1
+        provenance fields included: 1.24 list ref F2
+      categories defined in registries: 1.23 bool I2
+      PIDs included: 1.25 bool F3
+      primary storage format: 1.26 ref I1
+      metadata longevity plan URL: 2.18
+      format IRI: 2.8 F2B
+      export format supported: 1.27 list ref I1
+      exchange/harvesting method: 1.28 list ref I1
+      local search engine URL: 1.29 F4
+      external search engine type supported: 1.30 ref F4
+      access policy statements included: 1.31 bool R1.1
+      machine actionable: 1.32 bool I1
+    vocabularies: list
+      IRI: 2.20 I2
+      type: 1.48 ref I1
+      topic: 1.48 ref I1
+      name: 1.48 ref
+      specification language URL: 2.19 I1        
     data processing:
-      special data processing steps applied: none 
-      workflow frameworks applied: none 
-      distributed workflows tools used: none 
-      other analysis services offered: none 
-      data products offered:
-      - mesoclimate
-      - vegetation
-      - deposition
+      special data processing steps applied: 1.42 list ref 
+      workflow frameworks applied: 1.43 list ref
+      distributed workflows tools used: 1.44 list ref
+      other analysis services offered: 1.45 list ref A1
+      data products offered: 1.46 list ref
     fairness: 
       data findability:  
-        data findable: NULL 
-        gaps: NULL
+        data findable: 1.50 bool 
+        gaps: 1.50 list ref
       data accessibility: 
-        data accessible: NULL
-        gaps: NULL
+        data accessible: 1.51 bool
+        gaps: 1.51 list ref
       data interoperability: 
-        data interoperable: NULL
-        gaps: NULL 
+        data interoperable: 1.52 bool
+        gaps: 1.52 list ref
       data re-usability: 
-        data reusable: NULL
-        gaps: NULL 
+        data reusable: 1.53 bool
+        gaps: 1.53 list ref
     test fairness:
-      URI/IRI of dataset: NULL
-      URI of discovery portal: NULL
-      IRI of machine readable metadata of dataset: NULL
-      URI to linkset describing resource: NULL
-      Search query: NULL
-      IRI for the vocabulary used to describe citational provenance: NULL
-      IRI for the vocabulary used to describe contextual provenance: NULL
-      IRI of compliance certification: NULL    
-  - IRI: NULL 
-    name: NULL
-    kind: data_repository
-    software: 52_NORTH_SOS 
-    identifier: 
-      IRI: NULL
-      persistency-policy document IRI: NULL
-      kind: NULL
-      system: NULL
-      assigned: NULL
-      provider: NULL
-      includes-attributes: NULL
-    certification method: NULL 
-    policy: NULL
-    registry: NULL
-    persistency-guaranty: planned
-    access mechanisms: 
-      authentication method: NULL
-      access protocol URL: NULL
-      protocol open: bool
-      protocol royalty free: bool
-      own user database maintained: NULL
-      ORCID used in AAI: NULL
-      major access technology supported: NULL
-      authorisation technique: NULL
-      authorisation needed for: NULL
-      authorization for accessing content needed: NULL
-      access content process description IRI: NULL
-      data licenses in use: NULL
-      data license IRI:
-      metadata openly available: yes
-    data:
-    - type name: NULL 
-      preferred formats: 
-      - format name: NULL 
-        metadata included:
-          metadata headers: NULL
-          which metadata types: NULL 
-      registered data schema: NULL
-      search on data: NULL
-      search engine URL:
-    metadata: VOID
-    vocabularies: 
-    - IRI: http://vocabs.lter-europe.net/EnvThes/
-      type: thesaurus 
-      topic: domain_specific
-      name: EnvThes
-      specification language URL: https://www.w3.org/2004/02/skos/     
-    data processing: VOID
-    fairness: 
-      data findability:  
-        data findable: yes 
-        gaps: none
-      data accessibility: 
-        data accessible: partially
-        gaps: 
-        - distribution_link
-      data interoperability: 
-        data interoperable: yes
-        gaps: 
-        - format_checking
-        - data_quality_controll
-      data re-usability: 
-        data reusable: yes
-        gaps: none 
-    test fairness:
-      URI/IRI of dataset: NULL
-      URI of discovery portal: NULL
-      IRI of machine readable metadata of dataset: NULL
-      URI to linkset describing resource: NULL
-      Search query: NULL
-      IRI for the vocabulary used to describe citational provenance: NULL
-      IRI for the vocabulary used to describe contextual provenance: NULL
-      IRI of compliance certification: NULL        
+      URL/IRI of dataset: 1.4/2.4/2.10
+      URL of discovery portal: 1.5
+      IRI of machine readable metadata of dataset: 2.7/2.9 F2A
+      URL to linkset describing resource: 2.21 I3
+      Search query: 2.12 F4
+      IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
+      IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
+      IRI of compliance certification: 2.25 R1.3
+ 
