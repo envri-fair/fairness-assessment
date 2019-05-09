@@ -3,6 +3,7 @@ infrastructure acronym:
     eLTER
     EMSO
     EPOS
+    Euro-Argo
 
 repository kind:
     metadata repository
@@ -24,6 +25,7 @@ repository kind:
     D-SPace
     Fedora
     CDI system
+    NetCDF file
 
 1.8 metadata repository type:
     central
@@ -45,7 +47,7 @@ repository kind:
     PID
     local ID
     DOI
-    MDA ID
+    UUID
     NetCDF Oceansites ID
     NetCDF EGO ID
 
@@ -54,7 +56,7 @@ repository kind:
     Handle
     local system
     SEANOE
-    UUID
+    MDA ID
     URL    
 
 1.10 identifier assigned: 
@@ -74,6 +76,7 @@ repository kind:
     GoFAIR Implementation Network
     Data Seal of Approval
     IODE certified
+    RDA Trustworthy Data Repository
 
 
 1.14 published repository policy:
@@ -84,7 +87,6 @@ repository kind:
     PID creation
     data access
     terms of use
-    FAQ
 
 1.15 repository registry:
     re3data
@@ -92,6 +94,7 @@ repository kind:
     DataCite
     EMODNet
     data.gov.ie
+    GEO
     
 1.16 persistency-policy:
     10 years
@@ -102,6 +105,7 @@ repository kind:
     Shibboleth paried with eduGain
     OAuth
     Marine-ID
+    none-open
 
 1.36 access technology:
     local LDAP
@@ -128,7 +132,6 @@ repository kind:
     CC-BY-NC4.0
     CC-BY4.0
     CC-BY3.0
-    CC-BY.CC 0
     Code of Conduct
     local license
     creative commons
@@ -178,6 +181,7 @@ repository kind:
     NetCDF Oceansites Profile metadata
     NetCDF EGO format metadata
     standard NetCDF CF headers
+    NetCDF ACDD metadata
 
 1.22 metadata schema name:
     ISO 19115
@@ -200,6 +204,7 @@ repository kind:
     XML
     database
     OWL
+    NetCDF CF Argo
 
 1.27 metadata export format:
     HTML
@@ -208,6 +213,9 @@ repository kind:
     JSON
     JSON-LD
     OWL
+    NetCDF
+    CSV
+    
 
 1.28 metadata exchange/harvesting method:
     CSW
@@ -218,10 +226,13 @@ repository kind:
     LDP
     FDP
     RESTful_API
+    OpneDAP
     
-1.30 exernal search engine type:
+1.30 external search engine type:
     GEOPortal
     CSW endpoint
+    OAI-PMH
+    OpenDAP
 
 1.48 vocabulary type:
     codelist
@@ -244,13 +255,17 @@ repository kind:
     ODV aggregation
 
 1.43 workflow frameworks type:
-   
+    data processing steps recorded
 
 1.44 data processing tool type:
  
 
 1.45 analysis services:
     DIVA
+    SPARK
+    Cassandra
+    Elasticsearch
+    Pangeo
 
 
 1.46 data products:
@@ -274,8 +289,10 @@ repository kind:
 1.52 data interoperability gap:
     format checking
     data quality control
+    harmonising vocabularies
 
 1.53 data re-usability gap:
     provenance information
     quality description
     usage license 
+    harmonising vocabularies
