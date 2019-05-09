@@ -10,13 +10,15 @@ infrastructure:
   recognized authority IRI: 
   data management plans:
     specific DMP tools used: no
-    data publishing steps applied: VOID
-  repositories: 
-    IRI: 1.5 list 
-    name: 1.6 free
-    kind: ref
-    software: 1.7 ref
-    identifier: 
+    data publishing steps applied: QA QC manually
+  repositories: list
+    IRI: https://www.orfeus-eu.org/
+    name: VOID
+    kind: data repository 
+    data repository type: local
+    metadata repository type: relational database
+    software: home-made
+  identifier: 
       IRI: 2.5
       persistency-policy document IRI: 2.6
       kind: 1.9 ref
