@@ -18,7 +18,7 @@ infrastructure:
     data repository type: local
     metadata repository type: relational database
     software: home-made
-  identifier: 
+    identifier: 
       IRI: 2.5
       persistency-policy document IRI: 2.6
       kind: 1.9 ref
