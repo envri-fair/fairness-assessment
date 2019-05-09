@@ -13,7 +13,7 @@ infrastructure:
     data publishing steps applied: 
     - QA QC manually
   repositories: 
-    IRI: http://doi.org/10.17882/42182
+  - IRI: http://doi.org/10.17882/42182
     name: Euro-Argo Data
     kind: data repository
     data repository type: central
@@ -26,13 +26,9 @@ infrastructure:
       system: SEANOE
       assigned: automatically
       provider: SEANOE
-      includes-attributes: yes?? 
-    certification methods: 
-    - Data Seal of Approval
-    - IODE certified
-    - RDA Trustworthy Data Repository
-    policies: 
-    - data access
+      includes-attributes: yes 
+    certification method: Data Seal of Approval
+    policy: data access
     registry: GEO
     persistency-guaranty: NULL
     access mechanisms: 
@@ -51,20 +47,20 @@ infrastructure:
       data license IRI:  https://creativecommons.org/licenses/by/4.0/
       metadata openly available: yes
     data:
-      - type name: binary
-        preferred formats: 
-          format name: NetCDF
-          metadata types in data headers: 
-          - NetCDF ACDD metadata
+    - type name: binary
+      preferred formats: 
+      - format name: NetCDF
+        metadata types in data headers: 
+        - NetCDF ACDD metadata
       registered data schema: no
       search on data: yes
       search engine URL: http://www.argodatamgt.org/Access-to-data/Argo-data-selection
     metadata: 
-      - schema: 
-          IRI:http://dx.doi.org/10.13155/29825 
-          name: Argo user's manual
-          provenance fields included: 
-          - text only
+      schema: 
+      - IRI: http://dx.doi.org/10.13155/29825 
+        name: Argo user manual
+        provenance fields included: 
+        - text only
       categories defined in registries: planned
       PIDs included: yes
       primary storage format: NetCDF CF Argo
@@ -78,22 +74,19 @@ infrastructure:
       - OpenDAP
       - OGC CSW
       local search engine URL: NULL
-      external search engine type supported:
-      - CSW endpoint
-      - OAI-PMH
-      - OpenDAP
+      external search engine type supported: CSW endpoint
       access policy statements included: yes
       machine actionable: yes
     vocabularies: 
-      - IRI: http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P06
-        type: codelist
-        topic: project spefific
-        name: NVS P06
-        specification language URL: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml 
-      - IRI: http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P06
-        type: codelist
-        topic: domain spefific
-        name: NVS P01
+    - IRI: http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P06
+      type: codelist
+      topic: project specific
+      name: NVS P06
+      specification language URL: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml 
+    - IRI: http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P06
+      type: codelist
+      topic: domain specific
+      name: NVS P01
       specification language URL: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml   
     data processing:
       special data processing steps applied: 
@@ -129,7 +122,7 @@ infrastructure:
       URL of discovery portal: http://www.argodatamgt.org/Access-to-data/Argo-data-selection
       IRI of machine readable metadata of dataset: https://doi.org/10.17882/42182 
       URL to linkset describing resource: none
-      Search query: "Argo floats data" shows Argo GDAC DO?
+      Search query: NULL
       IRI for the vocabulary used to describe citational provenance: NULL
       IRI for the vocabulary used to describe contextual provenance: https://doi.org/10.17882/42182
       IRI of compliance certification: https://doi.org/10.17882/45538

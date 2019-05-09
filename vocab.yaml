@@ -3,6 +3,24 @@ li: http://www.w3.org/1999/02/22-rdf-syntax-ns#li
 ResearchInfrastructure: http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure
 Repository: http://envri.eu/ns/Repository
 data_repository: http://envri.eu/ns/DataRepository
+CC-BY4.0: http://envri.eu/ns/CC-BY4.0
+NetCDF file: http://envri.eu/ns/NetcdfFile
+Euro-Argo: http://envri.eu/ns/EuroArgo
+NetCDF ACDD metadata: http://envri.eu/ns/NetcdfAcddMetadata
+GEO: http://envri.eu/ns/Geo
+IODE certified: http://envri.eu/ns/IodeCertified
+RDA Trustworthy Data Repository: http://envri.eu/ns/RdaTrustworthyDataRepository
+NetCDF CF Argo: http://envri.eu/ns/NetcdfCfArgo
+Argo user manual: http://envri.eu/ns/ArgoUserManual
+OpenDAP: http://envri.eu/ns/OpenDap
+CSW endpoint: http://envri.eu/ns/CswEndpoint
+project specific: http://envri.eu/nx/ProjectSpecific
+data processing steps recorded: http://envri.eu/ns/DataProcessingStepsRecorded
+Spark: http://envri.eu/ns/Spark
+Cassandra: http://envri.eu/ns/Cassandra
+Elasticsearch: http://envri.eu/ns/Elasticsearch
+Pangeo: http://envri.eu/ns/Pangeo
+harmonising vocabularies: http://envri.eu/ns/HarmonisingVocabularies
 data repository: http://envri.eu/ns/DataRepository
 metadata_repository: http://envri.eu/ns/MetadataRepository
 metadata repository: http://envri.eu/ns/MetadataRepository
