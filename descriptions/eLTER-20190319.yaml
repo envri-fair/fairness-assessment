@@ -131,19 +131,22 @@ infrastructure:
       schema:
       - IRI: http://schemas.opengis.net/iso/19139/20060504
         name: ISO 19139
-        provenance fields included: NULL
-      - IRI:
+        provenance fields included: 
+        - text only
+      - IRI: NULL
         name: ISO 19115
-        provenance fields included: NULL
-      - IRI: 
+        provenance fields included: 
+        - text only
+      - IRI: NULL
         name: INSPIRE EF
         provenance fields included: NULL
-      - IRI:
+      - IRI: NULL
         name: EML 2.0
         provenance fields included: NULL        
-      - IRI:
+      - IRI: http://schemas.opengis.net/sensorML/
         name: SensorML
-        provenance fields included: NULL
+        provenance fields included: 
+        - text only
       categories defined in registries: partially
       PIDs included: partially
       primary storage format: DEIMS-SDR
