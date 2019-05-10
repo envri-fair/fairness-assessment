@@ -7,7 +7,7 @@ survey:
 infrastructure:
   acronym: Euro-Argo
   name: 1.3 Euro-Argo ERIC
-  recognized authority IRI: www.euro-argo.eu
+  recognized authority IRI: http://www.euro-argo.eu
   data management plans:
     specific DMP tools used: none
     data publishing steps applied: 
