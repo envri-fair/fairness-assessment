@@ -3,6 +3,7 @@ infrastructure acronym:
     eLTER
     EMSO
     EPOS
+    Euro-Argo
 
 repository kind:
     metadata repository
@@ -24,6 +25,7 @@ repository kind:
     D-SPace
     Fedora
     CDI system
+    NetCDF file
 
 1.8 metadata repository type:
     central
@@ -34,11 +36,13 @@ repository kind:
     DMP template
     quality management framework
     data policy document
+    DMPonline
 
 
 1.41 data publishing steps:
     QA QC manually
     QA QC automatically
+    QA QC
 
 
 1.9 identifier kind:
@@ -73,6 +77,8 @@ repository kind:
     CoreTrustSeal
     GoFAIR Implementation Network
     Data Seal of Approval
+    IODE certified
+    RDA Trustworthy Data Repository
 
 
 1.14 published repository policy:
@@ -83,6 +89,7 @@ repository kind:
     PID creation
     data access
     terms of use
+    data security
 
 1.15 repository registry:
     re3data
@@ -90,8 +97,9 @@ repository kind:
     DataCite
     EMODNet
     data.gov.ie
+    GEO
     
-1.16 persistency-policy:
+1.16 persistency-guaranty:
     10 years
     20 years
     50 years
@@ -99,7 +107,9 @@ repository kind:
 1.33 authentication method:
     Shibboleth paried with eduGain
     OAuth
+    OAuth paired with eduGain
     Marine-ID
+    none-open
 
 1.36 access technology:
     local LDAP
@@ -110,9 +120,11 @@ repository kind:
     APIviaBasicHTTP
     CAS
     OAUTH2
+    HTTP GET
     
 1.37 authorisation technique: 
     OAUTH
+    CPAuth
 
 1.37 authorisation needed for:
     access content
@@ -121,6 +133,7 @@ repository kind:
     query data
     download data
     advanced editing
+    access controlled services
     
 1.38 access license:
     CC-BY-NC4.0
@@ -164,9 +177,11 @@ repository kind:
     WAV
     JSON
     MSEED
+    raster data
 
 1.19 metadata types in data headers:
     parameters measured
+    units
     date 
     time
     depth
@@ -175,6 +190,7 @@ repository kind:
     NetCDF Oceansites Profile metadata
     NetCDF EGO format metadata
     standard NetCDF CF headers
+    NetCDF ACDD metadata
 
 1.22 metadata schema name:
     ISO 19115
@@ -185,9 +201,13 @@ repository kind:
     SensorML
     ISO TC2011
     NetCDF
+    INSPIRE
+    GeoDCAT
 
 1.24 provenance fields:
     text only
+    PROV-O
+    simplified PROV-O
     
 1.26 primary metadata storage format:
     DEIMS-SDR
@@ -197,6 +217,7 @@ repository kind:
     XML
     database
     OWL
+    NetCDF CF Argo
 
 1.27 metadata export format:
     HTML
@@ -205,6 +226,10 @@ repository kind:
     JSON
     JSON-LD
     OWL
+    NetCDF
+    CSV
+    Turtle
+    txt    
 
 1.28 metadata exchange/harvesting method:
     CSW
@@ -215,15 +240,21 @@ repository kind:
     LDP
     FDP
     RESTful_API
+    OpneDAP
+    SPARQL endpoint
     
-1.30 exernal search engine type:
+1.30 external search engine type:
     GEOPortal
     CSW endpoint
+    OAI-PMH
+    OpenDAP
+    SPARQL endpoint
 
 1.48 vocabulary type:
     codelist
     thesaurus
     ontology
+    vocabulary
 
 1.48 vocabulary topic:
     general
@@ -239,16 +270,23 @@ repository kind:
 1.42 processing steps:
     QA QC
     ODV aggregation
+    checksum 
+    Handle PID suffix
 
 1.43 workflow frameworks type:
-   
+    data processing steps recorded
+    custom workflows
 
-1.44 data processing tool type:
- 
+1.44 distributed workflow tool type:
+    community standardised scripts 
 
 1.45 analysis services:
     DIVA
-
+    SPARK
+    Cassandra
+    Elasticsearch
+    Pangeo
+    Jupiter Notebooks
 
 1.46 data products:
     salinity
@@ -258,6 +296,9 @@ repository kind:
     deposition
     interpolations
     climatologies
+    near real time observational data
+    final QC observational data
+    elaborated products
 
 1.50 data findability gap:
     PIDs
@@ -271,8 +312,11 @@ repository kind:
 1.52 data interoperability gap:
     format checking
     data quality control
+    harmonising vocabularies
+    harmonising data models
 
 1.53 data re-usability gap:
     provenance information
     quality description
     usage license 
+    harmonising vocabularies

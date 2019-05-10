@@ -38,7 +38,7 @@ infrastructure:
       protocol royalty free: bool
       own user database maintained: yes
       ORCID used in AAI: no
-      major access technology supported: local_LDAP 
+      major access technology supported: local LDAP 
       authorisation technique: NULL 
       authorisation needed for: 
       - upload data 
@@ -48,7 +48,7 @@ infrastructure:
       data license IRI:
       metadata openly available: yes
     data:
-    - type name: structured_data
+    - type name: structured
       preferred formats: 
         - format name: CSV
           metadata types in data headers: none
@@ -94,10 +94,10 @@ infrastructure:
     identifier: 
       IRI: NULL
       persistency-policy document IRI: NULL
-      kind: local_ID
-      system: local_system
+      kind: local ID
+      system: local system
       assigned: automatically
-      provider: local_service
+      provider: local service
       includes-attributes: yes
     certification method: NULL
     policy: NULL
@@ -131,19 +131,22 @@ infrastructure:
       schema:
       - IRI: http://schemas.opengis.net/iso/19139/20060504
         name: ISO 19139
-        provenance fields included: NULL
-      - IRI:
+        provenance fields included: 
+        - text only
+      - IRI: NULL
         name: ISO 19115
-        provenance fields included: NULL
-      - IRI: 
+        provenance fields included: 
+        - text only
+      - IRI: NULL
         name: INSPIRE EF
         provenance fields included: NULL
-      - IRI:
+      - IRI: NULL
         name: EML 2.0
         provenance fields included: NULL        
-      - IRI:
+      - IRI: http://schemas.opengis.net/sensorML/
         name: SensorML
-        provenance fields included: NULL
+        provenance fields included: 
+        - text only
       categories defined in registries: partially
       PIDs included: partially
       primary storage format: DEIMS-SDR
@@ -155,7 +158,7 @@ infrastructure:
       - OAI PMH
       - OGC CSW
       local search engine URL: https://deims.org/ 
-      external search engine type supported: CSW_endpoint
+      external search engine type supported: CSW endpoint
       access policy statements included: yes
       machine actionable: yes
     vocabularies: 
