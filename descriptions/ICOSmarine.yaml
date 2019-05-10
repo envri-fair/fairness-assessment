@@ -21,7 +21,7 @@ infrastructure:
     software: NULL
     identifier:
       IRI: https://handle.net
-      persistency-policy document IRI: NULL
+      persistency-policy document IRI: VOID
       kind: PID
       system: Handle
       assigned: automatically
@@ -33,7 +33,7 @@ infrastructure:
     persistency-guaranty: 20 years
     access mechanisms: 
       authentication method: OAuth paired with eduGain
-      access protocol URL: http://vocab.nerc.ac.uk/collection/L07/current/
+      access protocol URL: https://doi.org/10.17487%2FRFC2616
       protocol open: yes
       protocol royalty free: yes
       own user database maintained: yes
