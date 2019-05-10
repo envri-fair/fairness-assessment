@@ -3,9 +3,19 @@ li: http://www.w3.org/1999/02/22-rdf-syntax-ns#li
 ResearchInfrastructure: http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure
 Repository: http://envri.eu/ns/Repository
 data_repository: http://envri.eu/ns/DataRepository
+date: http://envri.eu/ns/Date
+units: http://envri.eu/ns/Units
+access data: http://envri.eu/ns/AccessData
+time series: http://envri.eu/ns/TimeSeries
+spatial: http://envri.eu/ns/Spatial
+raster data: http://envri.eu/ns/RasterData
+NetCDF Oceansites Profile metadata: http://envri.eu/ns/NetCdfOceansitesProfileMetadata
+NetCDF EGO format metadata: http://envri.eu/ns/NetCdfEgoFormatMetadata
+standard NetCDF CF headers: http://envri.eu.ns/StandardNetCdfCFHeaders
 CC-BY4.0: http://envri.eu/ns/CC-BY4.0
 NetCDF file: http://envri.eu/ns/NetcdfFile
 Euro-Argo: http://envri.eu/ns/EuroArgo
+DMPonline: http://envri.eu/ns/DMPonline
 NetCDF ACDD metadata: http://envri.eu/ns/NetcdfAcddMetadata
 GEO: http://envri.eu/ns/Geo
 IODE certified: http://envri.eu/ns/IodeCertified
@@ -148,9 +158,30 @@ ISO_19115: http://envri.eu/ns/ISO_19115
 ISO 19115: http://envri.eu/ns/ISO_19115
 ISO19139: http://envri.eu/ns/ISO_19139
 ISO TC211: http://envri.eu/ns/ISO_TC211
+INSPIRE: http://envri.eu/ns/INSPIRE
 INSPIRE_EF: http://envri.eu/ns/INSPIRE_EF
 INSPIRE EF: http://envri.eu/ns/INSPIRE_EF
 INSPIRE: http://envri.eu/ns/INSPIRE
+Turtle: http://envri.eu/ns/Turtle
+txt: http://envri.eu/ns/Txt
+OAuth paired with eduGain: http://envri.eu/ns/OAuthPairedEduGain
+HTTP GET: http://envri.eu/ns/HTTPGET
+CPAuth: http://envri.eu/ns/CPAuth
+access controlled services: http://envi.eu/ns/AccessControlledServices
+SPARQL endpoint: http://envri.eu/ns/SPARQLEndpoint
+Handle PID suffix: http://envri.eu/ns/HandlePIDSuffix
+checksum: http://envri.eu/ns/Checksum
+custom workflows: http://envri.eu/ns/CustomWorkflows
+community standardised scripts: http://envri.eu/ns/CommunityStandardisedScripts
+Jupiter Notebooks: http://envri.eu/ns/JupiterNotebooks
+near real time observational data: http://envri.eu/ns/NearRealTimeObservationalData
+final QC observational data: http://envri.eu/ns/FinalQCObservationalData
+elaborated products: http://envri.eu/ns/ElaboratedProducts
+harmonisind data models: http://envri.eu/ns/HarmonisingDataModels
+GeoDCAT: http://envri.eu/ns/GeoDCAT
+PROV-O: http://envri.eu/ns/ProvO
+simplified PROV-O: http://envri.eu/ns/SimplifiedProvO
+vocabulary: http://envri.eu/ns/Vocabulary
 EML2.0: http://envri.eu/ns/EML2.0
 EML 2.0: http://envri.eu/ns/EML2.0
 SensorML: http://envri.eu/ns/SensorML
@@ -232,3 +263,8 @@ data licenses in use: http://envri.eu/ns/dataLicensesInUse
 CC-BY-NC4.0: http://envri.eu/ns/CC-BY-NC4.0
 central: http://envri.eu/ns/CentralDataRepository
 relational database: http://envri.eu/ns/RelationalDatabase
+OWL: http://envri.eu/ns/Owl
+JSON: http://envri.eu/ns/Json
+general: http://envri.eu/ns/General
+ontology: http://envri.eu/ns/Ontology
+harmonising data models: http://envri.eu/ns/HarmonisingDataModels
