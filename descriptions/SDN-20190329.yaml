@@ -186,7 +186,7 @@ infrastructure:
     metadata: 
       schema:
       - IRI: http://schemas.opengis.net/iso/19139/20060504
-        name:  ISO19139
+        name: ISO 19139
         registries used: NULL
         provenance fields included: NULL
       - IRI: http://schemas.seadatanet.org/Standards-Software/Metadata-formats/SDN2_CDI_ISO19139_10.0.1.sch
