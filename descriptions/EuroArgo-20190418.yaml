@@ -7,28 +7,30 @@ survey:
 infrastructure:
   acronym: Euro-Argo
   name: 1.3 Euro-Argo ERIC
-  recognized authority IRI: http://www.euro-argo.eu
+  recognized authority URL: http://www.euro-argo.eu
   data management plans:
     specific DMP tools used: none
     data publishing steps applied: 
-    - QA QC manually
+    - manual QA QC
   repositories: 
-  - IRI: http://doi.org/10.17882/42182
+  - URL: http://doi.org/10.17882/42182
     name: Euro-Argo Data
     kind: data repository
     data repository type: central
     metadata repository type: central
     software: NetCDF file
     identifier: 
-      IRI: http://doi.org/10.17882/42182
-      persistency-policy document IRI: https://doi.org/10.13155/44515
-      kind: DOI
-      system: SEANOE
-      assigned: automatically
-      provider: SEANOE
-      includes-attributes: yes 
-    certification method: Data Seal of Approval
-    policy: data access
+      - IRI: http://doi.org/10.17882/42182
+        persistency-policy document IRI: https://doi.org/10.13155/44515
+        kind: DOI
+        system: SEANOE
+        assigned: automatically
+        provider: SEANOE
+        includes-attributes: yes 
+    certification methods:
+    - Data Seal of Approval
+    policies: 
+    - data access
     registry: GEO
     persistency-guaranty: NULL
     access mechanisms: 
@@ -57,7 +59,7 @@ infrastructure:
       search engine URL: http://www.argodatamgt.org/Access-to-data/Argo-data-selection
     metadata: 
       schema: 
-      - IRI: http://dx.doi.org/10.13155/29825 
+      - URL: http://dx.doi.org/10.13155/29825 
         name: Argo user manual
         provenance fields included: 
         - text only
@@ -119,6 +121,7 @@ infrastructure:
         - harmonising vocabularies
     test fairness:
       URL/IRI of dataset: http://doi.org/10.17882/42182 
+      IRI of metadata: https://doi.org/10.17882/42182
       URL of discovery portal: http://www.argodatamgt.org/Access-to-data/Argo-data-selection
       IRI of machine readable metadata of dataset: https://doi.org/10.17882/42182 
       URL to linkset describing resource: none

@@ -40,8 +40,8 @@ repository kind:
 
 
 1.41 data publishing steps:
-    QA QC manually
-    QA QC automatically
+    manual QA QC
+    automatic QA QC
     QA QC
 
 

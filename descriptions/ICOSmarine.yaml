@@ -7,28 +7,29 @@ survey:
 infrastructure:   
   acronym: ICOS 
   name: Integrated Carbon Observation System 
-  recognized authority IRI: http://www.icos-cp.eu
+  recognized authority URL: http://www.icos-cp.eu
   data management plans:
     specific DMP tools used: DMPonline
     data publishing steps applied: 
     - QA QC
   repositories: 
-  - IRI: https://data.icos-cp.eu/portal
+  - URL: https://data.icos-cp.eu/portal
     name: Carbon Portal
     kind: metadata data repository
     data repository type: central
     metadata repository type: central
     software: NULL
     identifier:
-      IRI: https://handle.net
-      persistency-policy document IRI: VOID
-      kind: PID
-      system: Handle
-      assigned: automatically
-      provider: Handle
-      includes-attributes: none
-    certification method: none
-    policy: data security
+      - IRI: https://handle.net
+        persistency-policy document IRI: VOID
+        kind: PID
+        system: Handle
+        assigned: automatically
+        provider: Handle
+        includes-attributes: none
+    certification methods: none
+    policies: 
+    - data security
     registry: re3data
     persistency-guaranty: 20 years
     access mechanisms: 
@@ -71,11 +72,11 @@ infrastructure:
       search engine URL:  https://data.icos-cp.eu/portal            
     metadata: 
       schema:
-      - IRI: NULL
+      - URL: NULL
         name: ISO 19115
         provenance fields included: 
         - text only
-      - IRI: https://semiceu.github.io/GeoDCAT-AP/releases/1.0.1/geodcat-ap_1.0.1.pdf
+      - URL: https://semiceu.github.io/GeoDCAT-AP/releases/1.0.1/geodcat-ap_1.0.1.pdf
         name: GeoDCAT
         provenance fields included: 
         - simplified PROV-O       
@@ -145,6 +146,7 @@ infrastructure:
         - provenance information
     test fairness:
       URL/IRI of dataset: https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0
+      IRI of metadata: https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0
       URL of discovery portal: https://data.icos-cp.eu/portal
       IRI of machine readable metadata of dataset:  https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0
       URL to linkset describing resource: https://meta.icos-cp.eu/objects/-ffoiHjX5NDN0Vq_fKuVmas0

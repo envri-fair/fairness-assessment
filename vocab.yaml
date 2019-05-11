@@ -234,6 +234,8 @@ deposition: http://envri.eu/ns/Deposition
 mesoclimate: http://envri.eu/ns/Mesoclimate
 ODV aggregation: http://envri.eu/ns/ODVAggregation
 QA QC: http://envri.eu/ns/QA_QC
+manual QA QC: http://envri.eu/ns/ManualQA_QC
+automatic QA QC: http://envri.eu/ny/AutomaticQA_QC
 DIVA: http://envri.eu/ns/DIVA
 interpolations: http://envri.eu/ns/Interpolations
 uptake in central resources: http://envri.eu/ns/UptakeInCentralResources
