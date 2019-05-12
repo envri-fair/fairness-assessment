@@ -22,13 +22,13 @@ infrastructure:
     metadata repository type: relational database
     software: MS SQL
     identifier: 
-      - IRI: NULL
-        persistency-policy document IRI: VOID
-        kind: MDA ID
-        system: UUID
-        assigned: automatically
-        provider: local service
-        includes-attributes: none
+    - IRI: NULL
+      persistency-policy document IRI: VOID
+      kind: MDA ID
+      system: UUID
+      assigned: automatically
+      provider: local service
+      includes-attributes: none
     certification methods: 
     - CoreTrustSeal
     - IODE certified
@@ -105,12 +105,12 @@ infrastructure:
       access policy statements included: yes
       machine actionable: yes
     vocabularies: 
-      - URL: http://www.marinespecies.org/
+      - IRI: http://www.marinespecies.org/
         type: taxonomy
         topic: domain specific
         name: WoRMS
         specification language URL: NULL   
-      - URL: http://www.marineregions.org/
+      - IRI: http://www.marineregions.org/
         type: gazetteer
         topic: domain specific
         name: Marine Regions
@@ -130,10 +130,12 @@ infrastructure:
         gaps: none
       data interoperability: 
         data interoperable: partially
-        gaps: format checking
+        gaps: 
+        - format checking
       data re-usability: 
         data reusable: partially
-        gaps: metadata checking
+        gaps: 
+        - metadata checking
     test fairness:
       URL/IRI of dataset: http://www.eurobis.org/imis?module=dataset&dasid=5514
       IRI of metadata: http://www.eurobis.org/imis?module=dataset&dasid=5514&show=eml 
@@ -151,13 +153,13 @@ infrastructure:
     metadata repository type: relational database
     software: MS SQL
     identifier: 
-      - IRI: NULL
-        persistency-policy document IRI: VOID
-        kind: LSID
-        system: LSR URN
-        assigned: automatically
-        provider: local service
-        includes-attributes: NULL
+    - IRI: NULL
+      persistency-policy document IRI: VOID
+      kind: LSID
+      system: LSR URN
+      assigned: automatically
+      provider: local service
+      includes-attributes: NULL
     certification methods: 
     - CoreTrustSeal
     - IODE certified
@@ -222,7 +224,7 @@ infrastructure:
       access policy statements included: yes
       machine actionable: yes
     vocabularies: 
-      - URL: http://www.marinespecies.org/
+      - IRI: http://www.marinespecies.org/
         type: taxonomy
         topic: domain specific
         name: WORMS
@@ -267,28 +269,29 @@ infrastructure:
     metadata repository type: relational database
     software: MS SQL
     identifier: 
-      - IRI: NULL
-        persistency-policy document IRI: VOID
-        kind: IMIS ID
-        system: NULL
-        assigned: automatically
-        provider: local service
-        includes-attributes: none
-      - IRI: NULL
-        persistency-policy document IRI: DOI
-        kind: DOI
-        system: DataCite
-        assigned: manually
-        provider: DataCite
-        includes-attributes:
-        - relevant metadata
+    - IRI: NULL
+      persistency-policy document IRI: VOID
+      kind: IMIS ID
+      system: NULL
+      assigned: automatically
+      provider: local service
+      includes-attributes: none
+    - IRI: NULL
+      persistency-policy document IRI: DOI
+      kind: DOI
+      system: DataCite
+      assigned: manually
+      provider: DataCite
+      includes-attributes:
+      - relevant metadata
     certification methods: 
     - CoreTrustSeal
     - IODE certified
     policies: 
     - Terms of Use
     - FAQ
-    registries: fairsharing.org
+    registries: 
+    - fairsharing.org
     persistency-guaranty: NULL
     access mechanisms: 
       authentication method: NULL 
@@ -350,21 +353,21 @@ infrastructure:
       access policy statements included: yes
       machine actionable: yes
     vocabularies: 
-      - URL: http://www.marinespecies.org/
+      - IRI: http://www.marinespecies.org/
         type: taxonomy
         topic: domain specific
         name: WoRMS
         specification language URL: NULL   
-      - URL: http://www.marineregions.org/
+      - IRI: http://www.marineregions.org/
         type: gazetteer
         topic: domain specific
         name: Marine Regions
         specification language URL: NULL
-      - URL: https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/
+      - IRI: https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/
         type: codelist
         topic: domain specific
         name: NERC vocabulary service
-        specification language URL: URL: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml              
+        specification language URL: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml              
     data processing:
       special data processing steps applied: VOID 
       workflow frameworks applied: 
