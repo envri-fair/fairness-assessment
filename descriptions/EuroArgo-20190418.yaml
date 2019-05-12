@@ -20,13 +20,13 @@ infrastructure:
     metadata repository type: central
     software: NetCDF file
     identifier: 
-      - IRI: http://doi.org/10.17882/42182
-        persistency-policy document IRI: https://doi.org/10.13155/44515
-        kind: DOI
-        system: SEANOE
-        assigned: automatically
-        provider: SEANOE
-        includes-attributes: yes 
+    - IRI: http://doi.org/10.17882/42182
+      persistency-policy document IRI: https://doi.org/10.13155/44515
+      kind: DOI
+      system: SEANOE
+      assigned: automatically
+      provider: SEANOE
+      includes-attributes: yes 
     certification methods:
     - Data Seal of Approval
     - IODE certified

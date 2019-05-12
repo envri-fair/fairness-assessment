@@ -20,13 +20,13 @@ infrastructure:
     metadata repository type: relational database
     software: Sextant
     identifier:
-      - IRI: https://www.w3.org/wiki/UriSchemes/http
-        persistency-policy document IRI: https://www.seadatanet.org/content/download/1695/10119/file/SeaDataNet+Data+Policy.pdf?version=1
-        kind: DOI
-        system: SEANOE
-        assigned: manually
-        provider: SEANOE
-        includes-attributes: yes
+    - IRI: https://www.w3.org/wiki/UriSchemes/http
+      persistency-policy document IRI: https://www.seadatanet.org/content/download/1695/10119/file/SeaDataNet+Data+Policy.pdf?version=1
+      kind: DOI
+      system: SEANOE
+      assigned: manually
+      provider: SEANOE
+      includes-attributes: yes
     certification methods: none
     policies: none
     registries: none
@@ -147,13 +147,13 @@ infrastructure:
     metadata repository type: relational database
     software: CDI system
     identifier: 
-      - IRI: https://sextant.ifremer.fr/record/90ae7a06-8b08-4afe-83dd-ca92bc99f5c0/
-        persistency-policy document IRI: https://www.seanoe.org/html/about.htm
-        kind: PID
-        system: planned
-        assigned: automatically
-        provider: planned
-        includes-attributes: planned
+    - IRI: https://sextant.ifremer.fr/record/90ae7a06-8b08-4afe-83dd-ca92bc99f5c0/
+      persistency-policy document IRI: https://www.seanoe.org/html/about.htm
+      kind: PID
+      system: planned
+      assigned: automatically
+      provider: planned
+      includes-attributes: planned
     certification methods: none
     policies: none
     registries: none

@@ -20,25 +20,26 @@ infrastructure:
     metadata repository type: central
     software: NULL
     identifier:
-      - IRI: https://handle.net
-        persistency-policy document IRI: VOID
-        kind: PID
-        system: Handle
-        assigned: automatically
-        provider: PDC
-        includes-attributes: none
-      - IRI: 
-        persistency-policy document IRI: VOID
-        kind: DOI
-        system: DataCite
-        assigned: manually
-        provider: DataCite
-        includes-attributes: 
-        - relevant metadata
+    - IRI: https://handle.net
+      persistency-policy document IRI: VOID
+      kind: PID
+      system: Handle
+      assigned: automatically
+      provider: PDC
+      includes-attributes: none
+    - IRI: 
+      persistency-policy document IRI: VOID
+      kind: DOI
+      system: DataCite
+      assigned: manually
+      provider: DataCite
+      includes-attributes: 
+      - relevant metadata
     certification methods: none
     policies: 
     - data security
-    registries: re3data
+    registries: 
+    - re3data
     persistency-guaranty: 20 years
     access mechanisms: 
       authentication method: OAuth paired with eduGain

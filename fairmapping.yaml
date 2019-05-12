@@ -36,7 +36,7 @@ persistentIdentifiersAreIncluded: https://w3id.org/fair/principles/terms/F3
 hasPrimaryStorageFormat: https://w3id.org/fair/principles/terms/I1
 hasMetadataFormatIri: https://w3id.org/fair/principles/terms/F2
 supportedExportFormats: https://w3id.org/fair/principles/terms/I1
-hasHarvestingMethod: https://w3id.org/fair/principles/terms/I1
+hasHarvestingMethods: https://w3id.org/fair/principles/terms/I1
 hasLocalSearchEngine: https://w3id.org/fair/principles/terms/F4
 supportsExternalSearchEngineTypes: https://w3id.org/fair/principles/terms/F4
 includesAccessPolicyStatements: https://w3id.org/fair/principles/terms/R1.1
@@ -46,6 +46,7 @@ hasTopic: https://w3id.org/fair/principles/terms/I1
 hasSpecificationLanguage: https://w3id.org/fair/principles/terms/I1
 otherAnalysisServicesOffered: https://w3id.org/fair/principles/terms/A1
 hasMetadata: https://w3id.org/fair/principles/terms/F3
+hasMetadataIri: https://w3id.org/fair/principles/terms/F3
 hasMachineReadableDatasetMetadata: https://w3id.org/fair/principles/terms/F2
 hasLinksetDescribingResource: https://w3id.org/fair/principles/terms/I3
 hasSearchQuery: https://w3id.org/fair/principles/terms/F4

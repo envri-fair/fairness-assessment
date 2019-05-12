@@ -39,6 +39,7 @@ metadata repository: http://envri.eu/ns/MetadataRepository
 metadata data repository: http://envri.eu/ns/MetadataRepository
 Data: http://envri.eu/ns/Data
 images: http://envri.eu/ns/Images
+image: http://envri.eu/ns/Image
 binary: http://envri.eu/ns/BinaryData
 PreferredFormat: http://envri.eu/ns/PreferredFormat
 Metadata: http://envri.eu/ns/Metadata
@@ -76,7 +77,7 @@ includesAttributes: http://envri.eu/ns/includesAttributes
 isAssigned: http://envri.eu/ns/isAssigned
 hasCertificationMethods: http://envri.eu/ns/hasCertificationMethods
 hasPolicies: http://envri.eu/ns/hasPolicies
-inRegistry: http://envri.eu/ns/inRegistry
+inRegistries: http://envri.eu/ns/inRegistries
 hasPersistentPolicy: http://envri.eu/ns/hasPersistentPolicy
 hasPersistencyPolicyDocumentIri: http://envri.eu/ns/hasPersistencyPolicyDocumentIri
 hasPersistencyGuaranty: http://envri.eu/ns/hasPersistencyGuaranty
@@ -124,13 +125,14 @@ hasMetadataLongevityPlan: http://envri.eu/ns/hasMetadataLongevityPlan
 hasFormat: http://envri.eu/ns/hasFormat
 hasMetadataFormatIri: http://envri.eu/ns/hasMetadataFormatIri
 supportedExportFormats: http://envri.eu/ns/supportedExportFormats
-hasHarvestingMethod: http://envri.eu/ns/hasHarvestingMethod
+hasHarvestingMethods: http://envri.eu/ns/hasHarvestingMethods
 hasLocalSearchEngine: http://envri.eu/ns/hasLocalSearchEngine
-supportsExternalSearchEngineType: http://envri.eu/ns/supportsExternalSearchEngineType
+supportsExternalSearchEngineTypes: http://envri.eu/ns/supportsExternalSearchEngineTypes
 includesAccessPolicyStatements: http://envri.eu/ns/includesAccessPolicyStatements
 isMachineActionable: http://envri.eu/ns/isMachineActionable
 hasVocabularies: http://envri.eu/ns/hasVocabularies
 hasTopic: http://envri.eu/ns/hasTopic
+hasMetadataIri: http://envri.eu/ns/hasMetadataIri
 hasSpecificationLanguage: http://envri.eu/ns/hasSpecificationLanguage
 hasDataProcessing: http://envri.eu/ns/hasDataProcessing
 specialDataProcessingStepsApplied: http://envri.eu/ns/specialDataProcessingStepsApplied
@@ -208,10 +210,12 @@ DataCite: http://envri.eu/ns/DataCite
 re3data: http://envri.eu/ns/re3data
 ASCII: http://envri.eu/ns/ASCII
 xls: http://envri.eu/ns/xls
+PDC: http://envri.eu/ns/PDC
 NetCDF: http://envri.eu/ns/NetCDF
 ODV: http://envri.eu/ns/OceanDataView
 CSV: http://envri.eu/ns/CommaSeparatedValues
 XML: http://envri.eu/ns/ExtensibleMarkupLanguage
+XLS: http://envri.eu/ns/MicrosoftExcel
 HTML: http://envri.eu/ns/HyperTextMarkupLanguage
 local ID: http://envri.eu/ns/LocalID
 PDF: http://envri.eu/ns/PortableDocumentFormat
@@ -226,6 +230,7 @@ OGC CSW: http://envri.eu/ns/OGC_CSW
 CSW: http://envri.eu/ns/OGC_CSW
 GEOPortal: http://envri.eu/ns/GEOPortal
 CDI system: http://envri.eu/ns/CDISystem
+OBIS event scheme: http://envri.eu/ns/OBISEventScheme
 parameters measured: http://envri.eu/ns/ParametersMeasured
 access content: http://envri.eu/ns/AccessContent
 data centre: http://envri.eu/ns/DataCentre
@@ -265,6 +270,10 @@ EDMED: http://envri.eu/ns/EDMED
 taxonomy: http://envri.eu/ns/taxonomy
 JSON: http://envri.eu/ns/Json
 general: http://envri.eu/ns/General
+data security: http://envri.eu/ns/DataSecurity
+data access: http://envri.eu/ns/DataAccess
+CoreTrustSeal: http://envri.eu/ns/CoreTrustSeal
+Data Seal of Approval: http://envri.eu/ns/DataSealofApproval
 ontology: http://envri.eu/ns/Ontology
 harmonising data models: http://envri.eu/ns/HarmonisingDataModels
 relevant metadata: http://envri.eu/ns/RelevantMetadata
@@ -275,6 +284,7 @@ FAQ: http://envri.eu/ns/FAQ
 MS SQL: http://envri.eu/ns/MS_SQL
 MDA ID: http://envri.eu/ns/MDA_ID
 relational database: http://envri.eu/ns/RelationalDatabase
+taxonmic register: http://envri.eu/ns/TaxonomicRegister
 WoRMS taxon matching: http://envri.eu/ns/WoRMSTaxonMatching
 DwC formatting: http://envri.eu/ns/DwCFormatting
 RSS: http://envri.eu/ns/RSS
@@ -297,3 +307,4 @@ observations: http://envri.eu/ns/Observations
 NERC vocabulary service: http://envri.eu/ns/NERCVocabularyService
 NVS P01: http://envri.eu/ns/NVSP01
 NVS P06: http://envri.eu/ns/NVSP06
+advanced editing: http://envri.eu/ns/AdvancedEditing
