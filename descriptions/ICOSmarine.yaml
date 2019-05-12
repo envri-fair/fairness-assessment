@@ -32,7 +32,7 @@ infrastructure:
         kind: DOI
         system: DataCite
         assigned: manually
-        provider: Handle
+        provider: DataCite
         includes-attributes: 
         - relevant metadata
     certification methods: none

@@ -291,4 +291,9 @@ LifeWatch virtual lab: http://envri.eu/ns/LifeWatchVirtualLab
 data explorer: http://envri.eu/ns/DataExplorer
 map viewer: http://envri.eu/ns/MapViewer
 R packages: http://envri.eu/ns/RPackages
-IMIS ID: http.//envri.eu/ns/IMIS_ID
+IMIS ID: http://envri.eu/ns/IMIS_ID
+DwC: http://envri.eu/ns/DwC
+observations: http://envri.eu/ns/Observations
+NERC vocabulary service: http://envri.eu/ns/NERCVocabularyService
+NVS P01: http://envri.eu/ns/NVSP01
+NVS P06: http://envri.eu/ns/NVSP06

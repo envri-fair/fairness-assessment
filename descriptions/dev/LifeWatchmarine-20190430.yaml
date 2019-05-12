@@ -270,17 +270,25 @@ infrastructure:
       - IRI: NULL
         persistency-policy document IRI: VOID
         kind: IMIS ID
-        system: UUID
+        system: NULL
         assigned: automatically
         provider: local service
         includes-attributes: none
+      - IRI: NULL
+        persistency-policy document IRI: DOI
+        kind: DOI
+        system: DataCite
+        assigned: manually
+        provider: DataCite
+        includes-attributes:
+        - relevant metadata
     certification methods: 
     - CoreTrustSeal
     - IODE certified
     policies: 
     - Terms of Use
     - FAQ
-    registries: none
+    registries: fairsharing.org
     persistency-guaranty: NULL
     access mechanisms: 
       authentication method: NULL 
@@ -300,27 +308,14 @@ infrastructure:
       data license IRI: http://www.eurobis.org/citation
       metadata openly available: yes
     data:
-    - type name: text
+    - type name: observations
       preferred formats: 
-        - format name: ASCII
-          metadata types in data headers: none
-      registered data schema: no
+        - format name: OBIS event scheme
+          metadata types in data headers: 
+          - DwC
+      registered data schema: yes
       search on data: yes
-      search engine URL: NULL
-    - type name: image
-      preferred formats: 
-        - format name: NULL
-          metadata types in data headers: none
-      registered data schema: no
-      search on data: yes
-      search engine URL: NULL
-    - type name: structured
-      preferred formats: 
-        - format name: NULL
-          metadata types in data headers: none
-      registered data schema: VOID
-      search on data: yes
-      search engine URL: NULL      
+      search engine URL: http://www.emodnet-biology.eu/portal/index.php    
     metadata: 
       schema: 
         - URL: NULL 
@@ -330,7 +325,11 @@ infrastructure:
         - URL: https://github.com/NCEAS/eml 
           name: EML 2.0
           provenance fields included: 
-          - text only              
+          - text only   
+        - URL: https://github.com/NCEAS/eml 
+          name: DwC
+          provenance fields included: 
+          - text only   
       categories defined in registries: yes
       PIDs included: yes
       primary storage format: relational database
@@ -341,8 +340,9 @@ infrastructure:
       - HTML
       - JSON
       - RSS
-      exchange/harvesting methods: planned
-      local search engine URL: http://www.marinedataarchive.org/datasets/imis?module:dataset
+      exchange/harvesting methods: 
+      - OAI-PMH
+      local search engine URL: http://www.eurobis.org/imis?module=dataset&extfrm=1
       external search engine types supported: 
       - GBIF
       - EDMED
@@ -359,12 +359,21 @@ infrastructure:
         type: gazetteer
         topic: domain specific
         name: Marine Regions
-        specification language URL: NULL          
+        specification language URL: NULL
+      - URL: https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/
+        type: codelist
+        topic: domain specific
+        name: NERC vocabulary service
+        specification language URL: URL: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml              
     data processing:
       special data processing steps applied: VOID 
-      workflow frameworks applied: VOID
-      distributed workflows tools used: VOID
-      other analysis services offered: VOID
+      workflow frameworks applied: 
+      - LifeWatch virtual lab
+      distributed workflows tools used: 
+      - data explorer
+      - map viewer
+      other analysis services offered: 
+      - R packages
       data products offered: VOID
     fairness: 
       data findability:  
@@ -374,11 +383,11 @@ infrastructure:
         data accessible: yes
         gaps: none
       data interoperability: 
-        data interoperable: partially
-        gaps: format checking
+        data interoperable: yes
+        gaps: none
       data re-usability: 
-        data reusable: partially
-        gaps: metadata checking
+        data reusable: yes
+        gaps: none
     test fairness:
       URL/IRI of dataset: http://www.eurobis.org/imis?module=dataset&dasid=5514
       IRI of metadata: http://www.eurobis.org/imis?module=dataset&dasid=5514&show=eml 
