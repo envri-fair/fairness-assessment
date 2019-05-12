@@ -29,7 +29,7 @@ infrastructure:
         includes-attributes: yes
     certification methods: none
     policies: none
-    registry: none
+    registries: none
     persistency-guaranty: none
     access mechanisms: 
       authentication method: Marine-ID
@@ -44,7 +44,8 @@ infrastructure:
       - download data
       authorization for accessing content needed: yes
       access content process description IRI: http://www.seadatanet.org/urnurl/SDN:L08::RS 
-      data licenses in use: local license
+      data licenses in use: 
+      - local license
       data license IRI: https://www.seadatanet.org/Data-Access/License/1.0 
       metadata openly available: yes
     data:
@@ -81,14 +82,15 @@ infrastructure:
       primary storage format: XML
       metadata longevity plan URL: none
       format IRI:  http://vocab.nerc.ac.uk/collection/L24/current/ODV/ 
-      export format supported: 
+      export formats supported: 
       - XML
       - HTML
       - PDF
-      exchange/harvesting method: 
+      exchange/harvesting methods: 
       - CSW
       local search engine URL: https://www.seadatanet.org/Products#/search?from=1&to=20  
-      external search engine type supported: GEOPortal
+      external search engine types supported: 
+      - GEOPortal
       access policy statements included: yes
       machine actionable: no    
     vocabularies:
@@ -130,7 +132,7 @@ infrastructure:
         - quality description
     test fairness:
       URL/IRI of dataset: http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?n_code=2626292
-      IRI of metadata: http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?n_code=2626292 
+      IRI of metadata: https://www.seadatanet.org/Products#/metadata/90ae7a06-8b08-4afe-83dd-ca92bc99f5c0 
       URL of discovery portal: https://www.seadatanet.org/Products#/search?from=1&to=20
       IRI of machine readable metadata of dataset:  http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?n_code=2626292
       URL to linkset describing resource: planned
@@ -154,7 +156,7 @@ infrastructure:
         includes-attributes: planned
     certification methods: none
     policies: none
-    registry: none
+    registries: none
     persistency-guaranty: none
     access mechanisms: 
       authentication method: Marine.id
@@ -169,7 +171,8 @@ infrastructure:
       - access content
       authorization for accessing content needed: yes
       access content process description IRI: NULL
-      data licenses in use: local
+      data licenses in use: 
+      - local license
       data license IRI: http://vocab.nerc.ac.uk/collection/L08/current/LS/
       metadata openly available: yes
     data: 
@@ -199,13 +202,14 @@ infrastructure:
       primary storage format: XML
       metadata longevity plan URL: none
       format IRI: http://www.isotc211.org/2005/gmx/gmx.xsd
-      export format supported: 
+      export formats supported: 
       - HTML
       - XML
-      exchange/harvesting method: 
+      exchange/harvesting methods: 
       - CSW
       local search engine URL: NULL
-      external search engine type supported: GEOPortal
+      external search engine types supported: 
+      - GEOPortal
       access policy statements included: yes
       machine actionable: partially
     vocabularies: 
@@ -249,7 +253,7 @@ infrastructure:
          - usage license         
     test fairness:
       URL/IRI of dataset: https://www.seadatanet.org/Products#/metadata/90ae7a06-8b08-4afe-83dd-ca92bc99f5c0
-      IRI of metadata: https://www.seadatanet.org/Products#/metadata/90ae7a06-8b08-4afe-83dd-ca92bc99f5c0
+      IRI of metadata: http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?n_code=2626292
       URL of discovery portal: http://seadatanet.maris2.nl/v_cdi_v3/browse_step.asp
       IRI of machine readable metadata of dataset: https://sextant.ifremer.fr/geonetwork/srv/eng/xml.metadata.get?uuid=90ae7a06-8b08-4afe-83dd-ca92bc99f5c0
       URL to linkset describing resource: none

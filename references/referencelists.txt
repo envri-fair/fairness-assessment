@@ -4,13 +4,15 @@ infrastructure acronym:
     EMSO
     EPOS
     Euro-Argo
+    LifeWatch (Marine)
+    ICOS
 
 repository kind:
     metadata repository
     data repository
     metadata data repository
     site repository
-    taxonomic repository
+    taxonomic register
 
 1.6 data repository type:
     local
@@ -20,7 +22,7 @@ repository kind:
 1.7 repository software:
     Zenodo
     52NORTH SOS 
-    Sextant-Si
+    Sextant
     MS SQL
     D-SPace
     Fedora
@@ -43,6 +45,8 @@ repository kind:
     manual QA QC
     automatic QA QC
     QA QC
+    WoRMS taxon matching
+    DwC formatting
 
 
 1.9 identifier kind:
@@ -52,6 +56,8 @@ repository kind:
     UUID
     NetCDF Oceansites ID
     NetCDF EGO ID
+    LSID
+    IMIS ID
 
 
 1.9 identifier system:
@@ -59,7 +65,7 @@ repository kind:
     local system
     SEANOE
     MDA ID
-    URL    
+    LSR URN    
 
 1.10 identifier assigned: 
     automatically
@@ -72,6 +78,9 @@ repository kind:
     ePIC service
     SEANOE
     PANGAEA
+
+1.12 includes attributes:
+    relevant metadata
 
 1.13 certification method: 
     CoreTrustSeal
@@ -88,7 +97,7 @@ repository kind:
     metadata creation
     PID creation
     data access
-    terms of use
+    Terms of Use
     data security
 
 1.15 repository registry:
@@ -98,6 +107,8 @@ repository kind:
     EMODNet
     data.gov.ie
     GEO
+    fairsharing.org
+    Biodiversity Catalogue
     
 1.16 persistency-guaranty:
     10 years
@@ -135,13 +146,14 @@ repository kind:
     advanced editing
     access controlled services
     
-1.38 access license:
+1.38 access licenses:
     CC-BY-NC4.0
     CC-BY4.0
     CC-BY3.0
     Code of Conduct
     local license
     creative commons
+    CC BY.CC 0
 
 1.17 data types:
     binary
@@ -218,6 +230,7 @@ repository kind:
     database
     OWL
     NetCDF CF Argo
+    relational database
 
 1.27 metadata export format:
     HTML
@@ -229,7 +242,8 @@ repository kind:
     NetCDF
     CSV
     Turtle
-    txt    
+    txt 
+    RSS
 
 1.28 metadata exchange/harvesting method:
     CSW
@@ -249,12 +263,17 @@ repository kind:
     OAI-PMH
     OpenDAP
     SPARQL endpoint
+    GBIF
+    GCMD
+    EDMED
 
 1.48 vocabulary type:
     codelist
     thesaurus
     ontology
     vocabulary
+    taxonomy
+    gazetteer
 
 1.48 vocabulary topic:
     general
@@ -265,7 +284,9 @@ repository kind:
 1.49 vocabulary name:
     EnvThes
     NERC vocabulary service
-    ISO19115 10139
+    ISO 19115 10139
+    WoRMS
+    Marine Regions
     
 1.42 processing steps:
     QA QC
@@ -276,9 +297,12 @@ repository kind:
 1.43 workflow frameworks type:
     data processing steps recorded
     custom workflows
+    LifeWatch virtual lab
 
 1.44 distributed workflow tool type:
     community standardised scripts 
+    data explorer
+    map viewer
 
 1.45 analysis services:
     DIVA
@@ -287,6 +311,7 @@ repository kind:
     Elasticsearch
     Pangeo
     Jupiter Notebooks
+    R packages
 
 1.46 data products:
     salinity
@@ -320,3 +345,4 @@ repository kind:
     quality description
     usage license 
     harmonising vocabularies
+    metadata checking
