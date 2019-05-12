@@ -29,9 +29,12 @@ infrastructure:
         includes-attributes: yes 
     certification methods:
     - Data Seal of Approval
+    - IODE certified
+    - RDA Trustworthy Data Repository
     policies: 
     - data access
-    registry: GEO
+    registries: 
+    - GEO
     persistency-guaranty: NULL
     access mechanisms: 
       authentication method: VOID
@@ -45,7 +48,8 @@ infrastructure:
       authorisation needed for: none
       authorization for accessing content needed: no
       access content process description IRI: VOID
-      data licenses in use: CC-BY4.0
+      data licenses in use: 
+      - CC-BY4.0
       data license IRI:  https://creativecommons.org/licenses/by/4.0/
       metadata openly available: yes
     data:
@@ -68,15 +72,16 @@ infrastructure:
       primary storage format: NetCDF CF Argo
       metadata longevity plan URL: https://www.nodc.noaa.gov/worlddatacenter/
       format IRI: https://doi.org/10.13155/29825
-      export format supported: 
+      export formats supported: 
       - NetCDF
       - CSV
-      exchange/harvesting method: 
+      exchange/harvesting methods: 
       - OAI-PMH
       - OpenDAP
       - OGC CSW
       local search engine URL: NULL
-      external search engine type supported: CSW endpoint
+      external search engine types supported: 
+      - CSW endpoint
       access policy statements included: yes
       machine actionable: yes
     vocabularies: 

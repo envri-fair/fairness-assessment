@@ -6,33 +6,40 @@ survey:
     email: klaas.deneudt@vliz.be
 infrastructure:
   acronym: LifeWatch 
-  name: LifeWatch (marine)
-  recognized authority IRI: http://www.lifewatch.be
+  name: LifeWatch (Marine)
+  recognized authority URL: http://www.lifewatch.be
   data management plans:
     specific DMP tools used: DMP template
-    data publishing steps applied: none
+    data publishing steps applied: 
+    - WoRMS taxon matching
+    - DwC formatting
+    - manual QA QC
   repositories: 
-  - IRI: http://www.marinedataarchive.org
+  - URL: http://www.marinedataarchive.org
     name: Marine Data Archive
     kind: data repository
     data repository type: central
-    metadata repository type: relational database?
+    metadata repository type: relational database
     software: MS SQL
     identifier: 
-      IRI: NULL
-      persistency-policy document IRI: VOID
-      kind: MDA ID
-      system: UUID
-      assigned: automatically
-      provider: local system
-      includes-attributes: none
-    certification method: CoreTrustSeal?
-    policy: terms of use
-    registry: none
-    persistency-guaranty: none
+      - IRI: NULL
+        persistency-policy document IRI: VOID
+        kind: MDA ID
+        system: UUID
+        assigned: automatically
+        provider: local service
+        includes-attributes: none
+    certification methods: 
+    - CoreTrustSeal
+    - IODE certified
+    policies: 
+    - Terms of Use
+    - FAQ
+    registries: none
+    persistency-guaranty: NULL
     access mechanisms: 
       authentication method: NULL 
-      access protocol URL: https://www.gbif.org/standards
+      access protocol URL: https://www.gbif.org/standards  
       protocol open: yes
       protocol royalty free: yes
       own user database maintained: yes
@@ -43,7 +50,8 @@ infrastructure:
       - advanced editing 
       authorization for accessing content needed: no
       access content process description IRI: NULL
-      data licenses in use: CC-BY.CC 0?
+      data licenses in use: 
+      - CC BY.CC 0
       data license IRI: http://www.eurobis.org/citation
       metadata openly available: yes
     data:
@@ -51,64 +59,333 @@ infrastructure:
       preferred formats: 
         - format name: ASCII
           metadata types in data headers: none
-      registered data schema: 1.21 bool I1
+      registered data schema: no
       search on data: yes
       search engine URL: NULL
     - type name: image
       preferred formats: 
         - format name: NULL
           metadata types in data headers: none
-      registered data schema: VOID
+      registered data schema: no
       search on data: yes
       search engine URL: NULL
+    - type name: structured
+      preferred formats: 
+        - format name: NULL
+          metadata types in data headers: none
+      registered data schema: VOID
+      search on data: yes
+      search engine URL: NULL      
     metadata: 
       schema: 
-        - IRI: NULL 
-        name: 1.22 ref I1
-        provenance fields included: 1.24 list ref F2
-      categories defined in registries: 1.23 bool I2
-      PIDs included: 1.25 bool F3
-      primary storage format: 1.26 ref I1
-      metadata longevity plan URL: 2.18
-      format IRI: 2.8 F2B
-      export format supported: 1.27 list ref I1
-      exchange/harvesting method: 1.28 list ref I1
-      local search engine URL: 1.29 F4
-      external search engine type supported: 1.30 ref F4
-      access policy statements included: 1.31 bool R1.1
-      machine actionable: 1.32 bool I1
-    vocabularies: list
-      IRI: 2.20 I2
-      type: 1.48 ref I1
-      topic: 1.48 ref I1
-      name: 1.48 ref
-      specification language URL: 2.19 I1        
+        - URL: https://www.iso.org/standard/53798.html
+          name: ISO 19115
+          provenance fields included: 
+          - text only
+        - URL: https://github.com/NCEAS/eml 
+          name: EML 2.0
+          provenance fields included: 
+          - text only        
+      categories defined in registries: yes
+      PIDs included: yes
+      primary storage format: relational database
+      metadata longevity plan URL: NULL
+      format IRI: https://www.gbif.org/standards
+      export formats supported: 
+      - XML
+      - HTML
+      - JSON
+      - RSS
+      exchange/harvesting methods: planned
+      local search engine URL: http://www.marinedataarchive.org/datasets/imis?module:dataset
+      external search engine types supported: 
+      - GBIF
+      - EDMED
+      - GCMD
+      access policy statements included: yes
+      machine actionable: yes
+    vocabularies: 
+      - URL: http://www.marinespecies.org/
+        type: taxonomy
+        topic: domain specific
+        name: WoRMS
+        specification language URL: NULL   
+      - URL: http://www.marineregions.org/
+        type: gazetteer
+        topic: domain specific
+        name: Marine Regions
+        specification language URL: NULL          
     data processing:
-      special data processing steps applied: 1.42 list ref 
-      workflow frameworks applied: 1.43 list ref
-      distributed workflows tools used: 1.44 list ref
-      other analysis services offered: 1.45 list ref A1
-      data products offered: 1.46 list ref
+      special data processing steps applied: VOID 
+      workflow frameworks applied: VOID
+      distributed workflows tools used: VOID
+      other analysis services offered: VOID
+      data products offered: VOID
     fairness: 
       data findability:  
-        data findable: 1.50 bool 
-        gaps: 1.50 list ref
+        data findable: yes
+        gaps: none
       data accessibility: 
-        data accessible: 1.51 bool
-        gaps: 1.51 list ref
+        data accessible: yes
+        gaps: none
       data interoperability: 
-        data interoperable: 1.52 bool
-        gaps: 1.52 list ref
+        data interoperable: partially
+        gaps: format checking
       data re-usability: 
-        data reusable: 1.53 bool
-        gaps: 1.53 list ref
+        data reusable: partially
+        gaps: metadata checking
     test fairness:
-      URL/IRI of dataset: 1.4/2.4/2.10
-      URL of discovery portal: 1.5
-      IRI of machine readable metadata of dataset: 2.7/2.9 F2A
-      URL to linkset describing resource: 2.21 I3
-      Search query: 2.12 F4
-      IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
-      IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
-      IRI of compliance certification: 2.25 R1.3
- 
+      URL/IRI of dataset: http://www.eurobis.org/imis?module=dataset&dasid=5514
+      IRI of metadata: http://www.eurobis.org/imis?module=dataset&dasid=5514&show=eml 
+      URL of discovery portal: http://www.marinedataarchive.org/
+      IRI of machine readable metadata of dataset: http://www.eurobis.org/imis?module=dataset&dasid=5514&show=eml
+      URL to linkset describing resource: NULL
+      Search query: https://www.google.co.uk/search?q=LifeWatch+observatory+data%3A+reference+collection+of+unique+observations+in+the+Belgian+Part+of+the+North+Sea ; 
+      IRI for the vocabulary used to describe citational provenance: https://gcube.wiki.gcube-system.org/gcube/Darwin_Core_Terms
+      IRI for the vocabulary used to describe contextual provenance: http://rs.gbif.org/vocabulary/
+      IRI of compliance certification: https://www.iode.org/index.php?option=com_content&view=article&id=61&Itemid=103
+  - URL: http://www.marinespecies.org
+    name: APHIA (WoRMS)
+    kind: taxonmic register
+    data repository type: central
+    metadata repository type: relational database
+    software: MS SQL
+    identifier: 
+      - IRI: NULL
+        persistency-policy document IRI: VOID
+        kind: LSID
+        system: LSR URN
+        assigned: automatically
+        provider: local service
+        includes-attributes: NULL
+    certification methods: 
+    - CoreTrustSeal
+    - IODE certified
+    policies: 
+    - Terms of Use
+    - FAQ
+    registries: none
+    persistency-guaranty: NULL
+    access mechanisms: 
+      authentication method: NULL 
+      access protocol URL: https://www.gbif.org/standards  
+      protocol open: yes
+      protocol royalty free: yes
+      own user database maintained: yes
+      ORCID used in AAI: no
+      major access technology supported: NULL 
+      authorisation technique: NULL 
+      authorisation needed for: 
+      - advanced editing 
+      authorization for accessing content needed: no
+      access content process description IRI: NULL
+      data licenses in use: 
+      - CC BY.CC 0
+      data license IRI: http://www.marinespecies.org/about.php#terms
+      metadata openly available: yes
+    data:
+    - type name: structured
+      preferred formats: 
+        - format name: XLS
+          metadata types in data headers: none
+        - format name: CSV
+          metadata types in data headers: none 
+      registered data schema: yes
+      search on data: yes
+      search engine URL: http://www.marinespecies.org/aphia.php?p=search
+    metadata: 
+      schema: 
+        - URL: http://www.marinespecies.org/ 
+          name: WoRMS
+          provenance fields included: 
+          - text only
+        - URL: https://github.com/NCEAS/eml 
+          name: EML 2.0
+          provenance fields included: 
+          - text only              
+      categories defined in registries: yes
+      PIDs included: yes
+      primary storage format: relational database
+      metadata longevity plan URL: NULL
+      format IRI: https://www.gbif.org/standards
+      export formats supported: 
+      - XML
+      - HTML
+      - JSON
+      - RSS
+      exchange/harvesting methods: planned
+      local search engine URL: http://www.lifewatch.be/en/imis?module=dataset
+      external search engine types supported: 
+      - GBIF
+      - EDMED
+      - GCMD
+      access policy statements included: yes
+      machine actionable: yes
+    vocabularies: 
+      - URL: http://www.marinespecies.org/
+        type: taxonomy
+        topic: domain specific
+        name: WORMS
+        specification language URL: NULL   
+    data processing:
+      special data processing steps applied: VOID 
+      workflow frameworks applied: 
+      - LifeWatch virtual lab
+      distributed workflows tools used: 
+      - data explorer
+      - map viewer
+      other analysis services offered: 
+      - R packages
+      data products offered: VOID
+    fairness: 
+      data findability:  
+        data findable: yes
+        gaps: none
+      data accessibility: 
+        data accessible: yes
+        gaps: none
+      data interoperability: 
+        data interoperable: yes
+        gaps: none
+      data re-usability: 
+        data reusable: yes
+        gaps: none
+    test fairness:
+      URL/IRI of dataset: www.marinespecies.org/asteroidea
+      IRI of metadata: http://www.lifewatch.be/en/imis?module=dataset&dasid=1841
+      URL of discovery portal: http://www.marinespecies.org
+      IRI of machine readable metadata of dataset: http://www.lifewatch.be/en/imis?module=dataset&dasid=1841&show=eml
+      URL to linkset describing resource: http://www.lsid.info/resolver/?lsid=urn%3Alsid%3Amarinespecies.org%3Ataxname%3A127160
+      Search query: NULL
+      IRI for the vocabulary used to describe citational provenance: https://gcube.wiki.gcube-system.org/gcube/Darwin_Core_Terms
+      IRI for the vocabulary used to describe contextual provenance: http://rs.gbif.org/vocabulary/
+      IRI of compliance certification: https://www.iode.org/index.php?option=com_content&view=article&id=61&Itemid=103      
+  - URL: http://www.eurobis.org
+    name: EUROBIS
+    kind: metadata repository
+    data repository type: central
+    metadata repository type: relational database
+    software: MS SQL
+    identifier: 
+      - IRI: NULL
+        persistency-policy document IRI: VOID
+        kind: IMIS ID
+        system: UUID
+        assigned: automatically
+        provider: local service
+        includes-attributes: none
+    certification methods: 
+    - CoreTrustSeal
+    - IODE certified
+    policies: 
+    - Terms of Use
+    - FAQ
+    registries: none
+    persistency-guaranty: NULL
+    access mechanisms: 
+      authentication method: NULL 
+      access protocol URL: https://www.gbif.org/standards  
+      protocol open: yes
+      protocol royalty free: yes
+      own user database maintained: yes
+      ORCID used in AAI: no
+      major access technology supported: NULL 
+      authorisation technique: NULL 
+      authorisation needed for: 
+      - advanced editing 
+      authorization for accessing content needed: no
+      access content process description IRI: NULL
+      data licenses in use: 
+      - CC BY.CC 0
+      data license IRI: http://www.eurobis.org/citation
+      metadata openly available: yes
+    data:
+    - type name: text
+      preferred formats: 
+        - format name: ASCII
+          metadata types in data headers: none
+      registered data schema: no
+      search on data: yes
+      search engine URL: NULL
+    - type name: image
+      preferred formats: 
+        - format name: NULL
+          metadata types in data headers: none
+      registered data schema: no
+      search on data: yes
+      search engine URL: NULL
+    - type name: structured
+      preferred formats: 
+        - format name: NULL
+          metadata types in data headers: none
+      registered data schema: VOID
+      search on data: yes
+      search engine URL: NULL      
+    metadata: 
+      schema: 
+        - URL: NULL 
+          name: ISO 19115
+          provenance fields included: 
+          - text only
+        - URL: https://github.com/NCEAS/eml 
+          name: EML 2.0
+          provenance fields included: 
+          - text only              
+      categories defined in registries: yes
+      PIDs included: yes
+      primary storage format: relational database
+      metadata longevity plan URL: NULL
+      format IRI: https://www.gbif.org/standards
+      export formats supported: 
+      - XML
+      - HTML
+      - JSON
+      - RSS
+      exchange/harvesting methods: planned
+      local search engine URL: http://www.marinedataarchive.org/datasets/imis?module:dataset
+      external search engine types supported: 
+      - GBIF
+      - EDMED
+      - GCMD
+      access policy statements included: yes
+      machine actionable: yes
+    vocabularies: 
+      - URL: http://www.marinespecies.org/
+        type: taxonomy
+        topic: domain specific
+        name: WoRMS
+        specification language URL: NULL   
+      - URL: http://www.marineregions.org/
+        type: gazetteer
+        topic: domain specific
+        name: Marine Regions
+        specification language URL: NULL          
+    data processing:
+      special data processing steps applied: VOID 
+      workflow frameworks applied: VOID
+      distributed workflows tools used: VOID
+      other analysis services offered: VOID
+      data products offered: VOID
+    fairness: 
+      data findability:  
+        data findable: yes
+        gaps: none
+      data accessibility: 
+        data accessible: yes
+        gaps: none
+      data interoperability: 
+        data interoperable: partially
+        gaps: format checking
+      data re-usability: 
+        data reusable: partially
+        gaps: metadata checking
+    test fairness:
+      URL/IRI of dataset: http://www.eurobis.org/imis?module=dataset&dasid=5514
+      IRI of metadata: http://www.eurobis.org/imis?module=dataset&dasid=5514&show=eml 
+      URL of discovery portal: http://www.emodnet-biology.eu/toolbox/en/download/occurrence/explore
+      IRI of machine readable metadata of dataset: http://www.eurobis.org/imis?module=dataset&dasid=5514&show=eml
+      URL to linkset describing resource: NULL
+      Search query: https://www.google.co.uk/search?q=LifeWatch+observatory+data%3A+reference+collection+of+unique+observations+in+the+Belgian+Part+of+the+North+Sea ; 
+      IRI for the vocabulary used to describe citational provenance: https://gcube.wiki.gcube-system.org/gcube/Darwin_Core_Terms
+      IRI for the vocabulary used to describe contextual provenance: http://rs.gbif.org/vocabulary/
+      IRI of compliance certification: https://www.iode.org/index.php?option=com_content&view=article&id=61&Itemid=103 

@@ -25,12 +25,20 @@ infrastructure:
         kind: PID
         system: Handle
         assigned: automatically
-        provider: Handle
+        provider: PDC
         includes-attributes: none
+      - IRI: 
+        persistency-policy document IRI: VOID
+        kind: DOI
+        system: DataCite
+        assigned: manually
+        provider: Handle
+        includes-attributes: 
+        - relevant metadata
     certification methods: none
     policies: 
     - data security
-    registry: re3data
+    registries: re3data
     persistency-guaranty: 20 years
     access mechanisms: 
       authentication method: OAuth paired with eduGain
@@ -47,7 +55,8 @@ infrastructure:
       - access controlled services
       authorization for accessing content needed: yes
       access content process description IRI: VOID
-      data licenses in use: CC-BY4.0
+      data licenses in use: 
+      - CC-BY4.0
       data license IRI: https://creativecommons.org/licenses/by/4.0/
       metadata openly available: yes
     data:
@@ -85,16 +94,17 @@ infrastructure:
       primary storage format: OWL
       metadata longevity plan URL: https://meta.icos-cp.eu/objects/5stgMTshDNdDe_Y8obQOpe0u
       format IRI:  https://www.w3.org/RDF/
-      export format supported: 
+      export formats supported: 
       - JSON
       - XML
       - Turtle
       - HTML
       - txt
-      exchange/harvesting method: 
+      exchange/harvesting methods: 
       - SPARQL endpoint
       local search engine URL:  https://meta.icos-cp.eu/sparqlclient/
-      external search engine type supported: SPARQL endpoint
+      external search engine types supported: 
+      - SPARQL endpoint
       access policy statements included: no
       machine actionable: yes    
     vocabularies:

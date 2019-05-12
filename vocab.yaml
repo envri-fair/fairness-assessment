@@ -14,6 +14,10 @@ standard NetCDF CF headers: http://envri.eu.ns/StandardNetCdfCFHeaders
 CC-BY4.0: http://envri.eu/ns/CC-BY4.0
 NetCDF file: http://envri.eu/ns/NetcdfFile
 Euro-Argo: http://envri.eu/ns/EuroArgo
+WoRMS: http://envri.eu/ns/WoRMS
+Marine regions: http://envri.eu/ns/MarineRegions
+WoRMS taxon matching: http://envri.eu/ns/WoRMSTaxonMatching
+DwC formatting: http://envri.eu/ns/DwCFormatting
 DMPonline: http://envri.eu/ns/DMPonline
 NetCDF ACDD metadata: http://envri.eu/ns/NetcdfAcddMetadata
 GEO: http://envri.eu/ns/Geo
@@ -42,6 +46,7 @@ codelist: http://envri.eu/ns/Codelist
 thesaurus: http://envri.eu/ns/Thesaurus
 Identifier: http://envri.eu/ns/Identifier
 LocalIdentifier: http://envri.eu/ns/LocalIdentifier
+CC BY.CC 0: http://envri.eu/ns/CCBY_CC0
 PersistentIdentifier: http://envri.eu/ns/PersistentIdentifier
 PID: http://envri.eu/ns/PersistentIdentifier
 PIDs: http://envri.eu/ns/PersistentIdentifiers
@@ -69,8 +74,8 @@ usesIdentifier: http://envri.eu/ns/usesIdentifier
 usesProvider: http://envri.eu/ns/usesProvider
 includesAttributes: http://envri.eu/ns/includesAttributes
 isAssigned: http://envri.eu/ns/isAssigned
-hasCertificationMethod: http://envri.eu/ns/hasCertificationMethod
-hasPolicy: http://envri.eu/ns/hasPolicy
+hasCertificationMethods: http://envri.eu/ns/hasCertificationMethods
+hasPolicies: http://envri.eu/ns/hasPolicies
 inRegistry: http://envri.eu/ns/inRegistry
 hasPersistentPolicy: http://envri.eu/ns/hasPersistentPolicy
 hasPersistencyPolicyDocumentIri: http://envri.eu/ns/hasPersistencyPolicyDocumentIri
@@ -107,7 +112,7 @@ hasSchema: http://envri.eu/ns/hasSchema
 hasRepositoryUrl: http://envri.eu/ns/hasRepositoryUrl
 hasIri: http://envri.eu/ns/hasIri
 hasIdentifierIri: http://envri.eu/ns/hasIdentifierIri
-hasSchemaIri: http://envri.eu/ns/hasSchemaIri
+hasSchemaUrl: http://envri.eu/ns/hasSchemaUrl
 hasVocabularyIri: http://envri.eu/ns/hasVocabularyIri
 hasName: http://envri.eu/ns/hasName
 hasSchemaName: http://envri.eu/ns/hasSchemaName
@@ -155,6 +160,7 @@ domain specific: http://envri.eu/ns/DomainSpecific
 ISO 19139: http://envri.eu/ns/ISO_19139
 ISO 19115: http://envri.eu/ns/ISO_19115
 ISO TC211: http://envri.eu/ns/ISO_TC211
+ISO 19115/19139: http://envri.eu/ns/ISO_19115_19139
 INSPIRE: http://envri.eu/ns/INSPIRE
 INSPIRE EF: http://envri.eu/ns/INSPIRE_EF
 INSPIRE: http://envri.eu/ns/INSPIRE
@@ -250,9 +256,39 @@ data quality control: http://envri.eu/ns/QA_QC
 data licenses in use: http://envri.eu/ns/dataLicensesInUse
 CC-BY-NC4.0: http://envri.eu/ns/CC-BY-NC4.0
 central: http://envri.eu/ns/CentralDataRepository
+RSS: http://envri.eu/ns/RSS
 relational database: http://envri.eu/ns/RelationalDatabase
 OWL: http://envri.eu/ns/Owl
+GBIF: http://envri.eu/ns/GBIF
+GCMD: http://envri.eu/ns/GCMD
+EDMED: http://envri.eu/ns/EDMED
+taxonomy: http://envri.eu/ns/taxonomy
 JSON: http://envri.eu/ns/Json
 general: http://envri.eu/ns/General
 ontology: http://envri.eu/ns/Ontology
 harmonising data models: http://envri.eu/ns/HarmonisingDataModels
+relevant metadata: http://envri.eu/ns/RelevantMetadata
+gazetteer: http://envri.eu/ns/Gazetteer
+metadata checking: http://envri.eu/ns/MetadataChecking
+Terms of Use: http://envri.eu/ns/TermsOfUse
+FAQ: http://envri.eu/ns/FAQ
+MS SQL: http://envri.eu/ns/MS_SQL
+MDA ID: http://envri.eu/ns/MDA_ID
+relational database: http://envri.eu/ns/RelationalDatabase
+WoRMS taxon matching: http://envri.eu/ns/WoRMSTaxonMatching
+DwC formatting: http://envri.eu/ns/DwCFormatting
+RSS: http://envri.eu/ns/RSS
+LifeWatch (Marine): http://envri.eu/ns/LifeWatchMarine
+IMIS: http://envri.eu/ns/IMIS
+EUROBIS: http://envri.eu/ns/EUROBIS
+APHIA: http://envri.eu/ns/APHIA
+ICOS: http://envri.eu/ns/ICOS
+LSID: http://envri.eu/ns/LSID
+LSR URN: http://envri.eu/ns/LSR_URN
+fairsharing.org: http://envri.eu/ns/FairsharingOrg
+Biodiversity Catalogue: http://envri.eu/ns/BiodiversityCatalogue
+LifeWatch virtual lab: http://envri.eu/ns/LifeWatchVirtualLab
+data explorer: http://envri.eu/ns/DataExplorer
+map viewer: http://envri.eu/ns/MapViewer
+R packages: http://envri.eu/ns/RPackages
+IMIS ID: http.//envri.eu/ns/IMIS_ID

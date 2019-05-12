@@ -150,7 +150,7 @@ infrastructure:
         name: ISO 1939
         registry used: NULL
         provenance fields included: NULL
-      - IRI:
+      - IRI: https://www.iso.org/standard/53798.html
         name: ISO 19115
         registry used: NULL
         provenance fields included: NULL

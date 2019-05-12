@@ -8,8 +8,8 @@ usesIdentifierSystem: https://w3id.org/fair/principles/terms/F1
 isAssigned: https://w3id.org/fair/principles/terms/F1
 usesProvider: https://w3id.org/fair/principles/terms/F1
 includesAttributes: https://w3id.org/fair/principles/terms/F2
-hasPolicy: https://w3id.org/fair/principles/terms/R1.1
-inRegistry: https://w3id.org/fair/principles/terms/F4
+hasPolicies: https://w3id.org/fair/principles/terms/R1.1
+inRegistries: https://w3id.org/fair/principles/terms/F4
 hasPersistencyGuaranty: https://w3id.org/fair/principles/terms/A1
 hasAuthenticationMethod: https://w3id.org/fair/principles/terms/A1.2
 hasAccessProtocolUrl: https://w3id.org/fair/principles/terms/A1.1
@@ -38,7 +38,7 @@ hasMetadataFormatIri: https://w3id.org/fair/principles/terms/F2
 supportedExportFormats: https://w3id.org/fair/principles/terms/I1
 hasHarvestingMethod: https://w3id.org/fair/principles/terms/I1
 hasLocalSearchEngine: https://w3id.org/fair/principles/terms/F4
-supportsExternalSearchEngineType: https://w3id.org/fair/principles/terms/F4
+supportsExternalSearchEngineTypes: https://w3id.org/fair/principles/terms/F4
 includesAccessPolicyStatements: https://w3id.org/fair/principles/terms/R1.1
 isMachineActionable: https://w3id.org/fair/principles/terms/I1
 hasVocabularyIri: https://w3id.org/fair/principles/terms/I2

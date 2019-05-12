@@ -28,7 +28,7 @@ infrastructure:
       includes-attributes: 1.12 list ref F2 
     certification methods: 1.13 list ref
     policies: 1.14 list ref R1.1
-    registry: 1.15 ref F4
+    registries: 1.15 list ref F4
     persistency-guaranty: 1.16 ref A1
     access mechanisms: 
       authentication method: 1.33 ref A1.2
@@ -42,7 +42,7 @@ infrastructure:
       authorisation needed for: 1.37 list ref A1.2
       authorization for accessing content needed: 2.16 bool A1.2
       access content process description IRI: 2.17 A1.2
-      data licenses in use: 1.38 ref R1.1
+      data licenses in use: 1.38 list ref R1.1
       data license IRI: 2.22 R1.1
       metadata openly available: 1.39 bool R1.1
     data:
@@ -63,10 +63,10 @@ infrastructure:
       primary storage format: 1.26 ref I1
       metadata longevity plan URL: 2.18
       format IRI: 2.8 F2B
-      export format supported: 1.27 list ref I1
-      exchange/harvesting method: 1.28 list ref I1
+      export formats supported: 1.27 list ref I1
+      exchange/harvesting methods: 1.28 list ref I1
       local search engine URL: 1.29 F4
-      external search engine type supported: 1.30 ref F4
+      external search engine types supported: 1.30 list ref F4
       access policy statements included: 1.31 bool R1.1
       machine actionable: 1.32 bool I1
     vocabularies: list
@@ -98,7 +98,7 @@ infrastructure:
       URL/IRI of dataset: 1.4/2.4/2.10
       IRI of metadata: 2.9
       URL of discovery portal: 1.5
-      IRI of machine readable metadata of dataset: 2.7/2.9 F2A
+      IRI of machine readable metadata of dataset: 2.7 F2A
       URL to linkset describing resource: 2.21 I3
       Search query: 2.12 F4
       IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
