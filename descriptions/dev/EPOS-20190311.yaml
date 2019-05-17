@@ -21,14 +21,14 @@ infrastructure:
     identifier: 
       IRI: 2.5
       persistency-policy document IRI: 2.6
-      kind: 1.9 ref
-      system: 1.9 ref
-      assigned: 1.10 ref
-      provider: 1.11 ref
-      includes-attributes: 1.12 bool
-    certification method: 1.13 ref
-    policy: 1.14 ref
-    registry: 1.15 ref
+      kind: DOI
+      system: NULL
+      assigned: manually
+      provider: DataCite
+      includes-attributes: no
+    certification method: no
+    policies: 1.14 ref
+    registries: 1.15 ref
     persistency-guaranty: 1.16 ref
     access mechanisms: 
       authentication method: 1.33 ref
