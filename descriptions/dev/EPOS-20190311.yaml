@@ -12,7 +12,7 @@ infrastructure:
     specific DMP tools used: no
     data publishing steps applied: QA QC manually
   repositories: list
-    IRI: https://www.orfeus-eu.org/
+    URL: https://www.orfeus-eu.org/
     name: VOID
     kind: data repository 
     data repository type: local
