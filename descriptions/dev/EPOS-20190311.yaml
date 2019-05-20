@@ -28,7 +28,7 @@ infrastructure:
       includes-attributes: no
     certification method: no
     policies: 1.14 ref
-    registries: 1.15 ref
+    registries: EPOS Metadata Catalog
     persistency-guaranty: 1.16 ref
     access mechanisms: 
       authentication method: 1.33 ref
