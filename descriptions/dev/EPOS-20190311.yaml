@@ -55,8 +55,8 @@ infrastructure:
       search engine URL: 2.11 F4
     metadata: 
       schema:
-        IRI: list
-        name: 1.22 ref 
+        IRI: https://www.fdsn.org/xml/station/fdsn-station-1.0.xsd
+        name: StationXML
         provenance fields included: 1.24 list ref
       categories defined in registries: 1.23 bool
       PIDs included: 1.25 bool
