@@ -57,7 +57,7 @@ infrastructure:
       schema:
         IRI: https://www.fdsn.org/xml/station/fdsn-station-1.0.xsd
         name: StationXML
-        provenance fields included: 1.24 list ref
+        provenance fields included: null
       categories defined in registries: 1.23 bool
       PIDs included: 1.25 bool
       primary storage format: 1.26 ref
