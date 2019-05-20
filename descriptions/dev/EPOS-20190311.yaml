@@ -56,7 +56,7 @@ infrastructure:
     metadata: 
       schema:
         IRI: list
-        name: 1.22 ref
+        name: 1.22 ref 
         provenance fields included: 1.24 list ref
       categories defined in registries: 1.23 bool
       PIDs included: 1.25 bool
