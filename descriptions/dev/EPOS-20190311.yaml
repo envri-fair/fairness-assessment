@@ -29,32 +29,30 @@ infrastructure:
     certification method: no
     policies: 1.14 ref
     registries: EPOS Metadata Catalog
-    persistency-guaranty: 1.16 ref
+    persistency-guaranty: VOID
     access mechanisms: 
-      authentication method: 1.33 ref
+      authentication method: none-open
       access protocol URL: 2.13 ref
       protocol open: 2.14 bool
       protocol royalty free: 2.15 bool
-      own user database maintained: 1.34 bool
-      ORCID used in AAI: 1.35 bool
-      major access technology supported: 1.36 ref
-      authorisation technique: 1.37 ref
-      authorisation needed for: 1.37 list ref
+      own user database maintained: no
+      ORCID used in AAI: no
+      major access technology supported: EduGAIN
+      authorisation technique: EduGAIN ?
+      authorisation needed for: NULL
       authorization for accessing content needed: 2.16 bool
       access content process description IRI: 2.17
-      data licenses in use: 1.38 ref
+      data licenses in use: no
       data license IRI: 2.22
-      metadata openly available: 1.39 bool
+      metadata openly available: yes
     data:
-      type name: 1.17 list ref
-      preferred formats: 
-        format name: 1.18 list ref
-        metadata included:
-          metadata headers: 1.19 bool
-          which metadata types: 1.19 list ref
-      registered data schema: 1.21 bool
-      search on data: 1.20 bool
-      search engine URL:
+      type name: FDSN Station XML
+      preferred formats: list
+        format name: FDSN Station XML ? 
+        metadata types in data headers: html ?
+      registered data schema: no
+      search on data: yes
+      search engine URL: 2.11 F4
     metadata: 
       schema:
         IRI: list
