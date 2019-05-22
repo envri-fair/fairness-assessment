@@ -56,48 +56,64 @@ infrastructure:
     metadata: 
       schema: list
         URL: 
-        name: 1.22 ref I1
-        provenance fields included: 1.24 list ref F2
-      categories defined in registries: 1.23 bool I2
-      PIDs included: 1.25 bool F3
-      primary storage format: 1.26 ref I1
+        name: ISO 19115
+        provenance fields included: PROV-O
+        URL: 
+        name: ISO 19119
+        provenance fields included: PROV-O
+        URL: 
+        name: ISO 19139
+        provenance fields included: PROV-O
+      categories defined in registries: yes
+      PIDs included: yes
+      primary storage format: database
       metadata longevity plan URL: 2.18
       format IRI: 2.8 F2B
-      export formats supported: 1.27 list ref I1
-      exchange/harvesting methods: 1.28 list ref I1
-      local search engine URL: 1.29 F4
-      external search engine types supported: 1.30 list ref F4
-      access policy statements included: 1.31 bool R1.1
-      machine actionable: 1.32 bool I1
+      export formats supported: Turtle-JSONLD-RDF-csv-nq-xml-pdf
+      exchange/harvesting methods: Z39.50-OAIPMH-CSW
+      local search engine URL: https://data.geoscience.earth/ncl/
+      external search engine types supported: null
+      access policy statements included: yes
+      machine actionable: yes
     vocabularies: list
-      IRI: 2.20 I2
-      type: 1.48 ref I1
-      topic: 1.48 ref I1
-      name: 1.48 ref
+      IRI: http://www.opengeospatial.org/
+      type: ontology
+      topic: domain specific
+      name: OGC
+      specification language URL: 2.19 I1        
+      IRI: https://www.w3.org/
+      type: ontology
+      topic: general
+      name: W3C
+      specification language URL: 2.19 I1        
+      IRI: https://inspire.ec.europa.eu/
+      type: ontology
+      topic: general
+      name: INSPIRE
       specification language URL: 2.19 I1        
     data processing:
-      special data processing steps applied: 1.42 list ref 
-      workflow frameworks applied: 1.43 list ref
-      distributed workflows tools used: 1.44 list ref
-      other analysis services offered: 1.45 list ref A1
-      data products offered: 1.46 list ref
+      special data processing steps applied: data validation
+      workflow frameworks applied: distributed synchronization
+      distributed workflows tools used: apache kafka
+      other analysis services offered: none
+      data products offered: none
     fairness: 
       data findability:  
-        data findable: 1.50 bool 
-        gaps: 1.50 list ref
+        data findable: yes
+        gaps: none
       data accessibility: 
-        data accessible: 1.51 bool
-        gaps: 1.51 list ref
+        data accessible: yes
+        gaps: none
       data interoperability: 
-        data interoperable: 1.52 bool
-        gaps: 1.52 list ref
+        data interoperable: yes
+        gaps: none
       data re-usability: 
-        data reusable: 1.53 bool
-        gaps: 1.53 list ref
+        data reusable: yes
+        gaps: none
     test fairness:
-      URL/IRI of dataset: 1.4/2.4/2.10
+      URL/IRI of dataset: http://resource.europe-geology.eu/dataset/borehole
       IRI of metadata: 2.9
-      URL of discovery portal: 1.5
+      URL of discovery portal: http://www.europe-geology.eu/
       IRI of machine readable metadata of dataset: 2.7 F2A
       URL to linkset describing resource: 2.21 I3
       Search query: 2.12 F4
