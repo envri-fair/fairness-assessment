@@ -87,7 +87,7 @@ infrastructure:
         gaps: F1 gap
       data accessibility: 
         data accessible: yes
-        gaps: none
+        gaps: void
       data interoperability: 
         data interoperable: no
         gaps: null
