@@ -84,16 +84,16 @@ infrastructure:
     fairness: 
       data findability:  
         data findable: yes
-        gaps: none
+        gaps: void
       data accessibility: 
         data accessible: yes
-        gaps: none
+        gaps: void
       data interoperability: 
         data interoperable: yes
-        gaps: none
+        gaps: void
       data re-usability: 
         data reusable: yes
-        gaps: none
+        gaps: void
     test fairness:
       URL/IRI of dataset: https://www.orfeus-eu.org/fdsnws/station/1/query?network=IB
       IRI of metadata: 2.9
