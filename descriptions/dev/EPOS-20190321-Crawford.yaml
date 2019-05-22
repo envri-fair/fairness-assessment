@@ -84,16 +84,16 @@ infrastructure:
     fairness: 
       data findability:  
         data findable: yes
-        gaps: none
+        gaps: void
       data accessibility: 
         data accessible: yes
-        gaps: none
+        gaps: void
       data interoperability: 
         data interoperable: null
         gaps: null
       data re-usability: 
         data reusable: yes
-        gaps: none
+        gaps: void
     test fairness:
       URL/IRI of dataset: http://seismology.resif.fr/#NetworkConsultPlace:Z3%5B2015-07-01T00:00:00.000000_2020-07-31T00:00:00.000000%5D
       IRI of metadata: 2.9
