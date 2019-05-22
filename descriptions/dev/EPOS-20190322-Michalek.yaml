@@ -1,42 +1,42 @@
 survey:
-  date: 1.0 yyyy-mm-dd
-  version: number
+  date: 2019-03-22
+  version: 1
   creator: 
-    name: 1.1 free
-    email: 1.2
+    name: Jan Michalek
+    email: jan.michalek@uib.no
 infrastructure:
-  acronym: ref
-  name: 1.3 free
+  acronym: EPOS
+  name: EPOS-Norway
   recognized authority URL: 
   data management plans:
-    specific DMP tools used: 1.40 ref
-    data publishing steps applied: 1.41 list ref
+    specific DMP tools used: no
+    data publishing steps applied: none
   repositories: list
-    URL: 1.5 F4
-    name: 1.6 free
-    kind: ref 
-    data repository type: 1.6 ref F4
-    metadata repository type: 1.8 ref F4
-    software: 1.7 ref F4
+    URL: http://epos-no.geo.uib.no:81/
+    name: Local server which is part of the EU EIDA system.
+    kind: data repository 
+    data repository type: local
+    metadata repository type: relational database
+    software: SeisComp3
     identifier: list
       IRI: 2.5 F1A
       persistency-policy document IRI: 2.6 F1B
-      kind: 1.9 ref F1
-      system: 1.9 ref F1
-      assigned: 1.10 ref F1
-      provider: 1.11 ref F1
-      includes-attributes: 1.12 list ref F2 
-    certification methods: 1.13 list ref
-    policies: 1.14 list ref R1.1
-    registries: 1.15 list ref F4
-    persistency-guaranty: 1.16 ref A1
+      kind: null
+      system: null
+      assigned: null
+      provider: null
+      includes-attributes: none
+    certification methods: none
+    policies: none
+    registries: none
+    persistency-guaranty: none
     access mechanisms: 
-      authentication method: 1.33 ref A1.2
+      authentication method: planned
       access protocol URL: 2.13 ref A1.1
       protocol open: 2.14 bool A1.1
       protocol royalty free: 2.15 bool A1.1
-      own user database maintained: 1.34 bool A1.2
-      ORCID used in AAI: 1.35 bool A1.2
+      own user database maintained: no
+      ORCID used in AAI: no
       major access technology supported: 1.36 ref A1.1
       authorisation technique: 1.37 ref A1.2
       authorisation needed for: 1.37 list ref A1.2
