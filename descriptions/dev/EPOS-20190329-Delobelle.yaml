@@ -100,16 +100,16 @@ infrastructure:
     fairness: 
       data findability:  
         data findable: yes
-        gaps: none
+        gaps: void
       data accessibility: 
         data accessible: yes
-        gaps: none
+        gaps: void
       data interoperability: 
         data interoperable: yes
-        gaps: none
+        gaps: void
       data re-usability: 
         data reusable: yes
-        gaps: none
+        gaps: void
     test fairness:
       URL/IRI of dataset: http://resource.europe-geology.eu/dataset/borehole
       IRI of metadata: 2.9
