@@ -1,0 +1,106 @@
+survey:
+  date: 2019-03-29
+  version: 1
+  creator: 
+    name: Delobelle
+    email: g.delobelle@brgm.fr
+infrastructure:
+  acronym: EPOS
+  name: EPOS
+  recognized authority URL: 
+  data management plans:
+    specific DMP tools used: 1.40 ref
+    data publishing steps applied: 1.41 list ref
+  repositories: list
+    URL: 1.5 F4
+    name: 1.6 free
+    kind: ref 
+    data repository type: 1.6 ref F4
+    metadata repository type: 1.8 ref F4
+    software: 1.7 ref F4
+    identifier: list
+      IRI: 2.5 F1A
+      persistency-policy document IRI: 2.6 F1B
+      kind: 1.9 ref F1
+      system: 1.9 ref F1
+      assigned: 1.10 ref F1
+      provider: 1.11 ref F1
+      includes-attributes: 1.12 list ref F2 
+    certification methods: 1.13 list ref
+    policies: 1.14 list ref R1.1
+    registries: 1.15 list ref F4
+    persistency-guaranty: 1.16 ref A1
+    access mechanisms: 
+      authentication method: 1.33 ref A1.2
+      access protocol URL: 2.13 ref A1.1
+      protocol open: 2.14 bool A1.1
+      protocol royalty free: 2.15 bool A1.1
+      own user database maintained: 1.34 bool A1.2
+      ORCID used in AAI: 1.35 bool A1.2
+      major access technology supported: 1.36 ref A1.1
+      authorisation technique: 1.37 ref A1.2
+      authorisation needed for: 1.37 list ref A1.2
+      authorization for accessing content needed: 2.16 bool A1.2
+      access content process description IRI: 2.17 A1.2
+      data licenses in use: 1.38 list ref R1.1
+      data license IRI: 2.22 R1.1
+      metadata openly available: 1.39 bool R1.1
+    data:
+      type name: 1.17 list ref I1
+      preferred formats: list
+        format name: 1.18 ref I1
+        metadata types in data headers: 1.19 list ref I1
+      registered data schema: 1.21 bool I1
+      search on data: 1.20 bool F4
+      search engine URL: 2.11 F4
+    metadata: 
+      schema: list
+        URL: 
+        name: 1.22 ref I1
+        provenance fields included: 1.24 list ref F2
+      categories defined in registries: 1.23 bool I2
+      PIDs included: 1.25 bool F3
+      primary storage format: 1.26 ref I1
+      metadata longevity plan URL: 2.18
+      format IRI: 2.8 F2B
+      export formats supported: 1.27 list ref I1
+      exchange/harvesting methods: 1.28 list ref I1
+      local search engine URL: 1.29 F4
+      external search engine types supported: 1.30 list ref F4
+      access policy statements included: 1.31 bool R1.1
+      machine actionable: 1.32 bool I1
+    vocabularies: list
+      IRI: 2.20 I2
+      type: 1.48 ref I1
+      topic: 1.48 ref I1
+      name: 1.48 ref
+      specification language URL: 2.19 I1        
+    data processing:
+      special data processing steps applied: 1.42 list ref 
+      workflow frameworks applied: 1.43 list ref
+      distributed workflows tools used: 1.44 list ref
+      other analysis services offered: 1.45 list ref A1
+      data products offered: 1.46 list ref
+    fairness: 
+      data findability:  
+        data findable: 1.50 bool 
+        gaps: 1.50 list ref
+      data accessibility: 
+        data accessible: 1.51 bool
+        gaps: 1.51 list ref
+      data interoperability: 
+        data interoperable: 1.52 bool
+        gaps: 1.52 list ref
+      data re-usability: 
+        data reusable: 1.53 bool
+        gaps: 1.53 list ref
+    test fairness:
+      URL/IRI of dataset: 1.4/2.4/2.10
+      IRI of metadata: 2.9
+      URL of discovery portal: 1.5
+      IRI of machine readable metadata of dataset: 2.7 F2A
+      URL to linkset describing resource: 2.21 I3
+      Search query: 2.12 F4
+      IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
+      IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
+      IRI of compliance certification: 2.25 R1.3
