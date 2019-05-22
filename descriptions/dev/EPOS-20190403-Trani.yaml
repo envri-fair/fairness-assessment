@@ -53,68 +53,71 @@ infrastructure:
       data license IRI: https://creativecommons.org/licenses/
       metadata openly available: yes
     data:
-      type name: 1.17 list ref I1
+      type name: JSON-MSEED-FDSN StationXML
       preferred formats: list
-        format name: 1.18 ref I1
-        metadata types in data headers: 1.19 list ref I1
-      registered data schema: 1.21 bool I1
-      search on data: 1.20 bool F4
+        format name: MSEED
+        metadata types in data headers: yes ?
+        format name: FDSN StationXML
+        metadata types in data headers: none
+        format name: JSON
+        metadata types in data headers: none
+      registered data schema: yes
+      search on data: yes
       search engine URL: 2.11 F4
     metadata: 
       schema: list
-        URL: 
-        name: 1.22 ref I1
-        provenance fields included: 1.24 list ref F2
-      categories defined in registries: 1.23 bool I2
-      PIDs included: 1.25 bool F3
-      primary storage format: 1.26 ref I1
+        URL: https://www.fdsn.org/xml/station/
+        name: StationXML
+        provenance fields included: planned
+        URL: https://quake.ethz.ch/quakeml/
+        name: QuakeML
+        provenance fields included: planned
+        URL: https://github.com/EIDA/wfcatalog/blob/master/wf_metadata_schema.json
+        name: Waveform metadata schema
+        provenance fields included: planned
+      categories defined in registries: planned
+      PIDs included: partially
+      primary storage format: database
       metadata longevity plan URL: 2.18
       format IRI: 2.8 F2B
-      export formats supported: 1.27 list ref I1
-      exchange/harvesting methods: 1.28 list ref I1
-      local search engine URL: 1.29 F4
-      external search engine types supported: 1.30 list ref F4
-      access policy statements included: 1.31 bool R1.1
-      machine actionable: 1.32 bool I1
+      export formats supported: XML-JSON-RDF
+      exchange/harvesting methods: WebAPI
+      local search engine URL: http://orfeus-eu.org/webdc3/
+      external search engine types supported: EPOS ICS
+      access policy statements included: partially
+      machine actionable: partially
     vocabularies: list
-      IRI: 2.20 I2
-      type: 1.48 ref I1
-      topic: 1.48 ref I1
-      name: 1.48 ref
-      specification language URL: 2.19 I1        
+      IRI: void
+      type: none
+      topic: none
+      name: none
+      specification language URL: void
     data processing:
-      special data processing steps applied: 1.42 list ref 
-      workflow frameworks applied: 1.43 list ref
-      distributed workflows tools used: 1.44 list ref
-      other analysis services offered: 1.45 list ref A1
-      data products offered: 1.46 list ref
+      special data processing steps applied: metadata extraction
+      workflow frameworks applied: VERCE-DARE
+      distributed workflows tools used: VERCE-DARE
+      other analysis services offered: none
+      data products offered: yes (which?)
     fairness: 
       data findability:  
-        data findable: 1.50 bool 
-        gaps: 1.50 list ref
+        data findable: yes
+        gaps: void
       data accessibility: 
-        data accessible: 1.51 bool
-        gaps: 1.51 list ref
+        data accessible: yes
+        gaps: void
       data interoperability: 
-        data interoperable: 1.52 bool
-        gaps: 1.52 list ref
+        data interoperable: partially
+        gaps: improving vocabularies
       data re-usability: 
-        data reusable: 1.53 bool
-        gaps: 1.53 list ref
+        data reusable: partially
+        gaps: improving vocabularies
     test fairness:
-      URL/IRI of dataset: 1.4/2.4/2.10
+      URL/IRI of dataset: http://www.orfeus-eu.org/data/eida/
       IRI of metadata: 2.9
-      URL of discovery portal: 1.5
+      URL of discovery portal: http://orfeus-eu.org/webdc3/
       IRI of machine readable metadata of dataset: 2.7 F2A
       URL to linkset describing resource: 2.21 I3
       Search query: 2.12 F4
       IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
       IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
       IRI of compliance certification: 2.25 R1.3
- 
-
-            
-            
-            
-            
-         
