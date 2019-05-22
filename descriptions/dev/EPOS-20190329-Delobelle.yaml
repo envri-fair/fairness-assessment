@@ -9,49 +9,49 @@ infrastructure:
   name: EPOS
   recognized authority URL: 
   data management plans:
-    specific DMP tools used: 1.40 ref
-    data publishing steps applied: 1.41 list ref
+    specific DMP tools used: none
+    data publishing steps applied: none
   repositories: list
-    URL: 1.5 F4
-    name: 1.6 free
-    kind: ref 
-    data repository type: 1.6 ref F4
-    metadata repository type: 1.8 ref F4
-    software: 1.7 ref F4
+    URL: https://www.epos-ip.org/data-services/epos-prototype-portal
+    name: EPOS TCS Geological Information and Modelling repositories
+    kind: metadata data repository
+    data repository type: domain
+    metadata repository type: central
+    software: OGC Services
     identifier: list
       IRI: 2.5 F1A
       persistency-policy document IRI: 2.6 F1B
-      kind: 1.9 ref F1
-      system: 1.9 ref F1
-      assigned: 1.10 ref F1
-      provider: 1.11 ref F1
-      includes-attributes: 1.12 list ref F2 
-    certification methods: 1.13 list ref
-    policies: 1.14 list ref R1.1
-    registries: 1.15 list ref F4
-    persistency-guaranty: 1.16 ref A1
+      kind: URI
+      system: HTTP URIs
+      assigned: automatically
+      provider: none
+      includes-attributes: none
+    certification methods: planned
+    policies: none
+    registries: European Geoscience Registry
+    persistency-guaranty: ownership
     access mechanisms: 
-      authentication method: 1.33 ref A1.2
+      authentication method: none
       access protocol URL: 2.13 ref A1.1
       protocol open: 2.14 bool A1.1
       protocol royalty free: 2.15 bool A1.1
-      own user database maintained: 1.34 bool A1.2
-      ORCID used in AAI: 1.35 bool A1.2
-      major access technology supported: 1.36 ref A1.1
-      authorisation technique: 1.37 ref A1.2
-      authorisation needed for: 1.37 list ref A1.2
+      own user database maintained: no
+      ORCID used in AAI: no
+      major access technology supported: none
+      authorisation technique: none
+      authorisation needed for: none
       authorization for accessing content needed: 2.16 bool A1.2
       access content process description IRI: 2.17 A1.2
-      data licenses in use: 1.38 list ref R1.1
-      data license IRI: 2.22 R1.1
-      metadata openly available: 1.39 bool R1.1
+      data licenses in use: creative commons
+      data license IRI: https://creativecommons.org/licenses/
+      metadata openly available: yes
     data:
-      type name: 1.17 list ref I1
+      type name: Turtle-JSONLD
       preferred formats: list
-        format name: 1.18 ref I1
-        metadata types in data headers: 1.19 list ref I1
-      registered data schema: 1.21 bool I1
-      search on data: 1.20 bool F4
+        format name: GML
+        metadata types in data headers: Turtle-JSONLD
+      registered data schema: yes
+      search on data: yes
       search engine URL: 2.11 F4
     metadata: 
       schema: list
