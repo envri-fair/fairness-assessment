@@ -76,28 +76,28 @@ infrastructure:
       name: null
       specification language URL: 2.19 I1        
     data processing:
-      special data processing steps applied: 1.42 list ref 
-      workflow frameworks applied: 1.43 list ref
-      distributed workflows tools used: 1.44 list ref
-      other analysis services offered: 1.45 list ref A1
-      data products offered: 1.46 list ref
+      special data processing steps applied: null
+      workflow frameworks applied: null
+      distributed workflows tools used: null
+      other analysis services offered: null
+      data products offered: null
     fairness: 
       data findability:  
-        data findable: 1.50 bool 
-        gaps: 1.50 list ref
+        data findable: yes
+        gaps: none
       data accessibility: 
-        data accessible: 1.51 bool
-        gaps: 1.51 list ref
+        data accessible: yes
+        gaps: none
       data interoperability: 
-        data interoperable: 1.52 bool
-        gaps: 1.52 list ref
+        data interoperable: yes
+        gaps: none
       data re-usability: 
-        data reusable: 1.53 bool
-        gaps: 1.53 list ref
+        data reusable: yes
+        gaps: none
     test fairness:
-      URL/IRI of dataset: 1.4/2.4/2.10
+      URL/IRI of dataset: http://fridge-services.rm.ingv.it/co2/?mintime=2018-08-01T00:00:00.000Z&maxtime=2018-08-20T00:00:00.000Z&minlat=43&maxlat=43.7&minlon=12&maxlon=12.9&min_period=60&max_period=180&param_name=co2_flux&inst_type=flux
       IRI of metadata: 2.9
-      URL of discovery portal: 1.5
+      URL of discovery portal: null
       IRI of machine readable metadata of dataset: 2.7 F2A
       URL to linkset describing resource: 2.21 I3
       Search query: 2.12 F4
