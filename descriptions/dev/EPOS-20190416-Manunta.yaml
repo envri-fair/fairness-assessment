@@ -5,28 +5,28 @@ survey:
     name: Michele Manunta
     email: manunta.m@irea.cnr.it
 infrastructure:
-  acronym: ref
-  name: 1.3 free
+  acronym: EPOS
+  name: EPOSAR
   recognized authority URL: 
   data management plans:
-    specific DMP tools used: 1.40 ref
-    data publishing steps applied: 1.41 list ref
+    specific DMP tools used: DMPonline
+    data publishing steps applied: none
   repositories: list
-    URL: 1.5 F4
-    name: 1.6 free
-    kind: ref 
-    data repository type: 1.6 ref F4
-    metadata repository type: 1.8 ref F4
-    software: 1.7 ref F4
+    URL: https://catalog.terradue.com/gep-epos/search?format=atomeop
+    name: Domain repository
+    kind: metadata data repository 
+    data repository type: domain
+    metadata repository type: central
+    software: null
     identifier: list
       IRI: 2.5 F1A
       persistency-policy document IRI: 2.6 F1B
-      kind: 1.9 ref F1
-      system: 1.9 ref F1
-      assigned: 1.10 ref F1
-      provider: 1.11 ref F1
-      includes-attributes: 1.12 list ref F2 
-    certification methods: 1.13 list ref
+      kind: PID
+      system: DOI
+      assigned: manually
+      provider: Zenodo
+      includes-attributes: none
+    certification methods: none
     policies: 1.14 list ref R1.1
     registries: 1.15 list ref F4
     persistency-guaranty: 1.16 ref A1
