@@ -1,0 +1,107 @@
+survey:
+  date: 2019-04-18
+  version: number
+  creator: 
+    name: Ivano Carluccio
+    email: ivano.carluccio@ingv.it
+infrastructure:
+  acronym: EPOS
+  name: Istituto Nazionale di Geofisica e Vulcanologia (INGV)
+  recognized authority URL: 
+  data management plans:
+    specific DMP tools used: null
+    data publishing steps applied: null
+  repositories: list
+    URL: null
+    name: local repository
+    kind: local
+    data repository type: ?
+    metadata repository type: none
+    software: mysql server
+    identifier: list
+      IRI: 2.5 F1A
+      persistency-policy document IRI: 2.6 F1B
+      kind: none
+      system: none
+      assigned: null
+      provider: null
+      includes-attributes: null
+    certification methods: none
+    policies: null
+    registries: null
+    persistency-guaranty: null
+    access mechanisms: 
+      authentication method: planned
+      access protocol URL: 2.13 ref A1.1
+      protocol open: 2.14 bool A1.1
+      protocol royalty free: 2.15 bool A1.1
+      own user database maintained: no
+      ORCID used in AAI: no
+      major access technology supported: null
+      authorisation technique: null
+      authorisation needed for: null
+      authorization for accessing content needed: 2.16 bool A1.2
+      access content process description IRI: 2.17 A1.2
+      data licenses in use: creative commons
+      data license IRI: https://creativecommons.org/licenses/
+      metadata openly available: yes
+    data:
+      type name: text-numeric
+      preferred formats: list
+        format name: json
+        metadata types in data headers: none
+      registered data schema: no
+      search on data: no
+      search engine URL: void
+    metadata: 
+      schema: list
+        URL: 
+        name: EPOS-DCAT-AP
+        provenance fields included: null
+      categories defined in registries: yes
+      PIDs included: yes
+      primary storage format: RDF
+      metadata longevity plan URL: 2.18
+      format IRI: 2.8 F2B
+      export formats supported: RDF
+      exchange/harvesting methods: null
+      local search engine URL: no
+      external search engine types supported: none
+      access policy statements included: yes
+      machine actionable: yes
+    vocabularies: list
+      IRI: 2.20 I2
+      type: null
+      topic: null
+      name: null
+      specification language URL: 2.19 I1        
+    data processing:
+      special data processing steps applied: 1.42 list ref 
+      workflow frameworks applied: 1.43 list ref
+      distributed workflows tools used: 1.44 list ref
+      other analysis services offered: 1.45 list ref A1
+      data products offered: 1.46 list ref
+    fairness: 
+      data findability:  
+        data findable: 1.50 bool 
+        gaps: 1.50 list ref
+      data accessibility: 
+        data accessible: 1.51 bool
+        gaps: 1.51 list ref
+      data interoperability: 
+        data interoperable: 1.52 bool
+        gaps: 1.52 list ref
+      data re-usability: 
+        data reusable: 1.53 bool
+        gaps: 1.53 list ref
+    test fairness:
+      URL/IRI of dataset: 1.4/2.4/2.10
+      IRI of metadata: 2.9
+      URL of discovery portal: 1.5
+      IRI of machine readable metadata of dataset: 2.7 F2A
+      URL to linkset describing resource: 2.21 I3
+      Search query: 2.12 F4
+      IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
+      IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
+      IRI of compliance certification: 2.25 R1.3
+ 
