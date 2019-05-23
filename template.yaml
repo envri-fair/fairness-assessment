@@ -8,9 +8,7 @@ infrastructure:
   acronym: ref
   name: 1.3 free
   recognized authority URL: 
-  data management plans:
-    specific DMP tools used: 1.40 ref
-    data publishing steps applied: 1.41 list ref
+  domain: ref
   repositories: list
     URL: 1.5 F4
     name: 1.6 free
@@ -19,8 +17,7 @@ infrastructure:
     metadata repository type: 1.8 ref F4
     software: 1.7 ref F4
     identifier: list
-      IRI: 2.5 F1A
-      persistency-policy document IRI: 2.6 F1B
+      IRI: 2.5 ref F1A
       kind: 1.9 ref F1
       system: 1.9 ref F1
       assigned: 1.10 ref F1
@@ -32,16 +29,14 @@ infrastructure:
     persistency-guaranty: 1.16 ref A1
     access mechanisms: 
       authentication method: 1.33 ref A1.2
-      access protocol URL: 2.13 ref A1.1
-      protocol open: 2.14 bool A1.1
-      protocol royalty free: 2.15 bool A1.1
+      access protocol URL: 2.13 A1.1
+      access without costs: 2.15 bool A1.1
       own user database maintained: 1.34 bool A1.2
       ORCID used in AAI: 1.35 bool A1.2
       major access technology supported: 1.36 ref A1.1
       authorisation technique: 1.37 ref A1.2
       authorisation needed for: 1.37 list ref A1.2
       authorization for accessing content needed: 2.16 bool A1.2
-      access content process description IRI: 2.17 A1.2
       data licenses in use: 1.38 list ref R1.1
       data license IRI: 2.22 R1.1
       metadata openly available: 1.39 bool R1.1
@@ -52,7 +47,7 @@ infrastructure:
         metadata types in data headers: 1.19 list ref I1
       registered data schema: 1.21 bool I1
       search on data: 1.20 bool F4
-      search engine URL: 2.11 F4
+      search engine indexing: 2.11 bool F4
     metadata: 
       schema: list
         URL: 
@@ -62,7 +57,7 @@ infrastructure:
       PIDs included: 1.25 bool F3
       primary storage format: 1.26 ref I1
       metadata longevity plan URL: 2.18
-      format IRI: 2.8 F2B
+      format IRI: 2.8 ref F2B
       export formats supported: 1.27 list ref I1
       exchange/harvesting methods: 1.28 list ref I1
       local search engine URL: 1.29 F4
@@ -70,11 +65,15 @@ infrastructure:
       access policy statements included: 1.31 bool R1.1
       machine actionable: 1.32 bool I1
     vocabularies: list
-      IRI: 2.20 I2
+      IRI: I2
       type: 1.48 ref I1
       topic: 1.48 ref I1
       name: 1.48 ref
-      specification language URL: 2.19 I1        
+      specification language URL: 2.19 ref I1 
+      concept IRI: 2.20 list I2     
+    data management plans:
+      specific DMP tools used: 1.40 ref
+      data publishing steps applied: 1.41 list ref  
     data processing:
       special data processing steps applied: 1.42 list ref 
       workflow frameworks applied: 1.43 list ref
@@ -96,14 +95,10 @@ infrastructure:
         gaps: 1.53 list ref
     test fairness:
       URL/IRI of dataset: 1.4/2.4/2.10
-      IRI of metadata: 2.9
       URL of discovery portal: 1.5
       IRI of machine readable metadata of dataset: 2.7 F2A
-      URL to linkset describing resource: 2.21 I3
-      Search query: 2.12 F4
-      IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
-      IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
-      IRI of compliance certification: 2.25 R1.3
+      machine readable provenance: 2.23 bool R1.2
+      compliance validation service: 2.25 list ref R1.3
  
 
             

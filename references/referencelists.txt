@@ -6,6 +6,12 @@ infrastructure acronym:
     Euro-Argo
     LifeWatch (Marine)
     ICOS
+    
+domain:
+    marine
+    earth
+    athmosphere
+    ecosystem
 
 repository kind:
     metadata repository
@@ -34,20 +40,7 @@ repository kind:
     relational database
     spreadsheets
 
-1.40 DMP tools:
-    DMP template
-    quality management framework
-    data policy document
-    DMPonline
-
-
-1.41 data publishing steps:
-    manual QA QC
-    automatic QA QC
-    QA QC
-    WoRMS taxon matching
-    DwC formatting
-
+2.5 IRI for identifier schema: 
 
 1.9 identifier kind:
     PID
@@ -294,6 +287,20 @@ repository kind:
     ISO 19115 10139
     WoRMS
     Marine Regions
+
+1.40 DMP tools:
+    DMP template
+    quality management framework
+    data policy document
+    DMPonline
+
+
+1.41 data publishing steps:
+    manual QA QC
+    automatic QA QC
+    QA QC
+    WoRMS taxon matching
+    DwC formatting
     
 1.42 processing steps:
     QA QC
