@@ -36,7 +36,7 @@ infrastructure:
     - Terms of Use
     - FAQ
     registries: none
-    persistency-guaranty: NULL
+    persistency-guaranty: none
     access mechanisms: 
       authentication method: NULL 
       access protocol URL: https://www.gbif.org/standards  

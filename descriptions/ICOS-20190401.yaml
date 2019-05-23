@@ -22,11 +22,12 @@ infrastructure:
     identifier:
     - IRI: https://handle.net
       persistency-policy document IRI: VOID
-      kind: PID
-      system: Handle
+      kind: PID, DOI
+      system: Handle, DOI
       assigned: automatically
       provider: PDC
-      includes-attributes: none
+      includes-attributes:
+      - relevant metadata
     - IRI: 
       persistency-policy document IRI: VOID
       kind: DOI
@@ -37,7 +38,8 @@ infrastructure:
       - relevant metadata
     certification methods: none
     policies: 
-    - data security
+    - data policy
+    - data usage license CC BY 4.0
     registries: 
     - re3data
     persistency-guaranty: 20 years
@@ -106,7 +108,7 @@ infrastructure:
       local search engine URL:  https://meta.icos-cp.eu/sparqlclient/
       external search engine types supported: 
       - SPARQL endpoint
-      access policy statements included: no
+      access policy statements included: yes
       machine actionable: yes    
     vocabularies:
     - IRI: http://purl.org/dc/elements/1.1/

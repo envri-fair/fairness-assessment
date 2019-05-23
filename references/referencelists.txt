@@ -121,6 +121,9 @@ repository kind:
     OAuth paired with eduGain
     Marine-ID
     none-open
+    ORCHID
+    fingerprint
+    
 
 1.36 access technology:
     local LDAP
