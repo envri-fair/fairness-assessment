@@ -21,8 +21,8 @@ infrastructure:
     identifier: list
       IRI: 2.5 F1A
       persistency-policy document IRI: 2.6 F1B
-      kind: DOI
-      system: null
+      kind: PID
+      system: DOI
       assigned: automatically
       provider: null
       includes-attributes: null
