@@ -34,7 +34,7 @@ infrastructure:
       provider: ePIC service
       includes-attributes: none
     certification methods: none
-    policies: usage-acknowledgements-itation
+    policies: usage-acknowledgements-citation
     registries: custom registry
     persistency-guaranty: none
     access mechanisms: 
