@@ -34,12 +34,14 @@ repository kind:
     Fedora
     CDI system
     NetCDF file
+    SeisComp3
 
 1.8 metadata repository type:
     central
     relational database
     spreadsheets
-
+    various
+ 
 2.5 IRI for identifier schema: 
 
 1.9 identifier kind:
@@ -128,6 +130,7 @@ repository kind:
     CAS
     OAUTH2
     HTTP GET
+    web service
     
 1.37 authorisation technique: 
     OAUTH
@@ -171,7 +174,8 @@ repository kind:
     image
     video
     observations
-
+    seismic waveform
+    
 
 1.18 data formats:
     CSV
@@ -185,8 +189,9 @@ repository kind:
     xls
     WAV
     JSON
-    MSEED
+    MiniSEED
     raster data
+    SEED
 
 1.19 metadata types in data headers:
     parameters measured
@@ -196,6 +201,8 @@ repository kind:
     depth
     location
     data centre
+    station identification
+    temporal range
     NetCDF Oceansites Profile metadata
     NetCDF EGO format metadata
     standard NetCDF CF headers
@@ -229,6 +236,7 @@ repository kind:
     OWL
     NetCDF CF Argo
     relational database
+    SEED
 
 1.27 metadata export format:
     HTML
@@ -242,6 +250,7 @@ repository kind:
     Turtle
     txt 
     RSS
+    SEED
 
 1.28 metadata exchange/harvesting method:
     CSW
@@ -307,6 +316,7 @@ repository kind:
     ODV aggregation
     checksum 
     Handle PID suffix
+    metadata extraction
 
 1.43 workflow frameworks type:
     data processing steps recorded
@@ -353,6 +363,7 @@ repository kind:
     data quality control
     harmonising vocabularies
     harmonising data models
+    improving vocabularies
 
 1.53 data re-usability gap:
     provenance information
@@ -360,3 +371,4 @@ repository kind:
     usage license 
     harmonising vocabularies
     metadata checking
+    improving vocabularies

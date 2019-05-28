@@ -14,7 +14,7 @@ hasPersistencyGuaranty: https://w3id.org/fair/principles/terms/A1
 hasAuthenticationMethod: https://w3id.org/fair/principles/terms/A1.2
 hasAccessProtocolUrl: https://w3id.org/fair/principles/terms/A1.1
 protocolIsOpen: https://w3id.org/fair/principles/terms/A1.1
-protocolIsRoyaltyFree: https://w3id.org/fair/principles/terms/A1.1
+allowsAccessWithoutCosts: https://w3id.org/fair/principles/terms/A1.1
 maintainsOwnUserDatabase: https://w3id.org/fair/principles/terms/A1.2
 usesORCIDinAAI: https://w3id.org/fair/principles/terms/A1.2
 supportsAccessTechnology: https://w3id.org/fair/principles/terms/A1.1
@@ -28,7 +28,7 @@ hasFormatName: https://w3id.org/fair/principles/terms/I1
 hasDataHeaderMetadataTypes: https://w3id.org/fair/principles/terms/I1
 dataSchemaIsRegistered: https://w3id.org/fair/principles/terms/I1
 searchOnData: https://w3id.org/fair/principles/terms/F4
-hasSearchEngineUrl: https://w3id.org/fair/principles/terms/F4
+allowsSearchEngineIndexing: https://w3id.org/fair/principles/terms/F4
 hasSchemaName: https://w3id.org/fair/principles/terms/I1
 includesProvenanceFields: https://w3id.org/fair/principles/terms/F2
 categoriesAreDefinedInRegistries: https://w3id.org/fair/principles/terms/I2
@@ -50,6 +50,7 @@ hasMetadataIri: https://w3id.org/fair/principles/terms/F3
 hasMachineReadableDatasetMetadata: https://w3id.org/fair/principles/terms/F2
 hasLinksetDescribingResource: https://w3id.org/fair/principles/terms/I3
 hasSearchQuery: https://w3id.org/fair/principles/terms/F4
-hasCitationalProvenanceVocabulary: https://w3id.org/fair/principles/terms/R1.2
+hasMachineReadableProvenance: https://w3id.org/fair/principles/terms/R1.2
 hasContextualProvenanceVocabulary: https://w3id.org/fair/principles/terms/R1.2
-hasComplianceCertification: https://w3id.org/fair/principles/terms/R1.3
+hasComplianceValidatorService: https://w3id.org/fair/principles/terms/R1.3
+hasConceptIri: https://w3id.org/fair/principles/terms/I2

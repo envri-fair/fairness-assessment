@@ -308,3 +308,14 @@ NERC vocabulary service: http://envri.eu/ns/NERCVocabularyService
 NVS P01: http://envri.eu/ns/NVSP01
 NVS P06: http://envri.eu/ns/NVSP06
 advanced editing: http://envri.eu/ns/AdvancedEditing
+web service: http://envri.eu/ns/webService
+SEED: http://envri.eu/ns/SEED
+SEISCOMP3: http://envri.eu/ns/SEISCOMP3
+station identification: http://envri.eu/ns/stationIdentification
+seismic waveform: http://envri.eu/ns/seismicWaveform
+temporal range: http://envri.eu/ns/temporalRange
+MiniSEED: http://envri.eu/ns/MiniSEED
+isDomain: http://envri.eu/ns/isDomain
+various: http://envri.eu/ns/various
+improving vocabularies: http://envri.eu/ns/improvingVocabularies
+metadata extraction: http://envri.eu/ns/metadataExtraction
