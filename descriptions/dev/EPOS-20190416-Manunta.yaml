@@ -7,20 +7,17 @@ survey:
 infrastructure:
   acronym: EPOS
   name: EPOSAR
-  recognized authority URL: 
-  data management plans:
-    specific DMP tools used: DMPonline
-    data publishing steps applied: none
-  repositories: list
-    URL: https://catalog.terradue.com/gep-epos/search?format=atomeop
-    name: Domain repository
+  recognized authority URL: null
+  domain: earth
+  repositories: 
+  - URL: https://catalog.terradue.com/gep-epos/search?format=atomeop
+    name: Terradue
     kind: metadata data repository 
     data repository type: domain
     metadata repository type: central
     software: null
-    identifier: list
-      IRI: 2.5 F1A
-      persistency-policy document IRI: 2.6 F1B
+    identifier: 
+    - IRI: null
       kind: PID
       system: DOI
       assigned: manually
@@ -41,27 +38,26 @@ infrastructure:
       authorisation technique: null
       authorisation needed for: null
       authorisation for accessing content needed: 2.16 bool A1.2
-      access content process description IRI: 2.17 A1.2
       data licenses in use: 
       - CCBY
       - CCBYNC
       data license IRI: https://creativecommons.org/licenses/
       metadata openly available: yes
     data:
-      type name: 
+    - type name: 
       - spatial
       - timeseries
-      preferred formats: list
-        format name: GEOTIFF 
+      preferred formats: 
+      - format name: GEOTIFF 
         metadata types in data headers: none
-        format name: ASCII
+      - format name: ASCII
         metadata types in data headers: none
       registered data schema: no
       search on data: null
-      search engine URL: null
+      search engine indexing: null
     metadata: 
-      schema: list
-        URL: 
+      schema: 
+      - URL: 
         name: ISO 19119
         provenance fields included: yes (?)
       categories defined in registries: no
@@ -77,8 +73,8 @@ infrastructure:
       external search engine types supported: yes (?)
       access policy statements included: yes
       machine actionable: yes
-    vocabularies: list
-      IRI: 2.20 I2
+    vocabularies: 
+    - IRI: null
       type: none
       topic: none
       name: none
