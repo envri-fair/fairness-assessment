@@ -114,6 +114,7 @@ hasIdentifierIri: http://envri.eu/ns/hasIdentifierIri
 hasSchemaUrl: http://envri.eu/ns/hasSchemaUrl
 hasVocabularyIri: http://envri.eu/ns/hasVocabularyIri
 hasName: http://envri.eu/ns/hasName
+hasDomain: http://envri.eu/ns/hasDomain
 hasSchemaName: http://envri.eu/ns/hasSchemaName
 includesProvenanceFields: http://envri.eu/ns/includesProvenanceFields
 categoriesAreDefinedInRegistries: http://envri.eu/ns/categoriesAreDefinedInRegistries
@@ -322,3 +323,9 @@ metadata extraction: http://envri.eu/ns/metadataExtraction
 SeisComp3: http://envri.eu/ns/SeisComp3
 data format: http://envri.eu/ns/DataFormat
 stationXML: http://envri.eu/ns/StationXML
+earth: http://envri.eu/ns/Earth
+partially: http://envri.eu/ns/Partially
+none: http://envri.eu/ns/None
+VOID: http://envri.eu/ns/VOID
+relatesTo: http://envri.eu/ns/relatesTo
+altLabel: http://www.w3.org/2004/02/skos/core#altLabel
