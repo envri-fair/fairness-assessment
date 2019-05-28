@@ -46,10 +46,14 @@ infrastructure:
       data license IRI: https://creativecommons.org/licenses/
       metadata openly available: yes
     data:
-      type name: Turtle-JSONLD
+      type name: 
+      - Turtle
+      - JSONLD
       preferred formats: list
         format name: GML
-        metadata types in data headers: Turtle-JSONLD
+        metadata types in data headers: 
+        - Turtle
+        - JSONLD
       registered data schema: yes
       search on data: yes
       search engine URL: 2.11 F4
@@ -69,8 +73,18 @@ infrastructure:
       primary storage format: database
       metadata longevity plan URL: 2.18
       format IRI: 2.8 F2B
-      export formats supported: Turtle-JSONLD-RDF-csv-nq-xml-pdf
-      exchange/harvesting methods: Z39.50-OAIPMH-CSW
+      export formats supported: 
+      - Turtle
+      - JSONLD
+      - RDF
+      - csv
+      - nq
+      - xml
+      - pdf
+      exchange/harvesting methods: 
+      - Z39.50
+      - OAIPMH
+      - CSW
       local search engine URL: https://data.geoscience.earth/ncl/
       external search engine types supported: null
       access policy statements included: yes
