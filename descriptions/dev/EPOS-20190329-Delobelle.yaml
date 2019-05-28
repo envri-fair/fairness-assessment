@@ -7,8 +7,6 @@ survey:
 infrastructure:
   acronym: EPOS
   name: EPOS
-  recognized authority URL: 
-
   recognized authority URL: NULL
   domain: earth
   repositories: 
