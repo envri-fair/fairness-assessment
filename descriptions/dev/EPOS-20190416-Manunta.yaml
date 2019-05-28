@@ -42,11 +42,15 @@ infrastructure:
       authorisation needed for: null
       authorisation for accessing content needed: 2.16 bool A1.2
       access content process description IRI: 2.17 A1.2
-      data licenses in use: CCBY-CCBYNC
+      data licenses in use: 
+      - CCBY
+      - CCBYNC
       data license IRI: https://creativecommons.org/licenses/
       metadata openly available: yes
     data:
-      type name: spatial-timeseries
+      type name: 
+      - spatial
+      - timeseries
       preferred formats: list
         format name: GEOTIFF 
         metadata types in data headers: none
@@ -65,7 +69,9 @@ infrastructure:
       primary storage format: XML
       metadata longevity plan URL: 2.18
       format IRI: 2.8 F2B
-      export formats supported: xml-atom(?)
+      export formats supported: 
+      - xml
+      - atom(?)
       exchange/harvesting methods: null
       local search engine URL: https://catalog.terradue.com/gep-epos/search?format=atomeop (search engine ?)
       external search engine types supported: yes (?)
