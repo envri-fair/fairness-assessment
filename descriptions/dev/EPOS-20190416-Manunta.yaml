@@ -57,7 +57,7 @@ infrastructure:
       search engine indexing: null
     metadata: 
       schema: 
-      - URL: 
+      - URL: null
         name: ISO 19119
         provenance fields included: yes (?)
       categories defined in registries: no
@@ -78,7 +78,8 @@ infrastructure:
       type: none
       topic: none
       name: none
-      specification language URL: 2.19 I1        
+      specification language URL: NULL
+      concept IRI: NULL
     data processing:
       special data processing steps applied: yes (?)
       workflow frameworks applied: yes (?)
@@ -100,11 +101,7 @@ infrastructure:
         gaps: void
     test fairness:
       URL/IRI of dataset: https://catalog.terradue.com//eop/gep-epos/profile/xml?uid=InW_CNR_IREA_20170211S1B_20180101S1B_RU11
-      IRI of metadata: 2.9
       URL of discovery portal: https://catalog.terradue.com/gep-epos/search?format=atomeop
-      IRI of machine readable metadata of dataset: 2.7 F2A
-      URL to linkset describing resource: 2.21 I3
-      Search query: 2.12 F4
-      IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
-      IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
-      IRI of compliance certification: 2.25 R1.3
+      IRI of machine readable metadata of dataset: NULL
+      machine readable provenance: NULL
+      compliance validation service: NULL
