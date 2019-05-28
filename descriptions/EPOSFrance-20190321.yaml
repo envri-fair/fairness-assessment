@@ -10,14 +10,14 @@ infrastructure:
   recognized authority URL: NULL
   domain: earth
   repositories: 
-  - URL: http://seismology.resif.fr/#WelcomePlace:
+  - URL: http://seismology.resif.fr/#WelcomePlace
     name: RESIF (France)
     kind: data repository
     data repository type: domain
     metadata repository type: NULL
     software: SeisComp3
     identifier: 
-      IRI: NULL
+    - IRI: NULL
       kind: DOI
       system: NULL
       assigned: automatically
@@ -67,7 +67,7 @@ infrastructure:
       access policy statements included: NULL
       machine actionable: NULL
     vocabularies: 
-      IRI: NULL
+    - IRI: NULL
       type: NULL
       topic: NULL
       name: NULL
@@ -97,7 +97,7 @@ infrastructure:
         gaps: none
     test fairness:
       URL/IRI of dataset: http://seismology.resif.fr/#NetworkConsultPlace:Z3%5B2015-07-01T00:00:00.000000_2020-07-31T00:00:00.000000%5D
-      URL of discovery portal: http://seismology.resif.fr/#WelcomePlace:
+      URL of discovery portal: http://seismology.resif.fr/#WelcomePlace
       IRI of machine readable metadata of dataset: NULL
       machine readable provenance: NULL
       compliance validation service: NULL

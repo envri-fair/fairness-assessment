@@ -17,7 +17,7 @@ infrastructure:
     metadata repository type: relational database
     software: SeisComp3
     identifier: 
-      IRI: NULL
+    - IRI: NULL
       kind: NULL
       system: NULL
       assigned: NULL
