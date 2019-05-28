@@ -47,7 +47,7 @@ infrastructure:
           metadata types in data headers: 
           - station identification
           - temporal range
-      registered data schema: yes
+      registered data schema: NULL
       search on data: yes
       search engine indexing: NULL
     metadata: 

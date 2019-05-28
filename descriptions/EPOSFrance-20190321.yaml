@@ -45,7 +45,7 @@ infrastructure:
       preferred formats: 
       - format name: MiniSEED
         metadata types in data headers: none
-      registered data schema: no
+      registered data schema: NULL
       search on data: partially
       search engine indexing: NULL
     metadata: 
