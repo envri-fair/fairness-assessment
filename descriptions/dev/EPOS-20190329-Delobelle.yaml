@@ -8,19 +8,18 @@ infrastructure:
   acronym: EPOS
   name: EPOS
   recognized authority URL: 
-  data management plans:
-    specific DMP tools used: none
-    data publishing steps applied: none
-  repositories: list
-    URL: https://www.epos-ip.org/data-services/epos-prototype-portal
+
+  recognized authority URL: NULL
+  domain: earth
+  repositories: 
+  - URL: https://www.epos-ip.org/data-services/epos-prototype-portal
     name: EPOS TCS Geological Information and Modelling repositories
     kind: metadata data repository
     data repository type: domain
     metadata repository type: central
     software: OGC Services
-    identifier: list
-      IRI: 2.5 F1A
-      persistency-policy document IRI: 2.6 F1B
+    identifier: 
+    - IRI: null
       kind: URI
       system: HTTP URIs
       assigned: automatically
@@ -32,45 +31,43 @@ infrastructure:
     persistency-guaranty: ownership
     access mechanisms: 
       authentication method: none
-      access protocol URL: 2.13 ref A1.1
-      protocol open: 2.14 bool A1.1
-      protocol royalty free: 2.15 bool A1.1
+      access protocol URL: NULL
+      access without costs: NULL
       own user database maintained: no
       ORCID used in AAI: no
       major access technology supported: none
       authorisation technique: none
       authorisation needed for: none
-      authorization for accessing content needed: 2.16 bool A1.2
-      access content process description IRI: 2.17 A1.2
+      authorization for accessing content needed: null
       data licenses in use: creative commons
       data license IRI: https://creativecommons.org/licenses/
       metadata openly available: yes
     data:
-      type name: GML
-      preferred formats: list
-        format name: Turtle
+    - type name: GML
+      preferred formats: 
+      - format name: Turtle
         metadata types in data headers: GML
-        format name: JSONLD
+      - format name: JSONLD
         metadata types in data headers: GML
       registered data schema: yes
       search on data: yes
-      search engine URL: 2.11 F4
+      search engine indexing: NULL
     metadata: 
-      schema: list
-        URL: 
+      schema: 
+      - URL: null
         name: ISO 19115
         provenance fields included: PROV-O
-        URL: 
+      - URL: null
         name: ISO 19119
         provenance fields included: PROV-O
-        URL: 
+      - URL: null
         name: ISO 19139
         provenance fields included: PROV-O
       categories defined in registries: yes
       PIDs included: yes
       primary storage format: database
-      metadata longevity plan URL: 2.18
-      format IRI: 2.8 F2B
+      metadata longevity plan URL: null
+      format IRI: null
       export formats supported: 
       - Turtle
       - JSONLD
@@ -87,22 +84,28 @@ infrastructure:
       external search engine types supported: null
       access policy statements included: yes
       machine actionable: yes
-    vocabularies: list
-      IRI: http://www.opengeospatial.org/
+    vocabularies: 
+    - IRI: http://www.opengeospatial.org/
       type: ontology
       topic: domain specific
       name: OGC
-      specification language URL: 2.19 I1        
-      IRI: https://www.w3.org/
+      specification language URL: NULL
+      concept IRI: NULL
+    - IRI: https://www.w3.org/
       type: ontology
       topic: general
       name: W3C
-      specification language URL: 2.19 I1        
-      IRI: https://inspire.ec.europa.eu/
+      specification language URL: NULL
+      concept IRI: NULL
+    - IRI: https://inspire.ec.europa.eu/
       type: ontology
       topic: general
       name: INSPIRE
-      specification language URL: 2.19 I1        
+      specification language URL: NULL
+      concept IRI: NULL
+    data management plans:
+      specific DMP tools used: NULL
+      data publishing steps applied: NULL  
     data processing:
       special data processing steps applied: data validation
       workflow frameworks applied: distributed synchronization
@@ -124,11 +127,8 @@ infrastructure:
         gaps: void
     test fairness:
       URL/IRI of dataset: http://resource.europe-geology.eu/dataset/borehole
-      IRI of metadata: 2.9
       URL of discovery portal: http://www.europe-geology.eu/
-      IRI of machine readable metadata of dataset: 2.7 F2A
-      URL to linkset describing resource: 2.21 I3
-      Search query: 2.12 F4
-      IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
-      IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
-      IRI of compliance certification: 2.25 R1.3
+      IRI of machine readable metadata of dataset: null
+      machine readable provenance: NULL
+      compliance validation service: NULL
+ 
