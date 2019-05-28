@@ -81,8 +81,8 @@ infrastructure:
       specification language URL: NULL
       concept IRI: NULL
     data management plans:
-      specific DMP tools used: NULL
-      data publishing steps applied: NULL  
+      specific DMP tools used: DMPonline
+      data publishing steps applied: none  
     data processing:
       special data processing steps applied: yes (?)
       workflow frameworks applied: yes (?)
