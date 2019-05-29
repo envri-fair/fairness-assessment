@@ -66,40 +66,40 @@ def _li(g, v, n, i):
     g.add((n, v['li'], URIRef(v[i])))
     
     
-def process_document(s, d, v):
+def translate(s, d, v):
     ns = 'http://envri.eu/ns/'
     gid = URIRef('{}G{}'.format(ns, sid.generate()))
     g = Graph(s, gid)
-    process_survey(g, d['survey'], v)
-    process_infrastructure(g, d['infrastructure'], v)
+    survey(g, d['survey'], v)
+    infrastructure(g, d['infrastructure'], v)
     
     
-def process_survey(g, d, v):
+def survey(g, d, v):
     n = BNode()
     _l(g, d, v, g.identifier, 'date', XSD.date)
     _l(g, d, v, g.identifier, 'version', XSD.string)
-    process_creator(g, d['creator'], v, g.identifier)
+    creator(g, d['creator'], v, g.identifier)
     
     
-def process_creator(g, d, v, n):
+def creator(g, d, v, n):
     n1 = BNode()
     _b(g, v, n, 'creator', n1)
     _l(g, d, v, n1, 'name', XSD.string)
     _r(g, d, v, n1, 'email')
     
     
-def process_infrastructure(g, d, v):
+def infrastructure(g, d, v):
     n = BNode()
     _t(g, d, v, n, 'ResearchInfrastructure')
     _l(g, d, v, n, 'acronym', XSD.string)
     _l(g, d, v, n, ['label', 'name'], XSD.string)
     _r(g, d, v, n, ['riUrl', 'recognized authority URL'])
     _r(g, d, v, n, ['hasDomain', 'domain'])
-    for repository in d['repositories']:
-        process_repository(g, repository, v, n, d['acronym'])
+    for r in d['repositories']:
+        repository(g, r, v, n, d['acronym'])
         
         
-def process_repository(g, d, v, n, i):
+def repository(g, d, v, n, i):
     if (handle_special_cases(g, d, v, n, 'hasRepository')):
         return
     n1 = BNode()
@@ -112,22 +112,22 @@ def process_repository(g, d, v, n, i):
     _r(g, d, v, n1, ['hasDataRepositoryType', 'data repository type'])
     _r(g, d, v, n1, ['hasMetadataRepositoryType', 'metadata repository type'])
     _r(g, d, v, n1, ['usesSoftware', 'software'])
-    process_repository_identifier(g, d['identifier'], v, n1, i, d['name'])
+    identifier(g, d['identifier'], v, n1, i, d['name'])
     _c(g, d['certification methods'], v, n1, BNode(), 'hasCertificationMethods')
     _c(g, d['policies'], v, n1, BNode(), 'hasPolicies')
     _c(g, d['registries'], v, n1, BNode(), 'inRegistries')
     _l(g, d, v, n1, ['hasPersistencyGuaranty', 'persistency-guaranty'], XSD.string)
-    process_repository_access(g, d['access mechanisms'], v, n1, i, d['name'])
-    process_repository_data(g, d['data'], v, n1, i, d['name'])
-    process_repository_metadata(g, d['metadata'], v, n1, i, d['name'])
-    process_repository_vocabularies(g, d['vocabularies'], v, n1, i, d['name'])
-    process_repository_datamanagementplans(g, d['data management plans'], v, n, d['name'])
-    process_repository_dataprocessing(g, d['data processing'], v, n1, i, d['name'])
-    process_repository_fairness(g, d['fairness'], v, n1, i, d['name'])
-    process_repository_testfairness(g, d['test fairness'], v, n1, i, d['name'])
+    access(g, d['access mechanisms'], v, n1, i, d['name'])
+    data(g, d['data'], v, n1, i, d['name'])
+    metadata(g, d['metadata'], v, n1, i, d['name'])
+    vocabularies(g, d['vocabularies'], v, n1, i, d['name'])
+    datamanagementplans(g, d['data management plans'], v, n, d['name'])
+    dataprocessing(g, d['data processing'], v, n1, i, d['name'])
+    fairness(g, d['fairness'], v, n1, i, d['name'])
+    testfairness(g, d['test fairness'], v, n1, i, d['name'])
         
         
-def process_repository_identifier(g, d, v, n, i, r):
+def identifier(g, d, v, n, i, r):
     if (handle_special_cases(g, d, v, n, 'usesIdentifier')):
         return
     for e in d:
@@ -143,7 +143,7 @@ def process_repository_identifier(g, d, v, n, i, r):
         _c(g, e['includes-attributes'], v, n1, BNode(), 'includesAttributes')
         
 
-def process_repository_access(g, d, v, n, i, r):
+def access(g, d, v, n, i, r):
     if (handle_special_cases(g, d, v, n, 'hasAccessMechanisms')):
         return
     n1 = BNode()
@@ -164,7 +164,7 @@ def process_repository_access(g, d, v, n, i, r):
     _l(g, d, v, n1, ['openAccessMetadata', 'metadata openly available'], XSD.bool)
     
     
-def process_repository_data(g, d, v, n, i, r):
+def data(g, d, v, n, i, r):
     if (handle_special_cases(g, d, v, n, 'hasData')):
         return
     for e1 in d:
@@ -184,13 +184,13 @@ def process_repository_data(g, d, v, n, i, r):
             _c(g, e2['metadata types in data headers'], v, n2, BNode(), 'hasDataHeaderMetadataTypes')
             
     
-def process_repository_metadata(g, d, v, n, i, r):
+def metadata(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'hasMetadata'):
         return
     n1 = BNode()
     _b(g, v, n, 'hasMetadata', n1)
     _l(g, d, v, n1, ['altLabel', '{} {} metadata'.format(i, r)], XSD.string)
-    process_repository_metadata_schema(g, d['schema'], v, n1, i, r)
+    metadata_schema(g, d['schema'], v, n1, i, r)
     _l(g, d, v, n1, ['categoriesAreDefinedInRegistries', 'categories defined in registries'], XSD.bool)
     _l(g, d, v, n1, ['persistentIdentifiersAreIncluded', 'PIDs included'], XSD.bool)
     _r(g, d, v, n1, ['hasPrimaryStorageFormat', 'primary storage format'])
@@ -204,7 +204,7 @@ def process_repository_metadata(g, d, v, n, i, r):
     _l(g, d, v, n1, ['isMachineActionable', 'machine actionable'], XSD.bool)
     
     
-def process_repository_metadata_schema(g, d, v, n, i, r):
+def metadata_schema(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'hasSchema'):
         return
     for e1 in d:
@@ -216,7 +216,7 @@ def process_repository_metadata_schema(g, d, v, n, i, r):
         _c(g, e1['provenance fields included'], v, n1, BNode(), 'includesProvenanceFields')
 
     
-def process_repository_vocabularies(g, d, v, n, i, r):
+def vocabularies(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'hasVocabularies'):
         return
     for e1 in d:
@@ -230,7 +230,7 @@ def process_repository_vocabularies(g, d, v, n, i, r):
         _r(g, e1, v, n1, ['hasSpecificationLanguage', 'specification language URL'])
         
 
-def process_repository_datamanagementplans(g, d, v, n, i):
+def datamanagementplans(g, d, v, n, i):
     if (handle_special_cases(g, d, v, n, 'hasDataManagementPlans')):
         return
     n1 = BNode()
@@ -240,7 +240,7 @@ def process_repository_datamanagementplans(g, d, v, n, i):
     _l(g, d, v, n1, ['appliedDataPublishingSteps', 'data publishing steps applied'], XSD.string)
     
 
-def process_repository_dataprocessing(g, d, v, n, i, r):
+def dataprocessing(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'hasDataProcessing'):
         return
     n1 = BNode()
@@ -253,19 +253,19 @@ def process_repository_dataprocessing(g, d, v, n, i, r):
     _c(g, d['data products offered'], v, n1, BNode(), 'dataProductsOffered')
 
     
-def process_repository_fairness(g, d, v, n, i, r):
+def fairness(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'fairness'):
         return
     n1 = BNode()
     _b(g, v, n, 'fairness', n1)
     _l(g, d, v, n1, ['altLabel', '{} {} fairness'.format(i, r)], XSD.string)
-    process_repository_faireness_findability(g, d['data findability'], v, n1, i, r)
-    process_repository_faireness_accessibility(g, d['data accessibility'], v, n1, i, r)
-    process_repository_faireness_interoperability(g, d['data interoperability'], v, n1, i, r)
-    process_repository_faireness_reusability(g, d['data re-usability'], v, n1, i, r)
+    fairness_findability(g, d['data findability'], v, n1, i, r)
+    fairness_accessibility(g, d['data accessibility'], v, n1, i, r)
+    fairness_interoperability(g, d['data interoperability'], v, n1, i, r)
+    fairness_reusability(g, d['data re-usability'], v, n1, i, r)
 
     
-def process_repository_faireness_findability(g, d, v, n, i, r):
+def fairness_findability(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'dataFindability'):
         return
     n1 = BNode()
@@ -275,7 +275,7 @@ def process_repository_faireness_findability(g, d, v, n, i, r):
     _c(g, d['gaps'], v, n1, BNode(), 'gaps')
 
     
-def process_repository_faireness_accessibility(g, d, v, n, i, r):
+def fairness_accessibility(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'dataAccessibility'):
         return
     n1 = BNode()
@@ -285,7 +285,7 @@ def process_repository_faireness_accessibility(g, d, v, n, i, r):
     _c(g, d['gaps'], v, n1, BNode(), 'gaps')
 
     
-def process_repository_faireness_interoperability(g, d, v, n, i, r):
+def fairness_interoperability(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'dataInteroperability'):
         return
     n1 = BNode()
@@ -295,7 +295,7 @@ def process_repository_faireness_interoperability(g, d, v, n, i, r):
     _c(g, d['gaps'], v, n1, BNode(), 'gaps')
 
     
-def process_repository_faireness_reusability(g, d, v, n, i, r):
+def fairness_reusability(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'dataReusability'):
         return
     n1 = BNode()
@@ -305,7 +305,7 @@ def process_repository_faireness_reusability(g, d, v, n, i, r):
     _c(g, d['gaps'], v, n1, BNode(), 'gaps')
     
     
-def process_repository_testfairness(g, d, v, n, i, r):
+def testfairness(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'testFairness'):
         return
     n1 = BNode()
@@ -321,7 +321,6 @@ def process_repository_testfairness(g, d, v, n, i, r):
 def handle_special_cases(g, d, v, n, k):
     if d is None:
         g.add((n, v[k], v['NULL']))
-        # _r(g, d, n, [k, 'NULL'])
         return True
     if d is 'NULL':
         g.add((n, v[k], v['NULL']))
