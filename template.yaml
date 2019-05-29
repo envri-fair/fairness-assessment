@@ -45,7 +45,7 @@ infrastructure:
       preferred formats: list
         format name: 1.18 ref I1
         metadata types in data headers: 1.19 list ref I1
-      registered data schema: 1.21 bool I1
+      registered data schema: 1.21 ref I1
       search on data: 1.20 bool F4
       search engine indexing: 2.11 bool F4
     metadata: 

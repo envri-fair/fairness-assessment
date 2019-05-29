@@ -6,7 +6,7 @@ survey:
     email: trani@knmi.nl
 infrastructure:
   acronym: EPOS
-  name: EPOS (ORFEUS)
+  name: EPOS ORFEUS
   recognized authority URL: NULL
   domain: earth
   repositories: 
@@ -15,29 +15,43 @@ infrastructure:
     kind: metadata data repository 
     data repository type: domain
     metadata repository type: various
-    software: SeisComp3
+    software: GitHub
     identifier: 
-      IRI: NULL
+    - IRI: https://www.doi.org/
       kind: DOI
-      system: NULL
+      system: DataCite
+      assigned: manually
+      provider: DataCite
+      includes-attributes: 
+      - file location
+      - file checksum
+      - PID replica
+    - IRI: https://www.pidconsortium.eu/
+      kind: PID
+      system: ePIC 
       assigned: automatically
-      provider: NULL
-      includes-attributes: NULL
+      provider: ePIC service
+      includes-attributes: none
     certification methods: NULL
-    policies: NULL
-    registries: NULL
-    persistency-guaranty: NULL
+    policies: 
+    - usage
+    - acknowledgements
+    - citation
+    registries: 
+    - local registry
+    persistency-guaranty: none
     access mechanisms: 
-      authentication method: NULL
+      authentication method: B2ACCESS
       access protocol URL: NULL
       access without costs: NULL
-      own user database maintained: NULL
-      ORCID used in AAI: NULL
-      major access technology supported: NULL
+      own user database maintained: yes
+      ORCID used in AAI: yes
+      major access technology supported: HTTP
       authorisation technique: NULL
       authorisation needed for: NULL
       authorization for accessing content needed: NULL
-      data licenses in use: NULL
+      data licenses in use: 
+      - CC BY
       data license IRI: NULL
       metadata openly available: yes
     data:
@@ -45,9 +59,23 @@ infrastructure:
       preferred formats: 
       - format name: MiniSEED
         metadata types in data headers: none
-      registered data schema: no
-      search on data: partially
+      registered data schema: NULL
+      search on data: yes
       search engine indexing: NULL
+    - type name: quake event
+      preferred formats: 
+      - format name: quakeML
+        metadata types in data headers: none
+      registered data schema: NULL
+      search on data: yes
+      search engine indexing: NULL  
+    - type name: stations
+      preferred formats: 
+      - format name: StationXML
+        metadata types in data headers: none
+      registered data schema: NULL
+      search on data: yes
+      search engine indexing: NULL        
     metadata: 
       schema: 
       - URL: NULL
@@ -67,7 +95,7 @@ infrastructure:
       access policy statements included: NULL
       machine actionable: NULL
     vocabularies: 
-      IRI: NULL
+    - IRI: NULL
       type: NULL
       topic: NULL
       name: NULL
@@ -77,7 +105,8 @@ infrastructure:
       specific DMP tools used: DMPonline
       data publishing steps applied: NULL  
     data processing:
-      special data processing steps applied: metadata extraction
+      special data processing steps applied: 
+      - metadata extraction
       workflow frameworks applied: 
       - VERCE
       - DARE
@@ -95,10 +124,12 @@ infrastructure:
         gaps: none
       data interoperability: 
         data interoperable: partially
-        gaps: improving vocabularies
+        gaps: 
+        - improving vocabularies
       data re-usability: 
         data reusable: yes
-        gaps: improving vocabularies
+        gaps: 
+        - improving vocabularies
     test fairness:
       URL/IRI of dataset: http://www.orfeus-eu.org/data/eida/
       URL of discovery portal: http://orfeus-eu.org/webdc3/

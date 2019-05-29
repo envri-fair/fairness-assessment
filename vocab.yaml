@@ -329,3 +329,42 @@ none: http://envri.eu/ns/None
 VOID: http://envri.eu/ns/VOID
 relatesTo: http://envri.eu/ns/relatesTo
 altLabel: http://www.w3.org/2004/02/skos/core#altLabel
+file location: http://envri.eu/ns/FileLocation
+file checksum: http://envri.eu/ns/FileChecksum
+PID replica: http://envri.eu/ns/PIDReplica
+ePIC: http://envri.eu/ns/ePIC
+ePIC service: http://envri.eu/ns/ePICService
+usage: http://envri.eu/ns/Usage
+acknowledgements: http://envri.eu/ns/Acknowledgementes
+citation: http://envri.eu/ns/Citation
+local registry: http://envri.eu/ns/LocalRegistry
+B2ACCESS: http://envri.eu/ns/B2ACCESS
+HTTP: http://envri.eu/ns/HTTP
+CC BY: http://envri.eu/ns/CCBY
+quake event: http://envri.eu/ns/QuakeEvent
+quakeML: http://envri.eu/ns/QuakeML
+FDSN StationXML: http://envri.eu/ns/FDSNStationXml
+Waveform metadata schema: http://envri.eu/ns/WaveformMetadataSchema
+RDF: http://envri.eu/ns/RDF
+WebAPI: http://envri.eu/ns/WebAPI
+EPOS ICS: http://envri.eu/ns/EposIcs
+VERCE: http://envri.eu/ns/VERCE
+DARE: http://envri.eu/ns/DARE
+GitHub: http://envri.eu/ns/GitHub
+metadata template: http://envri.eu/ns/MetadataTemplate
+EPOS: http://envri.eu/ns/EPOS
+EPOS ORFEUS: http://envri.eu/ns/EPOSORFEUS
+Shibboleth: http://envri.eu/ns/Shibboleth
+CC BY NC: http://envri.eu/ns/CCBYNC
+GEOTIFF: http://envri.eu/ns/GEOTIFF
+stations: http://envri.eu/ns/Stations
+atom: http://envri.eu/ns/Atom
+EPOSAR: http://envri.eu/ns/EPOSAR
+FDSN StationXML: http://envri.eu/ns/FDSNStationXml
+ISO 19119: http://envri.eu/ns/ISO19119
+StationXML: http://envri.eu/ns/StationXML
+
+
+
+
+
