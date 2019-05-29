@@ -8,6 +8,7 @@ access data: http://envri.eu/ns/AccessData
 time series: http://envri.eu/ns/TimeSeries
 spatial: http://envri.eu/ns/Spatial
 raster data: http://envri.eu/ns/RasterData
+domain: http://envri.eu/ns/Domain
 NetCDF Oceansites Profile metadata: http://envri.eu/ns/NetCdfOceansitesProfileMetadata
 NetCDF EGO format metadata: http://envri.eu/ns/NetCdfEgoFormatMetadata
 standard NetCDF CF headers: http://envri.eu.ns/StandardNetCdfCFHeaders
@@ -79,20 +80,17 @@ hasCertificationMethods: http://envri.eu/ns/hasCertificationMethods
 hasPolicies: http://envri.eu/ns/hasPolicies
 inRegistries: http://envri.eu/ns/inRegistries
 hasPersistentPolicy: http://envri.eu/ns/hasPersistentPolicy
-hasPersistencyPolicyDocumentIri: http://envri.eu/ns/hasPersistencyPolicyDocumentIri
 hasPersistencyGuaranty: http://envri.eu/ns/hasPersistencyGuaranty
 hasAccessMechanisms: http://envri.eu/ns/hasAccessMechanisms
 hasAuthenticationMethod: http://envri.eu/ns/hasAuthenticationMethod
 hasAccessProtocolUrl: http://envri.eu/ns/hasAccessProtocolUrl
-protocolIsOpen: http://envri.eu/ns/protocolIsOpen
-protocolIsRoyaltyFree: http://envri.eu/ns/protocolIsRoyaltyFree
+accessWithoutCosts: http://envri.eu/ns/accessWithoutCosts
 maintainsOwnUserDatabase: http://envri.eu/ns/maintainsOwnUserDatabase
 usesORCIDinAAI: http://envri.eu/ns/usesORCIDinAAI
 supportsAccessTechnology: http://envri.eu/ns/supportsAccessTechnology
 usesAuthorisationTechnique: http://envri.eu/ns/usesAuthorisationTechnique
 usesAuthorisationFor: http://envri.eu/ns/usesAuthorisationFor
 contentAccessAuthorizationRequired: http://envri.eu/ns/contentAccessAuthorizationRequired
-hasAccessConcentProcessDescriptionUri: http://envri.eu/ns/hasAccessConcentProcessDescriptionUri
 usesDataLicenses: http://envri.eu/ns/usesDataLicenses
 dataLicenseIri: http://envri.eu/ns/dataLicenseIri
 openAccessMetadata: http://envri.eu/ns/openAccessMetadata
@@ -106,7 +104,7 @@ hasMetadataHeaders: http://envri.eu/ns/hasMetadataHeaders
 metadataTypes: http://envri.eu/ns/metadataTypes
 dataSchemaIsRegistered: http://envri.eu/ns/dataSchemaIsRegistered
 searchOnData: http://envri.eu/ns/searchOnData
-hasSearchEngineUrl: http://envri.eu/ns/hasSearchEngineUrl
+searchEngineIndexing: http://envri.eu/ns/searchEngineIndexing
 hasDataRepositoryType: http://envri.eu/ns/hasDataRepositoryType
 hasMetadataRepositoryType: http://envri.eu/ns/hasMetadataRepositoryType
 hasSchema: http://envri.eu/ns/hasSchema
@@ -116,6 +114,7 @@ hasIdentifierIri: http://envri.eu/ns/hasIdentifierIri
 hasSchemaUrl: http://envri.eu/ns/hasSchemaUrl
 hasVocabularyIri: http://envri.eu/ns/hasVocabularyIri
 hasName: http://envri.eu/ns/hasName
+hasDomain: http://envri.eu/ns/hasDomain
 hasSchemaName: http://envri.eu/ns/hasSchemaName
 includesProvenanceFields: http://envri.eu/ns/includesProvenanceFields
 categoriesAreDefinedInRegistries: http://envri.eu/ns/categoriesAreDefinedInRegistries
@@ -132,15 +131,16 @@ includesAccessPolicyStatements: http://envri.eu/ns/includesAccessPolicyStatement
 isMachineActionable: http://envri.eu/ns/isMachineActionable
 hasVocabularies: http://envri.eu/ns/hasVocabularies
 hasTopic: http://envri.eu/ns/hasTopic
-hasMetadataIri: http://envri.eu/ns/hasMetadataIri
 hasSpecificationLanguage: http://envri.eu/ns/hasSpecificationLanguage
 hasDataProcessing: http://envri.eu/ns/hasDataProcessing
+hasLocalSearchEngineUrl: http://envri.eu/ns/hasLocalSearchEngineUrl
 specialDataProcessingStepsApplied: http://envri.eu/ns/specialDataProcessingStepsApplied
 workflowFrameworksApplied: http://envri.eu/ns/workflowFrameworksApplied
 distributedWorkflowsToolsUsed: http://envri.eu/ns/distributedWorkflowsToolsUsed
 otherAnalysisServicesOffered: http://envri.eu/ns/otherAnalysisServicesOffered
 dataProductsOffered: http://envri.eu/ns/dataProductsOffered
 fairness: http://envri.eu/ns/fairness
+testFairness: http://envri.eu/ns/testFairness
 dataFindability: http://envri.eu/ns/dataFindability
 dataAccessibility: http://envri.eu/ns/dataAccessibility
 dataInteroperability: http://envri.eu/ns/dataInteroperability
@@ -153,11 +153,12 @@ gaps: http://envri.eu/ns/gaps
 hasDataset: http://envri.eu/ns/hasDataset
 hasDiscoveryPortal: http://envri.eu/ns/hasDiscoveryPortal
 hasMachineReadableDatasetMetadata: http://envri.eu/ns/hasMachineReadableDatasetMetadata
-hasLinksetDescribingResource: http://envri.eu/ns/hasLinksetDescribingResource
-hasSearchQuery: http://envri.eu/ns/hasSearchQuery
-hasCitationalProvenanceVocabulary: http://envri.eu/ns/hasCitationalProvenanceVocabulary
-hasContextualProvenanceVocabulary: http://envri.eu/ns/hasContextualProvenanceVocabulary
-hasComplianceCertification: http://envri.eu/ns/hasComplianceCertification
+hasMachineReadableProvenance: http://envri.eu/ns/hasMachineReadableProvenance
+allowsAccessWithoutCosts: http://envri.eu/ns/allowsAccessWithoutCosts
+allowsSearchEngineIndexing: http://envri.eu/ns/allowsSearchEngineIndexing
+hasMachineReadableProvenance: http://envri.eu/ns/hasMachineReadableProvenance
+hasComplianceValidationService: http://envri.eu/ns/hasComplianceValidationService
+hasConceptIri: http://envri.eu/ns/hasConceptIri
 domain specific: http://envri.eu/ns/DomainSpecific
 ISO 19139: http://envri.eu/ns/ISO_19139
 ISO 19115: http://envri.eu/ns/ISO_19115
@@ -308,3 +309,62 @@ NERC vocabulary service: http://envri.eu/ns/NERCVocabularyService
 NVS P01: http://envri.eu/ns/NVSP01
 NVS P06: http://envri.eu/ns/NVSP06
 advanced editing: http://envri.eu/ns/AdvancedEditing
+web service: http://envri.eu/ns/webService
+SEED: http://envri.eu/ns/SEED
+SEISCOMP3: http://envri.eu/ns/SEISCOMP3
+station identification: http://envri.eu/ns/stationIdentification
+seismic waveform: http://envri.eu/ns/seismicWaveform
+temporal range: http://envri.eu/ns/temporalRange
+MiniSEED: http://envri.eu/ns/MiniSEED
+isDomain: http://envri.eu/ns/isDomain
+various: http://envri.eu/ns/various
+improving vocabularies: http://envri.eu/ns/improvingVocabularies
+metadata extraction: http://envri.eu/ns/metadataExtraction
+SeisComp3: http://envri.eu/ns/SeisComp3
+data format: http://envri.eu/ns/DataFormat
+stationXML: http://envri.eu/ns/StationXML
+earth: http://envri.eu/ns/Earth
+partially: http://envri.eu/ns/Partially
+none: http://envri.eu/ns/None
+VOID: http://envri.eu/ns/VOID
+relatesTo: http://envri.eu/ns/relatesTo
+altLabel: http://www.w3.org/2004/02/skos/core#altLabel
+file location: http://envri.eu/ns/FileLocation
+file checksum: http://envri.eu/ns/FileChecksum
+PID replica: http://envri.eu/ns/PIDReplica
+ePIC: http://envri.eu/ns/ePIC
+ePIC service: http://envri.eu/ns/ePICService
+usage: http://envri.eu/ns/Usage
+acknowledgements: http://envri.eu/ns/Acknowledgementes
+citation: http://envri.eu/ns/Citation
+local registry: http://envri.eu/ns/LocalRegistry
+B2ACCESS: http://envri.eu/ns/B2ACCESS
+HTTP: http://envri.eu/ns/HTTP
+CC BY: http://envri.eu/ns/CCBY
+quake event: http://envri.eu/ns/QuakeEvent
+quakeML: http://envri.eu/ns/QuakeML
+FDSN StationXML: http://envri.eu/ns/FDSNStationXml
+Waveform metadata schema: http://envri.eu/ns/WaveformMetadataSchema
+RDF: http://envri.eu/ns/RDF
+WebAPI: http://envri.eu/ns/WebAPI
+EPOS ICS: http://envri.eu/ns/EposIcs
+VERCE: http://envri.eu/ns/VERCE
+DARE: http://envri.eu/ns/DARE
+GitHub: http://envri.eu/ns/GitHub
+metadata template: http://envri.eu/ns/MetadataTemplate
+EPOS: http://envri.eu/ns/EPOS
+EPOS ORFEUS: http://envri.eu/ns/EPOSORFEUS
+Shibboleth: http://envri.eu/ns/Shibboleth
+CC BY NC: http://envri.eu/ns/CCBYNC
+GEOTIFF: http://envri.eu/ns/GEOTIFF
+stations: http://envri.eu/ns/Stations
+atom: http://envri.eu/ns/Atom
+EPOSAR: http://envri.eu/ns/EPOSAR
+FDSN StationXML: http://envri.eu/ns/FDSNStationXml
+ISO 19119: http://envri.eu/ns/ISO19119
+StationXML: http://envri.eu/ns/StationXML
+
+
+
+
+

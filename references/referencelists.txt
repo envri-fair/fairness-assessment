@@ -6,6 +6,12 @@ infrastructure acronym:
     Euro-Argo
     LifeWatch (Marine)
     ICOS
+    
+domain:
+    marine
+    earth
+    athmosphere
+    ecosystem
 
 repository kind:
     metadata repository
@@ -28,26 +34,16 @@ repository kind:
     Fedora
     CDI system
     NetCDF file
+    SeisComp3
+    GitHub
 
 1.8 metadata repository type:
     central
     relational database
     spreadsheets
-
-1.40 DMP tools:
-    DMP template
-    quality management framework
-    data policy document
-    DMPonline
-
-
-1.41 data publishing steps:
-    manual QA QC
-    automatic QA QC
-    QA QC
-    WoRMS taxon matching
-    DwC formatting
-
+    various
+ 
+2.5 IRI for identifier schema: 
 
 1.9 identifier kind:
     PID
@@ -65,7 +61,10 @@ repository kind:
     local system
     SEANOE
     MDA ID
-    LSR URN    
+    LSR URN  
+    DataCite
+    ePIC
+    Zenodo
 
 1.10 identifier assigned: 
     automatically
@@ -78,7 +77,7 @@ repository kind:
     ePIC service
     SEANOE
     PANGAEA
-
+    
 1.12 includes attributes:
     relevant metadata
 
@@ -99,6 +98,9 @@ repository kind:
     data access
     Terms of Use
     data security
+    usage
+    acknowledgements
+    citation
 
 1.15 repository registry:
     re3data
@@ -109,6 +111,7 @@ repository kind:
     GEO
     fairsharing.org
     Biodiversity Catalogue
+    local registry
     
 1.16 persistency-guaranty:
     10 years
@@ -123,7 +126,8 @@ repository kind:
     none-open
     ORCHID
     fingerprint
-    
+    B2ACCESS
+    Shibboleth
 
 1.36 access technology:
     local LDAP
@@ -135,6 +139,9 @@ repository kind:
     CAS
     OAUTH2
     HTTP GET
+    web service
+    HTTP
+    
     
 1.37 authorisation technique: 
     OAUTH
@@ -157,6 +164,8 @@ repository kind:
     local license
     creative commons
     CC BY.CC 0
+    CC BY
+    CC BY NC
 
 1.17 data types:
     binary
@@ -178,7 +187,11 @@ repository kind:
     image
     video
     observations
-
+    seismic waveform
+    stations
+    quake events
+    GEOTIFF
+    
 
 1.18 data formats:
     CSV
@@ -192,9 +205,11 @@ repository kind:
     xls
     WAV
     JSON
-    MSEED
+    MiniSEED
     raster data
-
+    SEED
+    quakeML
+    
 1.19 metadata types in data headers:
     parameters measured
     units
@@ -203,12 +218,18 @@ repository kind:
     depth
     location
     data centre
+    station identification
+    temporal range
     NetCDF Oceansites Profile metadata
     NetCDF EGO format metadata
     standard NetCDF CF headers
     NetCDF ACDD metadata
     DwC
 
+1.21 registered data schema:
+    MiniSEED
+    quakeML
+    
 1.22 metadata schema name:
     ISO 19115
     ISO 19139
@@ -220,6 +241,9 @@ repository kind:
     NetCDF
     INSPIRE
     GeoDCAT
+    StationXML
+    QuakeML
+    Waveform metadata schema
 
 1.24 provenance fields:
     text only
@@ -236,6 +260,7 @@ repository kind:
     OWL
     NetCDF CF Argo
     relational database
+    SEED
 
 1.27 metadata export format:
     HTML
@@ -249,6 +274,7 @@ repository kind:
     Turtle
     txt 
     RSS
+    SEED
 
 1.28 metadata exchange/harvesting method:
     CSW
@@ -259,8 +285,10 @@ repository kind:
     LDP
     FDP
     RESTful_API
-    OpneDAP
+    OpenDAP
     SPARQL endpoint
+    WebAP
+    
     
 1.30 external search engine type:
     GEOPortal
@@ -271,6 +299,7 @@ repository kind:
     GBIF
     GCMD
     EDMED
+    EPOS ICS
 
 1.48 vocabulary type:
     codelist
@@ -294,17 +323,35 @@ repository kind:
     ISO 19115 10139
     WoRMS
     Marine Regions
+
+1.40 DMP tools:
+    DMP template
+    quality management framework
+    data policy document
+    DMPonline
+
+
+1.41 data publishing steps:
+    manual QA QC
+    automatic QA QC
+    QA QC
+    WoRMS taxon matching
+    DwC formatting
+    metadata template
     
 1.42 processing steps:
     QA QC
     ODV aggregation
     checksum 
     Handle PID suffix
+    metadata extraction
 
 1.43 workflow frameworks type:
     data processing steps recorded
     custom workflows
     LifeWatch virtual lab
+    DARE
+    VERCE
 
 1.44 distributed workflow tool type:
     community standardised scripts 
@@ -346,6 +393,7 @@ repository kind:
     data quality control
     harmonising vocabularies
     harmonising data models
+    improving vocabularies
 
 1.53 data re-usability gap:
     provenance information
@@ -353,3 +401,4 @@ repository kind:
     usage license 
     harmonising vocabularies
     metadata checking
+    improving vocabularies

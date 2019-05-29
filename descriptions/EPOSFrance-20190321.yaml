@@ -1,0 +1,113 @@
+survey:
+  date: 2019-03-21
+  version: 1
+  creator: 
+    name: Wayne Crawford
+    email: crawford@ipgp.fr
+infrastructure:
+  acronym: EPOS
+  name: EPOS
+  recognized authority URL: NULL
+  domain: earth
+  repositories: 
+  - URL: http://seismology.resif.fr/#WelcomePlace
+    name: RESIF (France)
+    kind: data repository
+    data repository type: domain
+    metadata repository type: NULL
+    software: SeisComp3
+    identifier: 
+    - IRI: NULL
+      kind: DOI
+      system: NULL
+      assigned: automatically
+      provider: NULL
+      includes-attributes: NULL
+    certification methods: NULL
+    policies: NULL
+    registries: NULL
+    persistency-guaranty: NULL
+    access mechanisms: 
+      authentication method: NULL
+      access protocol URL: NULL
+      access without costs: NULL
+      own user database maintained: NULL
+      ORCID used in AAI: NULL
+      major access technology supported: NULL
+      authorisation technique: NULL
+      authorisation needed for: NULL
+      authorization for accessing content needed: NULL
+      data licenses in use: NULL
+      data license IRI: NULL
+      metadata openly available: yes
+    data:
+    - type name: seismic waveform
+      preferred formats: 
+      - format name: MiniSEED
+        metadata types in data headers: none
+      registered data schema: NULL
+      search on data: partially
+      search engine indexing: NULL
+    metadata: 
+      schema: 
+      - URL: NULL
+        name: stationXML
+        provenance fields included: none
+      categories defined in registries: yes
+      PIDs included: partially
+      primary storage format: XML
+      metadata longevity plan URL: NULL
+      format IRI: NULL
+      export formats supported: 
+      - XML
+      - SEED
+      exchange/harvesting methods: NULL
+      local search engine URL: NULL
+      external search engine types supported: NULL
+      access policy statements included: NULL
+      machine actionable: NULL
+    vocabularies: 
+    - IRI: NULL
+      type: NULL
+      topic: NULL
+      name: NULL
+      specification language URL: NULL
+      concept IRI: NULL
+    data management plans:
+      specific DMP tools used: NULL
+      data publishing steps applied: NULL  
+    data processing:
+      special data processing steps applied: NULL
+      workflow frameworks applied: NULL
+      distributed workflows tools used: NULL
+      other analysis services offered: NULL
+      data products offered: NULL
+    fairness: 
+      data findability:  
+        data findable: yes 
+        gaps: none
+      data accessibility: 
+        data accessible: yes
+        gaps: none
+      data interoperability: 
+        data interoperable: NULL
+        gaps: none
+      data re-usability: 
+        data reusable: yes
+        gaps: none
+    test fairness:
+      URL/IRI of dataset: http://seismology.resif.fr/#NetworkConsultPlace:Z3%5B2015-07-01T00:00:00.000000_2020-07-31T00:00:00.000000%5D
+      URL of discovery portal: http://seismology.resif.fr/#WelcomePlace
+      IRI of machine readable metadata of dataset: NULL
+      machine readable provenance: NULL
+      compliance validation service: NULL
+ 
+
+            
+            
+            
+            
+         
+
+            
+         

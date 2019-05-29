@@ -1,0 +1,115 @@
+survey:
+  date: 2019-03-22
+  version: 1
+  creator: 
+    name: Jan Michalek
+    email: jan.michalek@uib.no
+infrastructure:
+  acronym: EPOS
+  name: EPOS-Norway
+  recognized authority URL: NULL
+  domain: earth
+  repositories: 
+  - URL: http://epos-no.geo.uib.no:81/
+    name: local EU-EIDA
+    kind: data repository 
+    data repository type: local
+    metadata repository type: relational database
+    software: SeisComp3
+    identifier: 
+    - IRI: NULL
+      kind: NULL
+      system: NULL
+      assigned: NULL
+      provider: NULL
+      includes-attributes: none 
+    certification methods: none
+    policies: none
+    registries: none
+    persistency-guaranty: none
+    access mechanisms: 
+      authentication method: planned
+      access protocol URL: NULL
+      access without costs: NULL
+      own user database maintained: no
+      ORCID used in AAI: no
+      major access technology supported: web service
+      authorisation technique: none
+      authorisation needed for: none
+      authorization for accessing content needed: NULL
+      data licenses in use: NULL
+      data license IRI: NULL
+      metadata openly available: yes
+    data:
+    - type name: seismic waveform
+      preferred formats: 
+        - format name: MiniSEED
+          metadata types in data headers: 
+          - station identification
+          - temporal range
+      registered data schema: NULL
+      search on data: yes
+      search engine indexing: NULL
+    metadata: 
+      schema: 
+      - URL: NULL
+        name: SEED
+        provenance fields included: NULL
+      categories defined in registries: yes
+      PIDs included: no
+      primary storage format: SEED
+      metadata longevity plan URL: NULL
+      format IRI: NULL
+      export formats supported: 
+      - XML
+      - SEED
+      exchange/harvesting methods: NULL
+      local search engine URL: NULL
+      external search engine types supported: none
+      access policy statements included: no
+      machine actionable: yes
+    vocabularies: 
+    - IRI: https://ds.iris.edu/ds/nodes/dmc/data/formats/seed/
+      type: data format
+      topic: domain specific
+      name: SEED
+      specification language URL: NULL
+      concept IRI: NULL    
+    data management plans:
+      specific DMP tools used: no
+      data publishing steps applied: none  
+    data processing:
+      special data processing steps applied: none 
+      workflow frameworks applied: none
+      distributed workflows tools used: 
+      - SEISCOMP3
+      other analysis services offered: NULL
+      data products offered: NULL
+    fairness: 
+      data findability:  
+        data findable: no 
+        gaps: NULL
+      data accessibility: 
+        data accessible: yes
+        gaps: none
+      data interoperability: 
+        data interoperable: no
+        gaps: NULL
+      data re-usability: 
+        data reusable: no
+        gaps:
+        - usage license
+        - provenance information
+    test fairness:
+      URL/IRI of dataset: http://eida.geo.uib.no/fdsnws/dataselect/1/
+      URL of discovery portal: http://epos-no.geo.uib.no:81/
+      IRI of machine readable metadata of dataset: NULL
+      machine readable provenance: NULL
+      compliance validation service: NULL
+ 
+
+            
+            
+            
+            
+         
