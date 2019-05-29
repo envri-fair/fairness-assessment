@@ -1,3 +1,4 @@
 .ipynb_checkpoints/
 data.trig
 outputs/
+lib/__pycache__/
