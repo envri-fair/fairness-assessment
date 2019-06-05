@@ -1,0 +1,169 @@
+survey:
+  date: 2019-04-01
+  version: 1
+  creator: 
+    name: Alex Vermeulen
+    email: alexvermeulen@icos-ri.eu
+infrastructure:   
+  acronym: ICOS 
+  name: Integrated Carbon Observation System 
+  recognized authority URL: http://www.icos-cp.eu
+  domain: marine
+  repositories: 
+  - URL: https://data.icos-cp.eu/portal
+    name: Carbon Portal
+    kind: metadata data repository
+    data repository type: central
+    metadata repository type: central
+    software: NULL
+    identifier:
+    - IRI: https://handle.net
+      kind: PID
+      system: Handle
+      assigned: automatically
+      provider: PDC
+      includes-attributes:
+      - relevant metadata
+    - IRI: 
+      persistency-policy document IRI: VOID
+      kind: DOI
+      system: DataCite
+      assigned: manually
+      provider: DataCite
+      includes-attributes: 
+      - relevant metadata
+    certification methods: none
+    policies: 
+    - data policy
+    - data usage license CC BY 4.0
+    registries: 
+    - re3data
+    persistency-guaranty: 20 years
+    access mechanisms: 
+      authentication method: OAuth paired with eduGain
+      access protocol URL: https://doi.org/10.17487%2FRFC2616
+      protocol open: yes
+      protocol royalty free: yes
+      own user database maintained: yes
+      ORCID used in AAI: yes
+      major access technology supported: CAS
+      authorisation technique: OAUTH
+      authorisation needed for: 
+      - download data
+      - access data
+      - access controlled services
+      authorization for accessing content needed: yes
+      access content process description IRI: VOID
+      data licenses in use: 
+      - CC-BY4.0
+      data license IRI: https://creativecommons.org/licenses/by/4.0/
+      metadata openly available: yes
+    data:
+    - type name: time series
+      preferred formats:
+      - format name: NetCDF
+        metadata types in data headers:        
+        - standard NetCDF CF headers
+      - format name: CSV
+        metadata types in data headers: 
+        - parameters measured
+        - units                
+      registered data schema: no
+      search on data: yes
+      search engine URL: https://data.icos-cp.eu/portal           
+    - type name: spatial
+      preferred formats: 
+      - format name: raster data
+        metadata types in data headers: none
+      registered data schema: yes
+      search on data: planned
+      search engine URL:  https://data.icos-cp.eu/portal            
+    metadata: 
+      schema:
+      - URL: NULL
+        name: ISO 19115
+        provenance fields included: 
+        - text only
+      - URL: https://semiceu.github.io/GeoDCAT-AP/releases/1.0.1/geodcat-ap_1.0.1.pdf
+        name: GeoDCAT
+        provenance fields included: 
+        - simplified PROV-O       
+      categories defined in registries: yes
+      PIDs included: yes
+      primary storage format: OWL
+      metadata longevity plan URL: https://meta.icos-cp.eu/objects/5stgMTshDNdDe_Y8obQOpe0u
+      format IRI:  https://www.w3.org/RDF/
+      export formats supported: 
+      - JSON
+      - XML
+      - Turtle
+      - HTML
+      - txt
+      exchange/harvesting methods: 
+      - SPARQL endpoint
+      local search engine URL:  https://meta.icos-cp.eu/sparqlclient/
+      external search engine types supported: 
+      - SPARQL endpoint
+      access policy statements included: yes
+      machine actionable: yes    
+    vocabularies:
+    - IRI: http://purl.org/dc/elements/1.1/
+      type: vocabulary
+      topic: general
+      name: Darwin Core
+      specification language URL: https://www.w3.org/RDF/
+    - IRI: http://www.w3.org/ns/prov
+      type: ontology
+      topic: general
+      name: PROV-O
+      specification language URL: https://www.w3.org/OWL
+    - IRI: http://meta.icos-cp.eu/ontologies/cpmeta/
+      type: ontology
+      topic: domain specific
+      name: ICOS
+      specification language URL: https://www.w3.org/OWL/
+    data management plans:
+      specific DMP tools used: DMPonline
+      data publishing steps applied: 
+      - QA QC      
+    data processing:
+      special data processing steps applied: 
+      - checksum
+      - Handle PID suffix
+      - QA QC
+      workflow frameworks applied: 
+      - custom workflows
+      distributed workflows tools used: 
+      - community standardised scripts
+      other analysis services offered: 
+      - Jupiter Notebooks
+      data products offered: 
+      - near real time observational data
+      - final QC observational data
+      - elaborated products
+    fairness: 
+      data findability:  
+        data findable: yes
+        gaps: none
+      data accessibility: 
+        data accessible: yes
+        gaps: none
+      data interoperability: 
+        data interoperable: yes
+        gaps: 
+        - harmonising vocabularies
+        - harmonising data models
+      data re-usability: 
+        data reusable: yes
+        gaps: 
+        - provenance information
+    test fairness:
+      URL/IRI of dataset: https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0
+      IRI of metadata: https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0
+      URL of discovery portal: https://data.icos-cp.eu/portal
+      IRI of machine readable metadata of dataset:  https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0
+      URL to linkset describing resource: https://meta.icos-cp.eu/objects/-ffoiHjX5NDN0Vq_fKuVmas0
+      Search query: https://data.icos-cp.eu/portal/#%7B%22filterCategories%22%3A%7B%22project%22%3A%5B%22icos%22%5D%2C%22theme%22%3A%5B%22atmosphere%22%5D%2C%22level%22%3A%5B2%5D%2C%22type%22%3A%5B%22atcCh4L2DataObject%22%5D%2C%22station%22%3A%5B%22iAS_HPB%22%5D%7D%7D
+      IRI for the vocabulary used to describe citational provenance: http://www.w3.org/ns/prov/
+      IRI for the vocabulary used to describe contextual provenance: http://meta.icos-cp.eu/ontologies/cpmeta/
+      IRI of compliance certification: VOID

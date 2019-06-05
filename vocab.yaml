@@ -363,6 +363,7 @@ EPOSAR: http://envri.eu/ns/EPOSAR
 FDSN StationXML: http://envri.eu/ns/FDSNStationXml
 ISO 19119: http://envri.eu/ns/ISO19119
 StationXML: http://envri.eu/ns/StationXML
+data usage: http://envri.eu/ns/dataUsage
 
 
 

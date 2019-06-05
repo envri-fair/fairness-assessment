@@ -20,12 +20,12 @@ repository kind:
     site repository
     taxonomic register
 
-1.6 data repository type:
+6 data repository type:
     local
     domain
     central
     
-1.7 repository software:
+7 repository software:
     Zenodo
     52NORTH SOS 
     Sextant
@@ -37,15 +37,13 @@ repository kind:
     SeisComp3
     GitHub
 
-1.8 metadata repository type:
+8 metadata repository type:
     central
     relational database
     spreadsheets
     various
  
-2.5 IRI for identifier schema: 
-
-1.9 identifier kind:
+9 identifier kind:
     PID
     local ID
     DOI
@@ -56,7 +54,7 @@ repository kind:
     IMIS ID
 
 
-1.9 identifier system:
+9 identifier system:
     Handle
     local system
     SEANOE
@@ -66,11 +64,11 @@ repository kind:
     ePIC
     Zenodo
 
-1.10 identifier assigned: 
+10 identifier assigned: 
     automatically
     manually
 
-1.11 identifier provider:
+11 identifier provider:
     DataCite
     Handle
     local service
@@ -78,10 +76,10 @@ repository kind:
     SEANOE
     PANGAEA
     
-1.12 includes attributes:
+12 includes attributes:
     relevant metadata
 
-1.13 certification method: 
+13 certification method: 
     CoreTrustSeal
     GoFAIR Implementation Network
     Data Seal of Approval
@@ -89,7 +87,7 @@ repository kind:
     RDA Trustworthy Data Repository
 
 
-1.14 published repository policy:
+14 published repository policy:
     persistency
     number of automatic copies
     openness levels
@@ -102,7 +100,7 @@ repository kind:
     acknowledgements
     citation
 
-1.15 repository registry:
+15 repository registry:
     re3data
     WDS
     DataCite
@@ -113,12 +111,12 @@ repository kind:
     Biodiversity Catalogue
     local registry
     
-1.16 persistency-guaranty:
+16 persistency-guaranty:
     10 years
     20 years
     50 years
 
-1.33 authentication method:
+33 authentication method:
     Shibboleth paried with eduGain
     OAuth
     OAuth paired with eduGain
@@ -129,7 +127,7 @@ repository kind:
     B2ACCESS
     Shibboleth
 
-1.36 access technology:
+36 access technology:
     local LDAP
     OpenID
     SAMLbasedSSO
@@ -143,11 +141,11 @@ repository kind:
     HTTP
     
     
-1.37 authorisation technique: 
+37 authorisation technique: 
     OAUTH
     CPAuth
 
-1.37 authorisation needed for:
+37 authorisation needed for:
     access content
     upload data
     upload metadata
@@ -156,7 +154,7 @@ repository kind:
     advanced editing
     access controlled services
     
-1.38 access licenses:
+38 access licenses:
     CC-BY-NC4.0
     CC-BY4.0
     CC-BY3.0
@@ -167,7 +165,7 @@ repository kind:
     CC BY
     CC BY NC
 
-1.17 data types:
+17 data types:
     binary
     spatial
     time series
@@ -193,7 +191,7 @@ repository kind:
     GEOTIFF
     
 
-1.18 data formats:
+18 data formats:
     CSV
     txt
     xls
@@ -210,7 +208,7 @@ repository kind:
     SEED
     quakeML
     
-1.19 metadata types in data headers:
+19 metadata types in data headers:
     parameters measured
     units
     date 
@@ -226,11 +224,11 @@ repository kind:
     NetCDF ACDD metadata
     DwC
 
-1.21 registered data schema:
+21 registered data schema:
     MiniSEED
     quakeML
     
-1.22 metadata schema name:
+22 metadata schema name:
     ISO 19115
     ISO 19139
     ISO 19115/19139
@@ -245,12 +243,12 @@ repository kind:
     QuakeML
     Waveform metadata schema
 
-1.24 provenance fields:
+24 provenance fields:
     text only
     PROV-O
     simplified PROV-O
     
-1.26 primary metadata storage format:
+26 primary metadata storage format:
     DEIMS-SDR
     RDF
     JSON
@@ -262,7 +260,7 @@ repository kind:
     relational database
     SEED
 
-1.27 metadata export format:
+27 metadata export format:
     HTML
     XML
     RDF
@@ -276,7 +274,7 @@ repository kind:
     RSS
     SEED
 
-1.28 metadata exchange/harvesting method:
+28 metadata exchange/harvesting method:
     CSW
     OAI PMH
     OGC CSW
@@ -290,7 +288,7 @@ repository kind:
     WebAP
     
     
-1.30 external search engine type:
+30 external search engine type:
     GEOPortal
     CSW endpoint
     OAI-PMH
@@ -301,7 +299,7 @@ repository kind:
     EDMED
     EPOS ICS
 
-1.48 vocabulary type:
+48 vocabulary type:
     codelist
     thesaurus
     ontology
@@ -309,13 +307,13 @@ repository kind:
     taxonomy
     gazetteer
 
-1.48 vocabulary topic:
+48 vocabulary topic:
     general
     domain specific
     project specific
     provenance specific
 
-1.49 vocabulary name:
+49 vocabulary name:
     EnvThes
     NERC vocabulary service
     NVS P01
@@ -324,14 +322,14 @@ repository kind:
     WoRMS
     Marine Regions
 
-1.40 DMP tools:
+40 DMP tools:
     DMP template
     quality management framework
     data policy document
     DMPonline
 
 
-1.41 data publishing steps:
+41 data publishing steps:
     manual QA QC
     automatic QA QC
     QA QC
@@ -339,26 +337,26 @@ repository kind:
     DwC formatting
     metadata template
     
-1.42 processing steps:
+42 processing steps:
     QA QC
     ODV aggregation
     checksum 
     Handle PID suffix
     metadata extraction
 
-1.43 workflow frameworks type:
+43 workflow frameworks type:
     data processing steps recorded
     custom workflows
     LifeWatch virtual lab
     DARE
     VERCE
 
-1.44 distributed workflow tool type:
+44 distributed workflow tool type:
     community standardised scripts 
     data explorer
     map viewer
 
-1.45 analysis services:
+45 analysis services:
     DIVA
     SPARK
     Cassandra
@@ -367,7 +365,7 @@ repository kind:
     Jupiter Notebooks
     R packages
 
-1.46 data products:
+46 data products:
     salinity
     temperature
     mesoclimate
@@ -379,23 +377,23 @@ repository kind:
     final QC observational data
     elaborated products
 
-1.50 data findability gap:
+50 data findability gap:
     PIDs
     uptake in central resources
 
-1.51 data accessibility gap:
+51 data accessibility gap:
     problems with FTP access
     machine accessibility
     distribution link
 
-1.52 data interoperability gap:
+52 data interoperability gap:
     format checking
     data quality control
     harmonising vocabularies
     harmonising data models
     improving vocabularies
 
-1.53 data re-usability gap:
+53 data re-usability gap:
     provenance information
     quality description
     usage license 
