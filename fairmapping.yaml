@@ -1,12 +1,10 @@
 hasRepositoryUrl: https://w3id.org/fair/principles/terms/F4
-hasDataRepositoryType: https://w3id.org/fair/principles/terms/F4
-hasMetadataRepositoryType: https://w3id.org/fair/principles/terms/F4
+hasAllocation: https://w3id.org/fair/principles/terms/F4
 usesSoftware: https://w3id.org/fair/principles/terms/F4
-hasIdentifierIri: https://w3id.org/fair/principles/terms/F1
 usesIdentifierSystem: https://w3id.org/fair/principles/terms/F1
 isAssigned: https://w3id.org/fair/principles/terms/F1
 usesProvider: https://w3id.org/fair/principles/terms/F1
-includesAttributes: https://w3id.org/fair/principles/terms/F2
+includesMetadataSchema: https://w3id.org/fair/principles/terms/F2
 hasPolicies: https://w3id.org/fair/principles/terms/R1.1
 inRegistries: https://w3id.org/fair/principles/terms/F4
 hasPersistencyGuaranty: https://w3id.org/fair/principles/terms/A1

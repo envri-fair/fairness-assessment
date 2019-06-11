@@ -48,7 +48,11 @@ def _r(g, d, v, n, k):
     
 def _t(g, d, v, n, k):
     if k in d:
-        g.add((n, RDF.type, v[d[k]]))
+        if isinstance(d[k], list):
+            for i in d[k]:
+                g.add((n, RDF.type, v[i]))
+        else:
+            g.add((n, RDF.type, v[d[k]]))
     else:
         g.add((n, RDF.type, v[k]))
     
@@ -93,8 +97,10 @@ def infrastructure(g, d, v):
     _t(g, d, v, n, 'ResearchInfrastructure')
     _l(g, d, v, n, 'acronym', XSD.string)
     _l(g, d, v, n, ['label', 'name'], XSD.string)
-    _r(g, d, v, n, ['riUrl', 'recognized authority URL'])
-    _r(g, d, v, n, ['hasDomain', 'domain'])
+    _r(g, d, v, n, ['website', 'website'])
+    _c(g, d['domain'], v, n, BNode(), 'hasDomain')
+    _r(g, d, v, n, ['hasDataset', 'URL/IRI of dataset'])
+    _r(g, d, v, n, ['hasDiscoveryPortal', 'URL of discovery portal'])
     for r in d['repositories']:
         repository(g, r, v, n, d['acronym'])
         
@@ -109,8 +115,7 @@ def repository(g, d, v, n, i):
     _l(g, d, v, n1, ['label', 'name'], XSD.string) 
     _l(g, d, v, n1, ['altLabel', '{} repository'.format(i)], XSD.string)
     _t(g, d, v, n1, 'kind')
-    _r(g, d, v, n1, ['hasDataRepositoryType', 'data repository type'])
-    _r(g, d, v, n1, ['hasMetadataRepositoryType', 'metadata repository type'])
+    _r(g, d, v, n1, ['hasAllocation', 'allocation'])
     _r(g, d, v, n1, ['usesSoftware', 'software'])
     identifier(g, d['identifier'], v, n1, i, d['name'])
     _c(g, d['certification methods'], v, n1, BNode(), 'hasCertificationMethods')
@@ -124,7 +129,6 @@ def repository(g, d, v, n, i):
     datamanagementplans(g, d['data management plans'], v, n, d['name'])
     dataprocessing(g, d['data processing'], v, n1, i, d['name'])
     fairness(g, d['fairness'], v, n1, i, d['name'])
-    testfairness(g, d['test fairness'], v, n1, i, d['name'])
         
         
 def identifier(g, d, v, n, i, r):
@@ -136,11 +140,11 @@ def identifier(g, d, v, n, i, r):
         _t(g, e, v, n1, 'Identifier')
         _l(g, e, v, n1, ['altLabel', '{} {} identifier'.format(i, r)], XSD.string)
         _t(g, e, v, n1, 'kind')
-        _r(g, e, v, n1, ['hasIdentifierIri', 'IRI'])
         _r(g, e, v, n1, ['usesIdentifierSystem', 'system'])
+        _l(g, e, v, n1, ['hasLandingPage','landing page'], XSD.bool)
         _l(g, e, v, n1, ['isAssigned', 'assigned'], XSD.string)
         _r(g, e, v, n1, ['usesProvider', 'provider'])
-        _c(g, e['includes-attributes'], v, n1, BNode(), 'includesAttributes')
+        _c(g, e['includes metadata schema'], v, n1, BNode(), 'includesMetadataSchema')
         
 
 def access(g, d, v, n, i, r):
@@ -157,7 +161,6 @@ def access(g, d, v, n, i, r):
     _l(g, d, v, n1, ['usesORCIDinAAI', 'ORCID used in AAI'], XSD.bool)
     _r(g, d, v, n1, ['supportsAccessTechnology', 'major access technology supported'])
     _r(g, d, v, n1, ['usesAuthorisationTechnique', 'authorisation technique'])
-    _c(g, d['authorisation needed for'], v, n1, BNode(), 'usesAuthorisationFor')
     _l(g, d, v, n1, ['contentAccessAuthorizationRequired', 'authorization for accessing content needed'], XSD.bool)
     _c(g, d['data licenses in use'], v, n1, BNode(), 'usesDataLicenses')
     _r(g, d, v, n1, ['dataLicenseIri', 'data license IRI'])
@@ -175,7 +178,6 @@ def data(g, d, v, n, i, r):
         _t(g, e1, v, n1, 'type name')
         _r(g, e1, v, n1, ['dataSchemaIsRegistered', 'registered data schema'])
         _l(g, e1, v, n, ['searchOnData', 'search on data'], XSD.bool)
-        _l(g, e1, v, n, ['searchEngineIndexing', 'search engine indexing'], XSD.bool)
         for e2 in e1['preferred formats']:
             n2 = BNode()
             _b(g, v, n1, 'hasPreferredFormat', n2)
@@ -194,14 +196,15 @@ def metadata(g, d, v, n, i, r):
     _l(g, d, v, n1, ['categoriesAreDefinedInRegistries', 'categories defined in registries'], XSD.bool)
     _l(g, d, v, n1, ['persistentIdentifiersAreIncluded', 'PIDs included'], XSD.bool)
     _r(g, d, v, n1, ['hasPrimaryStorageFormat', 'primary storage format'])
-    _r(g, d, v, n1, ['hasMetadataLongevityPlan', 'metadata longevity plan URL'])
-    _r(g, d, v, n1, ['hasFormat', 'format IRI'])
     _c(g, d['export formats supported'], v, n1, BNode(), 'supportedExportFormats')
+    _l(g, d, v, n1, ['searchEngineIndexing', 'search engine indexing'], XSD.bool)
     _c(g, d['exchange/harvesting methods'], v, n1, BNode(), 'hasHarvestingMethods')
     _r(g, d, v, n1, ['hasLocalSearchEngineUrl', 'local search engine URL'])
     _c(g, d['external search engine types supported'], v, n1, BNode(), 'supportsExternalSearchEngineTypes')
     _l(g, d, v, n1, ['includesAccessPolicyStatements', 'access policy statements included'], XSD.bool)
+    _r(g, d, v, n1, ['hasMetadataLongevityPlan', 'metadata longevity plan URL'])
     _l(g, d, v, n1, ['isMachineActionable', 'machine actionable'], XSD.bool)
+    _r(g, d, v, n1, ['hasMachineReadableDatasetMetadata', 'IRI of machine readable metadata of dataset'])
     
     
 def metadata_schema(g, d, v, n, i, r):
@@ -224,10 +227,10 @@ def vocabularies(g, d, v, n, i, r):
         _b(g, v, n, 'hasVocabularies', n1)
         _l(g, e1, v, n1, ['altLabel', '{} {} vocabularies'.format(i, r)], XSD.string)
         _r(g, e1, v, n1, ['hasVocabularyIri', 'IRI'])
+        _l(g, e1, v, n1, ['hasName', 'name'], XSD.string)
         _t(g, e1, v, n1, 'type')
         _r(g, e1, v, n1, ['hasTopic', 'topic'])
-        _l(g, e1, v, n1, ['hasName', 'name'], XSD.string)
-        _r(g, e1, v, n1, ['hasSpecificationLanguage', 'specification language URL'])
+        _r(g, e1, v, n1, ['hasSpecificationLanguage', 'specification language'])
         
 
 def datamanagementplans(g, d, v, n, i):
@@ -238,6 +241,7 @@ def datamanagementplans(g, d, v, n, i):
     _l(g, d, v, n1, ['altLabel', '{} data management plans'.format(i)], XSD.string)
     _l(g, d, v, n1, ['usesSpecificDataManagementPlanTools', 'specific DMP tools used'], XSD.bool)
     _l(g, d, v, n1, ['appliedDataPublishingSteps', 'data publishing steps applied'], XSD.string)
+    _c(g, d['compliance validation service'], v, n1, BNode(), 'hasComplianceValidationService')
     
 
 def dataprocessing(g, d, v, n, i, r):
@@ -303,19 +307,6 @@ def fairness_reusability(g, d, v, n, i, r):
     _l(g, d, v, n1, ['altLabel', '{} {} faireness reusability'.format(i, r)], XSD.string)
     _l(g, d, v, n1, ['dataIsReusable', 'data reusable'], XSD.bool)
     _c(g, d['gaps'], v, n1, BNode(), 'gaps')
-    
-    
-def testfairness(g, d, v, n, i, r):
-    if handle_special_cases(g, d, v, n, 'testFairness'):
-        return
-    n1 = BNode()
-    _b(g, v, n, 'testFairness', n1)
-    _l(g, d, v, n1, ['altLabel', '{} {} test fairness'.format(i, r)], XSD.string)
-    _r(g, d, v, n1, ['hasDataset', 'URL/IRI of dataset'])
-    _r(g, d, v, n1, ['hasDiscoveryPortal', 'URL of discovery portal'])
-    _r(g, d, v, n1, ['hasMachineReadableDatasetMetadata', 'IRI of machine readable metadata of dataset'])
-    _l(g, d, v, n1, ['hasMachineReadableProvenance', 'machine readable provenance'], XSD.bool)
-    _c(g, d['compliance validation service'], v, n1, BNode(), 'hasComplianceValidationService')
     
 
 def handle_special_cases(g, d, v, n, k):
