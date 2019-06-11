@@ -3,57 +3,53 @@ survey:
   version: 1
   creator: 
     name: Alex Vermeulen
-    email: alexvermeulen@icos-ri.eu
+    email: alex.vermeulen@icos-ri.eu
 infrastructure:   
   acronym: ICOS 
   name: Integrated Carbon Observation System 
-  recognized authority URL: http://www.icos-cp.eu
-  domain: marine
+  website: http://www.icos-cp.eu
+  domain: 
+  - marine
+  - atmosphere
+  - ecosystem
+  URL/IRI of dataset: https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0
+  URL of discovery portal: https://data.icos-cp.eu/portal
   repositories: 
   - URL: https://data.icos-cp.eu/portal
     name: Carbon Portal
-    kind: metadata data repository
-    data repository type: central
-    metadata repository type: central
-    software: NULL
+    kind: 
+    - metadata repository
+    - data repository
+    allocation: central
+    software: iRODS
     identifier:
-    - IRI: https://handle.net
-      kind: PID
+    - kind: PID
       system: Handle
+      landing page: NULL
       assigned: automatically
       provider: PDC
-      includes-attributes:
-      - relevant metadata
-    - IRI: 
-      persistency-policy document IRI: VOID
-      kind: DOI
-      system: DataCite
+      includes metadata schema: none
+    - kind: DOI
+      system: DOI
+      landing page: yes
       assigned: manually
       provider: DataCite
-      includes-attributes: 
-      - relevant metadata
+      includes metadata schema: NULL
     certification methods: none
     policies: 
-    - data policy
-    - data usage license CC BY 4.0
+    - usage
     registries: 
     - re3data
     persistency-guaranty: 20 years
     access mechanisms: 
       authentication method: OAuth paired with eduGain
       access protocol URL: https://doi.org/10.17487%2FRFC2616
-      protocol open: yes
-      protocol royalty free: yes
+      access without costs: yes
       own user database maintained: yes
       ORCID used in AAI: yes
-      major access technology supported: CAS
+      major access technology supported: HTTP GET
       authorisation technique: OAUTH
-      authorisation needed for: 
-      - download data
-      - access data
-      - access controlled services
-      authorization for accessing content needed: yes
-      access content process description IRI: VOID
+      authorization for accessing content needed: no
       data licenses in use: 
       - CC-BY4.0
       data license IRI: https://creativecommons.org/licenses/by/4.0/
@@ -63,21 +59,19 @@ infrastructure:
       preferred formats:
       - format name: NetCDF
         metadata types in data headers:        
-        - standard NetCDF CF headers
+        - CF-1.4
       - format name: CSV
         metadata types in data headers: 
         - parameters measured
         - units                
-      registered data schema: no
-      search on data: yes
-      search engine URL: https://data.icos-cp.eu/portal           
+      registered data schema: none
+      search on data: no    
     - type name: spatial
       preferred formats: 
       - format name: raster data
         metadata types in data headers: none
-      registered data schema: yes
-      search on data: planned
-      search engine URL:  https://data.icos-cp.eu/portal            
+      registered data schema: none
+      search on data: planned       
     metadata: 
       schema:
       - URL: NULL
@@ -87,45 +81,48 @@ infrastructure:
       - URL: https://semiceu.github.io/GeoDCAT-AP/releases/1.0.1/geodcat-ap_1.0.1.pdf
         name: GeoDCAT
         provenance fields included: 
-        - simplified PROV-O       
+        - simplified PROV-O      
       categories defined in registries: yes
+      machine readable provenance: NULL     
       PIDs included: yes
-      primary storage format: OWL
-      metadata longevity plan URL: https://meta.icos-cp.eu/objects/5stgMTshDNdDe_Y8obQOpe0u
-      format IRI:  https://www.w3.org/RDF/
+      primary storage format: RDF
       export formats supported: 
       - JSON
       - XML
       - Turtle
       - HTML
       - txt
+      search engine indexing: NULL
       exchange/harvesting methods: 
       - SPARQL endpoint
       local search engine URL:  https://meta.icos-cp.eu/sparqlclient/
       external search engine types supported: 
       - SPARQL endpoint
       access policy statements included: yes
-      machine actionable: yes    
+      metadata longevity plan URL: https://meta.icos-cp.eu/objects/5stgMTshDNdDe_Y8obQOpe0u      
+      machine actionable: yes  
+      IRI of machine readable metadta of dataset: https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0
     vocabularies:
     - IRI: http://purl.org/dc/elements/1.1/
+      name: Darwin Core      
       type: vocabulary
       topic: general
-      name: Darwin Core
-      specification language URL: https://www.w3.org/RDF/
+      specification language: RDF
     - IRI: http://www.w3.org/ns/prov
+      name: PROV-O
       type: ontology
       topic: general
-      name: PROV-O
-      specification language URL: https://www.w3.org/OWL
+      specification language: OWL
     - IRI: http://meta.icos-cp.eu/ontologies/cpmeta/
+      name: ICOS
       type: ontology
       topic: domain specific
-      name: ICOS
-      specification language URL: https://www.w3.org/OWL/
+      specification language: OWL
     data management plans:
       specific DMP tools used: DMPonline
       data publishing steps applied: 
-      - QA QC      
+      - QA QC   
+      compliance validation service: none
     data processing:
       special data processing steps applied: 
       - checksum
@@ -157,13 +154,3 @@ infrastructure:
         data reusable: yes
         gaps: 
         - provenance information
-    test fairness:
-      URL/IRI of dataset: https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0
-      IRI of metadata: https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0
-      URL of discovery portal: https://data.icos-cp.eu/portal
-      IRI of machine readable metadata of dataset:  https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0
-      URL to linkset describing resource: https://meta.icos-cp.eu/objects/-ffoiHjX5NDN0Vq_fKuVmas0
-      Search query: https://data.icos-cp.eu/portal/#%7B%22filterCategories%22%3A%7B%22project%22%3A%5B%22icos%22%5D%2C%22theme%22%3A%5B%22atmosphere%22%5D%2C%22level%22%3A%5B2%5D%2C%22type%22%3A%5B%22atcCh4L2DataObject%22%5D%2C%22station%22%3A%5B%22iAS_HPB%22%5D%7D%7D
-      IRI for the vocabulary used to describe citational provenance: http://www.w3.org/ns/prov/
-      IRI for the vocabulary used to describe contextual provenance: http://meta.icos-cp.eu/ontologies/cpmeta/
-      IRI of compliance certification: VOID

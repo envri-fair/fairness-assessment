@@ -1,108 +1,96 @@
 survey:
-  date: 0 yyyy-mm-dd
+  date: yyyy-mm-dd
   version: number
   creator: 
-    name: 1 free
-    email: 2
+    name: free
+    email: 
 infrastructure:
-  acronym: 3 ref
-  name: 3 free
-  recognized authority URL: 
-  domain: 3.1 list ref
+  acronym: ref
+  name: free
+  website: 
+  domain: list ref 
+  URL/IRI of dataset: 
+  URL of discovery portal:   
   repositories: list
-    URL: 5 F4
-    name: 6 free
-    kind: 6 ref 
-    data repository type: 6 ref F4
-    metadata repository type: 8 ref F4
-    software: 7 ref F4
+    URL: F4
+    name: free
+    kind: list ref 
+    allocation: ref F4 
+    software: ref F4
     identifier: list
-      IRI: 2.5 ref F1A DELETE
-      kind: 9 list ref F1
-      system: 9 ref F1
-      assigned: 10 ref F1
-      provider: 11 ref F1
-      includes-attributes: 12 list ref F2 
-    certification methods: 13 list ref
-    policies: 14 list ref R1.1
-    registries: 15 list ref F4
-    persistency-guaranty: 16 ref A1
+      kind: ref F1
+      system: ref F1
+      landing page: bool F1
+      assigned: ref F1
+      provider: ref F1
+      includes metadata schema: list ref F2 
+    certification methods: list ref
+    policies: list ref R1.1
+    registries: list ref F4
+    persistency-guaranty: ref A1
     access mechanisms: 
-      authentication method: 33 ref A1.2
-      access protocol URL: 36.1 A1.1
-      access without costs: 33.1 bool A1.1
-      own user database maintained: 34 bool A1.2
-      ORCID used in AAI: 35 bool A1.2
-      major access technology supported: 36 ref A1.1
-      authorisation technique: 37 ref A1.2
-      authorisation needed for: 37 list ref A1.2
-      authorization for accessing content needed: 37.1 bool A1.2
-      data licenses in use: 38 list ref R1.1
-      data license IRI: 38.1 R1.1
-      metadata openly available: 39 bool R1.1
+      authentication method: ref A1.2
+      access protocol URL: A1.1
+      access without costs: bool A1.1
+      own user database maintained: bool A1.2
+      ORCID used in AAI: bool A1.2
+      major access technology supported: ref A1.1
+      authorisation technique: ref A1.2
+      authorization for accessing content needed: bool A1.2
+      data licenses in use: list ref R1.1
+      data license IRI: R1.1
+      metadata openly available: bool R1.1 
     data:
-      type name: 17 list ref I1
+      type name: list ref I1
       preferred formats: list
-        format name: 18 ref I1
-        metadata types in data headers: 19 list ref I1
-      registered data schema: 21 ref I1
-      search on data: 20 bool F4
-      search engine indexing: 20.1 bool F4
+        format name: ref I1
+        metadata types in data headers: list ref I1
+      registered data schema: ref I1
+      search on data: bool F4
     metadata: 
       schema: list
-        URL: 22
-        name: 22 ref I1
-        provenance fields included: 24 list ref F2
-      categories defined in registries: 23 bool I2
-      PIDs included: 25 bool F3
-      primary storage format: 26 ref I1
-      metadata longevity plan URL: 31.1
-      format IRI: 26.1 ref F2B
-      export formats supported: 27 list ref I1
-      exchange/harvesting methods: 28 list ref I1
-      local search engine URL: 29 F4
-      external search engine types supported: 30 list ref F4
-      access policy statements included: 31 bool R1.1
-      machine actionable: 32 bool I1
+        URL: 
+        name: ref I1
+        provenance fields included: list ref F2
+      machine readable provenance: bool R1.2        
+      categories defined in registries: bool I2
+      PIDs included: bool F3
+      primary storage format: ref I1
+      export formats supported: list ref I1
+      search engine indexing: bool F4      
+      exchange/harvesting methods: list ref I1
+      local search engine URL: F4
+      external search engine types supported: list ref F4
+      access policy statements included: bool R1.1
+      metadata longevity plan URL: 
+      machine actionable: bool I1
+      IRI of machine readable metadata of dataset: F2A 
     vocabularies: list
-      IRI: 47-49 I2
-      type: 47-49 ref I1
-      topic: 47-49 ref I1
-      name: 47-49 ref
-      specification language URL: 49.1 ref I1 
-      concept IRI: 49.2 list I2     
+      IRI: I2
+      name: ref      
+      type: ref I1
+      topic: ref I1
+      specification language: ref I1 
     data management plans:
-      specific DMP tools used: 40 ref
-      data publishing steps applied: 41 list ref  
+      specific DMP tools used: ref
+      data publishing steps applied: list ref 
+      compliance validation service: list ref R1.3
     data processing:
-      special data processing steps applied: 42 list ref 
-      workflow frameworks applied: 43 list ref
-      distributed workflows tools used: 44 list ref
-      other analysis services offered: 45 list ref A1
-      data products offered: 46 list ref
+      special data processing steps applied: list ref 
+      workflow frameworks applied: list ref
+      distributed workflows tools used: list ref
+      other analysis services offered: list ref A1
+      data products offered: list ref
     fairness: 
       data findability:  
-        data findable: 50 bool 
-        gaps: 50 list ref
+        data findable: bool 
+        gaps: list ref
       data accessibility: 
-        data accessible: 51 bool
-        gaps: 51 list ref
+        data accessible: bool
+        gaps: list ref
       data interoperability: 
-        data interoperable: 52 bool
-        gaps: 52 list ref
+        data interoperable: bool
+        gaps: list ref
       data re-usability: 
-        data reusable: 53 bool
-        gaps: 53 list ref
-    test fairness:
-      URL/IRI of dataset: 4
-      URL of discovery portal: 5
-      IRI of machine readable metadata of dataset: 32.1 F2A
-      machine readable provenance: 24.1 bool R1.2
-      compliance validation service: 41.1 list ref R1.3
- 
-
-            
-            
-            
-            
-         
+        data reusable: bool
+        gaps: list ref       

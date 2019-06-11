@@ -364,6 +364,9 @@ FDSN StationXML: http://envri.eu/ns/FDSNStationXml
 ISO 19119: http://envri.eu/ns/ISO19119
 StationXML: http://envri.eu/ns/StationXML
 data usage: http://envri.eu/ns/dataUsage
+CF-1.4: http://envri.eu/ns/CF1_4
+community specific: http://envri.eu/ns/communitySpecific
+
 
 
 
