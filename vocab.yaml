@@ -63,7 +63,7 @@ name: http://xmlns.com/foaf/0.1/name
 email: http://xmlns.com/foaf/0.1/mbox
 label: http://www.w3.org/2000/01/rdf-schema#label
 acronym: http://envri.eu/ns/acronym
-riUrl: http://envri.eu/ns/riUrl
+website: http://envri.eu/ns/website
 url: http://envri.eu/ns/url
 hasDataManagementPlans: http://envri.eu/ns/hasDataManagementPlans
 usesSpecificDataManagementPlanTools: http://envri.eu/ns/usesSpecificDataManagementPlanTools
@@ -74,7 +74,7 @@ usesIdentifierSystem: http://envri.eu/ns/usesIdentifierSystem
 usesSoftware: http://envri.eu/ns/usesSoftware
 usesIdentifier: http://envri.eu/ns/usesIdentifier
 usesProvider: http://envri.eu/ns/usesProvider
-includesAttributes: http://envri.eu/ns/includesAttributes
+includesMetadataSchema: http://envri.eu/ns/includesMetadataSchema
 isAssigned: http://envri.eu/ns/isAssigned
 hasCertificationMethods: http://envri.eu/ns/hasCertificationMethods
 hasPolicies: http://envri.eu/ns/hasPolicies
@@ -89,13 +89,13 @@ maintainsOwnUserDatabase: http://envri.eu/ns/maintainsOwnUserDatabase
 usesORCIDinAAI: http://envri.eu/ns/usesORCIDinAAI
 supportsAccessTechnology: http://envri.eu/ns/supportsAccessTechnology
 usesAuthorisationTechnique: http://envri.eu/ns/usesAuthorisationTechnique
-usesAuthorisationFor: http://envri.eu/ns/usesAuthorisationFor
 contentAccessAuthorizationRequired: http://envri.eu/ns/contentAccessAuthorizationRequired
 usesDataLicenses: http://envri.eu/ns/usesDataLicenses
 dataLicenseIri: http://envri.eu/ns/dataLicenseIri
 openAccessMetadata: http://envri.eu/ns/openAccessMetadata
 hasData: http://envri.eu/ns/hasData
 hasMetadata: http://envri.eu/ns/hasMetadata
+hasLandingPage: http://envri.eu/ns/hasLandingPage
 hasPreferredFormat: http://envri.eu/ns/hasPreferredFormat
 hasFormatName: http://envri.eu/ns/hasFormatName
 hasDataHeaderMetadataTypes: http://envri.eu/ns/hasDataHeaderMetadataTypes
@@ -105,12 +105,10 @@ metadataTypes: http://envri.eu/ns/metadataTypes
 dataSchemaIsRegistered: http://envri.eu/ns/dataSchemaIsRegistered
 searchOnData: http://envri.eu/ns/searchOnData
 searchEngineIndexing: http://envri.eu/ns/searchEngineIndexing
-hasDataRepositoryType: http://envri.eu/ns/hasDataRepositoryType
-hasMetadataRepositoryType: http://envri.eu/ns/hasMetadataRepositoryType
+hasAllocation: http://envri.eu/ns/hasAllocation
 hasSchema: http://envri.eu/ns/hasSchema
 hasRepositoryUrl: http://envri.eu/ns/hasRepositoryUrl
 hasIri: http://envri.eu/ns/hasIri
-hasIdentifierIri: http://envri.eu/ns/hasIdentifierIri
 hasSchemaUrl: http://envri.eu/ns/hasSchemaUrl
 hasVocabularyIri: http://envri.eu/ns/hasVocabularyIri
 hasName: http://envri.eu/ns/hasName
@@ -121,7 +119,6 @@ categoriesAreDefinedInRegistries: http://envri.eu/ns/categoriesAreDefinedInRegis
 persistentIdentifiersAreIncluded: http://envri.eu/ns/persistentIdentifiersAreIncluded
 hasPrimaryStorageFormat: http://envri.eu/ns/hasPrimaryStorageFormat
 hasMetadataLongevityPlan: http://envri.eu/ns/hasMetadataLongevityPlan
-hasFormat: http://envri.eu/ns/hasFormat
 hasMetadataFormatIri: http://envri.eu/ns/hasMetadataFormatIri
 supportedExportFormats: http://envri.eu/ns/supportedExportFormats
 hasHarvestingMethods: http://envri.eu/ns/hasHarvestingMethods
@@ -220,6 +217,7 @@ XLS: http://envri.eu/ns/MicrosoftExcel
 HTML: http://envri.eu/ns/HyperTextMarkupLanguage
 local ID: http://envri.eu/ns/LocalID
 PDF: http://envri.eu/ns/PortableDocumentFormat
+CF-1.4: http://envri.eu/ns/CF-1.4
 local system: http://envri.eu/ns/LocalSystem
 local service: http://envri.eu/ns/LocalService
 structured: http://envri.eu/ns/Structured
@@ -230,6 +228,7 @@ OAI PMH: http://envri.eu/ns/OAI-PMH
 OGC CSW: http://envri.eu/ns/OGC_CSW
 CSW: http://envri.eu/ns/OGC_CSW
 GEOPortal: http://envri.eu/ns/GEOPortal
+iRODS: http://envri.eu/ns/iRODS
 CDI system: http://envri.eu/ns/CDISystem
 OBIS event scheme: http://envri.eu/ns/OBISEventScheme
 parameters measured: http://envri.eu/ns/ParametersMeasured
@@ -324,6 +323,9 @@ SeisComp3: http://envri.eu/ns/SeisComp3
 data format: http://envri.eu/ns/DataFormat
 stationXML: http://envri.eu/ns/StationXML
 earth: http://envri.eu/ns/Earth
+marine: http://envri.eu/ns/Marine
+atmosphere: http://envri.eu/ns/Atmosphere
+ecosystem: http://envri.eu/ns/Ecosystem
 partially: http://envri.eu/ns/Partially
 none: http://envri.eu/ns/None
 VOID: http://envri.eu/ns/VOID
