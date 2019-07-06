@@ -21,8 +21,8 @@ WoRMS taxon matching: http://envri.eu/ns/WoRMSTaxonMatching
 DwC formatting: http://envri.eu/ns/DwCFormatting
 DMPonline: http://envri.eu/ns/DMPonline
 NetCDF ACDD metadata: http://envri.eu/ns/NetcdfAcddMetadata
-GEO: http://envri.eu/ns/Geo
-IODE certified: http://envri.eu/ns/IodeCertified
+GEOSS: http://envri.eu/ns/GEOSS
+IODE certification: http://envri.eu/ns/IodeCertification
 RDA Trustworthy Data Repository: http://envri.eu/ns/RdaTrustworthyDataRepository
 NetCDF CF Argo: http://envri.eu/ns/NetcdfCfArgo
 Argo user manual: http://envri.eu/ns/ArgoUserManual
@@ -365,6 +365,21 @@ EPOSAR: http://envri.eu/ns/EPOSAR
 FDSN StationXML: http://envri.eu/ns/FDSNStationXml
 ISO 19119: http://envri.eu/ns/ISO19119
 StationXML: http://envri.eu/ns/StationXML
+NetAPP: http://envri.eu/ns/NetAPP
+10 years: http://envri.eu/ns/10Years
+20 years: http://envri.eu/ns/20Years
+50 years: http://envri.eu/ns/50Years
+ownership: http://envri.eu/ns/Ownership
+FTP: http://envri.eu/ns/FTP
+codes: http://envri.eu/ns/codes
+Google dataset search: http://envri.eu/ns/GoogleDatasetSearch
+quality management framework: http://envri.eu/ns/QualityMnanagementFramework
+subsetting monthly snapshots: http://envri.eu/ns/SubsettingMonthlySnapshots
+DOI generation: http://envri.eu/ns/DOIGeneration
+gridded fields: http://envri.eu/ns/GriddedFields
+impovements in subsetting access: http://envri.eu/ns/ImprovementsInSubsettingAccess
+WMS service: http://envri.eu/ns/WMSService
+
 
 
 

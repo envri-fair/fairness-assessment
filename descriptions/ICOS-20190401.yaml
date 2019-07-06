@@ -21,7 +21,8 @@ infrastructure:
     - metadata repository
     - data repository
     allocation: central
-    software: iRODS
+    software: 
+    - iRODS
     identifier:
     - kind: PID
       system: Handle
@@ -83,7 +84,7 @@ infrastructure:
         provenance fields included: 
         - simplified PROV-O      
       categories defined in registries: yes
-      machine readable provenance: NULL     
+      machine readable provenance: no     
       PIDs included: yes
       primary storage format: RDF
       export formats supported: 
