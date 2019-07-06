@@ -116,7 +116,7 @@ def repository(g, d, v, n, i):
     _l(g, d, v, n1, ['altLabel', '{} repository'.format(i)], XSD.string)
     _t(g, d, v, n1, 'kind')
     _r(g, d, v, n1, ['hasAllocation', 'allocation'])
-    _r(g, d, v, n1, ['usesSoftware', 'software'])
+    _c(g, d['software'], v, n1, BNode(), 'usesSoftware')
     identifier(g, d['identifier'], v, n1, i, d['name'])
     _c(g, d['certification methods'], v, n1, BNode(), 'hasCertificationMethods')
     _c(g, d['policies'], v, n1, BNode(), 'hasPolicies')
@@ -158,7 +158,7 @@ def access(g, d, v, n, i, r):
     _r(g, d, v, n1, ['hasAccessProtocolUrl', 'access protocol URL'])
     _l(g, d, v, n1, ['accessWithoutCosts', 'access without costs'], XSD.bool)
     _l(g, d, v, n1, ['maintainsOwnUserDatabase', 'own user database maintained'], XSD.bool)
-    _l(g, d, v, n1, ['usesORCIDinAAI', 'ORCID used in AAI'], XSD.bool)
+    _r(g, d, v, n1, ['personIdentificationSystem', 'person identification system'])
     _r(g, d, v, n1, ['supportsAccessTechnology', 'major access technology supported'])
     _r(g, d, v, n1, ['usesAuthorisationTechnique', 'authorisation technique'])
     _l(g, d, v, n1, ['contentAccessAuthorizationRequired', 'authorization for accessing content needed'], XSD.bool)
@@ -241,7 +241,7 @@ def datamanagementplans(g, d, v, n, i):
     _l(g, d, v, n1, ['altLabel', '{} data management plans'.format(i)], XSD.string)
     _l(g, d, v, n1, ['usesSpecificDataManagementPlanTools', 'specific DMP tools used'], XSD.bool)
     _l(g, d, v, n1, ['appliedDataPublishingSteps', 'data publishing steps applied'], XSD.string)
-    _c(g, d['compliance validation service'], v, n1, BNode(), 'hasComplianceValidationService')
+    _l(g, d, v, n1, ['hasComplianceValidationService', 'compliance validation service'], XSD.bool)
     
 
 def dataprocessing(g, d, v, n, i, r):

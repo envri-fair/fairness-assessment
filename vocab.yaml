@@ -86,7 +86,7 @@ hasAuthenticationMethod: http://envri.eu/ns/hasAuthenticationMethod
 hasAccessProtocolUrl: http://envri.eu/ns/hasAccessProtocolUrl
 accessWithoutCosts: http://envri.eu/ns/accessWithoutCosts
 maintainsOwnUserDatabase: http://envri.eu/ns/maintainsOwnUserDatabase
-usesORCIDinAAI: http://envri.eu/ns/usesORCIDinAAI
+personIdentificationSystem: http://envri.eu/ns/personIdentificationSystem
 supportsAccessTechnology: http://envri.eu/ns/supportsAccessTechnology
 usesAuthorisationTechnique: http://envri.eu/ns/usesAuthorisationTechnique
 contentAccessAuthorizationRequired: http://envri.eu/ns/contentAccessAuthorizationRequired

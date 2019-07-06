@@ -12,7 +12,7 @@ hasAuthenticationMethod: https://w3id.org/fair/principles/terms/A1.2
 hasAccessProtocolUrl: https://w3id.org/fair/principles/terms/A1.1
 allowsAccessWithoutCosts: https://w3id.org/fair/principles/terms/A1.1
 maintainsOwnUserDatabase: https://w3id.org/fair/principles/terms/A1.2
-usesORCIDinAAI: https://w3id.org/fair/principles/terms/A1.2
+personIdentificationSystem: https://w3id.org/fair/principles/terms/A1.2
 supportsAccessTechnology: https://w3id.org/fair/principles/terms/A1.1
 usesAuthorisationTechnique: https://w3id.org/fair/principles/terms/A1.2
 contentAccessAuthorizationRequired: https://w3id.org/fair/principles/terms/A1.2
