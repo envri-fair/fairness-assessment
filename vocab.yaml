@@ -379,6 +379,8 @@ DOI generation: http://envri.eu/ns/DOIGeneration
 gridded fields: http://envri.eu/ns/GriddedFields
 impovements in subsetting access: http://envri.eu/ns/ImprovementsInSubsettingAccess
 WMS service: http://envri.eu/ns/WMSService
+ORCID: http://envri.eu/ns/ORCID
+person identification system: http://envri.eu/ns/personIdentificationSystem
 
 
 
