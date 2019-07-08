@@ -1,0 +1,146 @@
+survey:
+  date: 2019-04-18
+  version: 1
+  creator: 
+    name: Thierry Carval
+    email: thierry.carval@ifremer.fr
+infrastructure:
+  acronym: Euro-Argo
+  name: Euro-Argo ERIC
+  website: http://www.euro-argo.eu
+  domain: 
+  - atmosphere
+  URL/IRI of dataset: http://doi.org/10.17882/42182 
+  URL of discovery portal: http://www.argodatamgt.org/Access-to-data/Argo-data-selection 
+  repositories: 
+  - URL: http://doi.org/10.17882/42182
+    name: Euro-Argo Data
+    kind: 
+    - data repository
+    allocation: central
+    software: 
+    - NetAPP
+    identifier: 
+    - kind: DOI
+      system: SEANOE
+      landing page: yes
+      assigned: automatically
+      provider: SEANOE
+      includes metadata schema: NULL
+    certification methods:
+    - Data Seal of Approval
+    - IODE certification
+    policies: 
+    - data access
+    registries: 
+    - GEOSS
+    persistency-guaranty: 50 years
+    access mechanisms: 
+      authentication method: VOID
+      access protocol URL: https://doi.org/10.17882/42182
+      access without costs: yes
+      own user database maintained: no
+      person identification system: none
+      major access technology supported: FTP
+      authorisation technique: VOID
+      authorization for accessing content needed: no
+      data licenses in use: 
+      - CC-BY4.0
+      data license IRI:  https://creativecommons.org/licenses/by/4.0/
+      metadata openly available: yes
+    data:
+    - type name: binary
+      preferred formats: 
+      - format name: NetCDF
+        metadata types in data headers: 
+        - NetCDF ACDD metadata
+      registered data schema: NULL
+      search on data: yes
+    metadata: 
+      schema: 
+      - URL: http://dx.doi.org/10.13155/29825 
+        name: Argo user manual
+        provenance fields included: 
+        - text only
+      - URL: NULL
+        name: NetCDF CF checker
+        provenance fields included: 
+        - codes        
+      machine readable provenance: 
+      categories defined in registries: planned
+      PIDs included: yes
+      primary storage format: NetCDF CF Argo
+      export formats supported: 
+      - NetCDF
+      - CSV
+      search engine indexing: NULL
+      exchange/harvesting methods: 
+      - OAI-PMH
+      - OpenDAP
+      - OGC CSW
+      local search engine URL: NULL
+      external search engine types supported: 
+      - CSW endpoint
+      - Google dataset search
+      access policy statements included: yes
+      metadata longevity plan URL: https://www.nodc.noaa.gov/worlddatacenter/
+      machine actionable: yes
+      IRI of machine readable metadata of dataset: https://doi.org/10.17882/42182 
+    vocabularies: 
+    - IRI: http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P06
+      name: NVS P06    
+      type: codelist
+      topic: project specific
+      specification language: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml 
+    - IRI: http://vocab.nerc.ac.uk/collection/P01/current/PSALST01/ 
+      name: NVS P01    
+      type: codelist
+      topic: domain specific
+      specification language: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml  
+    data management plans:
+      specific DMP tools used: quality management framework
+      data publishing steps applied: 
+      - subsetting monthly snapshots
+      - DOI generation
+      compliance validation service: yes
+    data processing:
+      special data processing steps applied: 
+      - QA QC
+      workflow frameworks applied: 
+      - data processing steps recorded
+      distributed workflows tools used: none
+      other analysis services offered: 
+      - Spark
+      - Cassandra
+      - Elasticsearch
+      - Pangeo
+      data products offered: 
+      - gridded fields
+      - temperature
+      - salinity
+      - climatologies
+    fairness: 
+      data findability:  
+        data findable: yes
+        gaps: none
+      data accessibility: 
+        data accessible: yes
+        gaps: 
+        - impovements in subsetting access
+        - WMS service
+      data interoperability: 
+        data interoperable: partially
+        gaps: 
+        - harmonising vocabularies
+      data re-usability: 
+        data reusable: partially
+        gaps: 
+        - harmonising vocabularies
+
+ 
+
+            
+            
+            
+            
+         
