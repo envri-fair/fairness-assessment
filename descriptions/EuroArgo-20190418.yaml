@@ -11,14 +11,15 @@ infrastructure:
   domain: 
   - atmosphere
   URL/IRI of dataset: http://doi.org/10.17882/42182 
-  IRI of metadata: http://www.argodatamgt.org/Access-to-data/Argo-data-selection 
+  URL of discovery portal: http://www.argodatamgt.org/Access-to-data/Argo-data-selection 
   repositories: 
   - URL: http://doi.org/10.17882/42182
     name: Euro-Argo Data
     kind: 
     - data repository
     allocation: central
-    software: NetAPP
+    software: 
+    - NetAPP
     identifier: 
     - kind: DOI
       system: SEANOE
@@ -53,7 +54,7 @@ infrastructure:
       - format name: NetCDF
         metadata types in data headers: 
         - NetCDF ACDD metadata
-      registered data schema: yes
+      registered data schema: NULL
       search on data: yes
     metadata: 
       schema: 

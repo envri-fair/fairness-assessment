@@ -86,7 +86,7 @@ hasAuthenticationMethod: http://envri.eu/ns/hasAuthenticationMethod
 hasAccessProtocolUrl: http://envri.eu/ns/hasAccessProtocolUrl
 accessWithoutCosts: http://envri.eu/ns/accessWithoutCosts
 maintainsOwnUserDatabase: http://envri.eu/ns/maintainsOwnUserDatabase
-personIdentificationSystem: http://envri.eu/ns/personIdentificationSystem
+usesORCIDinAAI: http://envri.eu/ns/usesORCIDinAAI
 supportsAccessTechnology: http://envri.eu/ns/supportsAccessTechnology
 usesAuthorisationTechnique: http://envri.eu/ns/usesAuthorisationTechnique
 contentAccessAuthorizationRequired: http://envri.eu/ns/contentAccessAuthorizationRequired
@@ -380,9 +380,8 @@ gridded fields: http://envri.eu/ns/GriddedFields
 impovements in subsetting access: http://envri.eu/ns/ImprovementsInSubsettingAccess
 WMS service: http://envri.eu/ns/WMSService
 ORCID: http://envri.eu/ns/ORCID
-person identification system: http://envri.eu/ns/personIdentificationSystem
-
-
+personIdentificationSystem: http://envri.eu/ns/personIdentificationSystem
+NetCDF CF checker: http://envri.eu/ns/NetCDFCFChecker
 
 
 
