@@ -176,7 +176,7 @@ def data(g, d, v, n, i, r):
         _t(g, e1, v, n1, 'Data')
         _l(g, e1, v, n1, ['altLabel', '{} {} data'.format(i, r)], XSD.string)
         _t(g, e1, v, n1, 'type name')
-        _r(g, e1, v, n1, ['dataSchemaIsRegistered', 'registered data schema'])
+        _c(g, e1['registered data schema'], v, n1, BNode(), 'dataSchemaIsRegistered')
         _l(g, e1, v, n, ['searchOnData', 'search on data'], XSD.bool)
         for e2 in e1['preferred formats']:
             n2 = BNode()
