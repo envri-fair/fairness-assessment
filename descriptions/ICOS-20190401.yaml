@@ -21,7 +21,8 @@ infrastructure:
     - metadata repository
     - data repository
     allocation: central
-    software: iRODS
+    software: 
+    - iRODS
     identifier:
     - kind: PID
       system: Handle
@@ -46,7 +47,7 @@ infrastructure:
       access protocol URL: https://doi.org/10.17487%2FRFC2616
       access without costs: yes
       own user database maintained: yes
-      ORCID used in AAI: yes
+      person identification system: ORCID
       major access technology supported: HTTP GET
       authorisation technique: OAUTH
       authorization for accessing content needed: no
@@ -83,7 +84,7 @@ infrastructure:
         provenance fields included: 
         - simplified PROV-O      
       categories defined in registries: yes
-      machine readable provenance: NULL     
+      machine readable provenance: no     
       PIDs included: yes
       primary storage format: RDF
       export formats supported: 

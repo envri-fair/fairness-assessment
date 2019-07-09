@@ -6,48 +6,44 @@ survey:
     email: thierry.carval@ifremer.fr
 infrastructure:
   acronym: Euro-Argo
-  name: 1.3 Euro-Argo ERIC
-  recognized authority URL: http://www.euro-argo.eu
-  data management plans:
-    specific DMP tools used: none
-    data publishing steps applied: 
-    - manual QA QC
+  name: Euro-Argo ERIC
+  website: http://www.euro-argo.eu
+  domain: 
+  - atmosphere
+  URL/IRI of dataset: http://doi.org/10.17882/42182 
+  URL of discovery portal: http://www.argodatamgt.org/Access-to-data/Argo-data-selection 
   repositories: 
   - URL: http://doi.org/10.17882/42182
     name: Euro-Argo Data
-    kind: data repository
-    data repository type: central
-    metadata repository type: central
-    software: NetCDF file
+    kind: 
+    - data repository
+    allocation: central
+    software: 
+    - NetAPP
     identifier: 
-    - IRI: http://doi.org/10.17882/42182
-      persistency-policy document IRI: https://doi.org/10.13155/44515
-      kind: DOI
+    - kind: DOI
       system: SEANOE
+      landing page: yes
       assigned: automatically
       provider: SEANOE
-      includes-attributes: yes 
+      includes metadata schema: NULL
     certification methods:
     - Data Seal of Approval
-    - IODE certified
-    - RDA Trustworthy Data Repository
+    - IODE certification
     policies: 
     - data access
     registries: 
-    - GEO
-    persistency-guaranty: NULL
+    - GEOSS
+    persistency-guaranty: 50 years
     access mechanisms: 
       authentication method: VOID
       access protocol URL: https://doi.org/10.17882/42182
-      protocol open: yes
-      protocol royalty free: yes
+      access without costs: yes
       own user database maintained: no
-      ORCID used in AAI: no
-      major access technology supported: VOID
+      person identification system: none
+      major access technology supported: FTP
       authorisation technique: VOID
-      authorisation needed for: none
       authorization for accessing content needed: no
-      access content process description IRI: VOID
       data licenses in use: 
       - CC-BY4.0
       data license IRI:  https://creativecommons.org/licenses/by/4.0/
@@ -58,23 +54,26 @@ infrastructure:
       - format name: NetCDF
         metadata types in data headers: 
         - NetCDF ACDD metadata
-      registered data schema: no
+      registered data schema: NULL
       search on data: yes
-      search engine URL: http://www.argodatamgt.org/Access-to-data/Argo-data-selection
     metadata: 
       schema: 
       - URL: http://dx.doi.org/10.13155/29825 
         name: Argo user manual
         provenance fields included: 
         - text only
+      - URL: NULL
+        name: NetCDF CF checker
+        provenance fields included: 
+        - codes        
+      machine readable provenance: 
       categories defined in registries: planned
       PIDs included: yes
       primary storage format: NetCDF CF Argo
-      metadata longevity plan URL: https://www.nodc.noaa.gov/worlddatacenter/
-      format IRI: https://doi.org/10.13155/29825
       export formats supported: 
       - NetCDF
       - CSV
+      search engine indexing: NULL
       exchange/harvesting methods: 
       - OAI-PMH
       - OpenDAP
@@ -82,19 +81,28 @@ infrastructure:
       local search engine URL: NULL
       external search engine types supported: 
       - CSW endpoint
+      - Google dataset search
       access policy statements included: yes
+      metadata longevity plan URL: https://www.nodc.noaa.gov/worlddatacenter/
       machine actionable: yes
+      IRI of machine readable metadata of dataset: https://doi.org/10.17882/42182 
     vocabularies: 
     - IRI: http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P06
+      name: NVS P06    
       type: codelist
       topic: project specific
-      name: NVS P06
-      specification language URL: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml 
-    - IRI: http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=P06
+      specification language: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml 
+    - IRI: http://vocab.nerc.ac.uk/collection/P01/current/PSALST01/ 
+      name: NVS P01    
       type: codelist
       topic: domain specific
-      name: NVS P01
-      specification language URL: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml   
+      specification language: http://cfconventions.org/Data/cf-standard-names/64/src/cf-standard-name-table.xml  
+    data management plans:
+      specific DMP tools used: quality management framework
+      data publishing steps applied: 
+      - subsetting monthly snapshots
+      - DOI generation
+      compliance validation service: yes
     data processing:
       special data processing steps applied: 
       - QA QC
@@ -105,7 +113,9 @@ infrastructure:
       - Spark
       - Cassandra
       - Elasticsearch
+      - Pangeo
       data products offered: 
+      - gridded fields
       - temperature
       - salinity
       - climatologies
@@ -115,7 +125,9 @@ infrastructure:
         gaps: none
       data accessibility: 
         data accessible: yes
-        gaps: none
+        gaps: 
+        - impovements in subsetting access
+        - WMS service
       data interoperability: 
         data interoperable: partially
         gaps: 
@@ -124,16 +136,7 @@ infrastructure:
         data reusable: partially
         gaps: 
         - harmonising vocabularies
-    test fairness:
-      URL/IRI of dataset: http://doi.org/10.17882/42182 
-      IRI of metadata: https://doi.org/10.17882/42182
-      URL of discovery portal: http://www.argodatamgt.org/Access-to-data/Argo-data-selection
-      IRI of machine readable metadata of dataset: https://doi.org/10.17882/42182 
-      URL to linkset describing resource: none
-      Search query: NULL
-      IRI for the vocabulary used to describe citational provenance: NULL
-      IRI for the vocabulary used to describe contextual provenance: https://doi.org/10.17882/42182
-      IRI of compliance certification: https://doi.org/10.17882/45538
+
  
 
             
