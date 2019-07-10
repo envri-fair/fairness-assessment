@@ -1,107 +1,101 @@
 survey:
   date: 2019-03-22
-  version: 1
-  creator: 
+  version: 1.0
+  creator:
     name: Jan Michalek
     email: jan.michalek@uib.no
 infrastructure:
-  acronym: EPOS
+  acronym: EPOS-Norway
   name: EPOS-Norway
-  recognized authority URL: 
-  data management plans:
-    specific DMP tools used: no
-    data publishing steps applied: none
-  repositories: list
-    URL: http://epos-no.geo.uib.no:81/
-    name: Local server which is part of the EU EIDA system.
-    kind: data repository 
-    data repository type: local
-    metadata repository type: relational database
+  website: https://epos-no.uib.no
+  domain: earth
+  URL/IRI of dataset: http://eida.geo.uib.no/fdsnws/dataselect/1/
+  URL of discovery portal: http://epos-no.geo.uib.no:81/
+  repositories: 
+    URL: XXXXX
+    name: XXXXX
+    kind: metadata data repository
+    allocation: local
     software: SeisComp3
-    identifier: list
-      IRI: 2.5 F1A
-      persistency-policy document IRI: 2.6 F1B
-      kind: null
-      system: null
-      assigned: null
-      provider: null
-      includes-attributes: none
+    identifier: 
+      kind: none
+      system: none
+      landing page: no
+      assigned: none
+      provider: none
+      includes metadata schema: none
     certification methods: none
     policies: none
     registries: none
     persistency-guaranty: none
-    access mechanisms: 
+    access mechanisms:
       authentication method: planned
-      access protocol URL: 2.13 ref A1.1
-      protocol open: 2.14 bool A1.1
-      protocol royalty free: 2.15 bool A1.1
+      access protocol URL: https://www.eosc-hub.eu/training-material/federated-aai-eida-services
+      access without costs: yes
       own user database maintained: no
-      ORCID used in AAI: no
+      person identification system: none
       major access technology supported: webservice
-      authorisation technique: none
-      authorisation needed for: none
-      authorization for accessing content needed: 2.16 bool A1.2
-      access content process description IRI: 2.17 A1.2
+      authorisation technique: none 
+      authorization for accessing content needed: no
       data licenses in use: planned
-      data license IRI: 2.22 R1.1
+      data license IRI: void
       metadata openly available: yes
     data:
       type name: seismic waveform
-      preferred formats: list
+      preferred formats: 
         format name: mseed
-        metadata types in data headers: station identification-temporal range
-      registered data schema: yes
+        metadata types in data headers: - station identification
+                                        - temporal range
+                                        - network
+                                        - channel
+      registered data schema: MiniSEED
       search on data: yes
-      search engine URL: 2.11 F4
-    metadata: 
-      schema: list
-        URL: 
-        name: SEED
-        provenance fields included: null
+    metadata:
+      schema: 
+        URL: https://www.orfeus-eu.org/documents/WFCatalog_Specification-v0.22.pdf
+        name: WFMetadata
+        provenance fields included: none
+      machine readable provenance: no
       categories defined in registries: yes
       PIDs included: no
       primary storage format: SEED
-      metadata longevity plan URL: 2.18
-      format IRI: 2.8 F2B
-      export formats supported: XML-SEED
-      exchange/harvesting methods: null
-      local search engine URL: yes ?
+      export formats supported: - XML
+                                - SEED
+      search engine indexing: yes
+      exchange/harvesting methods: REST
+      local search engine URL: planned
       external search engine types supported: none
       access policy statements included: no
-      machine actionable: yes
-    vocabularies: list
-      IRI: https://ds.iris.edu/ds/nodes/dmc/data/formats/seed/
-      type: data format
+      metadata longevity plan URL: planned
+      machine actionable: partially
+      IRI of machine readable metadata of dataset: planned
+    vocabularies: 
+      IRI: https://github.com/epos-eu/EPOS-DCAT-AP
+      name: EPOS-DCAT-AP
+      type: ontology
       topic: domain specific
-      name: SEED
-      specification language URL: 2.19 I1        
+      specification language: rdf owl
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied: none
+      compliance validation service: yes
     data processing:
       special data processing steps applied: none
       workflow frameworks applied: none
-      distributed workflows tools used: SEISCOMP3
-      other analysis services offered: null
-      data products offered: null
-    fairness: 
-      data findability:  
+      distributed workflows tools used: Enlighten
+      other analysis services offered: Enlighten
+      data products offered: data quality
+    fairness:
+      data findability:
         data findable: no
-        gaps: F1 gap
-      data accessibility: 
+        gaps: no unique identifier
+      data accessibility:
         data accessible: yes
-        gaps: void
-      data interoperability: 
+        gaps: none
+      data interoperability:
         data interoperable: no
-        gaps: null
-      data re-usability: 
+        gaps: missing semantic information
+      data re-usability:
         data reusable: no
-        gaps: usage license-provenance information
-    test fairness:
-      URL/IRI of dataset: http://eida.geo.uib.no/fdsnws/dataselect/1/
-      IRI of metadata: 2.9
-      URL of discovery portal: http://epos-no.geo.uib.no:81/
-      IRI of machine readable metadata of dataset: 2.7 F2A
-      URL to linkset describing resource: 2.21 I3
-      Search query: 2.12 F4
-      IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
-      IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
-      IRI of compliance certification: 2.25 R1.3
- 
+        gaps: - usage license	
+              - provenance information
