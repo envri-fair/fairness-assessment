@@ -1,123 +1,105 @@
 survey:
-  date: 2019-04-03
-  version: 1
-  creator: 
+  date: 2019-03-04
+  version: 1.0
+  creator:
     name: Luca Trani
     email: trani@knmi.nl
-infrastructure:
-  acronym: EPOS
+infrastructure: 
+  acronym: EPOS-ORFEUS
   name: EPOS (ORFEUS)
-  recognized authority URL: 
-  data management plans:
-    specific DMP tools used: DMPonline
-    data publishing steps applied: custom
-  repositories: list
-    URL: http://orfeus-eu.org/webdc3/
-    name: European Federated Data Archive
-    kind: metadata data repository 
-    data repository type: domain
-    metadata repository type: mixed/various
+  website: http://www.orfeus-eu.org/
+  domain: earth
+  URL/IRI of dataset: http://www.orfeus-eu.org/data/eida/
+  URL of discovery portal: http://orfeus-eu.org/webdc3/
+  repositories: 
+    URL: http://www.orfeus-eu.org/data/
+    name: ORFEUS
+    kind: metadata data repository
+    allocation: distributed
     software: GitHub
-    identifier: list
-      IRI: https://www.doi.org/
-      persistency-policy document IRI: 2.6 F1B
+    identifier: 
       kind: PID
       system: DOI
+      landing page: yes
       assigned: manually
       provider: DataCite
-      includes-attributes: file location-file checksum-PID replica
-      IRI: https://www.pidconsortium.eu/
-      persistency-policy document IRI: 2.6 F1B
-      kind: PID
-      system: ePic
-      assigned: automatically
-      provider: ePIC service
-      includes-attributes: none
+      includes metadata schema: null
     certification methods: none
-    policies: usage-acknowledgements-citation
-    registries: custom registry
+    policies: usage
+    registries: EIDA WS Routing
     persistency-guaranty: none
-    access mechanisms: 
+    access mechanisms:
       authentication method: B2ACCESS
-      access protocol URL: 2.13 ref A1.1
-      protocol open: 2.14 bool A1.1
-      protocol royalty free: 2.15 bool A1.1
+      access protocol URL: https://www.eosc-hub.eu/training-material/federated-aai-eida-services
+      access without costs: yes
       own user database maintained: yes
-      ORCID used in AAI: yes
-      major access technology supported: HTTP (list?)
-      authorisation technique: several
-      authorisation needed for: null
-      authorization for accessing content needed: 2.16 bool A1.2
-      access content process description IRI: 2.17 A1.2
-      data licenses in use: CCBY
-      data license IRI: https://creativecommons.org/licenses/
+      person identification system: planned
+      major access technology supported: HTTP
+      authorisation technique: SeisComp
+      authorization for accessing content needed: yes
+      data licenses in use: CC-BY
+      data license IRI: https://creativecommons.org/licenses/by/2.0/it/
       metadata openly available: yes
     data:
-      type name: JSON-MSEED-FDSN StationXML
-      preferred formats: list
-        format name: MSEED
-        metadata types in data headers: yes ?
-        format name: FDSN StationXML
-        metadata types in data headers: none
-        format name: JSON
-        metadata types in data headers: none
-      registered data schema: yes
+      type name: seismic waveform
+      preferred formats: 
+        format name:  - MSEED
+                      - XML
+                      - JSON
+        metadata types in data headers: - station identification
+                                        - temporal range
+      registered data schema: MiniSEED
       search on data: yes
-      search engine URL: 2.11 F4
-    metadata: 
-      schema: list
-        URL: https://www.fdsn.org/xml/station/
-        name: StationXML
+    metadata:
+      schema: 
+        URL: https://www.orfeus-eu.org/documents/WFCatalog_Specification-v0.22.pdf
+        name: WFMetadata
         provenance fields included: planned
-        URL: https://quake.ethz.ch/quakeml/
-        name: QuakeML
-        provenance fields included: planned
-        URL: https://github.com/EIDA/wfcatalog/blob/master/wf_metadata_schema.json
-        name: Waveform metadata schema
-        provenance fields included: planned
+      machine readable provenance: no
       categories defined in registries: planned
       PIDs included: partially
       primary storage format: database
-      metadata longevity plan URL: 2.18
-      format IRI: 2.8 F2B
-      export formats supported: XML-JSON-RDF
-      exchange/harvesting methods: WebAPI
+      export formats supported: - XML
+                                - JSON
+                                - RDF
+      search engine indexing: yes
+      exchange/harvesting methods: REST
       local search engine URL: http://orfeus-eu.org/webdc3/
       external search engine types supported: EPOS ICS
       access policy statements included: partially
+      metadata longevity plan URL: planned
       machine actionable: partially
-    vocabularies: list
-      IRI: void
-      type: none
-      topic: none
-      name: none
-      specification language URL: void
+      IRI of machine readable metadata of dataset: planned
+    vocabularies: 
+      IRI: https://github.com/epos-eu/EPOS-DCAT-AP
+      name: EPOS-DCAT-AP
+      type: ontology
+      topic: domain specific
+      specification language: rdf owl
+    data management plans:
+      specific DMP tools used: DMPonline
+      data publishing steps applied: planned
+      compliance validation service: yes
     data processing:
       special data processing steps applied: metadata extraction
-      workflow frameworks applied: VERCE-DARE
-      distributed workflows tools used: VERCE-DARE
-      other analysis services offered: none
-      data products offered: yes (which?)
-    fairness: 
-      data findability:  
+      workflow frameworks applied: - VERCE
+                                   - DARE
+      distributed workflows tools used: - VERCE
+                                        - DARE
+      other analysis services offered: Jupyter Notebooks
+      data products offered: - strongmotion products
+                             - data quality	
+    fairness:
+      data findability:
         data findable: yes
-        gaps: void
-      data accessibility: 
+        gaps: no unique identifier
+      data accessibility:
         data accessible: yes
-        gaps: void
-      data interoperability: 
+        gaps: none
+      data interoperability:
         data interoperable: partially
         gaps: improving vocabularies
-      data re-usability: 
+      data re-usability:
         data reusable: partially
-        gaps: improving vocabularies
-    test fairness:
-      URL/IRI of dataset: http://www.orfeus-eu.org/data/eida/
-      IRI of metadata: 2.9
-      URL of discovery portal: http://orfeus-eu.org/webdc3/
-      IRI of machine readable metadata of dataset: 2.7 F2A
-      URL to linkset describing resource: 2.21 I3
-      Search query: 2.12 F4
-      IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
-      IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
-      IRI of compliance certification: 2.25 R1.3
+        gaps: - improving vocabularies
+              - provenance
