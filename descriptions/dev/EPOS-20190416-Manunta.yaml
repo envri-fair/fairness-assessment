@@ -1,110 +1,99 @@
 survey:
   date: 2019-04-16
-  version: 1
-  creator: 
-    name: Michele Manunta
+  version: 1.0
+  creator:
+    name: michele manunta
     email: manunta.m@irea.cnr.it
 infrastructure:
   acronym: EPOS
   name: EPOSAR
-  recognized authority URL: null
+  website: xxxx
   domain: earth
+  URL/IRI of dataset: https://catalog.terradue.com//eop/gep-epos/profile/xml?uid=InW_CNR_IREA_20170211S1B_20180101S1B_RU11
+  URL of discovery portal: https://catalog.terradue.com/gep-epos/search?format=atomeop
   repositories: 
-  - URL: https://catalog.terradue.com/gep-epos/search?format=atomeop
-    name: Terradue
-    kind: metadata data repository 
-    data repository type: domain
-    metadata repository type: central
-    software: null
+    URL: xxxx
+    name: xxxx
+    kind: metadata repository
+    allocation: central
+    software: xxxx
     identifier: 
-    - IRI: null
       kind: PID
       system: DOI
+      landing page: xxxx
       assigned: manually
       provider: Zenodo
-      includes-attributes: none
+      includes metadata schema: none
     certification methods: none
     policies: none
     registries: none
     persistency-guaranty: null
-    access mechanisms: 
+    access mechanisms:
       authentication method: Shibboleth
-      access protocol URL: 2.13 ref A1.1
-      protocol open: 2.14 bool A1.1
-      protocol royalty free: 2.15 bool A1.1
+      access protocol URL: xxxx
+      access without costs: xxxx
       own user database maintained: yes
-      ORCID used in AAI: no
-      major access technology supported: null
-      authorisation technique: null
-      authorisation needed for: null
-      authorisation for accessing content needed: 2.16 bool A1.2
-      data licenses in use: 
-      - CCBY
-      - CCBYNC
-      data license IRI: https://creativecommons.org/licenses/
+      person identification system: xxxx
+      major access technology supported: xxxx
+      authorisation technique: xxxx
+      authorization for accessing content needed: xxxx
+      data licenses in use: - CCBY
+                            - CCBYNC
+      data license IRI: xxxx
       metadata openly available: yes
     data:
-    - type name: 
-      - spatial
-      - timeseries
+      type name: - spatial
+                 - timeseries
       preferred formats: 
-      - format name: GEOTIFF 
-        metadata types in data headers: none
-      - format name: ASCII
+        format name: - geotiff
+                     - ASCII
         metadata types in data headers: none
       registered data schema: no
-      search on data: null
-      search engine indexing: null
-    metadata: 
+      search on data: xxxx
+    metadata:
       schema: 
-      - URL: null
-        name: ISO 19119
-        provenance fields included: yes (?)
+        URL: 
+        name: ISO19119
+        provenance fields included: xxxx
+      machine readable provenance: xxxx
       categories defined in registries: no
       PIDs included: yes
-      primary storage format: XML
-      metadata longevity plan URL: 2.18
-      format IRI: 2.8 F2B
-      export formats supported: 
-      - xml
-      - atom(?)
-      exchange/harvesting methods: null
-      local search engine URL: https://catalog.terradue.com/gep-epos/search?format=atomeop (search engine ?)
-      external search engine types supported: yes (?)
+      primary storage format: xml
+      export formats supported: xxxx
+      search engine indexing: xxxx
+      exchange/harvesting methods: xxxx
+      local search engine URL: xxxx
+      external search engine types supported: xxxx
       access policy statements included: yes
+      metadata longevity plan URL: xxxx
       machine actionable: yes
+      IRI of machine readable metadata of dataset: F2A
     vocabularies: 
-    - IRI: null
-      type: none
-      topic: none
-      name: none
-      specification language URL: NULL
-      concept IRI: NULL
+      IRI: https://github.com/epos-eu/EPOS-DCAT-AP
+      name: EPOS-DCAT-AP
+      type: ontology
+      topic: domain specific
+      specification language: rdf owl
     data management plans:
-      specific DMP tools used: DMPonline
-      data publishing steps applied: none  
+      specific DMP tools used: https://dmponline.dcc.ac.uk/
+      data publishing steps applied: none
+      compliance validation service: xxxx
     data processing:
-      special data processing steps applied: yes (?)
-      workflow frameworks applied: yes (?)
+      special data processing steps applied: xxxx
+      workflow frameworks applied: xxxx
       distributed workflows tools used: none
       other analysis services offered: none
-      data products offered: yes (?)
-    fairness: 
-      data findability:  
+      data products offered: xxxx
+    fairness:
+      data findability:
         data findable: yes
-        gaps: void
-      data accessibility: 
+        gaps: none
+      data accessibility:
         data accessible: yes
-        gaps: void
-      data interoperability: 
+        gaps: none
+      data interoperability:
         data interoperable: yes
-        gaps: void
-      data re-usability: 
+        gaps: none
+      data re-usability:
         data reusable: yes
-        gaps: void
-    test fairness:
-      URL/IRI of dataset: https://catalog.terradue.com//eop/gep-epos/profile/xml?uid=InW_CNR_IREA_20170211S1B_20180101S1B_RU11
-      URL of discovery portal: https://catalog.terradue.com/gep-epos/search?format=atomeop
-      IRI of machine readable metadata of dataset: NULL
-      machine readable provenance: NULL
-      compliance validation service: NULL
+        gaps: none
