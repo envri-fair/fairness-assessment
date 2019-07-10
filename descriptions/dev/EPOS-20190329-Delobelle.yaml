@@ -1,132 +1,107 @@
 survey:
   date: 2019-03-29
-  version: 1
-  creator: 
-    name: Delobelle
+  version: 1.0
+  creator:
+    name: Gregory Delobelle
     email: g.delobelle@brgm.fr
 infrastructure:
   acronym: EPOS
   name: EPOS
-  recognized authority URL: NULL
+  website: https://www.epos-ip.org
   domain: earth
+  URL/IRI of dataset: https://data.geoscience.earth/id/dataset/borehole
+  URL of discovery portal: https://www.epos-ip.org/data-services/epos-prototype-portal
   repositories: 
-  - URL: https://www.epos-ip.org/data-services/epos-prototype-portal
-    name: EPOS TCS Geological Information and Modelling repositories
-    kind: metadata data repository
-    data repository type: domain
-    metadata repository type: central
-    software: OGC Services
+    URL: https://data.geoscience.earth/id/dataset/borehole
+    name: CSW
+    kind: metadata repository
+    allocation: distributed
+    software: OGC services stack
     identifier: 
-    - IRI: null
-      kind: URI
-      system: HTTP URIs
+      kind: PID
+      system: HTTP URI
+      landing page: yes
       assigned: automatically
       provider: none
-      includes-attributes: none
+      includes metadata schema: none
     certification methods: planned
     policies: none
     registries: European Geoscience Registry
     persistency-guaranty: ownership
-    access mechanisms: 
+    access mechanisms:
       authentication method: none
-      access protocol URL: NULL
-      access without costs: NULL
+      access protocol URL: none
+      access without costs: yes
       own user database maintained: no
-      ORCID used in AAI: no
-      major access technology supported: none
+      person identification system: none
+      major access technology supported: HTTP
       authorisation technique: none
-      authorisation needed for: none
-      authorization for accessing content needed: null
+      authorization for accessing content needed: no
       data licenses in use: creative commons
-      data license IRI: https://creativecommons.org/licenses/
+      data license IRI: http://purl.org/eprint/accessRights/OpenAccess
       metadata openly available: yes
     data:
-    - type name: GML
+      type name: GML
       preferred formats: 
-      - format name: Turtle
+        format name: - Turtle
+                     - JSONLD
         metadata types in data headers: GML
-      - format name: JSONLD
-        metadata types in data headers: GML
-      registered data schema: yes
+      registered data schema: - geoscience 
+                              - openGIS 
+                              - INSPIRE
       search on data: yes
-      search engine indexing: NULL
-    metadata: 
+    metadata:
       schema: 
-      - URL: null
-        name: ISO 19115
-        provenance fields included: PROV-O
-      - URL: null
-        name: ISO 19119
-        provenance fields included: PROV-O
-      - URL: null
-        name: ISO 19139
-        provenance fields included: PROV-O
+        URL: https://joinup.ec.europa.eu/release/dcat-ap/11
+        name: DCAT-AP
+        provenance fields included: none
+      machine readable provenance: yes
       categories defined in registries: yes
       PIDs included: yes
-      primary storage format: database
-      metadata longevity plan URL: null
-      format IRI: null
-      export formats supported: 
-      - Turtle
-      - JSONLD
-      - RDF
-      - csv
-      - nq
-      - xml
-      - pdf
-      exchange/harvesting methods: 
-      - Z39.50
-      - OAIPMH
-      - CSW
+      primary storage format: relational database
+      export formats supported: - Turtle
+                                - JSONLD
+                                - RDF
+                                - csv
+                                - nq
+                                - xml
+                                - pdf
+      search engine indexing: yes
+      exchange/harvesting methods:  - Z39.50
+                                    - OAIPMH
+                                    - CSW
       local search engine URL: https://data.geoscience.earth/ncl/
-      external search engine types supported: null
+      external search engine types supported: EPOS ICS
       access policy statements included: yes
+      metadata longevity plan URL: none
       machine actionable: yes
-    vocabularies: 
-    - IRI: http://www.opengeospatial.org/
-      type: ontology
-      topic: domain specific
-      name: OGC
-      specification language URL: NULL
-      concept IRI: NULL
-    - IRI: https://www.w3.org/
-      type: ontology
-      topic: general
-      name: W3C
-      specification language URL: NULL
-      concept IRI: NULL
-    - IRI: https://inspire.ec.europa.eu/
-      type: ontology
-      topic: general
-      name: INSPIRE
-      specification language URL: NULL
-      concept IRI: NULL
+      IRI of machine readable metadata of dataset: https://data.geoscience.earth/id/dataset/borehole
+    vocabularies: list
+      IRI: I2
+      name: ref
+      type: ref I1
+      topic: ref I1
+      specification language: ref I1
     data management plans:
-      specific DMP tools used: NULL
-      data publishing steps applied: NULL  
+      specific DMP tools used: none
+      data publishing steps applied: none
+      compliance validation service: yes
     data processing:
-      special data processing steps applied: data validation
-      workflow frameworks applied: distributed synchronization
+      special data processing steps applied: data validation against XSD and codeLists
+      workflow frameworks applied: apache kafka
       distributed workflows tools used: apache kafka
       other analysis services offered: none
       data products offered: none
-    fairness: 
-      data findability:  
+    fairness:
+      data findability:
         data findable: yes
-        gaps: void
-      data accessibility: 
+        gaps: none
+      data accessibility:
         data accessible: yes
-        gaps: void
-      data interoperability: 
+        gaps: none
+      data interoperability:
         data interoperable: yes
-        gaps: void
-      data re-usability: 
+        gaps: none
+      data re-usability:
         data reusable: yes
-        gaps: void
-    test fairness:
-      URL/IRI of dataset: http://resource.europe-geology.eu/dataset/borehole
-      URL of discovery portal: http://www.europe-geology.eu/
-      IRI of machine readable metadata of dataset: null
-      machine readable provenance: NULL
-      compliance validation service: NULL
- 
+        gaps: none
