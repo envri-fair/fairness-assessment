@@ -30,7 +30,7 @@ infrastructure:
       assigned: automatically
       provider: PDC
       includes metadata schema: none
-    - kind: DOI
+    - kind: PID
       system: DOI
       landing page: yes
       assigned: manually
@@ -123,7 +123,7 @@ infrastructure:
       specific DMP tools used: DMPonline
       data publishing steps applied: 
       - QA QC   
-      compliance validation service: none
+      compliance validation service: no
     data processing:
       special data processing steps applied: 
       - checksum

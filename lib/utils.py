@@ -193,6 +193,7 @@ def metadata(g, d, v, n, i, r):
     _b(g, v, n, 'hasMetadata', n1)
     _l(g, d, v, n1, ['altLabel', '{} {} metadata'.format(i, r)], XSD.string)
     metadata_schema(g, d['schema'], v, n1, i, r)
+    _l(g, d, v, n1, ['hasMachineReadableProvenance', 'machine readable provenance'], XSD.bool)
     _l(g, d, v, n1, ['categoriesAreDefinedInRegistries', 'categories defined in registries'], XSD.bool)
     _l(g, d, v, n1, ['persistentIdentifiersAreIncluded', 'PIDs included'], XSD.bool)
     _r(g, d, v, n1, ['hasPrimaryStorageFormat', 'primary storage format'])

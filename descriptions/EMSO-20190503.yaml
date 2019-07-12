@@ -1,0 +1,123 @@
+survey:
+  date: 2019-05-03
+  version: 1
+  creator: 
+    name: Ivan Rodero
+    email: ivan.rodero@emso-eu.org
+infrastructure:
+  acronym: SDN
+  name: SeaDataNet
+  website: http://www.emso.eu
+  domain: 
+  - marine
+  URL/IRI of dataset: http://data.emso.eu/files/emso/azores/exif0001/EXIF0001_1944-2019.nc
+  URL of discovery portal: http://data.emso.eu
+  repositories: 
+  - URL: http://data.emso.eu/files/
+    name: EMSO data
+    kind: 
+    - data repository
+    allocation: central
+    software: 
+    - Apache HTTP
+    identifier: 
+    - kind: planned
+      system: planned
+      landing page: no
+      assigned: manually
+      provider: planned
+      includes metadata schema: NULL
+    certification methods: none
+    policies: none
+    registries: none
+    persistency-guaranty: none
+    access mechanisms: 
+      authentication method: VOID
+      access protocol URL: VOID
+      access without costs: yes
+      own user database maintained: yes
+      person identification system: none
+      major access technology supported: HTTP
+      authorisation technique: VOID
+      authorization for accessing content needed: no
+      data licenses in use: 
+      - CC-BY4.0
+      data license IRI:  NULL
+      metadata openly available: yes
+    data:
+    - type name: binary
+      preferred formats: 
+      - format name: NetCDF CF
+        metadata types in data headers: 
+        - NetCDF ACDD metadata
+      registered data schema: planned
+      search on data: planned
+    - type name: text
+      preferred formats: 
+      - format name: ODV ASCII
+        metadata types in data headers: 
+        - NetCDF metadata
+      registered data schema: none
+      search on data: planned      
+    metadata: 
+      schema: 
+      - URL: NULL
+        name: ISO 19115/19139
+        provenance fields included: 
+        - text only
+      - URL: NULL
+        name: SDN community profile
+        provenance fields included: planned   
+      machine readable provenance: no 
+      categories defined in registries: yes
+      PIDs included: yes
+      primary storage format: XML
+      export formats supported: 
+      - XML
+      - HTML      
+      search engine indexing: NULL
+      exchange/harvesting methods: 
+      - OGC CSW
+      - OAI-PMH
+      local search engine URL: https://cdi.seadatanet.org/search
+      external search engine types supported: 
+      - Geo portal
+      - IODE Ocean Data Portal
+      access policy statements included: yes
+      metadata longevity plan URL: VOID
+      machine actionable: yes
+      IRI of machine readable metadata of dataset:  http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?n_code=2626292
+    vocabularies: 
+    - IRI: http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery_1-3
+      name: ACDD      
+      type: thesaurus
+      topic: domain specific
+      specification language: https://www.w3.org/RDF/  
+    data management plans:
+      specific DMP tools used: planned
+      data publishing steps applied: 
+      - QA QC
+      compliance validation service: no
+    data processing:
+      special data processing steps applied: none
+      workflow frameworks applied: none
+      distributed workflows tools used: none
+      other analysis services offered: planned
+      data products offered: planned
+    fairness: 
+      data findability:  
+        data findable: yes
+        gaps: none
+      data accessibility: 
+        data accessible: partially
+        gaps: 
+        - improved WPS service
+      data interoperability: 
+        data interoperable: partially
+        gaps: 
+        - harmonization
+      data re-usability: 
+        data reusable: partially
+        gaps: 
+        - quality information
+        - provenance information
