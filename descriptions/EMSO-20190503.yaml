@@ -11,9 +11,9 @@ infrastructure:
   domain: 
   - marine
   URL/IRI of dataset: http://data.emso.eu/files/emso/azores/exif0001/EXIF0001_1944-2019.nc
-  URL of discovery portal:  http://data.emso.eu
+  URL of discovery portal: http://data.emso.eu
   repositories: 
-  - URL:http://data.emso.eu/files/
+  - URL: http://data.emso.eu/files/
     name: EMSO data
     kind: 
     - data repository
