@@ -9,7 +9,7 @@ infrastructure:
   name: Euro-Argo ERIC
   website: http://www.euro-argo.eu
   domain: 
-  - atmosphere
+  - marine
   URL/IRI of dataset: http://doi.org/10.17882/42182 
   URL of discovery portal: http://www.argodatamgt.org/Access-to-data/Argo-data-selection 
   repositories: 
@@ -21,8 +21,8 @@ infrastructure:
     software: 
     - NetAPP
     identifier: 
-    - kind: DOI
-      system: SEANOE
+    - kind: PID
+      system: DOI
       landing page: yes
       assigned: automatically
       provider: SEANOE

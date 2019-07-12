@@ -26,7 +26,7 @@ infrastructure:
       system: SEANOE
       assigned: manually
       provider: SEANOE
-      includes-attributes: yes
+      includes-attributes: NULL
     certification methods: none
     policies: none
     registries: none

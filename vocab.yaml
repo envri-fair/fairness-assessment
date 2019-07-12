@@ -382,7 +382,43 @@ WMS service: http://envri.eu/ns/WMSService
 ORCID: http://envri.eu/ns/ORCID
 personIdentificationSystem: http://envri.eu/ns/personIdentificationSystem
 NetCDF CF checker: http://envri.eu/ns/NetCDFCFChecker
-
-
-
-
+data usage: http://envri.eu/ns/DataUsage
+stewardship: http://envri.eu/ns/Stewardship
+European Geoscience Registry: http://envri.eu/ns/EuropeanGeoscienceRegistry
+NetCDF CF: http://envri.eu/ns/NetCDFCF
+SDN framework: http://envri.eu/ns/SDNFramework
+metadata validation: http://envri.eu/ns/MetadataValidation
+metadata publication: http://envri.eu/ns/MetadataPublication
+metadata import: http://envri.eu/ns/MetadataImport
+improved WPS service: http://envri.eu/ns/ImprovedWPSService
+quality information: http://envri.eu/ns/QualityInformation
+B2SAFE: http://envri.eu/ns/B2SAFE
+B2HANDLE: http://envri.eu/ns/B2HANDLE
+EUDAT: http://envri.eu/ns/EUDAT
+IODE Ocean Data Portal: http://envri.eu/ns/IODEOceanDataPortal
+Marine-ID: http://envri.eu/ns/Marine-ID
+ODV ASCII: http://envri.eu/ns/ODVASCII
+Medatlas ASCII: http://envri.eu/ns/MedatlasASCII
+OpenSearch: http://envri.eu/ns/OpenSearch
+GEO Portal: http://envri.eu/ns/GEOPortal
+Octopus:  http://envri.eu/ns/Octopus
+aggregations: http://envri.eu/ns/Aggregations
+CDI metadata reference: http://envri.eu/ns/CDIMetadataReference
+Geo portal: http://envri.eu/ns/GeoPortal
+Apache HTTP: http://envri.eu/ns/ApacheHTTP
+NetCDF metadata: http://envri.eu/ns/NetCDFMetadata
+harmonization: http://envri.eu/ns/Harmonization
+CoreTrustSeal: http://envri.eu/ns/
+account manually: http://envri.eu/ns/AccountManually
+HTTP POST: http://envri.eu/ns/HTTPPOST
+SSQL service: http://envri.eu/ns/SSQLService
+records cleaning: http://envri.eu/ns/RecordsCleaning
+EML: http://envri.eu/ns/EML
+sound files: http://envri.eu/ns/SoundFiles
+Darwin Core Archive: http://envri.eu/ns/DarwinCoreArchive
+DOI generation: http://envri.eu/ns/DOIGeneration
+geolocation: http://envri.eu/ns/Geolocation
+geospatial datasets: http://envri.eu/ns/GeospatialDatasets
+integrated standardised datasets: http://envri.eu/ns/IntegratedStandardisedDatasets
+occurance data: http://envri.eu/ns/OccuranceData
+OBIS: http://envri.eu/ns/OBIS
