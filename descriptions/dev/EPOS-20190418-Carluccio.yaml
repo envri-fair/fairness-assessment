@@ -1,107 +1,97 @@
 survey:
   date: 2019-04-18
-  version: number
-  creator: 
+  version: 1.0
+  creator:
     name: Ivano Carluccio
     email: ivano.carluccio@ingv.it
 infrastructure:
   acronym: EPOS
   name: Istituto Nazionale di Geofisica e Vulcanologia (INGV)
-  recognized authority URL: 
-  data management plans:
-    specific DMP tools used: null
-    data publishing steps applied: null
-  repositories: list
+  website: http://www.ingv.it/it/
+  domain: earth
+  URL/IRI of dataset: http://fridge-services.rm.ingv.it/co2/?mintime=2018-08-01T00:00:00.000Z&maxtime=2018-08-20T00:00:00.000Z&minlat=43&maxlat=43.7&minlon=12&maxlon=12.9&min_period=60&max_period=180&param_name=co2_flux&inst_type=flux
+  URL of discovery portal: http://fridge.rm.ingv.it/ (temporary unavailable)
+  repositories: 
     URL: null
-    name: local repository
-    kind: local
-    data repository type: ?
-    metadata repository type: none
-    software: mysql server
-    identifier: list
-      IRI: 2.5 F1A
-      persistency-policy document IRI: 2.6 F1B
-      kind: none
-      system: none
+    name: mysql
+    kind: data repository
+    allocation: local
+    software: relational database
+    identifier: 
+      kind: planned
+      system: null
+      landing page: null
       assigned: null
       provider: null
-      includes-attributes: null
-    certification methods: none
+      includes metadata schema: none
+    certification methods: null
     policies: null
     registries: null
     persistency-guaranty: null
-    access mechanisms: 
+    access mechanisms:
       authentication method: planned
-      access protocol URL: 2.13 ref A1.1
-      protocol open: 2.14 bool A1.1
-      protocol royalty free: 2.15 bool A1.1
+      access protocol URL: null
+      access without costs: yes
       own user database maintained: no
-      ORCID used in AAI: no
+      person identification system: none
       major access technology supported: null
       authorisation technique: null
-      authorisation needed for: null
-      authorization for accessing content needed: 2.16 bool A1.2
-      access content process description IRI: 2.17 A1.2
-      data licenses in use: creative commons
-      data license IRI: https://creativecommons.org/licenses/
+      authorization for accessing content needed: no
+      data licenses in use: none
+      data license IRI: null
       metadata openly available: yes
     data:
-      type name: text-numeric
-      preferred formats: list
+      type name: - text 
+                 - numeric
+      preferred formats: 
         format name: json
         metadata types in data headers: none
-      registered data schema: no
+      registered data schema: none
       search on data: no
-      search engine URL: void
-    metadata: 
-      schema: list
-        URL: 
-        name: EPOS-DCAT-AP
+    metadata:
+      schema: 
+        URL: https://joinup.ec.europa.eu/release/dcat-ap/121
+        name: DCAT-AP
         provenance fields included: null
+      machine readable provenance: no
       categories defined in registries: yes
       PIDs included: yes
       primary storage format: RDF
-      metadata longevity plan URL: 2.18
-      format IRI: 2.8 F2B
       export formats supported: RDF
+      search engine indexing: null
       exchange/harvesting methods: null
       local search engine URL: no
       external search engine types supported: none
       access policy statements included: yes
+      metadata longevity plan URL: null
       machine actionable: yes
-    vocabularies: list
-      IRI: 2.20 I2
+      IRI of machine readable metadata of dataset: null
+    vocabularies: 
+      IRI: null
+      name: null
       type: null
       topic: null
-      name: null
-      specification language URL: 2.19 I1        
+      specification language: null
+    data management plans:
+      specific DMP tools used: null
+      data publishing steps applied: null
+      compliance validation service: null
     data processing:
       special data processing steps applied: null
       workflow frameworks applied: null
       distributed workflows tools used: null
       other analysis services offered: null
       data products offered: null
-    fairness: 
-      data findability:  
+    fairness:
+      data findability:
         data findable: yes
-        gaps: none
-      data accessibility: 
+        gaps: null
+      data accessibility:
         data accessible: yes
-        gaps: none
-      data interoperability: 
+        gaps: null
+      data interoperability:
         data interoperable: yes
-        gaps: none
-      data re-usability: 
+        gaps: null
+      data re-usability:
         data reusable: yes
-        gaps: none
-    test fairness:
-      URL/IRI of dataset: http://fridge-services.rm.ingv.it/co2/?mintime=2018-08-01T00:00:00.000Z&maxtime=2018-08-20T00:00:00.000Z&minlat=43&maxlat=43.7&minlon=12&maxlon=12.9&min_period=60&max_period=180&param_name=co2_flux&inst_type=flux
-      IRI of metadata: 2.9
-      URL of discovery portal: null
-      IRI of machine readable metadata of dataset: 2.7 F2A
-      URL to linkset describing resource: 2.21 I3
-      Search query: 2.12 F4
-      IRI for the vocabulary used to describe citational provenance: 2.23 R1.2
-      IRI for the vocabulary used to describe contextual provenance: 2.24 R1.2
-      IRI of compliance certification: 2.25 R1.3
- 
+        gaps: null
