@@ -41,8 +41,7 @@ infrastructure:
       data license IRI: null
       metadata openly available: yes
     data:
-      type name: - text 
-                 - numeric
+      type name: text/plain
       preferred formats: 
         format name: json
         metadata types in data headers: none
