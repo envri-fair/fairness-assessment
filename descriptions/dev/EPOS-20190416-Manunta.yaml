@@ -7,67 +7,67 @@ survey:
 infrastructure:
   acronym: EPOS
   name: EPOSAR
-  website: xxxx
+  website: https://geohazards-tep.eu/#!thematic
   domain: earth
   URL/IRI of dataset: https://catalog.terradue.com//eop/gep-epos/profile/xml?uid=InW_CNR_IREA_20170211S1B_20180101S1B_RU11
-  URL of discovery portal: https://catalog.terradue.com/gep-epos/search?format=atomeop
+  URL of discovery portal: https://geohazards-tep.eu/#!
   repositories: 
-    URL: xxxx
-    name: xxxx
+    URL: https://catalog.terradue.com/gep-epos/search?format=json
+    name: GEP
     kind: metadata repository
-    allocation: central
-    software: xxxx
+    allocation: local
+    software: OGC services stack
     identifier: 
-      kind: PID
+      kind: planned
       system: DOI
-      landing page: xxxx
-      assigned: manually
+      landing page: yes
+      assigned: automatically
       provider: Zenodo
-      includes metadata schema: none
-    certification methods: none
-    policies: none
-    registries: none
-    persistency-guaranty: null
+      includes metadata schema: planned
+    certification methods: planned
+    policies: planned
+    registries: planned
+    persistency-guaranty: unlimited
     access mechanisms:
-      authentication method: Shibboleth
-      access protocol URL: xxxx
-      access without costs: xxxx
+      authentication method: none-open
+      access protocol URL: http://about.zenodo.org/policies/
+      access without costs: yes
       own user database maintained: yes
-      person identification system: xxxx
-      major access technology supported: xxxx
-      authorisation technique: xxxx
-      authorization for accessing content needed: xxxx
+      person identification system: none
+      major access technology supported: HTTP
+      authorisation technique: none-open
+      authorization for accessing content needed: no
       data licenses in use: - CCBY
                             - CCBYNC
-      data license IRI: xxxx
+      data license IRI: https://creativecommons.org/licenses/by/2.0/it/
       metadata openly available: yes
     data:
       type name: - spatial
                  - timeseries
       preferred formats: 
         format name: - geotiff
-                     - ASCII
-        metadata types in data headers: none
-      registered data schema: no
-      search on data: xxxx
+                     - csv
+        metadata types in data headers: community specific
+      registered data schema: ISO 19115/139
+      search on data: yes
     metadata:
       schema: 
-        URL: 
-        name: ISO19119
-        provenance fields included: xxxx
-      machine readable provenance: xxxx
+        URL: https://www.iso.org/standard/67253.html
+        name: ISO 19115/139
+        provenance fields included: ISO 19115/139
+      machine readable provenance: yes
       categories defined in registries: no
-      PIDs included: yes
+      PIDs included: planned
       primary storage format: xml
-      export formats supported: xxxx
-      search engine indexing: xxxx
-      exchange/harvesting methods: xxxx
-      local search engine URL: xxxx
-      external search engine types supported: xxxx
+      export formats supported: JSON
+      search engine indexing: yes
+      exchange/harvesting methods: null
+      local search engine URL: https://catalog.terradue.com/gep-epos/search?format=json
+      external search engine types supported: EPOS-ICS
       access policy statements included: yes
-      metadata longevity plan URL: xxxx
+      metadata longevity plan URL: null
       machine actionable: yes
-      IRI of machine readable metadata of dataset: F2A
+      IRI of machine readable metadata of dataset: https://catalog.terradue.com/gep-epos/search?format=json&uid=InU_fcasu_20181222S1A_20181228S1B_0HVN
     vocabularies: 
       IRI: https://github.com/epos-eu/EPOS-DCAT-AP
       name: EPOS-DCAT-AP
@@ -76,24 +76,24 @@ infrastructure:
       specification language: rdf owl
     data management plans:
       specific DMP tools used: https://dmponline.dcc.ac.uk/
-      data publishing steps applied: none
-      compliance validation service: xxxx
+      data publishing steps applied: null
+      compliance validation service: no
     data processing:
-      special data processing steps applied: xxxx
-      workflow frameworks applied: xxxx
+      special data processing steps applied: none
+      workflow frameworks applied: none
       distributed workflows tools used: none
       other analysis services offered: none
-      data products offered: xxxx
+      data products offered: Surface Displacements
     fairness:
       data findability:
         data findable: yes
-        gaps: none
+        gaps: PIDs
       data accessibility:
         data accessible: yes
         gaps: none
       data interoperability:
         data interoperable: yes
-        gaps: none
+        gaps: improving vocabularies
       data re-usability:
         data reusable: yes
         gaps: none
