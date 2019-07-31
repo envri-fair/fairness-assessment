@@ -5,8 +5,8 @@ survey:
     name: Ivan Rodero
     email: ivan.rodero@emso-eu.org
 infrastructure:
-  acronym: SDN
-  name: SeaDataNet
+  acronym: EMSO 
+  name: EMSO ERIC
   website: http://www.emso.eu
   domain: 
   - marine
