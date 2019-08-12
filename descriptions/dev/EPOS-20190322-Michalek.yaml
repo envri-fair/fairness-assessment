@@ -12,8 +12,8 @@ infrastructure:
   URL/IRI of dataset: http://eida.geo.uib.no/fdsnws/dataselect/1/
   URL of discovery portal: http://epos-no.geo.uib.no:81/
   repositories: 
-    URL: XXXXX
-    name: XXXXX
+    URL: http://eida.geo.uib.no/fdsnws/dataselect/1/
+    name: EIDA server at UIB
     kind: metadata data repository
     allocation: local
     software: SeisComp3
