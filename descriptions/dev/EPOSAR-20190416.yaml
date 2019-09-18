@@ -7,37 +7,39 @@ survey:
 infrastructure:
   acronym: EPOS
   name: EPOSAR
-  recognized authority URL: NULL
-  domain: earth
+  website: none
+  domain: 
+  - earth
+  URL/IRI of dataset: https://catalog.terradue.com//eop/gep-epos/profile/xml?uid=InW_CNR_IREA_20170211S1B_20180101S1B_RU11
+  URL of discovery portal: https://catalog.terradue.com/gep-epos/search?format=atomeop  
   repositories: 
   - URL: https://catalog.terradue.com/gep-epos/search?format=atomeop
     name: Terradue
-    kind: metadata data repository 
-    data repository type: domain
-    metadata repository type: central
-    software: NULL
+    kind: 
+    - metadata repository 
+    - data repository
+    allocation: central
+    software: none
     identifier: 
-    - IRI: NULL
-      kind: PID
-      system: Zenodo
+    - kind: PID
+      system: none
+      landing page: none
       assigned: manually
       provider: Zenodo
-      includes-attributes: none
+      includes metadata schema: none
     certification methods: none
     policies: none
     registries: none
-    persistency-guaranty: NULL
+    persistency-guaranty: none
     access mechanisms: 
       authentication method: Shibboleth
       access protocol URL: NULL
-      protocol open: NULL
-      protocol royalty free: NULL
+      access without costs: none
       own user database maintained: yes
-      ORCID used in AAI: no
-      major access technology supported: NULL
-      authorisation technique: NULL
-      authorisation needed for: NULL
-      authorisation for accessing content needed: NULL
+      person identification system: no
+      major access technology supported: none
+      authorisation technique: none
+      authorisation for accessing content needed: none
       data licenses in use: 
       - CC BY
       - CC BY NC
@@ -50,66 +52,62 @@ infrastructure:
         metadata types in data headers: none
       - format name: ASCII
         metadata types in data headers: none
-      registered data schema: NULL
-      search on data: NULL
-      search engine indexing: NULL
+      registered data schema: none
+      search on data: none
     - type name: time series
       preferred formats: 
       - format name: ASCII
         metadata types in data headers: none
-      registered data schema: NULL
-      search on data: NULL
-      search engine indexing: NULL      
+      registered data schema: none
+      search on data: none 
     metadata: 
       schema: 
-      - URL: NULL
+      - URL: none
         name: ISO 19119
-        provenance fields included: NULL
+        provenance fields included: none
       categories defined in registries: no
+      machine readable provenance: no
       PIDs included: yes
       primary storage format: XML
-      metadata longevity plan URL: NULL
-      format IRI: NULL
+      format IRI: none
       export formats supported: 
       - XML
       - atom
-      exchange/harvesting methods: NULL
+      search engine indexing: none
+      exchange/harvesting methods: none
       local search engine URL: https://catalog.terradue.com/gep-epos/search?format=atomeop 
-      external search engine types supported: NULL
+      external search engine types supported: none
       access policy statements included: yes
+      metadata longevity plan URL: none
       machine actionable: yes
+      IRI of machine readable metadata of dataset: none
     vocabularies: 
-    - IRI: NULL
+    - IRI: none
+      name: none
       type: none
       topic: none
-      name: none
-      specification language URL: NULL
-      concept IRI: NULL
+      specification language URL: none
+      concept IRI: none
     data management plans:
       specific DMP tools used: DMPonline
-      data publishing steps applied: none  
+      data publishing steps applied: none
+      compliance validation service: none
     data processing:
-      special data processing steps applied: NULL
-      workflow frameworks applied: NULL
+      special data processing steps applied: none
+      workflow frameworks applied: none
       distributed workflows tools used: none
       other analysis services offered: none
-      data products offered: NULL
+      data products offered: none
     fairness: 
       data findability:  
         data findable: yes
-        gaps: VOID
+        gaps: none
       data accessibility: 
         data accessible: yes
-        gaps: VOID
+        gaps: none
       data interoperability: 
         data interoperable: yes
-        gaps: VOID
+        gaps: none
       data re-usability: 
         data reusable: yes
-        gaps: VOID
-    test fairness:
-      URL/IRI of dataset: https://catalog.terradue.com//eop/gep-epos/profile/xml?uid=InW_CNR_IREA_20170211S1B_20180101S1B_RU11
-      URL of discovery portal: https://catalog.terradue.com/gep-epos/search?format=atomeop
-      IRI of machine readable metadata of dataset: NULL
-      machine readable provenance: NULL
-      compliance validation service: NULL
+        gaps: none
