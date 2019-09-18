@@ -7,7 +7,7 @@ survey:
 infrastructure:
   acronym: EPOS
   name: EPOSAR
-  website: none
+  website: NULL
   domain: 
   - earth
   URL/IRI of dataset: https://catalog.terradue.com//eop/gep-epos/profile/xml?uid=InW_CNR_IREA_20170211S1B_20180101S1B_RU11
@@ -30,16 +30,16 @@ infrastructure:
     certification methods: none
     policies: none
     registries: none
-    persistency-guaranty: none
+    persistency-guaranty: NULL
     access mechanisms: 
       authentication method: Shibboleth
       access protocol URL: NULL
-      access without costs: none
+      access without costs: NULL
       own user database maintained: yes
-      person identification system: no
-      major access technology supported: none
-      authorisation technique: none
-      authorisation for accessing content needed: none
+      person identification system: none
+      major access technology supported: NULL
+      authorisation technique: NULL
+      authorisation for accessing content needed: NULL
       data licenses in use: 
       - CC BY
       - CC BY NC
@@ -52,19 +52,19 @@ infrastructure:
         metadata types in data headers: none
       - format name: ASCII
         metadata types in data headers: none
-      registered data schema: none
-      search on data: none
+      registered data schema: NULL
+      search on data: NULL
     - type name: time series
       preferred formats: 
       - format name: ASCII
         metadata types in data headers: none
-      registered data schema: none
-      search on data: none 
+      registered data schema: NULL
+      search on data: NULL 
     metadata: 
       schema: 
       - URL: none
         name: ISO 19119
-        provenance fields included: none
+        provenance fields included: NULL
       categories defined in registries: no
       machine readable provenance: no
       PIDs included: yes
@@ -73,31 +73,31 @@ infrastructure:
       export formats supported: 
       - XML
       - atom
-      search engine indexing: none
+      search engine indexing: NULL
       exchange/harvesting methods: none
       local search engine URL: https://catalog.terradue.com/gep-epos/search?format=atomeop 
-      external search engine types supported: none
+      external search engine types supported: NULL
       access policy statements included: yes
-      metadata longevity plan URL: none
+      metadata longevity plan URL: NULL
       machine actionable: yes
-      IRI of machine readable metadata of dataset: none
+      IRI of machine readable metadata of dataset: NULL
     vocabularies: 
-    - IRI: none
+    - IRI: NULL
       name: none
       type: none
       topic: none
-      specification language URL: none
-      concept IRI: none
+      specification language: NULL
+      concept IRI: NULL
     data management plans:
       specific DMP tools used: DMPonline
       data publishing steps applied: none
-      compliance validation service: none
+      compliance validation service: NULL
     data processing:
-      special data processing steps applied: none
-      workflow frameworks applied: none
+      special data processing steps applied: NULL
+      workflow frameworks applied: NULL
       distributed workflows tools used: none
       other analysis services offered: none
-      data products offered: none
+      data products offered: NULL
     fairness: 
       data findability:  
         data findable: yes

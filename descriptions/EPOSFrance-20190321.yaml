@@ -7,22 +7,26 @@ survey:
 infrastructure:
   acronym: EPOS
   name: EPOS
-  recognized authority URL: NULL
-  domain: earth
+  website: NULL
+  domain: 
+  - earth
+  URL/IRI of dataset: http://seismology.resif.fr/#NetworkConsultPlace:Z3%5B2015-07-01T00:00:00.000000_2020-07-31T00:00:00.000000%5D
+  URL of discovery portal: http://seismology.resif.fr/#WelcomePlace  
   repositories: 
   - URL: http://seismology.resif.fr/#WelcomePlace
     name: RESIF (France)
-    kind: data repository
-    data repository type: domain
-    metadata repository type: NULL
-    software: SeisComp3
+    kind: 
+    - data repository
+    allocation: domain
+    software: 
+    - SeisComp3
     identifier: 
-    - IRI: NULL
-      kind: DOI
+    - kind: DOI
       system: NULL
+      landing page: NULL
       assigned: automatically
       provider: NULL
-      includes-attributes: NULL
+      includes metadata schema: none
     certification methods: NULL
     policies: NULL
     registries: NULL
@@ -32,10 +36,9 @@ infrastructure:
       access protocol URL: NULL
       access without costs: NULL
       own user database maintained: NULL
-      ORCID used in AAI: NULL
+      person identification system: NULL
       major access technology supported: NULL
       authorisation technique: NULL
-      authorisation needed for: NULL
       authorization for accessing content needed: NULL
       data licenses in use: NULL
       data license IRI: NULL
@@ -47,7 +50,6 @@ infrastructure:
         metadata types in data headers: none
       registered data schema: NULL
       search on data: partially
-      search engine indexing: NULL
     metadata: 
       schema: 
       - URL: NULL
@@ -56,26 +58,27 @@ infrastructure:
       categories defined in registries: yes
       PIDs included: partially
       primary storage format: XML
-      metadata longevity plan URL: NULL
-      format IRI: NULL
       export formats supported: 
       - XML
       - SEED
+      search engine indexing: NULL      
       exchange/harvesting methods: NULL
       local search engine URL: NULL
       external search engine types supported: NULL
       access policy statements included: NULL
+      metadata longevity plan URL: NULL      
       machine actionable: NULL
+      IRI of machine readable metadata of dataset: NULL      
     vocabularies: 
     - IRI: NULL
+      name: NULL    
       type: NULL
       topic: NULL
-      name: NULL
-      specification language URL: NULL
-      concept IRI: NULL
+      specification language: NULL
     data management plans:
       specific DMP tools used: NULL
-      data publishing steps applied: NULL  
+      data publishing steps applied: NULL 
+      compliance validation service: NULL
     data processing:
       special data processing steps applied: NULL
       workflow frameworks applied: NULL
@@ -95,19 +98,4 @@ infrastructure:
       data re-usability: 
         data reusable: yes
         gaps: none
-    test fairness:
-      URL/IRI of dataset: http://seismology.resif.fr/#NetworkConsultPlace:Z3%5B2015-07-01T00:00:00.000000_2020-07-31T00:00:00.000000%5D
-      URL of discovery portal: http://seismology.resif.fr/#WelcomePlace
-      IRI of machine readable metadata of dataset: NULL
-      machine readable provenance: NULL
-      compliance validation service: NULL
- 
-
-            
-            
-            
-            
-         
-
-            
-         
+  

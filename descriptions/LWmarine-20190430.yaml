@@ -181,7 +181,8 @@ infrastructure:
       - format name: DwC 
         metadata types in data headers: 
         - DwC
-      registered data schema: Darwin Core Archive
+      registered data schema: 
+      - Darwin Core Archive
       search on data: yes    
     - type name: sound files
       preferred formats:
@@ -194,7 +195,8 @@ infrastructure:
       - format name: OBIS
         metadata types in data headers: 
         - OBIS event scheme
-      registered data schema: OBIS event scheme  
+      registered data schema: 
+      - OBIS event scheme  
       search on data: yes         
     metadata: 
       schema:
