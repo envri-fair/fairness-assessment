@@ -422,3 +422,40 @@ geospatial datasets: http://envri.eu/ns/GeospatialDatasets
 integrated standardised datasets: http://envri.eu/ns/IntegratedStandardisedDatasets
 occurance data: http://envri.eu/ns/OccuranceData
 OBIS: http://envri.eu/ns/OBIS
+distributed: http://envri.eu/ns/distributed
+OracleDB: http://envri.eu/ns/OracleDB
+data policy: http://envri.eu/ns/dataPolicy
+password: http://envri.eu/ns/password
+Nasa Ames ASCII: http://envri.eu/ns/NasaAmesASCII
+Nasa Ames format for data exchange: http://envri.eu/ns/NasaAmesFormatDataExchange
+Nasa Ames: http://envri.eu/ns/NasaAmes
+domain-specific: http://envri.eu/ns/domainSpecific
+Google Analytics: http://envri.eu/ns/GoogleAnalytics
+discovery metadata: http://envri.eu/ns/discoveryMetadata
+usage licence: http://envri.eu/ns/usageLicence
+improving vocabulary: http://envri.eu/ns/improvingVocabulary
+centralized: http://envri.eu/ns/centralized
+Sybase: http://envri.eu/ns/Sybase
+custom: http://envri.eu/ns/custom
+version control: http://envri.eu/ns/versionControl
+WIS: http://envri.eu/ns/WIS
+THREDDS/NcISO: http://envri.eu/ns/THREDDS_NcISO
+RRT data production: http://envri.eu/ns/RRTDataProduction
+CEDA: http://envri.eu/ns/CEDA
+ACTRIS ACCESS: http://envri.eu/ns/ActrisAccess
+WIS Portal: http://envri.eu/ns/WISPortal
+PostgreSQL: http://envri.eu/ns/PostgreSQL
+data process: http://envri.eu/ns/dataProcess
+data provider: http://envri.eu/ns/dataProvider
+data originator: http://envri.eu/ns/dataOriginator
+CERA: http://envri.eu/ns/cera
+NetCDF/CF: http://envri.eu/ns/NetCDF_CF
+NetCDF: http://envri.eu/ns/NetCDF
+THREDDS: http://envri.eu/ns/THREDDS
+data processing: http://envri.eu/ns/dataProcessing
+time-height profiles: http://envri.eu/ns/time-heightProfiles
+mongoDB database: http://envri.eu/ns/mongoDBDatabase
+UUID version 4: http://envri.eu/ns/UUIDversion4
+IR spectra: http://envri.eu/ns/IRspectra
+JCAMP-DX: http://envri.eu/ns/JCAMP-DX
+mass spectra: http://envri.eu/ns/massSpectra
