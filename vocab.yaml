@@ -445,6 +445,17 @@ CEDA: http://envri.eu/ns/CEDA
 ACTRIS ACCESS: http://envri.eu/ns/ActrisAccess
 WIS Portal: http://envri.eu/ns/WISPortal
 PostgreSQL: http://envri.eu/ns/PostgreSQL
-data process: http://envri.eu/ns/data process
-data provider: http://envri.eu/ns/data provider
-data originator: http://envri.eu/ns/data originator
+data process: http://envri.eu/ns/dataProcess
+data provider: http://envri.eu/ns/dataProvider
+data originator: http://envri.eu/ns/dataOriginator
+CERA: http://envri.eu/ns/cera
+NetCDF/CF: http://envri.eu/ns/NetCDF_CF
+NetCDF: http://envri.eu/ns/NetCDF
+THREDDS: http://envri.eu/ns/THREDDS
+data processing: http://envri.eu/ns/dataProcessing
+time-height profiles: http://envri.eu/ns/time-heightProfiles
+mongoDB database: http://envri.eu/ns/mongoDBDatabase
+UUID version 4: http://envri.eu/ns/UUIDversion4
+IR spectra: http://envri.eu/ns/IRspectra
+JCAMP-DX: http://envri.eu/ns/JCAMP-DX
+mass spectra: http://envri.eu/ns/massSpectra
