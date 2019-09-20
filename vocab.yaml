@@ -459,3 +459,8 @@ UUID version 4: http://envri.eu/ns/UUIDversion4
 IR spectra: http://envri.eu/ns/IRspectra
 JCAMP-DX: http://envri.eu/ns/JCAMP-DX
 mass spectra: http://envri.eu/ns/massSpectra
+persistence: http://envri.eu/ns/persistence
+local technique: http://envri.eu/ns/localTechnique
+MAT level 4: http://envri.eu/ns/MATlevel4
+community specific: http://envri.eu/ns/communitySpecific
+ackowledgements: http://envri.eu/ns/ackowledgements

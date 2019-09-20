@@ -1,0 +1,118 @@
+survey:
+  date: 20190426
+  version: 1
+  creator:
+    name: Richard Rud
+    email: ror@nilu.no
+infrastructure:
+  acronym: ACTRIS
+  name: ACTRIS
+  website: http://actris.nilu.no
+  domain:
+  - atmosphere
+  URL/IRI of dataset: NULL
+  URL of discovery portal: http://actris.nilu.no
+  repositories:
+  - URL: https://en.aeris-data.fr/
+    name: GRES
+    kind:
+    - data repository
+    - metadata repository
+    allocation: centralized
+    software:
+    - mongoDB database
+    identifier:
+    - kind: PIDs
+      system: UUID version 4
+      landing page: partially
+      assigned: manually
+      provider: DataCite
+      includes metadata schema: NULL
+    certification methods: none
+    policies:
+    - data policy
+    registries: NULL
+    persistency-guaranty: NULL
+    access mechanisms:
+      authentication method: OAuth
+      access protocol URL: https://www.w3.org/wiki/UriSchemes/ftp
+      access without costs: yes
+      own user database maintained: planned
+      person identification system: https://orcid.org/
+      major access technology supported: NULL
+      authorisation technique: password
+      authorization for accessing content needed: no
+      data licenses in use: planned
+      data license IRI: none
+      metadata openly available: yes
+    data:
+    - type name: time series
+      preferred formats:
+      - format name: NetCDF
+        metadata types in data headers: NULL
+    - type name: profiles
+      preferred formats:
+      - format name: NetCDF
+        metadata types in data headers: NULL        
+      registered data schema: none
+      search on data: yes
+    metadata:
+      schema:
+      - URL: http://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf
+        name: ISO 19139
+        provenance fields included: planned
+      machine readable provenance: no
+      categories defined in registries: partially
+      PIDs included: yes
+      primary storage format: mongoDB database
+      export formats supported:
+      - JSON
+      - XML
+      search engine indexing: no
+      exchange/harvesting methods:
+      - CSW
+      local search engine URL: https://en.aeris-data.fr/
+      external search engine types supported: none
+      access policy statements included: planned
+      metadata longevity plan URL: none
+      machine actionable: no
+      IRI of machine readable metadata of dataset: none
+    vocabularies:
+    - IRI: http://cfconventions.org/latest.html
+      name: CF-standard names
+      type: therasurus
+      topic: domain-specific
+      specification language: XML
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied:
+      - QA QC
+      compliance validation service: no
+    data processing:
+      special data processing steps applied: none
+      workflow frameworks applied: planned
+      distributed workflows tools used: none
+      other analysis services offered: planned
+      data products offered: NULL
+    fairness:
+      data findability:
+        data findable: partially
+        gaps:
+        - PIDs
+        - Discovery metadata
+        - uptake in central resources
+      data accessibility:
+        data accessible: yes
+        gaps:
+        - Machine accessability
+      data interoperability:
+        data interoperable: partially
+        gaps:
+        - harmonising vocabularies
+        - harmonising data models
+        - improving vocabularies
+      data re-usability:
+        data reusable: partially
+        gaps:
+        - usage licence
+        - improving vocabulary

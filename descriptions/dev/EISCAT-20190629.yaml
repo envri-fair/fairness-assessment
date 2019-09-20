@@ -1,0 +1,222 @@
+survey:
+  date: 2019-06-29
+  version: 1
+  creator:
+    name: Anders Tjulin
+    email: anders.tjulin@eiscat.se
+infrastructure:
+  acronym: EISCAT
+  name: EISCAT
+  website: https://www.eiscat.se/
+  domain:
+  - atmosphere
+  URL/IRI of dataset: https://www.eiscat.se/schedule/tape2.cgi?exp=manda_zenith_4.00v_SW&date=20140210
+  URL of discovery portal: https://www.eiscat.se/schedule/
+  repositories:
+  - URL: https://www.eiscat.se/schedule/
+    name: EISCAT Schedule
+    kind:
+    - data repository
+    allocation: central
+    software:
+    - custom
+    identifier:
+    - kind: local ID
+      system: VOID
+      landing page: yes
+      assigned: automatically
+      provider: VOID
+      includes metadata schema: none
+    certification methods: none
+    policies:
+    - data access
+    - Terms of Use
+    - acknowledgements
+    - persistence
+    registries: none
+    persistency-guaranty: 10 years
+    access mechanisms:
+      authentication method: local method
+      access protocol URL: https://www.eiscat.se/wp-content/uploads/2017/06/BlueBook_Edition2015.pdf
+      access without costs: yes
+      own user database maintained: no
+      person identification system: none
+      major access technology supported: HTTP
+      authorisation technique: local technique
+      authorization for accessing content needed: yes
+      data licenses in use:
+      - local license
+      data license IRI: https://www.eiscat.se/wp-content/uploads/2016/03/Rules.pdf
+      metadata openly available: yes
+    data:
+    - type name: binary
+      preferred formats:
+      - format name: MAT level 4
+        metadata types in data headers:
+        - date
+        - time
+        - station identification
+        - community specific
+      registered data schema: none
+      search on data: no
+    metadata:
+      schema:
+      - URL: VOID
+        name: none
+        provenance fields included:
+        - text only
+      machine readable provenance: no
+      categories defined in registries: no
+      PIDs included: VOID
+      primary storage format: txt
+      export formats supported:
+      - txt
+      search engine indexing: yes
+      exchange/harvesting methods: none
+      local search engine URL: https://www.eiscat.se/schedule/
+      external search engine types supported: none
+      access policy statements included: no
+      metadata longevity plan URL: https://www.eiscat.se/wp-content/uploads/2017/06/BlueBook_Edition2015.pdf
+      machine actionable: no
+      IRI of machine readable metadata of dataset: VOID
+    vocabularies:
+    - IRI: VOID
+      name: none
+      type: none
+      topic: none
+      specification language: none
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied: none
+      compliance validation service: no
+    data processing:
+      special data processing steps applied:
+      - metadata extraction
+      workflow frameworks applied: none
+      distributed workflows tools used: none
+      other analysis services offered: none
+      data products offered:
+      - near real time observational data
+    fairness:
+      data findability:
+        data findable: partially
+        gaps:
+        - PIDs
+        - discovery metadata
+      data accessibility:
+        data accessible: yes
+        gaps: none
+      data interoperability:
+        data interoperable: no
+        gaps:
+        - harmonising vocabularies
+        - format checking
+        - harmonising data models
+      data re-usability:
+        data reusable: partially
+        gaps:
+        - harmonising vocabularies
+        - metadata checking
+  - URL: https://www.eiscat.se/madrigal/
+    name: Madrigal
+    kind:
+    - data repository
+    allocation: central
+    software:
+    - custom
+    identifier:
+    - kind: none
+      system: VOID
+      landing page: VOID
+      assigned: VOID
+      provider: VOID
+      includes metadata schema:
+      - VOID
+    certification methods: none
+    policies:
+    - Terms of Use
+    - ackowledgements
+    - data access
+    registries: none
+    persistency-guaranty: 10 years
+    access mechanisms:
+      authentication method: none-open
+      access protocol URL: https://www.eiscat.se/wp-content/uploads/2017/06/BlueBook_Edition2015.pdf
+      access without costs: yes
+      own user database maintained: yes
+      person identification system: none
+      major access technology supported: HTTP
+      authorisation technique: none
+      authorization for accessing content needed: no
+      data licenses in use:
+      - local license
+      data license IRI: https://www.eiscat.se/wp-content/uploads/2016/03/Rules.pdf
+      metadata openly available: yes
+    data:
+    - type name: time series
+      preferred formats:
+      - format name: txt
+        metadata types in data headers:
+        - community specific
+    - type name: image
+      preferred formats:
+      - format name: hdf
+        metadata types in data headers: none
+      registered data schema: none
+      search on data: yes
+    metadata:
+      schema:
+      - URL: https://www.eiscat.se/madrigal/ad_metadata.html
+        name: none
+        provenance fields included: none
+      machine readable provenance: planned
+      categories defined in registries: no
+      PIDs included: VOID
+      primary storage format: txt
+      export formats supported:
+      - txt
+      search engine indexing: yes
+      exchange/harvesting methods: none
+      local search engine URL: https://www.eiscat.se/madrigal/cgi-bin/accessData.cgi
+      external search engine types supported: none
+      access policy statements included: no
+      metadata longevity plan URL: https://www.eiscat.se/wp-content/uploads/2017/06/BlueBook_Edition2015.pdf
+      machine actionable: yes
+      IRI of machine readable metadata of dataset: https://www.eiscat.se/madrigal/cgi-bin/madDataBrowse?fileName=/opt/madrigal/experiments/2014/eis/10feb14/NCAR_2014-02-10_manda_60_vhf.bin
+    vocabularies:
+    - IRI: https://www.eiscat.se/madrigal/cedarFormat.pdf
+      name: Cedar
+      type: codelist
+      topic: domain-specific
+      specification language: foo
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied:
+      - manual QA QC
+      compliance validation service: yes
+    data processing:
+      special data processing steps applied:
+      - QA QC
+      workflow frameworks applied: none
+      distributed workflows tools used: none
+      other analysis services offered: none
+      data products offered:
+      - final QC observational data
+    fairness:
+      data findability:
+        data findable: partially
+        gaps:
+        - PIDs
+        - discovery metadata
+      data accessibility:
+        data accessible: yes
+        gaps: none
+      data interoperability:
+        data interoperable: partially
+        gaps:
+        - harmonising vocabularies
+        - harmonising data models
+      data re-usability:
+        data reusable: yes
+        gaps:
+        - quality description
