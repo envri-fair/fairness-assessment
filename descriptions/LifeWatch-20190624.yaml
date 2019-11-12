@@ -1,0 +1,181 @@
+survey:
+  date: 2019-06-24          
+  version: 1
+  creator: 
+    name: Nicola Fiore
+    email: nicola.fiore@lifewatch.eu
+infrastructure:   
+  acronym: LifeWatch 
+  name: LifeWatch ERIC 
+  website: http://www.lifewatch.eu
+  domain: 
+  - ecosystem
+  URL/IRI of dataset: http://www.lifewatchitaly.eu/catalogue-of-resources?p_auth=LflU6bat&p_p_id=datasetsearch_WAR_lifewatchportlet&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_pos=2&p_p_col_count=3&_datasetsearch_WAR_lifewatchportlet_action=search  
+  URL of discovery portal: http://www.lifewatchitaly.eu/catalogue-of-resources
+  repositories: 
+  - URL: http://www.lifewatchitaly.eu/catalogue-of-resources
+    name: LifeWatch Italy Portal
+    kind: 
+    - metadata repository
+    - data repository
+    allocation: central
+    software: 
+    - Java Portlet
+    - TomCat
+    - MySQL
+    - Virtuoso
+    identifier:
+    - kind: local ID
+      system: NULL
+      landing page: yes
+      assigned: automatically
+      provider: planned
+      includes metadata schema: 
+      - ISO 19115/19139 
+    certification methods: none
+    policies: planned
+    registries: planned
+    persistency-guaranty: 25 years
+    access mechanisms: 
+      authentication method: Liferay 
+      access protocol URL: http://www.lifewatchitaly.eu/home?p_p_id=58&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&saveLastPath=false&_58_struts_action=%2Flogin%2Flogin
+      access without costs: yes
+      own user database maintained: yes
+      person identification system: planned
+      major access technology supported: local LDAP
+      authorisation technique: password
+      authorization for accessing content needed: yes
+      data licenses in use: 
+      - CC-BY4.0
+      data license IRI: none
+      metadata openly available: yes
+    data:
+    - type name: structured 
+      preferred formats:
+      - format name: XLS
+        metadata types in data headers:        
+        - JSON
+        - EML
+      - format name: CSV
+        metadata types in data headers: 
+        - JSON
+        - EML     
+      - format name: TXT
+        metadata types in data headers: 
+        - JSON
+        - EML            
+      - format name: XML
+        metadata types in data headers: 
+        - JSON
+        - EML    
+      registered data schema: none
+      search on data: yes       
+    metadata: 
+      schema:
+      - URL: http://schemas.opengis.net/iso/19139/20060504
+        name: ISO 19139
+        provenance fields included: 
+        - text only
+      - URL: NULL
+        name: ISO 19115
+        provenance fields included: 
+        - text only
+      - URL: NULL
+        name: INSPIRE EF
+        provenance fields included: NULL
+      - URL: NULL
+        name: EML 2.0
+        provenance fields included: NULL        
+      - URL: http://schemas.opengis.net/sensorML/
+        name: SensorML
+        provenance fields included: 
+        - text only
+      categories defined in registries: yes
+      machine readable provenance: no     
+      PIDs included: planned
+      primary storage format: relational database
+      export formats supported: 
+      - JSON
+      - XML
+      - HTML
+      - RDF
+      search engine indexing: planned
+      exchange/harvesting methods: 
+      - SPARQL endpoint
+      - landing pages
+      local search engine URL:  http://www.servicecentrelifewatch.eu/web/lifewatch-italia/catalogue-of-resources
+      external search engine types supported: none
+      access policy statements included: yes
+      metadata longevity plan URL: planned    
+      machine actionable: planned  
+      IRI of machine readable metadata of dataset: planned
+    vocabularies:
+    - IRI: http://thesauri.lifewatchitaly.eu/PhytoTraits/
+      name: LW Phytoplankton Traits  
+      type: thesaurus
+      topic: domain specific
+      specification language: SKOS
+    - IRI: http://thesauri.lifewatchitaly.eu/fishTraits/
+      name: LW Fish Traits
+      type: thesaurus
+      topic: domain specific
+      specification language: SKOS
+    - IRI: http://thesauri.lifewatchitaly.eu/
+      name: LW MacroZooBenthos Traits
+      type: thesaurus
+      topic: domain specific
+      specification language: SKOS
+    - IRI: http://thesauri.lifewatchitaly.eu/
+      name: LW Acquatic Organism
+      type: thesaurus
+      topic: domain specific
+      specification language: SKOS    
+    - IRI: http://thesauri.lifewatchitaly.eu/
+      name: LW Endemisms
+      type: thesaurus
+      topic: domain specific
+      specification language: SKOS
+    - IRI: http://thesauri.lifewatchitaly.eu/
+      name: LW MacroAlgae
+      type: thesaurus
+      topic: domain specific
+      specification language: SKOS         
+    data management plans:
+      specific DMP tools used: no
+      data publishing steps applied: 
+      - semi-automatic QA QC   
+      compliance validation service: planned
+    data processing:
+      special data processing steps applied: 
+      - simulation
+      - visualisation
+      - modelling
+      workflow frameworks applied: 
+      - Taverna
+      - Galaxy
+      - Kepler
+      distributed workflows tools used: 
+      - Taverna
+      - Galaxy
+      - Kepler
+      other analysis services offered: 
+      - help desk
+      data products offered: 
+      - biological primary data
+      - traits
+    fairness: 
+      data findability:  
+        data findable: partially
+        gaps: 
+        - PIDs
+      data accessibility: 
+        data accessible: yes
+        gaps: none
+      data interoperability: 
+        data interoperable: partially
+        gaps: 
+        - knowledge representation language
+      data re-usability: 
+        data reusable: partially
+        gaps: 
+        - data usage license

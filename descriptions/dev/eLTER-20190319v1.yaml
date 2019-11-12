@@ -298,8 +298,7 @@ infrastructure:
         data reusable: yes
         gaps: none 
     test fairness:
-      URI/IRI of dataset: 1.4/2.4
-      URI of discovery portal: 1.5
+
       IRI of machine readable metadata of dataset: 2.7
       URI to linkset describing resource: 2.21
       IRI for the vocabulary used to descripe citational provenance: 2.23
