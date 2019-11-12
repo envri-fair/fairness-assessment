@@ -7,52 +7,48 @@ survey:
 infrastructure:
   acronym: eLTER
   name: Integrated European Long-Term Ecosystem & Socio-Ecological Research Infrastructure
-  recognized authority IRI: http://www.lter-europe.net/elter
-  data management plans:
-    specific DMP tools used: no
-    data publishing steps applied: 
-    - manual
+  website: http://www.lter-europe.net/elter
+  domain:
+  - ecosystem
+  URL/IRI of dataset: NULL
+  URL of discovery portal: NULL  
   repositories: 
-  - IRI: NULL
+  - URL: NULL
     name: EUDAT/FZJ B2SHARE
     kind: data repository
-    data repository type: central
-    metadata repository type: central
-    software: Zenodo
+    allocation: central
+    software: 
+    - Zenodo
     identifier: 
-      IRI: NULL
-      persistency-policy document IRI: NULL
-      kind: PID
+    - kind: PID
       system: Handle
+      landing page: no
       assigned: automatically
       provider: Handle
-      includes-attributes: yes
-    certification method: NULL
-    policy: NULL
-    registry: NULL
-    persistency-guaranty: planned
+      includes metadata schema: NULL
+    certification methods: NULL
+    policies: none
+    registries: 
+    - re3data
+    persistency-guaranty: ownership
     access mechanisms: 
-      authentication method: people can request accounts, which are managed centrally 
+      authentication method: password 
       access protocol URL: NULL
-      protocol open: bool
-      protocol royalty free: bool
+      access withoug costs: yes
       own user database maintained: yes
-      ORCID used in AAI: no
+      person identification system: none
       major access technology supported: local LDAP 
       authorisation technique: NULL 
-      authorisation needed for: 
-      - upload data 
       authorization for accessing content needed: no
-      access content process description IRI: NULL
       data licenses in use: VOID
-      data license IRI:
+      data license IRI: NULL
       metadata openly available: yes
     data:
     - type name: structured
       preferred formats: 
         - format name: CSV
           metadata types in data headers: none
-      registered data schema: bool
+      registered data schema: NULL
       search on data: yes
       search engine URL: NULL
     metadata: VOID
@@ -61,7 +57,8 @@ infrastructure:
       type: thesaurus
       topic: domain specific 
       name: EnvThes
-      specification language URL: https://www.w3.org/2004/02/skos/     
+      specification language: https://www.w3.org/2004/02/skos/     
+    data management plans: VOID
     data processing: VOID
     fairness: 
       data findability:  
@@ -76,47 +73,34 @@ infrastructure:
       data re-usability: 
         data reusable: NULL
         gaps: NULL
-    test fairness:
-      URL/IRI of dataset: NULL
-      URL of discovery portal: NULL
-      IRI of machine readable metadata of dataset: NULL
-      URL to linkset describing resource: NULL
-      Search query: NULL      
-      IRI for the vocabulary used to describe citational provenance: NULL
-      IRI for the vocabulary used to describe contextual provenance: NULL
-      IRI of compliance certification: NULL
-  - IRI: https://deims.org/   
+  - URL: https://deims.org/   
     name: DEIMS-SDR
     kind: metadata repository
-    data repository type: central
-    metadata repository type: central    
+    allocation: central  
     software: NULL
     identifier: 
-      IRI: NULL
-      persistency-policy document IRI: NULL
-      kind: local ID
+    - kind: local ID
       system: local system
+      landing page: NULL
       assigned: automatically
       provider: local service
-      includes-attributes: yes
-    certification method: NULL
-    policy: NULL
-    registry: re3data
+      includes metadata schema: NULL
+    certification methods: NULL
+    policies: NULL
+    registries: 
+    - re3data
     persistency-guaranty: planned
     access mechanisms: 
       authentication method: NULL
       access protocol URL: NULL
-      protocol open: bool
-      protocol royalty free: bool
+      access without costs: yes
       own user database maintained: yes
-      ORCID used in AAI: no
+      person identification system: none
       major access technology supported: local LDAP
       authorisation technique: NULL
-      authorisation needed for: 
-      - upload data
       authorization for accessing content needed: no
-      access content process description IRI: 
-      data licenses in use: CC-BY-NC4.0
+      data licenses in use: 
+      - CC-BY-NC4.0
       data license IRI:
       metadata openly available: yes
     data:
@@ -126,47 +110,53 @@ infrastructure:
           metadata types in data headers: none
       registered data schema: NULL
       search on data: NULL
-      search engine URL:
     metadata: 
       schema:
-      - IRI: http://schemas.opengis.net/iso/19139/20060504
+      - URL: http://schemas.opengis.net/iso/19139/20060504
         name: ISO 19139
         provenance fields included: 
         - text only
-      - IRI: NULL
+      - URL: NULL
         name: ISO 19115
         provenance fields included: 
         - text only
-      - IRI: NULL
+      - URL: NULL
         name: INSPIRE EF
         provenance fields included: NULL
-      - IRI: NULL
+      - URL: NULL
         name: EML 2.0
         provenance fields included: NULL        
-      - IRI: http://schemas.opengis.net/sensorML/
+      - URL: http://schemas.opengis.net/sensorML/
         name: SensorML
         provenance fields included: 
         - text only
       categories defined in registries: partially
       PIDs included: partially
       primary storage format: DEIMS-SDR
-      metadata longevity plan URL: NULL
-      format IRI: 
-      export format supported: 
+      export formats supported: 
       - XML
-      exchange/harvesting method: 
+      search engine indexing: NULL
+      exchange/harvesting methods: 
       - OAI PMH
       - OGC CSW
       local search engine URL: https://deims.org/ 
-      external search engine type supported: CSW endpoint
+      external search engine types supported: 
+      - CSW endpoint
       access policy statements included: yes
+      metadata longevity plan URL: NULL
       machine actionable: yes
+      IRI of machine readable metadata of dataset: none
     vocabularies: 
     - IRI: http://vocabs.lter-europe.net/EnvThes/
       type: thesaurus 
       topic: domain specific
       name: EnvThes
-      specification language URL: https://www.w3.org/2004/02/skos/       
+      specification language: https://www.w3.org/2004/02/skos/     
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied: 
+      - manual QA QC   
+      compliance validation service: NULL    
     data processing:
       special data processing steps applied: none 
       workflow frameworks applied: none 
@@ -189,45 +179,32 @@ infrastructure:
       data re-usability: 
         data reusable: NULL
         gaps: NULL 
-    test fairness:
-      URL/IRI of dataset: NULL
-      URL of discovery portal: NULL
-      IRI of machine readable metadata of dataset: NULL
-      URL to linkset describing resource: NULL
-      Search query: NULL
-      IRI for the vocabulary used to describe citational provenance: NULL
-      IRI for the vocabulary used to describe contextual provenance: NULL
-      IRI of compliance certification: NULL    
-  - IRI: NULL 
+  - URL: NULL 
     name: eLTER CDN
     kind: data repository
-    data repository type: central
-    metadata repository type: central
-    software: 52NORTH SOS 
+    allocation: central
+    software: 
+    - 52NORTH SOS 
     identifier: 
-      IRI: NULL
-      persistency-policy document IRI: NULL
-      kind: NULL
+    - kind:
       system: NULL
+      landing page: NULL
       assigned: NULL
       provider: NULL
-      includes-attributes: NULL
-    certification method: NULL 
-    policy: NULL
-    registry: NULL
+      includes metadata schema: NULL
+    certification methods: NULL 
+    policies: NULL
+    registries: NULL
     persistency-guaranty: planned
     access mechanisms: 
       authentication method: NULL
       access protocol URL: NULL
-      protocol open: bool
-      protocol royalty free: bool
+      access without costs: NULL
       own user database maintained: NULL
-      ORCID used in AAI: NULL
+      person identification system: NULL
       major access technology supported: NULL
       authorisation technique: NULL
-      authorisation needed for: NULL
       authorization for accessing content needed: NULL
-      access content process description IRI: NULL
       data licenses in use: NULL
       data license IRI:
       metadata openly available: yes
@@ -245,7 +222,12 @@ infrastructure:
       type: thesaurus 
       topic: domain specific
       name: EnvThes
-      specification language URL: https://www.w3.org/2004/02/skos/     
+      specification language: https://www.w3.org/2004/02/skos/
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied: 
+      - manual QA QC   
+      compliance validation service: NULL         
     data processing: VOID
     fairness: 
       data findability:  
@@ -263,12 +245,3 @@ infrastructure:
       data re-usability: 
         data reusable: yes
         gaps: none 
-    test fairness:
-      URL/IRI of dataset: NULL
-      URL of discovery portal: NULL
-      IRI of machine readable metadata of dataset: NULL
-      URL to linkset describing resource: NULL
-      Search query: NULL
-      IRI for the vocabulary used to describe citational provenance: NULL
-      IRI for the vocabulary used to describe contextual provenance: NULL
-      IRI of compliance certification: NULL        

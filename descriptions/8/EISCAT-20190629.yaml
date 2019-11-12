@@ -130,12 +130,11 @@ infrastructure:
       landing page: VOID
       assigned: VOID
       provider: VOID
-      includes metadata schema:
-      - VOID
+      includes metadata schema: VOID
     certification methods: none
     policies:
     - Terms of Use
-    - ackowledgements
+    - acknowledgements
     - data access
     registries: none
     persistency-guaranty: 10 years
@@ -158,9 +157,11 @@ infrastructure:
       - format name: txt
         metadata types in data headers:
         - community specific
+      registered data schema: none
+      search on data: yes        
     - type name: image
       preferred formats:
-      - format name: hdf
+      - format name: HDF
         metadata types in data headers: none
       registered data schema: none
       search on data: yes
@@ -187,8 +188,8 @@ infrastructure:
     - IRI: https://www.eiscat.se/madrigal/cedarFormat.pdf
       name: Cedar
       type: codelist
-      topic: domain-specific
-      specification language: foo
+      topic: domain specific
+      specification language: NULL
     data management plans:
       specific DMP tools used: none
       data publishing steps applied:

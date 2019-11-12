@@ -1,0 +1,104 @@
+survey:
+  date: 2019-09-03          
+  version: 1
+  creator: 
+    name: Antonio Pepe
+    email: antoniopepe@crea.gov.it
+infrastructure:   
+  acronym: ANAEE-France 
+  name: ANAEE-France 
+  website: http://www.anaee-france.fr
+  domain: 
+  - ecosystem
+  URL/IRI of dataset: NULL 
+  URL of discovery portal: https://data-preproduction.inra.fr/dataverse
+  repositories: 
+  - URL: http://w3.avignon.inra.fr/geonetwork_anaee
+    name: ANAEE-France Metadata Catalog
+    kind: 
+    - metadata repository
+    allocation: central
+    software: 
+    - GeoNetwork
+    identifier:
+    - kind: local ID
+      system: NULL
+      landing page: no
+      assigned: automatically
+      provider: NULL
+      includes metadata schema: VOID
+    certification methods: none
+    policies: none
+    registries: planned
+    persistency-guaranty: planned
+    access mechanisms: 
+      authentication method: none-open 
+      access protocol URL: VOID
+      access without costs: yes
+      own user database maintained: yes
+      person identification system: none
+      major access technology supported: LDAP
+      authorisation technique: local
+      authorization for accessing content needed: no
+      data licenses in use: VOID
+      data license IRI: NULL
+      metadata openly available: yes
+    data: VOID      
+    metadata: 
+      schema:
+      - URL: http://schemas.opengis.net/iso/19139/20060504
+        name: ISO 19139
+        provenance fields included: 
+        - text only
+      - URL: NULL
+        name: ISO 19115
+        provenance fields included: 
+        - text only
+      categories defined in registries: yes
+      machine readable provenance: no     
+      PIDs included: yes
+      primary storage format: XML
+      export formats supported: 
+      - PDF
+      - XML
+      - RDF
+      search engine indexing: yes
+      exchange/harvesting methods: 
+      - CSW
+      - OAI-PMH
+      local search engine URL:  http://w3.avignon.inra.fr/geonetwork_anaee
+      external search engine types supported: NULL
+      access policy statements included: yes
+      metadata longevity plan URL: VOID    
+      machine actionable: no  
+      IRI of machine readable metadata of dataset: VOID
+    vocabularies:
+    - IRI: http://agroportal.lirmm.fr/ontologies/ANAEETHES
+      name: ANAEETHES  
+      type: thesaurus
+      topic: domain specific
+      specification language: SKOS     
+    data management plans:
+      specific DMP tools used: planned
+      data publishing steps applied: planned
+      compliance validation service: no
+    data processing:
+      special data processing steps applied: planned
+      workflow frameworks applied: planned
+      distributed workflows tools used: 
+      - Anaee-ENVRI semantic pipelines
+      other analysis services offered: none
+      data products offered: planned
+    fairness: 
+      data findability:  
+        data findable: yes
+        gaps: none
+      data accessibility: 
+        data accessible: yes
+        gaps: none
+      data interoperability: 
+        data interoperable: yes
+        gaps: none
+      data re-usability: 
+        data reusable: NULL
+        gaps: NULL

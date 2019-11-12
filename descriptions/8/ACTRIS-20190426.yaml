@@ -82,7 +82,7 @@ infrastructure:
     - IRI: http://cfconventions.org/latest.html
       name: CF standard names
       type: thesaurus
-      topic: domain-specific
+      topic: domain specific
       specification language: XML
     data management plans:
       specific DMP tools used: DMP template
@@ -202,7 +202,7 @@ infrastructure:
     - IRI: http://cfconventions.org/latest.html
       name: CF standard names
       type: thesaurus
-      topic: domain-specific
+      topic: domain specific
       specification language: XML
     data management plans:
       specific DMP tools used: none
@@ -313,7 +313,7 @@ infrastructure:
     - IRI: http://cfconventions.org/
       name: CF Standard Names
       type: thesaurus
-      topic: domain-specific
+      topic: domain specific
       specification language: XML
     data management plans:
       specific DMP tools used: none
@@ -347,3 +347,328 @@ infrastructure:
         gaps:
         - harmonising vocabularies
         - improving vocabularies    
+  - URL: https://en.aeris-data.fr/
+    name: GRES
+    kind:
+    - data repository
+    - metadata repository
+    allocation: centralized
+    software:
+    - mongoDB database
+    identifier:
+    - kind: PIDs
+      system: UUID version 4
+      landing page: partially
+      assigned: manually
+      provider: DataCite
+      includes metadata schema: NULL
+    certification methods: none
+    policies:
+    - data policy
+    registries: NULL
+    persistency-guaranty: NULL
+    access mechanisms:
+      authentication method: OAuth
+      access protocol URL: https://www.w3.org/wiki/UriSchemes/ftp
+      access without costs: yes
+      own user database maintained: planned
+      person identification system: ORCID
+      major access technology supported: NULL
+      authorisation technique: password
+      authorization for accessing content needed: no
+      data licenses in use: planned
+      data license IRI: none
+      metadata openly available: yes
+    data:
+    - type name: time series
+      preferred formats:
+      - format name: NetCDF
+        metadata types in data headers: NULL
+      registered data schema: none
+      search on data: yes        
+    - type name: profiles
+      preferred formats:
+      - format name: NetCDF
+        metadata types in data headers: NULL        
+      registered data schema: none
+      search on data: yes
+    metadata:
+      schema:
+      - URL: http://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf
+        name: ISO 19139
+        provenance fields included: planned
+      machine readable provenance: no
+      categories defined in registries: partially
+      PIDs included: yes
+      primary storage format: mongoDB database
+      export formats supported:
+      - JSON
+      - XML
+      search engine indexing: no
+      exchange/harvesting methods:
+      - CSW
+      local search engine URL: https://en.aeris-data.fr/
+      external search engine types supported: none
+      access policy statements included: planned
+      metadata longevity plan URL: none
+      machine actionable: no
+      IRI of machine readable metadata of dataset: none
+    vocabularies:
+    - IRI: http://cfconventions.org/latest.html
+      name: CF-standard names
+      type: thesaurus
+      topic: domain specific
+      specification language: XML
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied:
+      - QA QC
+      compliance validation service: no
+    data processing:
+      special data processing steps applied: none
+      workflow frameworks applied: planned
+      distributed workflows tools used: none
+      other analysis services offered: planned
+      data products offered: NULL
+    fairness:
+      data findability:
+        data findable: partially
+        gaps:
+        - PIDs
+        - discovery metadata 
+        - uptake in central resources
+      data accessibility:
+        data accessible: yes
+        gaps:
+        - machine accessibility
+      data interoperability:
+        data interoperable: partially
+        gaps:
+        - harmonising vocabularies
+        - harmonising data models
+        - improving vocabularies
+      data re-usability:
+        data reusable: partially
+        gaps:
+        - usage licence
+        - improving vocabulary
+  - URL: http://cloudnet.fmi.fi
+    name: CLOUDNET
+    kind:
+    - data repository
+    - metadata repository
+    allocation: centralized
+    software:
+    - relational database
+    identifier:
+    - kind: planned
+      system: none
+      landing page: no
+      assigned: none
+      provider: none
+      includes metadata schema: planned
+    certification methods: none
+    policies:
+    - data policy
+    - version control
+    registries:
+    - re3data
+    persistency-guaranty: ownership
+    access mechanisms:
+      authentication method: none
+      access protocol URL: https://www.w3.org/wiki/UriSchemes/http
+      access without costs: yes
+      own user database maintained: no
+      person identification system: none
+      major access technology supported: VOID
+      authorisation technique: VOID
+      authorization for accessing content needed: no
+      data licenses in use: none
+      data license IRI: http://actris.nilu.no/Content/Documents/DataPolicy.pdf
+      metadata openly available: no
+    data:
+    - type name: time series
+      preferred formats:
+      - format name: NetCDF 
+        metadata types in data headers: 
+        - standard NetCDF CF headers
+      registered data schema: planned
+      search on data: planned        
+    - type name: profiles
+      preferred formats:
+      - format name: NetCDF 
+        metadata types in data headers: 
+        - standard NetCDF CF headers
+      registered data schema: planned
+      search on data: planned    
+    metadata:
+      schema:
+      - URL: none
+        name: local schema
+        provenance fields included: NULL
+      machine readable provenance: no
+      categories defined in registries: no
+      PIDs included: no
+      primary storage format: relational database
+      export formats supported:
+      - JSON
+      search engine indexing: no
+      exchange/harvesting methods: planned
+      local search engine URL: VOID
+      external search engine types supported: none
+      access policy statements included: no
+      metadata longevity plan URL: http://www.actris.eu/Portals/46/Publications/DataCentre/ACTRIS_Data_Management_Plan.pdf
+      machine actionable: no
+      IRI of machine readable metadata of dataset: none
+    vocabularies:
+    - IRI: http://cfconventions.org/latest.html
+      name: CF-standard names
+      type: thesaurus
+      topic: domain specific
+      specification language: XML
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied: NULL
+      compliance validation service: no
+    data processing:
+      special data processing steps applied: NULL
+      workflow frameworks applied: NULL
+      distributed workflows tools used: none
+      other analysis services offered:
+      - NWP model evaluation service
+      data products offered: NULL
+    fairness:
+      data findability:
+        data findable: partially
+        gaps:
+        - PIDs
+        - discovery metadata
+        - uptake in central resources
+      data accessibility:
+        data accessible: partially
+        gaps:
+        - machine accessibility
+      data interoperability:
+        data interoperable: partially
+        gaps:
+        - harmonising vocabularies
+        - harmonising data models
+        - improving vocabularies
+      data re-usability:
+        data reusable: partially
+        gaps:
+        - usage licence
+        - improving vocabulary        
+  - URL: https://data.eurochamp.org
+    name: ASC
+    kind:
+    - data repository
+    - metadata repository
+    allocation: centralized
+    software:
+    - mongoDB database
+    identifier:
+    - kind: PIDs
+      system: UUID version 4
+      landing page: partially
+      assigned: manually
+      provider: DataCite
+      includes metadata schema: NULL
+    certification methods: none
+    policies:
+    - data policy
+    registries: none
+    persistency-guaranty: no
+    access mechanisms:
+      authentication method: OAuth
+      access protocol URL: https://www.w3.org/wiki/UriSchemes/http
+      access without costs: yes
+      own user database maintained: planned
+      person identification system: ORCID
+      major access technology supported: NULL
+      authorisation technique: password
+      authorization for accessing content needed: no
+      data licenses in use: planned
+      data license IRI: none
+      metadata openly available: yes
+    data:
+    - type name: IR spectra
+      preferred formats:
+      - format name: JCAMP-DX
+        metadata types in data headers: NULL
+      registered data schema: planned
+      search on data: yes        
+    - type name: mass spectra
+      preferred formats:
+      - format name: text 
+        metadata types in data headers: NULL
+      registered data schema: planned
+      search on data: yes   
+    - type name: chamber experiments
+      preferred formats:
+      - format name: EDF ASCII
+        metadata types in data headers: NULL
+      registered data schema: planned
+      search on data: yes        
+    metadata:
+      schema:
+      - URL: http://wis.wmo.int/2012/metadata/WMO_Core_Metadata_Profile_v1.3_Part_1.pdf
+        name: ISO 19139
+        provenance fields included: planned
+      machine readable provenance: no
+      categories defined in registries: partially
+      PIDs included: yes
+      primary storage format: mongoDB database
+      export formats supported:
+      - JSON
+      - XML
+      search engine indexing: no
+      exchange/harvesting methods:
+      - CSW
+      local search engine URL: https://data.eurochamp.org/
+      external search engine types supported: none
+      access policy statements included: planned
+      metadata longevity plan URL: https://data.eurochamp.org/documents/
+      machine actionable: no
+      IRI of machine readable metadata of dataset: none
+    vocabularies:
+    - IRI: http://cfconventions.org/latest.html
+      name: CF-standard names
+      type: thesaurus
+      topic: domain specific
+      specification language: XML
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied:
+      - QA QC
+      compliance validation service: no
+    data processing:
+      special data processing steps applied: none
+      workflow frameworks applied: none
+      distributed workflows tools used: none
+      other analysis services offered:
+      - data generation tools
+      - modelling tools
+      data products offered: NULL
+    fairness:
+      data findability:
+        data findable: partially
+        gaps:
+        - PIDs
+        - discovery metadata
+        - uptake in central resources
+      data accessibility:
+        data accessible: yes
+        gaps:
+        - machine accessibility
+      data interoperability:
+        data interoperable: partially
+        gaps:
+        - harmonising vocabularies
+        - harmonising data models
+        - improving vocabularies
+      data re-usability:
+        data reusable: partially
+        gaps:
+        - usage licence
+        - improving vocabulary         
