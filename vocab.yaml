@@ -1,85 +1,246 @@
-10 years: http://envri.eu/ns/10Years
-20 years: http://envri.eu/ns/20Years
-50 years: http://envri.eu/ns/50Years
-52NORTH SOS: http://envri.eu/ns/52NORTH_SOS
-access content: http://envri.eu/ns/AccessContent
-access controlled services: http://envi.eu/ns/AccessControlledServices
-access data: http://envri.eu/ns/AccessData
-AccessMechanism: http://envri.eu/ns/AccessMechanism
-accessWithoutCosts: http://envri.eu/ns/accessWithoutCosts
-account manually: http://envri.eu/ns/AccountManually
-acknowledgements: http://envri.eu/ns/Acknowledgements
-acronym: http://envri.eu/ns/acronym
-ACTRIS ACCESS: http://envri.eu/ns/ActrisAccess
-advanced editing: http://envri.eu/ns/AdvancedEditing
-aggregations: http://envri.eu/ns/Aggregations
-allowsAccessWithoutCosts: http://envri.eu/ns/allowsAccessWithoutCosts
-allowsSearchEngineIndexing: http://envri.eu/ns/allowsSearchEngineIndexing
-altLabel: http://www.w3.org/2004/02/skos/core#altLabel
-Apache HTTP: http://envri.eu/ns/ApacheHTTP
-APHIA: http://envri.eu/ns/APHIA
-appliedDataPublishingSteps: http://envri.eu/ns/appliedDataPublishingSteps
-Argo user manual: http://envri.eu/ns/ArgoUserManual
-ASCII: http://envri.eu/ns/ASCII
-atmosphere: http://envri.eu/ns/Atmosphere
-atom: http://envri.eu/ns/Atom
-automatic QA QC: http://envri.eu/ny/AutomaticQA_QC
-B2ACCESS: http://envri.eu/ns/B2ACCESS
-B2HANDLE: http://envri.eu/ns/B2HANDLE
-B2SAFE: http://envri.eu/ns/B2SAFE
-Bag: http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag
-binary: http://envri.eu/ns/BinaryData
-Biodiversity Catalogue: http://envri.eu/ns/BiodiversityCatalogue
-biological primary data: http://envri.eu/ns/BiologicalPrimaryData
-CAS: http://envri.eu/ns/CAS
-Cassandra: http://envri.eu/ns/Cassandra
-categoriesAreDefinedInRegistries: http://envri.eu/ns/categoriesAreDefinedInRegistries
-CC BY NC: http://envri.eu/ns/CCBYNC
-CC BY: https://creativecommons.org/licenses/by/4.0/
-CC BY.CC 0: https://creativecommons.org/publicdomain/zero/1.0/deed.de
-CC-BY4.0: https://creativecommons.org/licenses/by/4.0/
-CC-BY-NC4.0: https://creativecommons.org/licenses/by-nc/4.0/
-CDI metadata reference: http://envri.eu/ns/CDIMetadataReference
-CDI system: http://envri.eu/ns/CDISystem
-CEDA: http://envri.eu/ns/CEDA
-central: http://envri.eu/ns/CentralDataRepository
-centralized: http://envri.eu/ns/centralized
-CERA: http://envri.eu/ns/cera
-certificate validation: http://envri.eu/ns/CertificateValidation
-CF-1.4: http://envri.eu/ns/CF-1.4
-chamber experiments: http://envri.eu/ns/ChamberExperiments
-checksum: http://envri.eu/ns/Checksum
-citation: http://envri.eu/ns/Citation
-climatologies: http://envri.eu/ns/Climatologies
-codelist: http://envri.eu/ns/Codelist
-codes: http://envri.eu/ns/codes
-community specific: http://envri.eu/ns/CommunitySpecific
-community standardised scripts: http://envri.eu/ns/CommunityStandardisedScripts
-contentAccessAuthorizationRequired: http://envri.eu/ns/contentAccessAuthorizationRequired
-CoreTrustSeal: http://envri.eu/ns/
-CoreTrustSeal: http://envri.eu/ns/CoreTrustSeal
-CPAuth: http://envri.eu/ns/CPAuth
-creator: http://purl.org/dc/terms/creator
-CSV: http://envri.eu/ns/CommaSeparatedValues
-CSW endpoint: http://envri.eu/ns/CswEndpoint
-CSW: http://envri.eu/ns/OGC_CSW
-custom workflows: http://envri.eu/ns/CustomWorkflows
-custom: http://envri.eu/ns/custom
-DARE: http://envri.eu/ns/DARE
-Darwin Core Archive: http://envri.eu/ns/DarwinCoreArchive
-data access: http://envri.eu/ns/DataAccess
-data centre: http://envri.eu/ns/DataCentre
-data explorer: http://envri.eu/ns/DataExplorer
-data format: http://envri.eu/ns/DataFormat
-data generation tools: http://envri.eu/ns/DataGenerationTools
-data licenses in use: http://envri.eu/ns/dataLicensesInUse
-data originator: http://envri.eu/ns/DataOriginator
-data policy: http://envri.eu/ns/dataPolicy
-data process: http://envri.eu/ns/DataProcess
-data processing steps recorded: http://envri.eu/ns/DataProcessingStepsRecorded
-data processing: http://envri.eu/ns/dataProcessing
-data provider: http://envri.eu/ns/DataProvider
-data quality control: http://envri.eu/ns/QA_QC
+10 years: 
+  uri: http://envri.eu/ns/10Years
+  label: "10 years"
+20 years: 
+  uri: http://envri.eu/ns/20Years
+  label: "20 years"
+50 years: 
+  uri: http://envri.eu/ns/50Years
+  label: "50 years" 
+52NORTH SOS:
+  uri: http://www.wikidata.org/entity/Q30289756
+  label: "52°North"
+access content: 
+  uri: http://envri.eu/ns/AccessContent
+  label: "Access Content"
+access controlled services: 
+  uri: http://envi.eu/ns/AccessControlledServices
+  label: "Access Controlled Services"
+access data: 
+  uri: http://envri.eu/ns/AccessData
+  label: "Access Data"
+AccessMechanism: 
+  uri: http://envri.eu/ns/AccessMechanism
+  label: "Access Mechanism"
+accessWithoutCosts: 
+  uri: http://envri.eu/ns/AccessWithoutCosts
+  label: "Access Without Costs"
+account manually: 
+  uri: http://envri.eu/ns/AccountManually
+  label: "Account Manually"
+acknowledgements: 
+  uri: http://envri.eu/ns/Acknowledgements
+  label: "Acknowledgements"
+acronym: 
+  uri: http://envri.eu/ns/acronym
+  label: "acronym"
+ACTRIS ACCESS: 
+  uri: http://envri.eu/ns/ActrisAccess
+  label: "ACTRIS Access"
+advanced editing: 
+  uri: http://envri.eu/ns/AdvancedEditing
+  label: "Advanced Editing"
+aggregations: 
+  uri: http://envri.eu/ns/Aggregations
+  label: "Aggregations"
+allowsAccessWithoutCosts: 
+  uri: http://envri.eu/ns/allowsAccessWithoutCosts
+  label: "allows access without costs"
+allowsSearchEngineIndexing: 
+  uri: http://envri.eu/ns/allowsSearchEngineIndexing
+  label: "allows search engine indexing"
+altLabel: 
+  uri: http://www.w3.org/2004/02/skos/core#altLabel
+  label: "alternative label"
+Apache HTTP:
+  uri: http://www.wikidata.org/entity/Q11354
+  label: "Apache HTTP Server"
+APHIA: 
+  uri: http://envri.eu/ns/APHIA
+  label: "APHIA"
+appliedDataPublishingSteps: 
+  uri: http://envri.eu/ns/appliedDataPublishingSteps
+  label: "applied data publishing steps"
+Argo user manual: 
+  uri: http://envri.eu/ns/ArgoUserManual
+  label: "Argo user namual"
+ASCII: 
+  uri: http://www.wikidata.org/entity/Q8815
+  label: "ASCII"
+atmosphere: 
+  uri: http://www.wikidata.org/entity/Q8104
+  label: "Atmosphere"
+atom: 
+  uri: http://www.wikidata.org/entity/Q9121
+  label: "Atom"
+automatic QA QC: 
+  uri: http://envri.eu/ny/AutomaticQA_QC
+  label: "Automatic QA/QC"
+B2ACCESS: 
+  uri: http://envri.eu/ns/B2ACCESS
+  label: "B2ACCESS"
+B2HANDLE: 
+  uri: http://envri.eu/ns/B2HANDLE
+  label: "B2HANDLE"
+B2SAFE: 
+  uri: http://envri.eu/ns/B2SAFE
+  label: "B2SAFE"
+Bag: 
+  uri: http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag
+  label: "Bag"
+binary: 
+  uri: http://envri.eu/ns/BinaryData
+  label: "Binary data"
+Biodiversity Catalogue: 
+  uri: http://envri.eu/ns/BiodiversityCatalogue
+  label: "Biodiversity catalogue"
+biological primary data: 
+  uri: http://envri.eu/ns/BiologicalPrimaryData
+  label: "Biological primary data"
+CAS: 
+  uri: http://www.wikidata.org/entity/Q628566
+  label: "Central Authentication Service"
+Cassandra: 
+  uri: http://www.wikidata.org/entity/Q616639
+  label: "Apache Cassandra"
+categoriesAreDefinedInRegistries: 
+  uri: http://envri.eu/ns/categoriesAreDefinedInRegistries
+  label: "categories are defined in registries"
+CC BY NC: 
+  uri: http://www.wikidata.org/entity/Q6936496
+  label: "Creative Commons Attribution-NonCommercial"
+CC BY: 
+  uri: http://www.wikidata.org/entity/Q6905323
+  label: "Creative Commons Attribution"
+CC BY.CC 0: 
+  uri: http://www.wikidata.org/entity/Q6938433
+  label: "CC0"
+CC-BY4.0: 
+  uri: http://www.wikidata.org/entity/Q20007257
+  label: "Creative Commons Attribution 4.0 International"
+CC-BY-NC4.0: 
+  uri: http://www.wikidata.org/entity/Q34179348
+  label: "Creative Commons Attribution-NonCommercial 4.0 License"
+CDI metadata reference: 
+  uri: http://envri.eu/ns/CDIMetadataReference
+  label: "CDI metadata reference"
+CDI system: 
+  uri: http://envri.eu/ns/CDISystem
+  label: "CDI system"
+CEDA: 
+  uri: http://envri.eu/ns/CEDA
+  label: "CEDA"
+central: 
+  uri: http://envri.eu/ns/CentralDataRepository
+  label: "Central data repository"
+centralized: 
+  uri: http://envri.eu/ns/centralized
+  label: "Centralized"
+CERA: 
+  uri: http://envri.eu/ns/cera
+  label: "CERA" 
+certificate validation: 
+  uri: http://envri.eu/ns/CertificateValidation
+  label: "Certificate validation"
+CF-1.4: 
+  uri: http://envri.eu/ns/CF-1.4
+  label: "Climate and Forecast Metadata Conventions 1.4"
+chamber experiments: 
+  uri: http://envri.eu/ns/ChamberExperiments
+  label: "Chamber experiments"
+checksum: 
+  uri: http://envri.eu/ns/Checksum
+  label: "Checksum"
+citation: 
+  uri: http://envri.eu/ns/Citation
+  label: "Citation"
+climatologies: 
+  uri: http://envri.eu/ns/Climatologies
+  label: "Climatologies"
+codelist: 
+  uri: http://envri.eu/ns/Codelist
+  label: "Codelist"
+codes: 
+  uri: http://envri.eu/ns/codes
+  label: "codes"
+community specific: 
+  uri: http://envri.eu/ns/CommunitySpecific
+  label: "Community specific"
+community standardised scripts: 
+  uri: http://envri.eu/ns/CommunityStandardisedScripts
+  label: "Community standardised scripts"
+contentAccessAuthorizationRequired: 
+  uri: http://envri.eu/ns/contentAccessAuthorizationRequired
+  label: "content access authorization required"
+CoreTrustSeal: 
+  uri: http://envri.eu/ns/CoreTrustSeal
+  label: "Core Trust Seal"
+CPAuth: 
+  uri: http://envri.eu/ns/CPAuth
+  label: "ICOS Carbon Portal Auth"
+creator: 
+  uri: http://purl.org/dc/terms/creator
+  label: "creator"
+CSV: 
+  uri: http://www.wikidata.org/entity/Q935809
+  label: "comma-separated values"
+CSW endpoint: 
+  uri: http://www.wikidata.org/entity/Q661823
+  label: "Catalog Service for the Web"
+CSW: 
+  uri: http://www.wikidata.org/entity/Q661823
+  label: "Catalog Service for the Web"
+custom workflows: 
+  uri: http://envri.eu/ns/CustomWorkflows
+  label: "Custom workflows"
+custom: 
+  uri: http://envri.eu/ns/custom
+  label: "Custom"
+DARE: 
+  uri: http://envri.eu/ns/DARE
+  label: "DARE"
+Darwin Core Archive: 
+  uri: http://www.wikidata.org/entity/Q5225954
+  label: "Darwin Core Archive"
+data access: 
+  uri: http://envri.eu/ns/DataAccess
+  label: "Data access"
+data centre: 
+  uri: http://www.wikidata.org/entity/Q671224
+  label: "Data center"
+data explorer: 
+  uri: http://envri.eu/ns/DataExplorer
+  label: "Data explorer"
+data format: 
+  uri: http://www.wikidata.org/entity/Q494823
+  label: "Data format"
+data generation tools: 
+  uri: http://envri.eu/ns/DataGenerationTools
+  label: "Data generation tools"
+data licenses in use: 
+  uri: http://envri.eu/ns/dataLicensesInUse
+  label: "data licenses in use"
+data originator: 
+  uri: http://envri.eu/ns/DataOriginator
+  label: "Data originator"
+data policy: 
+  uri: http://envri.eu/ns/dataPolicy
+  label: "data policy"
+data process: 
+  uri: http://envri.eu/ns/DataProcess
+  label: "data process"
+data processing steps recorded: 
+  uri: http://envri.eu/ns/DataProcessingStepsRecorded
+  label: "data processing steps recorded"
+data processing: 
+  uri: http://envri.eu/ns/dataProcessing
+  label: "data processing"
+data provider: 
+  uri: http://envri.eu/ns/DataProvider
+  label: "Data provider"
+data quality control: 
+  uri: https://en.wikipedia.org/wiki/QA/QC
+  label: "QA/QC"
 data repository: http://envri.eu/ns/DataRepository
 Data Seal of Approval: http://envri.eu/ns/DataSealofApproval
 data security: http://envri.eu/ns/DataSecurity
