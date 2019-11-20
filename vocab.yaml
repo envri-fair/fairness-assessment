@@ -53,7 +53,7 @@ altLabel:
   uri: http://www.w3.org/2004/02/skos/core#altLabel
   label: "alternative label"
 Apache HTTP:
-  uri: http://www.wikidata.org/entity/Q11354
+  uri: http://www.wikidata.org/entity/Baaa
   label: "Apache HTTP Server"
 APHIA: 
   uri: http://envri.eu/ns/APHIA
@@ -251,7 +251,7 @@ data security:
   uri: https://www.wikidata.org/entity/Q899388
   label: "Data Security"
 data usage license: 
-  uri:http://envri.eu/ns/DataUsageLicense
+  uri: http://envri.eu/ns/DataUsageLicense
   label: "data usage license"
 data usage: 
   uri: http://envri.eu/ns/DataUsage
@@ -296,8 +296,8 @@ dataSchemaIsRegistered:
   uri: http://envri.eu/ns/dataSchemaIsRegistered
   label: "dataSchemaIsRegistered"
 date:
-  uri: https://www.wikidata.org/entity/Q205892
-  label: "calendar date"
+  uri: http://purl.org/dc/terms/date
+  label: "date"
 DEIMS-SDR: 
   uri: http://envri.eu/ns/DEIMS-SDR
   label: "DEIMS-SDR"
@@ -371,8 +371,8 @@ Elasticsearch:
   uri: https://www.wikidata.org/entity/Q3050461
   label: "Elasticsearch"
 email: 
-  uri: https://www.wikidata.org/entity/Q9158
-  label: "email"
+  uri: http://xmlns.com/foaf/0.1/mbox
+  label: "mbox"
 EML: 
   uri: http://envri.eu/ns/EML2.0
   label: "EML"
@@ -776,7 +776,7 @@ knowledge representation language:
   uri: https://www.wikidata.org/entity/Q6336852
   label: "KRL"
 label: 
-  uri: https://www.wikidata.org/entity/Q722218
+  uri: http://www.w3.org/2000/01/rdf-schema#label
   label: "label"
 landing pages:
   uri: https://www.wikidata.org/entity/Q1494741
@@ -920,7 +920,7 @@ MySQL:
   uri: https://www.wikidata.org/entity/Q850
   label: "MySQL"
 name: 
-  uri: https://www.wikidata.org/entity/Q82799
+  uri: http://xmlns.com/foaf/0.1/name
   label: "name"
 Nasa Ames ASCII: 
   uri: http://envri.eu/ns/NasaAmesASCII
@@ -1160,10 +1160,10 @@ relevant metadata:
   uri: http://envri.eu/ns/RelevantMetadata
   label: "relevant metadata"
 Repository: 
-  uri: https://www.wikidata.org/entity/Q3133368
-  label: "repository"
+  uri: http://envri.eu/ns/Repository
+  label: "Repository"
 ResearchInfrastructure: 
-  uri: https://www.wikidata.org/entity/Q1438053
+  uri: http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure
   label: "research infrastructure"
 RESTful_API: 
   uri: https://www.wikidata.org/entity/Q557770
@@ -1445,7 +1445,7 @@ WebAPI:
   uri: https://www.wikidata.org/entity/Q20202982
   label: "Web API"
 website: 
-  uri: https://www.wikidata.org/entity/Q35127
+  uri: http://envri.eu/ns/website
   label: "website"
 WIS Portal: 
   uri: http://envri.eu/ns/WISPortal

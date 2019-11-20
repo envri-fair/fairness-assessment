@@ -7,7 +7,7 @@ sid = ShortId()
 
 def _l(g, d, v, n, k, t):
     if isinstance(k, list):
-        p = v[k[0]]
+        p = v[k[0]]['uri']
         if k[1] in d:
             if handle_special_cases(g, d[k[1]], v, n, k[0]):
                 return
@@ -17,44 +17,44 @@ def _l(g, d, v, n, k, t):
     else:
         if handle_special_cases(g, d[k], v, n, k):
             return
-        p = v[k]
+        p = v[k]['uri']
         o = d[k]
     
     g.add((n, p, Literal(o, datatype=t)))
     
     
 def _b(g, v, n, k, b):
-    g.add((n, v[k], b))
+    g.add((n, v[k]['uri'], b))
     
     
 def _r(g, d, v, n, k):
     if isinstance(k, list):
         if handle_special_cases(g, d[k[1]], v, n, k[0]):
             return
-        p = v[k[0]]
+        p = v[k[0]]['uri']
         o = d[k[1]]
     else:
         if handle_special_cases(g, d[k], v, n, k):
             return
-        p = v[k]
+        p = v[k]['uri']
         o = d[k]
     
     if o.find('http') > -1 or o.find('www') > -1 or o.find('@') > -1:
         g.add((n, p, URIRef(o)))
         return
         
-    g.add((n, p, URIRef(v[o])))
+    g.add((n, p, URIRef(v[o]['uri'])))
     
     
 def _t(g, d, v, n, k):
     if k in d:
         if isinstance(d[k], list):
             for i in d[k]:
-                g.add((n, RDF.type, v[i]))
+                g.add((n, RDF.type, v[i]['uri']))
         else:
-            g.add((n, RDF.type, v[d[k]]))
+            g.add((n, RDF.type, v[d[k]]['uri']))
     else:
-        g.add((n, RDF.type, v[k]))
+        g.add((n, RDF.type, v[k]['uri']))
     
     
 def _c(g, d, v, n1, n2, k):
@@ -67,7 +67,7 @@ def _c(g, d, v, n1, n2, k):
     
     
 def _li(g, v, n, i):
-    g.add((n, v['li'], URIRef(v[i])))
+    g.add((n, v['li']['uri'], URIRef(v[i]['uri'])))
     
     
 def translate(s, d, v):
@@ -312,18 +312,18 @@ def fairness_reusability(g, d, v, n, i, r):
 
 def handle_special_cases(g, d, v, n, k):
     if d is None:
-        g.add((n, v[k], v['NULL']))
+        g.add((n, v[k]['uri'], v['NULL']['uri']))
         return True
     if d is 'NULL':
-        g.add((n, v[k], v['NULL']))
+        g.add((n, v[k]['uri'], v['NULL']['uri']))
         return True
     if d == 'VOID':
-        g.add((n, v[k], v['VOID']))
+        g.add((n, v[k]['uri'], v['VOID']['uri']))
         return True
     if d == 'none':
-        g.add((n, v[k], v['none']))
+        g.add((n, v[k]['uri'], v['none']['uri']))
         return True
     if d == 'planned':
-        g.add((n, v[k], v['planned']))
+        g.add((n, v[k]['uri'], v['planned']['uri']))
         return True
     return False
