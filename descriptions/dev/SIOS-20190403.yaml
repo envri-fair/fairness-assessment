@@ -1,0 +1,249 @@
+survey:
+  date: 2019-04-03
+  version: 1
+  creator:
+    name: Stein Tronstad
+    email: stein.tronstad@npolar.no
+infrastructure:
+  acronym: SIOS
+  name: SIOS
+  website: https://sios-svalbard.org/
+  domain:
+  - atmosphere
+  - ecosystem
+  URL/IRI of dataset: https://data.npolar.no/dataset/a5c33604-42ea-42f0-a8cd-3a95f1efa9fc
+  URL of discovery portal: https://data.npolar.no/dataset/
+  repositories:
+  - URL: http://thredds.met.no/thredds/catalog/catalog.html
+    name: norwegian Meteorological Institute
+    kind:
+    - data repository
+    allocation: local
+    software:
+    - custom
+    identifier:
+    - kind: PID
+      system: UUID
+      landing page: no
+      assigned: automatically
+      provider: VOID
+      includes metadata schema: NULL
+    certification methods: NULL
+    policies: none
+    registries:
+    - re3data
+    persistency-guaranty: NULL
+    access mechanisms:
+      authentication method: none-open
+      access protocol URL: https://www.w3.org/wiki/UriSchemes/http
+      access without costs: Yes
+      own user database maintained: no
+      person identification system: none
+      major access technology supported: http
+      authorisation technique: none-open
+      authorization for accessing content needed: no
+      data licenses in use:
+      - CC-BY4.0
+      data license IRI: https://www.met.no/en/free-meteorological-data/Licensing-and-crediting
+      metadata openly available: yes
+    data:
+    - type name:
+      - time series
+      preferred formats:
+      - format name: NetCDF/CF
+        metadata types in data headers:
+        - standard NetCDF CF headers
+        - NetCDF ACDD metadata
+      registered data schema: none
+      search on data: yes
+    - type name: trajectories
+      preferred formats:
+      - format name: NetCDF/CF
+        metadata types in data headers:
+        - standard NetCDF CF headers
+        - NetCDF ACDD metadata
+      registered data schema: none
+      search on data: yes    
+    - type name: model data observation
+      preferred formats:
+      - format name: NetCDF/CF
+        metadata types in data headers:
+        - standard NetCDF CF headers
+        - NetCDF ACDD metadata
+      registered data schema: none
+      search on data: yes            
+    metadata:
+      schema:
+      - URL: https://www.iso.org/standard/53798.html
+        name: ISO 19115
+        provenance fields included:
+        - text only
+      machine readable provenance: no
+      categories defined in registries: none
+      PIDs included: yes
+      primary storage format: XML
+      export formats supported:
+      - XML
+      search engine indexing: yes
+      exchange/harvesting methods:
+      - OAI PMH
+      local search engine URL: https://sios-svalbard.org/metadata_search
+      external search engine types supported:
+      - OAI PMH
+      access policy statements included: yes
+      metadata longevity plan URL: https://sios-svalbard.org/sites/sios.metsis.met.no/files/common/SIOS_Data_Management_Plan_20170428_ToBeApproved.pdf
+      machine actionable: yes
+      IRI of machine readable metadata of dataset: https://oaipmh.met.no/oai/?verb=GetRecord&metadataPrefix=iso&identifier=a9ffbf5a-84ea-5fc6-b933-7cda7a9ec4a7
+    vocabularies:
+    - IRI: https://github.com/steingod/scivocab/
+      name: NULL
+      type: NULL
+      topic: domain specific
+      specification language: NULL
+    data management plans:
+      specific DMP tools used: VOID
+      data publishing steps applied: NULL
+      compliance validation service: yes
+    data processing:
+      special data processing steps applied: NULL
+      workflow frameworks applied: NULL
+      distributed workflows tools used: none
+      other analysis services offered: none
+      data products offered: NULL
+    fairness:
+      data findability:
+        data findable: yes
+        gaps: NULL
+      data accessibility:
+        data accessible: yes
+        gaps: NULL
+      data interoperability:
+        data interoperable: partially
+        gaps:
+        - harmonising vocabularies
+        - improving vocabularies
+        - harmonising data models
+      data re-usability:
+        data reusable: partially
+        gaps:
+        - harmonising vocabularies
+        - improving vocabularies
+  - URL: https://data.npolar.no/dataset/
+    name: norwegian Polar Data Centre
+    kind:
+    - data repository
+    allocation: local
+    software:
+    - custom
+    identifier:
+    - kind: PID
+      system: UUID-DOI
+      landing page: yes
+      assigned: automatically
+      provider: DataCite
+      includes metadata schema: NULL
+    certification methods: none
+    policies: NULL
+    registries:
+    - re3data
+    persistency-guaranty: NULL
+    access mechanisms:
+      authentication method: none-open
+      access protocol URL: NULL
+      access without costs: yes
+      own user database maintained: yes
+      person identification system: planned
+      major access technology supported: HTTP
+      authorisation technique: none-open
+      authorization for accessing content needed: no
+      data licenses in use:
+      - CC-BY4.0
+      data license IRI: NULL
+      metadata openly available: yes
+    data:
+    - type name:
+      - time series
+      preferred formats:
+      - format name: NetCDF/CF
+        metadata types in data headers:
+        - standard NetCDF CF headers
+      registered data schema: none
+      search on data: yes
+    - type name:
+      - trajectories
+      preferred formats:
+      - format name: NetCDF/CF
+        metadata types in data headers:
+        - standard NetCDF CF headers
+      registered data schema: none
+      search on data: yes    
+    - type name:
+      - spatial observation
+      preferred formats:
+      - format name: NetCDF/CF
+        metadata types in data headers:
+        - standard NetCDF CF headers
+      - format name: CSV
+        metadata types in data headers:
+        - standard NetCDF CF headers  
+      - format name: JSON
+        metadata types in data headers:
+        - standard NetCDF CF headers  
+      - format name: txt
+        metadata types in data headers:
+        - standard NetCDF CF headers  
+      - format name: shp
+        metadata types in data headers: none     
+      registered data schema: none
+      search on data: yes
+    metadata:
+      schema:
+      - URL: http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif_v9.8.4.xsd
+        name: GCMD-DIF
+        provenance fields included: VOID
+      machine readable provenance: no
+      categories defined in registries: none
+      PIDs included: yes
+      primary storage format: JSON
+      export formats supported:
+      - XML
+      - JSON-LD
+      search engine indexing: yes
+      exchange/harvesting methods:
+      - OAI PMH
+      local search engine URL: https://api.npolar.no/dataset/?q=
+      external search engine types supported:
+      - OAI PMH
+      access policy statements included: yes
+      metadata longevity plan URL: NULL
+      machine actionable: yes
+      IRI of machine readable metadata of dataset: https://api.npolar.no/dataset/a5c33604-42ea-42f0-a8cd-3a95f1efa9fc
+    vocabularies:
+    - IRI: http://cfconventions.org/latest.html
+      name: CF standard names
+      type: thesaurus
+      topic: domain specific
+      specification language: NULL
+    data management plans:
+      specific DMP tools used: data policy document
+      data publishing steps applied: none
+      compliance validation service: yes
+    data processing:
+      special data processing steps applied: none
+      workflow frameworks applied: NULL
+      distributed workflows tools used: none
+      other analysis services offered: none
+      data products offered: NULL
+    fairness:
+      data findability:
+        data findable: yes
+        gaps: NULL
+      data accessibility:
+        data accessible: yes
+        gaps: NULL
+      data interoperability:
+        data interoperable: partially
+        gaps: NULL
+      data re-usability:
+        data reusable: partially
+        gaps: NULL
