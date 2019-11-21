@@ -1069,7 +1069,7 @@ PDC:
 PDF: 
   uri: https://www.wikidata.org/entity/Q42332
   label: "Portable Document Format"
-elpersistence: 
+persistence: 
   uri: https://www.wikidata.org/entity/Q1400808
   label: "persistence"
 PersistentIdentifier: 
@@ -1341,7 +1341,10 @@ traits:
   label: "traits"
 Trajectories:
   uri: https://www.wikidata.org/entity/Q7833059
-  label: "Trajectories"
+  label: "trajectories"
+trajectories:
+  uri: https://www.wikidata.org/entity/Q7833059
+  label: "trajectories"
 Turtle: 
   uri: https://www.wikidata.org/entity/Q223044
   label: "turtle"
