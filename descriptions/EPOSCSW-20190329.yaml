@@ -53,7 +53,7 @@ infrastructure:
       - format name: JSON-LD
         metadata types in data headers: NULL
       registered data schema: 
-      - geoscience 
+      - Geoscience 
       - openGIS 
       - INSPIRE
       search on data: yes
