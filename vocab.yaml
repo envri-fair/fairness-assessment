@@ -966,7 +966,7 @@ NetCDF Oceansites Profile metadata:
   label: "NetCDF Oceansites Profile metadata"
 NetCDF/CF: 
   uri: http://envri.eu/ns/NetCDF_CF
-  label: "NetCDF/CF"
+  label: "NetCDF CF"
 NetCDF: 
   uri: https://www.wikidata.org/entity/Q1361922
   label: "NetCDF"
