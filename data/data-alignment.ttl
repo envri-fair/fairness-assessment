@@ -1,0 +1,3 @@
+@prefix envri: <http://envri.eu/ns/> .
+
+<https://w3id.org/fair/principles/terms/R1.2> envri:demonstrator <https://mybinder.org/v2/gh/envri-fair/provenance.git/master> .

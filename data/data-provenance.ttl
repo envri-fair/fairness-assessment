@@ -1,0 +1,68 @@
+@prefix nilu: <http://nilu.no/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pidinst: <http://pidinst.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://nilu.no/data/iYv_VwE> a prov:Entity ;
+    obo:SIO_000396 "NO0002R.20191203110000.20191203122012.aerosol_light_scattering_coefficient.pm10.1h.1h.lev2.nas"^^xsd:string ;
+    prov:wasAttributedTo <http://nilu.no/activities/BYkNO52> ;
+    prov:wasDerivedFrom <http://nilu.no/data/Bnkv1bI> ;
+    prov:wasGeneratedBy <http://nilu.no/software/Mn6RV5I> .
+
+<http://nilu.no/activities/BYkNO52> a prov:Activity,
+        "obo:OBI_0200170"^^xsd:string ;
+    rdfs:label "averaging data transformation"^^xsd:string ;
+    prov:endedAtTime "2019-12-03T12:00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-12-03T11:00:00"^^xsd:dateTime .
+
+<http://nilu.no/activities/MnkdOwI> a prov:Activity,
+        "obo:NCIT_C48177"^^xsd:string ;
+    rdfs:label "Processing"^^xsd:string ;
+    prov:endedAtTime "2019-12-03T12:00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-12-03T11:00:00"^^xsd:dateTime .
+
+<http://nilu.no/activities/iY4L15E> a prov:Activity,
+        "obo:NCIT_C15311"^^xsd:string ;
+    rdfs:label "Quality Control"^^xsd:string ;
+    prov:endedAtTime "2019-12-03T12:00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-12-03T11:00:00"^^xsd:dateTime .
+
+<http://nilu.no/data/Bnkv1bI> a prov:Entity ;
+    obo:SIO_000396 "NO0002R.20191203110000.20191203121009.aerosol_light_scattering_coefficient.pm10.1h.30s.lev1.nas"^^xsd:string ;
+    prov:wasAttributedTo <http://nilu.no/activities/MnkdOwI>,
+        <http://nilu.no/activities/iY4L15E> ;
+    prov:wasDerivedFrom <http://nilu.no/data/Ml61bH> ;
+    prov:wasGeneratedBy <http://nilu.no/software/Bq6B1GI> .
+
+<http://nilu.no/data/Ml61bH> a prov:Entity ;
+    obo:SIO_000396 "NO0002R.20191203110000.20191203110000.aerosol_light_scattering_coefficient.pm10.1h.30s.lev0.nas"^^xsd:string ;
+    prov:wasAttributedTo <http://nilu.no/activities/sqk5VbH> ;
+    prov:wasGeneratedBy <http://nilu.no/activities/sqk5VbH> .
+
+<http://nilu.no/sensors/sYv2VbE> a prov:Agent ;
+    pidinst:AlternateIdentifier "70810508"^^xsd:string ;
+    pidinst:InstrumentType "nephelometer"^^xsd:string ;
+    pidinst:Name "TSI_3563_BIR_dry"^^xsd:string ;
+    pidinst:alternateIdentifierType "serialNumber"^^xsd:string ;
+    pidinst:manufacturerName "TSI"^^xsd:string ;
+    pidinst:modelName "3563"^^xsd:string .
+
+<http://nilu.no/software/Bq6B1GI> a prov:Agent,
+        "obo:NCIT_C17146"^^xsd:string ;
+    rdfs:label "Computer Program"^^xsd:string .
+
+<http://nilu.no/software/Mn6RV5I> a prov:Agent,
+        "obo:NCIT_C17146"^^xsd:string ;
+    rdfs:label "Computer Program"^^xsd:string .
+
+<http://nilu.no/activities/sqk5VbH> a prov:Activity,
+        "obo:SIO_001054"^^xsd:string ;
+    rdfs:label "measuring"^^xsd:string ;
+    prov:endedAtTime "2019-12-03T12:00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-12-03T11:00:00"^^xsd:dateTime ;
+    prov:wasAssociatedWith <http://nilu.no/sensors/sYv2VbE> .
+
