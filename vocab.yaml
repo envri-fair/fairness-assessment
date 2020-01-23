@@ -264,7 +264,7 @@ dataAccessibility:
   label: "dataAccessibility"
 DataCite:
   uri: https://www.wikidata.org/entity/Q58333293
-  label: "DataCite - A Global Registration Agency for Research Data"
+  label: "DataCite"
 dataFindability: 
   uri: http://envri.eu/ns/dataFindability
   label: "dataFindability"
@@ -309,7 +309,7 @@ depth:
   label: "depth"
 DigitalObjectIdentifier: 
   uri: https://www.wikidata.org/entity/Q25670
-  label: "digital object identifier"
+  label: "DOI"
 discovery metadata:
   uri: https://www.wikidata.org/entity/Q6822475
   label: "Metadata discovery"
@@ -333,7 +333,7 @@ DOI generation:
   label: "DOI generation"
 DOI: 
   uri: https://www.wikidata.org/entity/Q25670
-  label: "digital object identifier"
+  label: "DOI"
 domain specific: 
   uri: http://envri.eu/ns/DomainSpecific
   label: "domain specific"
@@ -375,12 +375,12 @@ email:
   label: "mbox"
 EML: 
   uri: http://envri.eu/ns/EML2.0
-  label: "EML"
+  label: "EML 2.0"
 EML2.0: 
   uri: http://envri.eu/ns/EML2.0
-  label: "EML2.0"
+  label: "EML 2.0"
 ePIC service: 
-  uri: http://envri.eu/ns/ePIC
+  uri: http://envri.eu/ns/ePICservice
   label: "ePIC service"
 EML 2.0: 
   uri: http://envri.eu/ns/EML2.0
@@ -1074,7 +1074,7 @@ persistence:
   label: "persistence"
 PersistentIdentifier: 
   uri: http://envri.eu/ns/PersistentIdentifier
-  label: "PersistentIdentifier"
+  label: "PID"
 persistentIdentifiersAreIncluded: 
   uri: http://envri.eu/ns/persistentIdentifiersAreIncluded
   label: "persistentIdentifiersAreIncluded"
@@ -1086,10 +1086,10 @@ PID replica:
   label: "PID replica"
 PIDs: 
   uri: http://envri.eu/ns/PersistentIdentifier
-  label: "PIDs"
+  label: "PID"
 PID: 
   uri: https://www.wikidata.org/entity/Q420330
-  label: "persistent identifier"
+  label: "PID"
 planned: 
   uri: http://envri.eu/ns/planned
   label: "planned"
@@ -1407,7 +1407,7 @@ UUID version 4:
   label: "UUID version 4"
 UUID: 
   uri: https://www.wikidata.org/entity/Q195284
-  label: "Universally Unique Identifier"
+  label: "UUID"
 UUID-DOI: 
   uri: http://envri.eu/ns/UUID-DOI
   label: "UUID-DOI"
