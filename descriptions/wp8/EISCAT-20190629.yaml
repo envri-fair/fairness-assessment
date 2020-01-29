@@ -117,7 +117,7 @@ infrastructure:
         gaps:
         - harmonising vocabularies
         - metadata checking
-  - URL: https://www.eiscat.se/madrigal/
+  - URL: https://portal.eiscat.se/madrigal
     name: Madrigal
     kind:
     - data repository

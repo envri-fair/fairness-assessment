@@ -30,7 +30,7 @@ infrastructure:
       assigned: automatically
       provider: PDC
       includes metadata schema: none
-    - kind: PID
+    - kind: DOI
       system: DOI
       landing page: yes
       assigned: manually

@@ -913,6 +913,9 @@ modelling:
 mongoDB database: 
   uri: https://www.wikidata.org/entity/Q1165204
   label: "MongoDB"
+MongoDB:
+  uri: https://www.wikidata.org/entity/Q1165204
+  label: "MongoDB"
 MS SQL: 
   uri: https://www.wikidata.org/entity/Q215819
   label: "Microsoft SQL Server"
@@ -1276,6 +1279,9 @@ structured:
 subsetting monthly snapshots: 
   uri: http://envri.eu/ns/SubsettingMonthlySnapshots
   label: "subsetting monthly snapshots"
+SVN repository:
+  uri: http://envri.eu/ns/SVNRepository
+  label: "SVN repository"
 supportedExportFormats: 
   uri: http://envri.eu/ns/supportedExportFormats
   label: "supportedExportFormats"

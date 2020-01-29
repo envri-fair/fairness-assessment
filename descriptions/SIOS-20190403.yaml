@@ -15,7 +15,7 @@ infrastructure:
   URL of discovery portal: https://data.npolar.no/dataset/
   repositories:
   - URL: http://thredds.met.no/thredds/catalog/catalog.html
-    name: norwegian Meteorological Institute
+    name: Norwegian Meteorological Institute
     kind:
     - data repository
     allocation: local
@@ -70,7 +70,7 @@ infrastructure:
         metadata types in data headers:
         - standard NetCDF CF headers
         - NetCDF ACDD metadata
-      registered data schema: none
+      registered data schema: NetCDF
       search on data: yes            
     metadata:
       schema:
@@ -81,7 +81,7 @@ infrastructure:
       machine readable provenance: no
       categories defined in registries: none
       PIDs included: yes
-      primary storage format: XML
+      primary storage format: SVN repository
       export formats supported:
       - XML
       search engine indexing: yes
@@ -100,6 +100,11 @@ infrastructure:
       type: NULL
       topic: domain specific
       specification language: NULL
+    - IRI: http://cfconventions.org/latest.html
+      name: CF standard names
+      type: thesaurus
+      topic: domain specific
+      specification language: NULL      
     data management plans:
       specific DMP tools used: VOID
       data publishing steps applied: NULL
@@ -129,7 +134,7 @@ infrastructure:
         - harmonising vocabularies
         - improving vocabularies
   - URL: https://data.npolar.no/dataset/
-    name: norwegian Polar Data Centre
+    name: Norwegian Polar Data Centre
     kind:
     - data repository
     allocation: local
@@ -137,11 +142,17 @@ infrastructure:
     - custom
     identifier:
     - kind: PID
-      system: UUID-DOI
+      system: UUID
+      landing page: no
+      assigned: automatically
+      provider: none
+      includes metadata schema: NULL
+    - kind: DOI
+      system: DOI
       landing page: yes
       assigned: automatically
       provider: DataCite
-      includes metadata schema: NULL
+      includes metadata schema: NULL          
     certification methods: none
     policies: NULL
     registries:
@@ -158,7 +169,7 @@ infrastructure:
       authorization for accessing content needed: no
       data licenses in use:
       - CC-BY4.0
-      data license IRI: NULL
+      data license IRI: https://creativecommons.org/licenses/by/4.0/
       metadata openly available: yes
     data:
     - type name:
@@ -194,7 +205,7 @@ infrastructure:
         - standard NetCDF CF headers  
       - format name: shp
         metadata types in data headers: none     
-      registered data schema: none
+      registered data schema: NetCDF
       search on data: yes
     metadata:
       schema:
@@ -204,7 +215,7 @@ infrastructure:
       machine readable provenance: no
       categories defined in registries: none
       PIDs included: yes
-      primary storage format: JSON
+      primary storage format: MongoDB
       export formats supported:
       - XML
       - JSON-LD
