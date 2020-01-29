@@ -54,7 +54,8 @@ infrastructure:
         metadata types in data headers:
         - standard NetCDF CF headers
         - NetCDF ACDD metadata
-      registered data schema: none
+      registered data schema: 
+      - NetCDF
       search on data: yes
     - type name: trajectories
       preferred formats:
@@ -70,7 +71,7 @@ infrastructure:
         metadata types in data headers:
         - standard NetCDF CF headers
         - NetCDF ACDD metadata
-      registered data schema: NetCDF
+      registered data schema: none
       search on data: yes            
     metadata:
       schema:
@@ -178,7 +179,8 @@ infrastructure:
       - format name: NetCDF/CF
         metadata types in data headers:
         - standard NetCDF CF headers
-      registered data schema: none
+      registered data schema: 
+      - NetCDF
       search on data: yes
     - type name:
       - trajectories
@@ -205,7 +207,7 @@ infrastructure:
         - standard NetCDF CF headers  
       - format name: shp
         metadata types in data headers: none     
-      registered data schema: NetCDF
+      registered data schema: none
       search on data: yes
     metadata:
       schema:
