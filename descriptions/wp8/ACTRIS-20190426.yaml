@@ -44,8 +44,8 @@ infrastructure:
       authorisation technique: password
       authorization for accessing content needed: partially
       data licenses in use: none
-      data license IRI: http://actris.nilu.no/Content/Documents/DataPolicy.pdf
-      metadata openly available: false
+      data license IRI: NULL
+      metadata openly available: yes
     data:
     - type name: time series
       preferred formats:
@@ -272,15 +272,15 @@ infrastructure:
       authorisation technique: password
       authorization for accessing content needed: yes
       data licenses in use: none
-      data license IRI: http://actris.nilu.no/Content/Documents/DataPolicy.pdf
-      metadata openly available: yes
+      data license IRI: https://www.earlinet.org/index.php?id=127
+      metadata openly available: no
     data:
     - type name: time series
       preferred formats:
       - format name: NetCDF/CF
         metadata types in data headers:
         - NetCDF ACDD metadata
-      registered data schema: none
+      registered data schema: NetCDF
       search on data: yes
     metadata:
       schema:
@@ -357,7 +357,7 @@ infrastructure:
     - mongoDB database
     identifier:
     - kind: PIDs
-      system: UUID version 4
+      system: DOI
       landing page: partially
       assigned: manually
       provider: DataCite
@@ -569,7 +569,7 @@ infrastructure:
     - mongoDB database
     identifier:
     - kind: PIDs
-      system: UUID version 4
+      system: DOI
       landing page: partially
       assigned: manually
       provider: DataCite

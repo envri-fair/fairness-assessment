@@ -44,7 +44,7 @@ infrastructure:
       person identification system: none
       major access technology supported: HTTP
       authorisation technique: local technique
-      authorization for accessing content needed: no
+      authorization for accessing content needed: yes
       data licenses in use:
       - local license
       data license IRI: http://www.iagos-data.fr/#CMSConsultPlace:DATA_POLICY
@@ -75,7 +75,7 @@ infrastructure:
     metadata:
       schema:
       - URL: https://inspire-reference.jrc.ec.europa.eu/vocabularies/geospatial-standards/iso-19139
-        name: INSPIRE
+        name: ISO 19115/19139
         provenance fields included:
         - text only
       machine readable provenance: no
