@@ -1,0 +1,137 @@
+survey:
+  date: 20190419
+  version: 1
+  creator:
+    name: Damien Boulanger
+    email: damien.boulanger@obs-mip.fr
+infrastructure:
+  acronym: IAGOS
+  name: IAGOS
+  website: https://www.iagos.org/
+  domain: 
+  - atmosphere
+  URL/IRI of dataset: http://doi.org/10.25326/06
+  URL of discovery portal: http://www.iagos-data.fr
+  repositories:
+  - URL: http://www.iagos-data.fr
+    name: IAGOS repository
+    kind:
+    - metadata repository
+    - data repository
+    allocation: central
+    software:
+    - custom
+    identifier:
+    - kind: local ID
+      system: DOI
+      landing page: yes
+      assigned: manually
+      provider: DataCite
+      includes metadata schema: NULL
+    certification methods: NULL
+    policies:
+    - acknowledgements
+    - citation
+    - usage
+    registries:
+    - DataCite
+    persistency-guaranty: NULL
+    access mechanisms:
+      authentication method: local method
+      access protocol URL: https://www.w3.org/wiki/UriSchemes/http
+      access without costs: yes
+      own user database maintained: yes
+      person identification system: none
+      major access technology supported: HTTP
+      authorisation technique: local technique
+      authorization for accessing content needed: no
+      data licenses in use:
+      - local license
+      data license IRI: http://www.iagos-data.fr/#CMSConsultPlace:DATA_POLICY
+      metadata openly available: yes
+    data:
+    - type name: binary
+      preferred formats:
+      - format name: NetCDF       
+        metadata types in data headers:
+        - parameters measured
+        - units
+        - time
+        - location
+      registered data schema:
+      - local registry
+      search on data: yes        
+    - type name: text
+      preferred formats:
+      - format name: ASCII       
+        metadata types in data headers: 
+        - parameters measured
+        - units
+        - time
+        - location        
+      registered data schema:
+      - local registry
+      search on data: yes
+    metadata:
+      schema:
+      - URL: https://inspire-reference.jrc.ec.europa.eu/vocabularies/geospatial-standards/iso-19139
+        name: INSPIRE
+        provenance fields included:
+        - text only
+      machine readable provenance: no
+      categories defined in registries: no
+      PIDs included: no
+      primary storage format: relational database
+      export formats supported:
+      - JSON
+      - XML
+      - RDF
+      search engine indexing: yes
+      exchange/harvesting methods:
+      - CSW
+      local search engine URL: http://catalogue2.sedoo.fr/geonetwork/srv/eng/catalog.search#/home
+      external search engine types supported:
+      - CSW endpoint
+      access policy statements included: yes
+      metadata longevity plan URL: NULL
+      machine actionable: yes
+      IRI of machine readable metadata of dataset: http://catalogue2.sedoo.fr/geonetwork/srv/api/records/575882c0-64ce-4648-bb19-00030d5d63af/formatters/xml
+    vocabularies:
+    - IRI: http://cfconventions.org/standard-names.html
+      name: CF Standard Names
+      type: thesaurus
+      topic: domain specific
+      specification language: XML
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied:
+      - QA QC
+      compliance validation service: yes
+    data processing:
+      special data processing steps applied:
+      - QA QC
+      - metadata extraction
+      workflow frameworks applied:
+      - custom workflows
+      distributed workflows tools used: none
+      other analysis services offered: none
+      data products offered:
+      - climatologies
+      - elaborated products
+    fairness:
+      data findability:
+        data findable: yes
+        gaps:
+        - PIDs
+      data accessibility:
+        data accessible: yes
+        gaps:
+        - machine accessibility
+      data interoperability:
+        data interoperable: no
+        gaps:
+        - improving vocabularies
+      data re-usability:
+        data reusable: no
+        gaps:
+        - usage license

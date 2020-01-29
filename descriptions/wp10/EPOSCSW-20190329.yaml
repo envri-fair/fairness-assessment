@@ -1,0 +1,118 @@
+survey:
+  date: 2019-03-29
+  version: 1.0
+  creator:
+    name: Gregory Delobelle
+    email: g.delobelle@brgm.fr
+infrastructure:
+  acronym: EPOS
+  name: EPOS
+  website: https://www.epos-ip.org
+  domain: 
+  - earth
+  URL/IRI of dataset: https://data.geoscience.earth/id/dataset/borehole
+  URL of discovery portal: https://www.epos-ip.org/data-services/epos-prototype-portal
+  repositories: 
+  - URL: https://data.geoscience.earth/id/dataset/borehole
+    name: EPOS CSW
+    kind: 
+    - metadata repository
+    allocation: distributed
+    software: 
+    - OGC services stack
+    identifier: 
+    - kind: PID
+      system: HTTP URI
+      landing page: yes
+      assigned: automatically
+      provider: none
+      includes metadata schema: none
+    certification methods: planned
+    policies: none
+    registries: 
+    - European Geoscience Registry
+    persistency-guaranty: ownership
+    access mechanisms:
+      authentication method: none
+      access protocol URL: none
+      access without costs: yes
+      own user database maintained: no
+      person identification system: none
+      major access technology supported: HTTP
+      authorisation technique: none
+      authorization for accessing content needed: no
+      data licenses in use: NULL
+      data license IRI: http://purl.org/eprint/accessRights/OpenAccess
+      metadata openly available: yes
+    data:
+    - type name: GML
+      preferred formats: 
+      - format name: Turtle
+        metadata types in data headers: 
+        - GML
+      - format name: JSON-LD
+        metadata types in data headers: NULL
+      registered data schema: 
+      - Geoscience 
+      - openGIS 
+      - INSPIRE
+      search on data: yes
+    metadata:
+      schema: 
+      - URL: https://joinup.ec.europa.eu/release/dcat-ap/11
+        name: DCAT-AP
+        provenance fields included: none
+      machine readable provenance: yes
+      categories defined in registries: yes
+      PIDs included: yes
+      primary storage format: relational database
+      export formats supported: 
+      - Turtle
+      - JSON-LD
+      - RDF
+      - CSV
+      - nq
+      - XML
+      - PDF
+      search engine indexing: yes
+      exchange/harvesting methods:  
+      - Z39.50
+      - OAI-PMH
+      - CSW
+      local search engine URL: https://data.geoscience.earth/ncl/
+      external search engine types supported: 
+      - EPOS ICS
+      access policy statements included: yes
+      metadata longevity plan URL: none
+      machine actionable: yes
+      IRI of machine readable metadata of dataset: https://data.geoscience.earth/id/dataset/borehole
+    vocabularies: none
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied: none
+      compliance validation service: yes
+    data processing:
+      special data processing steps applied: 
+      - data validation against XSD 
+      - data validation against code lists
+      workflow frameworks applied: 
+      - apache kafka
+      distributed workflows tools used: 
+      - apache kafka
+      other analysis services offered: none
+      data products offered: none
+    fairness:
+      data findability:
+        data findable: yes
+        gaps: none
+      data accessibility:
+        data accessible: yes
+        gaps: none
+      data interoperability:
+        data interoperable: yes
+        gaps: none
+      data re-usability:
+        data reusable: yes
+        gaps: none
+
+

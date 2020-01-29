@@ -1,0 +1,279 @@
+survey:
+  date: 2019-05-23
+  version: 1
+  creator: 
+    name: Dick Schaap
+    email: dick@maris.nl
+infrastructure:
+  acronym: SDN
+  name: SeaDataNet
+  website: http://www.seadatanet.org
+  domain: 
+  - marine
+  URL/IRI of dataset: https://doi.org/10.12770/90ae7a06-8b08-4afe-83dd-ca92bc99f5c0
+  URL of discovery portal:  https://www.seadatanet.org/Products
+  repositories: 
+  - URL: https://www.seadatanet.org/Products
+    name: SeaDataNet Central Data Products
+    kind: 
+    - data repository
+    allocation: central
+    software: 
+    - Sextant
+    identifier: 
+    - kind: PID
+      system: DOI
+      landing page: yes
+      assigned: manually
+      provider: DataCite
+      includes metadata schema: NULL
+    certification methods: none
+    policies: 
+    - data usage
+    registries: none
+    persistency-guaranty: stewardship
+    access mechanisms: 
+      authentication method: Marine-ID
+      access protocol URL: http://vocab.nerc.ac.uk/collection/L07/current/
+      access without costs: yes
+      own user database maintained: yes
+      person identification system: none
+      major access technology supported: CAS
+      authorisation technique: OAUTH
+      authorization for accessing content needed: no
+      data licenses in use: 
+      - local license
+      data license IRI:  https://www.seadatanet.org/Data-Access/License/1.0 
+      metadata openly available: yes
+    data:
+    - type name: binary
+      preferred formats: 
+      - format name: NetCDF CF
+        metadata types in data headers: 
+        - NetCDF CF
+      registered data schema: none
+      search on data: planned
+    - type name: text
+      preferred formats: 
+      - format name: ODV ASCII
+        metadata types in data headers: 
+        - CDI metadata reference
+      - format name: Medatlas ASCII
+        metadata types in data headers: 
+        - CDI metadata reference        
+      registered data schema: none
+      search on data: planned      
+    metadata: 
+      schema: 
+      - URL: NULL
+        name: ISO 19115/19139
+        provenance fields included: 
+        - text only
+      - URL: NULL
+        name: SDN community profile
+        provenance fields included: planned   
+      machine readable provenance: no 
+      categories defined in registries: yes
+      PIDs included: yes
+      primary storage format: XML
+      export formats supported: 
+      - XML
+      - HTML      
+      search engine indexing: NULL
+      exchange/harvesting methods: 
+      - OGC CSW
+      - OAI-PMH
+      local search engine URL: https://cdi.seadatanet.org/search
+      external search engine types supported: 
+      - Geo portal
+      - IODE Ocean Data Portal
+      access policy statements included: yes
+      metadata longevity plan URL: VOID
+      machine actionable: yes
+      IRI of machine readable metadata of dataset:  http://seadatanet.maris2.nl/v_cdi_v3/print_xml.asp?n_code=2626292
+    vocabularies: 
+    - IRI: http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml
+      name: ISO 19115/19139      
+      type: codelist
+      topic: INSPIRE
+      specification language: https://www.w3.org/XML/
+    - IRI: http://vocab.nerc.ac.uk/collection/V22/current/
+      name: NERC vocabulary service      
+      type: thesaurus
+      topic: domain specific
+      specification language: https://www.w3.org/XML/
+    - IRI: https://edmo.seadatanet.org
+      name: EDMO    
+      type: thesaurus
+      topic: project specific
+      specification language: https://www.w3.org/XML/   
+    - IRI: https://cdi.seadatanet.org
+      name: SeaDataNet CDI    
+      type: thesaurus
+      topic: project specific
+      specification language: planned        
+    data management plans:
+      specific DMP tools used: SDN framework
+      data publishing steps applied: 
+      - metadata import
+      - metadata validation
+      - metadata publication
+      - DOI generation
+      compliance validation service: no
+    data processing:
+      special data processing steps applied: planned
+      workflow frameworks applied: planned
+      distributed workflows tools used: none
+      other analysis services offered: planned
+      data products offered: 
+      - interpolations
+    fairness: 
+      data findability:  
+        data findable: yes
+        gaps: none
+      data accessibility: 
+        data accessible: partially
+        gaps: 
+        - improved WPS service
+      data interoperability: 
+        data interoperable: partially
+        gaps: 
+        - harmonising vocabularies
+      data re-usability: 
+        data reusable: partially
+        gaps: 
+        - provenance information
+        - quality information
+  - URL: https://cdi.seadatanet.org/search
+    name: SeaDataNet Common DAta Index (CDI)
+    kind: 
+    - data repository
+    allocation: central
+    software: 
+    - B2SAFE
+    identifier: 
+    - kind: PID
+      system: B2HANDLE
+      landing page: no
+      assigned: automatically
+      provider: EUDAT
+      includes metadata schema: NULL
+    certification methods: none
+    policies: 
+    - data usage
+    registries: 
+    - GEOSS
+    - IODE Ocean Data Portal
+    persistency-guaranty: stewardship
+    access mechanisms: 
+      authentication method: Marine-ID
+      access protocol URL: http://vocab.nerc.ac.uk/collection/L07/current/
+      access without costs: yes
+      own user database maintained: yes
+      person identification system: none
+      major access technology supported: CAS
+      authorisation technique: OAUTH
+      authorization for accessing content needed: no
+      data licenses in use: 
+      - local license
+      data license IRI:  https://www.seadatanet.org/Data-Access/License/1.0 
+      metadata openly available: yes
+    data:
+    - type name: binary
+      preferred formats: 
+      - format name: NetCDF CF
+        metadata types in data headers: 
+        - NetCDF CF
+      registered data schema: none
+      search on data: planned
+    metadata: 
+      schema: 
+      - URL: NULL
+        name: ISO 19115/19139
+        provenance fields included: 
+        - text only
+      - URL: NULL
+        name: SDN community profile
+        provenance fields included: planned   
+      machine readable provenance: no 
+      categories defined in registries: yes
+      PIDs included: yes
+      primary storage format: XML
+      export formats supported: 
+      - XML
+      - HTML
+      search engine indexing: NULL
+      exchange/harvesting methods: 
+      - OGC CSW
+      local search engine URL: https://www.seadatanet.org/Products#/search
+      external search engine types supported: none
+      access policy statements included: yes
+      metadata longevity plan URL: VOID
+      machine actionable: partially
+      IRI of machine readable metadata of dataset: https://doi.org/10.17882/42182 
+    vocabularies: 
+    - IRI: http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml
+      name: ISO 19115/19139      
+      type: codelist
+      topic: INSPIRE
+      specification language: https://www.w3.org/XML/
+    - IRI: http://vocab.nerc.ac.uk/collection/V22/current/
+      name: NERC vocabulary service      
+      type: thesaurus
+      topic: domain specific
+      specification language: https://www.w3.org/XML/
+    - IRI: https://edmo.seadatanet.org
+      name: EDMO    
+      type: thesaurus
+      topic: project specific
+      specification language: https://www.w3.org/XML/   
+    - IRI: https://cdi.seadatanet.org
+      name: SeaDataNet CDI    
+      type: thesaurus
+      topic: project specific
+      specification language: planned        
+    data management plans:
+      specific DMP tools used: SDN framework
+      data publishing steps applied: 
+      - metadata import
+      - metadata validation
+      - metadata publication
+      - DOI generation
+      compliance validation service: no
+    data processing:
+      special data processing steps applied: 
+      - QA QC 
+      - ODV aggregation
+      workflow frameworks applied: planned
+      distributed workflows tools used: 
+      - Octopus
+      other analysis services offered: planned
+      data products offered: 
+      - interpolations
+      - aggregations
+    fairness: 
+      data findability:  
+        data findable: yes
+        gaps: none
+      data accessibility: 
+        data accessible: partially
+        gaps: 
+        - improved WPS service
+      data interoperability: 
+        data interoperable: partially
+        gaps: 
+        - harmonising vocabularies
+      data re-usability: 
+        data reusable: partially
+        gaps: 
+        - provenance information
+        - quality information
+                
+
+ 
+
+            
+            
+            
+            
+         
