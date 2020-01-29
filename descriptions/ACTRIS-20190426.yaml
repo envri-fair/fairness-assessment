@@ -280,7 +280,8 @@ infrastructure:
       - format name: NetCDF/CF
         metadata types in data headers:
         - NetCDF ACDD metadata
-      registered data schema: NetCDF
+      registered data schema: 
+      - NetCDF
       search on data: yes
     metadata:
       schema:
