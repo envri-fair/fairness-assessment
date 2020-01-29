@@ -1,0 +1,113 @@
+survey:
+  date: 2019-04-16
+  version: 1
+  creator: 
+    name: Michele Manunta
+    email: manunta.m@irea.cnr.it
+infrastructure:
+  acronym: EPOS
+  name: EPOSAR
+  website: NULL
+  domain: 
+  - earth
+  URL/IRI of dataset: https://catalog.terradue.com//eop/gep-epos/profile/xml?uid=InW_CNR_IREA_20170211S1B_20180101S1B_RU11
+  URL of discovery portal: https://catalog.terradue.com/gep-epos/search?format=atomeop  
+  repositories: 
+  - URL: https://catalog.terradue.com/gep-epos/search?format=atomeop
+    name: Terradue
+    kind: 
+    - metadata repository 
+    - data repository
+    allocation: central
+    software: none
+    identifier: 
+    - kind: PID
+      system: none
+      landing page: none
+      assigned: manually
+      provider: Zenodo
+      includes metadata schema: none
+    certification methods: none
+    policies: none
+    registries: none
+    persistency-guaranty: NULL
+    access mechanisms: 
+      authentication method: Shibboleth
+      access protocol URL: NULL
+      access without costs: NULL
+      own user database maintained: yes
+      person identification system: none
+      major access technology supported: NULL
+      authorisation technique: NULL
+      authorisation for accessing content needed: NULL
+      data licenses in use: 
+      - CC BY
+      - CC BY NC
+      data license IRI: https://creativecommons.org/licenses/
+      metadata openly available: yes
+    data:
+    - type name: spatial
+      preferred formats: 
+      - format name: GEOTIFF 
+        metadata types in data headers: none
+      - format name: ASCII
+        metadata types in data headers: none
+      registered data schema: NULL
+      search on data: NULL
+    - type name: time series
+      preferred formats: 
+      - format name: ASCII
+        metadata types in data headers: none
+      registered data schema: NULL
+      search on data: NULL 
+    metadata: 
+      schema: 
+      - URL: none
+        name: ISO 19119
+        provenance fields included: NULL
+      categories defined in registries: no
+      machine readable provenance: no
+      PIDs included: yes
+      primary storage format: XML
+      format IRI: none
+      export formats supported: 
+      - XML
+      - atom
+      search engine indexing: NULL
+      exchange/harvesting methods: none
+      local search engine URL: https://catalog.terradue.com/gep-epos/search?format=atomeop 
+      external search engine types supported: NULL
+      access policy statements included: yes
+      metadata longevity plan URL: NULL
+      machine actionable: yes
+      IRI of machine readable metadata of dataset: NULL
+    vocabularies: 
+    - IRI: NULL
+      name: none
+      type: none
+      topic: none
+      specification language: NULL
+      concept IRI: NULL
+    data management plans:
+      specific DMP tools used: DMPonline
+      data publishing steps applied: none
+      compliance validation service: NULL
+    data processing:
+      special data processing steps applied: NULL
+      workflow frameworks applied: NULL
+      distributed workflows tools used: none
+      other analysis services offered: none
+      data products offered: NULL
+    fairness: 
+      data findability:  
+        data findable: yes
+        gaps: none
+      data accessibility: 
+        data accessible: yes
+        gaps: none
+      data interoperability: 
+        data interoperable: yes
+        gaps: none
+      data re-usability: 
+        data reusable: yes
+        gaps: none
