@@ -1,0 +1,2075 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix envri: <http://envri.eu/ns/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <https://www.wikidata.org/entityi/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+envri:G9rS5kv {
+    envri:G9rS5kv dcterms:creator [ foaf:mbox <johannes.peterseil@umweltbundesamt.at> ;
+                foaf:name "Johannes Peterseil"^^xsd:string ] ;
+        dcterms:date "2019-03-19"^^xsd:date ;
+        dcterms:hasVersion "1"^^xsd:string .
+
+    [] a <http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure> ;
+        rdfs:label "Integrated European Long-Term Ecosystem & Socio-Ecological Research Infrastructure"^^xsd:string ;
+        envri:acronym "eLTER"^^xsd:string ;
+        envri:hasDataManagementPlans [ envri:appliedDataPublishingSteps "['manual QA QC']"^^xsd:string ;
+                envri:hasComplianceValidationService envri:NULL ;
+                envri:usesSpecificDataManagementPlanTools envri:none ;
+                skos:altLabel "eLTER CDN data management plans"^^xsd:string ],
+            [ envri:appliedDataPublishingSteps "['manual QA QC']"^^xsd:string ;
+                envri:hasComplianceValidationService envri:NULL ;
+                envri:usesSpecificDataManagementPlanTools envri:none ;
+                skos:altLabel "DEIMS-SDR data management plans"^^xsd:string ],
+            <https://www.wikidata.org/entity/Q513000> ;
+        envri:hasDataset envri:NULL ;
+        envri:hasDiscoveryPortal envri:NULL ;
+        envri:hasDomain [ a rdf:Bag ;
+                rdf:li <https://www.wikidata.org/entity/Q37813> ] ;
+        envri:hasRepository [ a envri:Repository,
+                    <https://www.wikidata.org/entity/Q3454922> ;
+                rdfs:label "DEIMS-SDR"^^xsd:string ;
+                envri:fairness [ envri:dataAccessibility [ envri:dataIsAccessible envri:NULL ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "eLTER DEIMS-SDR faireness accessibility"^^xsd:string ] ;
+                        envri:dataFindability [ envri:dataIsFindable envri:NULL ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "eLTER DEIMS-SDR faireness findability"^^xsd:string ] ;
+                        envri:dataInteroperability [ envri:gaps envri:NULL ;
+                                skos:altLabel "eLTER DEIMS-SDR faireness interoperability"^^xsd:string ;
+                                ns1:Q61782522 envri:NULL ] ;
+                        envri:dataReusability [ envri:dataIsReusable envri:NULL ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "eLTER DEIMS-SDR faireness reusability"^^xsd:string ] ;
+                        skos:altLabel "eLTER DEIMS-SDR fairness"^^xsd:string ] ;
+                envri:hasAccessMechanisms [ a envri:AccessMechanism ;
+                        envri:AccessWithoutCosts "true"^^xsd:bool ;
+                        envri:contentAccessAuthorizationRequired "false"^^xsd:bool ;
+                        envri:dataLicenseIri envri:NULL ;
+                        envri:hasAccessProtocolUrl envri:NULL ;
+                        envri:hasAuthenticationMethod envri:NULL ;
+                        envri:maintainsOwnUserDatabase "true"^^xsd:bool ;
+                        envri:openAccessMetadata "true"^^xsd:bool ;
+                        envri:personIdentificationSystem envri:none ;
+                        envri:supportsAccessTechnology envri:LocalLDAP ;
+                        envri:usesAuthorisationTechnique envri:NULL ;
+                        envri:usesDataLicenses [ a rdf:Bag ;
+                                rdf:li <http://www.wikidata.org/entity/Q34179348> ] ;
+                        skos:altLabel "eLTER DEIMS-SDR access mechanism"^^xsd:string ] ;
+                envri:hasAllocation envri:CentralDataRepository ;
+                envri:hasCertificationMethods envri:NULL ;
+                envri:hasData [ a envri:NULL,
+                            <https://www.wikidata.org/entity/Q42848> ;
+                        envri:dataSchemaIsRegistered envri:NULL ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes envri:none ;
+                                envri:hasFormatName envri:NULL ] ;
+                        skos:altLabel "eLTER DEIMS-SDR data"^^xsd:string ] ;
+                envri:hasDataProcessing [ envri:dataProductsOffered [ a rdf:Bag ;
+                                rdf:li envri:Mesoclimate,
+                                    <https://www.wikidata.org/entity/Q187997>,
+                                    <https://www.wikidata.org/entity/Q1987070> ] ;
+                        envri:distributedWorkflowsToolsUsed envri:none ;
+                        envri:otherAnalysisServicesOffered envri:none ;
+                        envri:specialDataProcessingStepsApplied envri:none ;
+                        envri:workflowFrameworksApplied envri:none ;
+                        skos:altLabel "eLTER DEIMS-SDR data processing"^^xsd:string ] ;
+                envri:hasMetadata [ envri:categoriesAreDefinedInRegistries "partially"^^xsd:bool ;
+                        envri:hasHarvestingMethods [ a rdf:Bag ;
+                                rdf:li envri:OAI-PMH,
+                                    envri:OGC_CSW ] ;
+                        envri:hasLocalSearchEngineUrl <https://deims.org/> ;
+                        envri:hasMachineReadableDatasetMetadata envri:none ;
+                        envri:hasMachineReadableProvenance "machine readable provenance"^^xsd:bool ;
+                        envri:hasMetadataLongevityPlan envri:NULL ;
+                        envri:hasPrimaryStorageFormat envri:DEIMS-SDR ;
+                        envri:hasSchema [ envri:hasSchemaName <https://www.wikidata.org/entity/Q7451082> ;
+                                envri:hasSchemaUrl <http://schemas.opengis.net/sensorML/> ;
+                                envri:includesProvenanceFields [ a rdf:Bag ;
+                                        rdf:li envri:TextOnly ] ;
+                                skos:altLabel "eLTER DEIMS-SDR metadata schema"^^xsd:string ],
+                            [ envri:hasSchemaName envri:EML2.0 ;
+                                envri:hasSchemaUrl envri:NULL ;
+                                envri:includesProvenanceFields envri:NULL ;
+                                skos:altLabel "eLTER DEIMS-SDR metadata schema"^^xsd:string ],
+                            [ envri:hasSchemaName <https://www.wikidata.org/entity/Q50377276> ;
+                                envri:hasSchemaUrl envri:NULL ;
+                                envri:includesProvenanceFields [ a rdf:Bag ;
+                                        rdf:li envri:TextOnly ] ;
+                                skos:altLabel "eLTER DEIMS-SDR metadata schema"^^xsd:string ],
+                            [ envri:hasSchemaName envri:INSPIRE_EF ;
+                                envri:hasSchemaUrl envri:NULL ;
+                                envri:includesProvenanceFields envri:NULL ;
+                                skos:altLabel "eLTER DEIMS-SDR metadata schema"^^xsd:string ],
+                            [ envri:hasSchemaName <https://www.wikidata.org/entity/Q30079268> ;
+                                envri:hasSchemaUrl <http://schemas.opengis.net/iso/19139/20060504> ;
+                                envri:includesProvenanceFields [ a rdf:Bag ;
+                                        rdf:li envri:TextOnly ] ;
+                                skos:altLabel "eLTER DEIMS-SDR metadata schema"^^xsd:string ] ;
+                        envri:includesAccessPolicyStatements "true"^^xsd:bool ;
+                        envri:isMachineActionable "true"^^xsd:bool ;
+                        envri:persistentIdentifiersAreIncluded "partially"^^xsd:bool ;
+                        envri:searchEngineIndexing envri:NULL ;
+                        envri:supportedExportFormats [ a rdf:Bag ;
+                                rdf:li <https://www.wikidata.org/entity/Q2115> ] ;
+                        envri:supportsExternalSearchEngineTypes [ a rdf:Bag ;
+                                rdf:li <http://www.wikidata.org/entity/Q661823> ] ;
+                        skos:altLabel "eLTER DEIMS-SDR metadata"^^xsd:string ] ;
+                envri:hasPersistencyGuaranty envri:planned ;
+                envri:hasPolicies envri:NULL ;
+                envri:hasRepositoryUrl <https://deims.org/> ;
+                envri:hasVocabularies [ a <https://www.wikidata.org/entity/Q17152639> ;
+                        envri:hasName "EnvThes"^^xsd:string ;
+                        envri:hasSpecificationLanguage <https://www.w3.org/2004/02/skos/> ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://vocabs.lter-europe.net/EnvThes/> ;
+                        skos:altLabel "eLTER DEIMS-SDR vocabularies"^^xsd:string ] ;
+                envri:inRegistries [ a rdf:Bag ;
+                        rdf:li envri:re3data ] ;
+                envri:searchOnData envri:NULL ;
+                envri:usesIdentifier [ a envri:LocalID,
+                            <https://www.wikidata.org/entity/Q853614> ;
+                        envri:hasLandingPage envri:NULL ;
+                        envri:includesMetadataSchema envri:NULL ;
+                        envri:isAssigned "automatically"^^xsd:string ;
+                        envri:usesIdentifierSystem <https://www.wikidata.org/entity/Q6664565> ;
+                        envri:usesProvider <https://www.wikidata.org/entity/Q11412386> ;
+                        skos:altLabel "eLTER DEIMS-SDR identifier"^^xsd:string ] ;
+                envri:usesSoftware envri:NULL ;
+                skos:altLabel "eLTER repository"^^xsd:string ],
+            [ a envri:DataRepository,
+                    envri:Repository ;
+                rdfs:label "EUDAT/FZJ B2SHARE"^^xsd:string ;
+                envri:fairness [ envri:dataAccessibility [ envri:dataIsAccessible envri:NULL ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "eLTER EUDAT/FZJ B2SHARE faireness accessibility"^^xsd:string ] ;
+                        envri:dataFindability [ envri:dataIsFindable envri:NULL ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "eLTER EUDAT/FZJ B2SHARE faireness findability"^^xsd:string ] ;
+                        envri:dataInteroperability [ envri:gaps envri:NULL ;
+                                skos:altLabel "eLTER EUDAT/FZJ B2SHARE faireness interoperability"^^xsd:string ;
+                                ns1:Q61782522 envri:NULL ] ;
+                        envri:dataReusability [ envri:dataIsReusable envri:NULL ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "eLTER EUDAT/FZJ B2SHARE faireness reusability"^^xsd:string ] ;
+                        skos:altLabel "eLTER EUDAT/FZJ B2SHARE fairness"^^xsd:string ] ;
+                envri:hasAccessMechanisms [ a envri:AccessMechanism ;
+                        envri:AccessWithoutCosts "access without costs"^^xsd:bool ;
+                        envri:contentAccessAuthorizationRequired "false"^^xsd:bool ;
+                        envri:dataLicenseIri envri:NULL ;
+                        envri:hasAccessProtocolUrl envri:NULL ;
+                        envri:hasAuthenticationMethod "password"^^xsd:string ;
+                        envri:maintainsOwnUserDatabase "true"^^xsd:bool ;
+                        envri:openAccessMetadata "true"^^xsd:bool ;
+                        envri:personIdentificationSystem envri:none ;
+                        envri:supportsAccessTechnology envri:LocalLDAP ;
+                        envri:usesAuthorisationTechnique envri:NULL ;
+                        envri:usesDataLicenses <https://www.wikidata.org/entity/Q513000> ;
+                        skos:altLabel "eLTER EUDAT/FZJ B2SHARE access mechanism"^^xsd:string ] ;
+                envri:hasAllocation envri:CentralDataRepository ;
+                envri:hasCertificationMethods envri:NULL ;
+                envri:hasData [ a envri:structured,
+                            <https://www.wikidata.org/entity/Q42848> ;
+                        envri:dataSchemaIsRegistered envri:NULL ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes envri:none ;
+                                envri:hasFormatName <http://www.wikidata.org/entity/Q935809> ] ;
+                        skos:altLabel "eLTER EUDAT/FZJ B2SHARE data"^^xsd:string ] ;
+                envri:hasDataProcessing <https://www.wikidata.org/entity/Q513000> ;
+                envri:hasMetadata <https://www.wikidata.org/entity/Q513000> ;
+                envri:hasPersistencyGuaranty "ownership"^^xsd:string ;
+                envri:hasPolicies envri:none ;
+                envri:hasRepositoryUrl envri:NULL ;
+                envri:hasVocabularies [ a <https://www.wikidata.org/entity/Q17152639> ;
+                        envri:hasName "EnvThes"^^xsd:string ;
+                        envri:hasSpecificationLanguage <https://www.w3.org/2004/02/skos/> ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://vocabs.lter-europe.net/EnvThes/> ;
+                        skos:altLabel "eLTER EUDAT/FZJ B2SHARE vocabularies"^^xsd:string ] ;
+                envri:inRegistries [ a rdf:Bag ;
+                        rdf:li envri:re3data ] ;
+                envri:searchOnData "true"^^xsd:bool ;
+                envri:usesIdentifier [ a <https://www.wikidata.org/entity/Q420330>,
+                            <https://www.wikidata.org/entity/Q853614> ;
+                        envri:hasLandingPage "false"^^xsd:bool ;
+                        envri:includesMetadataSchema envri:NULL ;
+                        envri:isAssigned "automatically"^^xsd:string ;
+                        envri:usesIdentifierSystem <https://www.wikidata.org/entity/Q1575058> ;
+                        envri:usesProvider <https://www.wikidata.org/entity/Q1575058> ;
+                        skos:altLabel "eLTER EUDAT/FZJ B2SHARE identifier"^^xsd:string ] ;
+                envri:usesSoftware [ a rdf:Bag ;
+                        rdf:li <https://www.wikidata.org/entity/Q22661177> ] ;
+                skos:altLabel "eLTER repository"^^xsd:string ],
+            [ a envri:DataRepository,
+                    envri:Repository ;
+                rdfs:label "eLTER CDN"^^xsd:string ;
+                envri:fairness [ envri:dataAccessibility [ envri:dataIsAccessible "partially"^^xsd:bool ;
+                                envri:gaps [ a rdf:Bag ;
+                                        rdf:li envri:DistributionLink ] ;
+                                skos:altLabel "eLTER eLTER CDN faireness accessibility"^^xsd:string ] ;
+                        envri:dataFindability [ envri:dataIsFindable "true"^^xsd:bool ;
+                                envri:gaps envri:none ;
+                                skos:altLabel "eLTER eLTER CDN faireness findability"^^xsd:string ] ;
+                        envri:dataInteroperability [ envri:gaps [ a rdf:Bag ;
+                                        rdf:li envri:FormatChecking,
+                                            <https://en.wikipedia.org/wiki/QA/QC> ] ;
+                                skos:altLabel "eLTER eLTER CDN faireness interoperability"^^xsd:string ;
+                                ns1:Q61782522 "true"^^xsd:bool ] ;
+                        envri:dataReusability [ envri:dataIsReusable "true"^^xsd:bool ;
+                                envri:gaps envri:none ;
+                                skos:altLabel "eLTER eLTER CDN faireness reusability"^^xsd:string ] ;
+                        skos:altLabel "eLTER eLTER CDN fairness"^^xsd:string ] ;
+                envri:hasAccessMechanisms [ a envri:AccessMechanism ;
+                        envri:AccessWithoutCosts envri:NULL ;
+                        envri:contentAccessAuthorizationRequired envri:NULL ;
+                        envri:dataLicenseIri envri:NULL ;
+                        envri:hasAccessProtocolUrl envri:NULL ;
+                        envri:hasAuthenticationMethod envri:NULL ;
+                        envri:maintainsOwnUserDatabase envri:NULL ;
+                        envri:openAccessMetadata "true"^^xsd:bool ;
+                        envri:personIdentificationSystem envri:NULL ;
+                        envri:supportsAccessTechnology envri:NULL ;
+                        envri:usesAuthorisationTechnique envri:NULL ;
+                        envri:usesDataLicenses envri:NULL ;
+                        skos:altLabel "eLTER eLTER CDN access mechanism"^^xsd:string ] ;
+                envri:hasAllocation envri:CentralDataRepository ;
+                envri:hasCertificationMethods envri:NULL ;
+                envri:hasData [ a envri:NULL,
+                            <https://www.wikidata.org/entity/Q42848> ;
+                        envri:dataSchemaIsRegistered envri:NULL ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes envri:none ;
+                                envri:hasFormatName envri:NULL ] ;
+                        skos:altLabel "eLTER eLTER CDN data"^^xsd:string ] ;
+                envri:hasDataProcessing <https://www.wikidata.org/entity/Q513000> ;
+                envri:hasMetadata <https://www.wikidata.org/entity/Q513000> ;
+                envri:hasPersistencyGuaranty envri:planned ;
+                envri:hasPolicies envri:NULL ;
+                envri:hasRepositoryUrl envri:NULL ;
+                envri:hasVocabularies [ a <https://www.wikidata.org/entity/Q17152639> ;
+                        envri:hasName "EnvThes"^^xsd:string ;
+                        envri:hasSpecificationLanguage <https://www.w3.org/2004/02/skos/> ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://vocabs.lter-europe.net/EnvThes/> ;
+                        skos:altLabel "eLTER eLTER CDN vocabularies"^^xsd:string ] ;
+                envri:inRegistries envri:NULL ;
+                envri:searchOnData envri:NULL ;
+                envri:usesIdentifier [ a envri:NULL,
+                            <https://www.wikidata.org/entity/Q853614> ;
+                        envri:hasLandingPage envri:NULL ;
+                        envri:includesMetadataSchema envri:NULL ;
+                        envri:isAssigned envri:NULL ;
+                        envri:usesIdentifierSystem envri:NULL ;
+                        envri:usesProvider envri:NULL ;
+                        skos:altLabel "eLTER eLTER CDN identifier"^^xsd:string ] ;
+                envri:usesSoftware [ a rdf:Bag ;
+                        rdf:li <http://www.wikidata.org/entity/Q30289756> ] ;
+                skos:altLabel "eLTER repository"^^xsd:string ] ;
+        envri:website <http://www.lter-europe.net/elter> .
+}
+
+envri:G9CSoNv {
+    envri:G9CSoNv dcterms:creator [ foaf:mbox <alex.vermeulen@icos-ri.eu> ;
+                foaf:name "Alex Vermeulen"^^xsd:string ] ;
+        dcterms:date "2019-04-01"^^xsd:date ;
+        dcterms:hasVersion "1"^^xsd:string .
+
+    [] a <http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure> ;
+        rdfs:label "Integrated Carbon Observation System"^^xsd:string ;
+        envri:acronym "ICOS"^^xsd:string ;
+        envri:hasDataManagementPlans [ envri:appliedDataPublishingSteps "['QA QC']"^^xsd:string ;
+                envri:hasComplianceValidationService "false"^^xsd:bool ;
+                envri:usesSpecificDataManagementPlanTools "DMPonline"^^xsd:bool ;
+                skos:altLabel "Carbon Portal data management plans"^^xsd:string ] ;
+        envri:hasDataset <https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0> ;
+        envri:hasDiscoveryPortal <https://data.icos-cp.eu/portal> ;
+        envri:hasDomain [ a rdf:Bag ;
+                rdf:li envri:Marine,
+                    <http://www.wikidata.org/entity/Q8104>,
+                    <https://www.wikidata.org/entity/Q37813> ] ;
+        envri:hasRepository [ a envri:DataRepository,
+                    envri:Repository,
+                    <https://www.wikidata.org/entity/Q3454922> ;
+                rdfs:label "Carbon Portal"^^xsd:string ;
+                envri:fairness [ envri:dataAccessibility [ envri:dataIsAccessible "true"^^xsd:bool ;
+                                envri:gaps envri:none ;
+                                skos:altLabel "ICOS Carbon Portal faireness accessibility"^^xsd:string ] ;
+                        envri:dataFindability [ envri:dataIsFindable "true"^^xsd:bool ;
+                                envri:gaps envri:none ;
+                                skos:altLabel "ICOS Carbon Portal faireness findability"^^xsd:string ] ;
+                        envri:dataInteroperability [ envri:gaps [ a rdf:Bag ;
+                                        rdf:li envri:HarmonisingDataModels,
+                                            envri:HarmonisingVocabularies ] ;
+                                skos:altLabel "ICOS Carbon Portal faireness interoperability"^^xsd:string ;
+                                ns1:Q61782522 "true"^^xsd:bool ] ;
+                        envri:dataReusability [ envri:dataIsReusable "true"^^xsd:bool ;
+                                envri:gaps [ a rdf:Bag ;
+                                        rdf:li envri:ProvenanceInformation ] ;
+                                skos:altLabel "ICOS Carbon Portal faireness reusability"^^xsd:string ] ;
+                        skos:altLabel "ICOS Carbon Portal fairness"^^xsd:string ] ;
+                envri:hasAccessMechanisms [ a envri:AccessMechanism ;
+                        envri:AccessWithoutCosts "true"^^xsd:bool ;
+                        envri:contentAccessAuthorizationRequired "false"^^xsd:bool ;
+                        envri:dataLicenseIri <https://creativecommons.org/licenses/by/4.0/> ;
+                        envri:hasAccessProtocolUrl <https://doi.org/10.17487%2FRFC2616> ;
+                        envri:hasAuthenticationMethod "OAuth paired with eduGain"^^xsd:string ;
+                        envri:maintainsOwnUserDatabase "true"^^xsd:bool ;
+                        envri:openAccessMetadata "true"^^xsd:bool ;
+                        envri:personIdentificationSystem <https://www.wikidata.org/entity/Q51044> ;
+                        envri:supportsAccessTechnology <https://www.wikidata.org/entity/Q30542074> ;
+                        envri:usesAuthorisationTechnique <https://www.wikidata.org/entity/Q743238> ;
+                        envri:usesDataLicenses [ a rdf:Bag ;
+                                rdf:li <http://www.wikidata.org/entity/Q20007257> ] ;
+                        skos:altLabel "ICOS Carbon Portal access mechanism"^^xsd:string ] ;
+                envri:hasAllocation envri:CentralDataRepository ;
+                envri:hasCertificationMethods envri:none ;
+                envri:hasData [ a envri:Spatial,
+                            <https://www.wikidata.org/entity/Q42848> ;
+                        envri:dataSchemaIsRegistered envri:none ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes envri:none ;
+                                envri:hasFormatName <https://www.wikidata.org/entity/Q7295261> ] ;
+                        skos:altLabel "ICOS Carbon Portal data"^^xsd:string ],
+                    [ a <https://www.wikidata.org/entity/Q186588>,
+                            <https://www.wikidata.org/entity/Q42848> ;
+                        envri:dataSchemaIsRegistered envri:none ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li envri:ParametersMeasured,
+                                            envri:Units ] ;
+                                envri:hasFormatName <http://www.wikidata.org/entity/Q935809> ],
+                            [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li envri:CF-1.4 ] ;
+                                envri:hasFormatName <https://www.wikidata.org/entity/Q1361922> ] ;
+                        skos:altLabel "ICOS Carbon Portal data"^^xsd:string ] ;
+                envri:hasDataProcessing [ envri:dataProductsOffered [ a rdf:Bag ;
+                                rdf:li envri:ElaboratedProducts,
+                                    envri:FinalQCObservationalData,
+                                    envri:NearRealTimeObservationalData ] ;
+                        envri:distributedWorkflowsToolsUsed [ a rdf:Bag ;
+                                rdf:li envri:CommunityStandardisedScripts ] ;
+                        envri:otherAnalysisServicesOffered [ a rdf:Bag ;
+                                rdf:li envri:JupiterNotebooks ] ;
+                        envri:specialDataProcessingStepsApplied [ a rdf:Bag ;
+                                rdf:li envri:Checksum,
+                                    envri:HandlePIDSuffix,
+                                    envri:QA_QC ] ;
+                        envri:workflowFrameworksApplied [ a rdf:Bag ;
+                                rdf:li envri:CustomWorkflows ] ;
+                        skos:altLabel "ICOS Carbon Portal data processing"^^xsd:string ] ;
+                envri:hasMetadata [ envri:categoriesAreDefinedInRegistries "true"^^xsd:bool ;
+                        envri:hasHarvestingMethods [ a rdf:Bag ;
+                                rdf:li <https://www.wikidata.org/entity/Property:P5305> ] ;
+                        envri:hasLocalSearchEngineUrl <https://meta.icos-cp.eu/sparqlclient/> ;
+                        envri:hasMachineReadableDatasetMetadata <https://hdl.handle.net/11676/-ffoiHjX5NDN0Vq_fKuVmas0> ;
+                        envri:hasMachineReadableProvenance "false"^^xsd:bool ;
+                        envri:hasMetadataLongevityPlan <https://meta.icos-cp.eu/objects/5stgMTshDNdDe_Y8obQOpe0u> ;
+                        envri:hasPrimaryStorageFormat <https://www.wikidata.org/entity/Q54872> ;
+                        envri:hasSchema [ envri:hasSchemaName <https://www.wikidata.org/entity/Q50377276> ;
+                                envri:hasSchemaUrl envri:NULL ;
+                                envri:includesProvenanceFields [ a rdf:Bag ;
+                                        rdf:li envri:TextOnly ] ;
+                                skos:altLabel "ICOS Carbon Portal metadata schema"^^xsd:string ],
+                            [ envri:hasSchemaName envri:GeoDCAT ;
+                                envri:hasSchemaUrl <https://semiceu.github.io/GeoDCAT-AP/releases/1.0.1/geodcat-ap_1.0.1.pdf> ;
+                                envri:includesProvenanceFields [ a rdf:Bag ;
+                                        rdf:li envri:SimplifiedProvO ] ;
+                                skos:altLabel "ICOS Carbon Portal metadata schema"^^xsd:string ] ;
+                        envri:includesAccessPolicyStatements "true"^^xsd:bool ;
+                        envri:isMachineActionable "true"^^xsd:bool ;
+                        envri:persistentIdentifiersAreIncluded "true"^^xsd:bool ;
+                        envri:searchEngineIndexing envri:NULL ;
+                        envri:supportedExportFormats [ a rdf:Bag ;
+                                rdf:li <https://www.wikidata.org/entity/Q1145976>,
+                                    <https://www.wikidata.org/entity/Q2063>,
+                                    <https://www.wikidata.org/entity/Q2115>,
+                                    <https://www.wikidata.org/entity/Q223044>,
+                                    <https://www.wikidata.org/entity/Q8811> ] ;
+                        envri:supportsExternalSearchEngineTypes [ a rdf:Bag ;
+                                rdf:li <https://www.wikidata.org/entity/Property:P5305> ] ;
+                        skos:altLabel "ICOS Carbon Portal metadata"^^xsd:string ] ;
+                envri:hasPersistencyGuaranty "20 years"^^xsd:string ;
+                envri:hasPolicies [ a rdf:Bag ;
+                        rdf:li envri:Usage ] ;
+                envri:hasRepositoryUrl <https://data.icos-cp.eu/portal> ;
+                envri:hasVocabularies [ a <https://www.wikidata.org/entity/Q324254> ;
+                        envri:hasName "ICOS"^^xsd:string ;
+                        envri:hasSpecificationLanguage <https://www.wikidata.org/entity/Q826165> ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://meta.icos-cp.eu/ontologies/cpmeta/> ;
+                        skos:altLabel "ICOS Carbon Portal vocabularies"^^xsd:string ],
+                    [ a <https://www.wikidata.org/entity/Q324254> ;
+                        envri:hasName "PROV-O"^^xsd:string ;
+                        envri:hasSpecificationLanguage <https://www.wikidata.org/entity/Q826165> ;
+                        envri:hasTopic envri:General ;
+                        envri:hasVocabularyIri <http://www.w3.org/ns/prov> ;
+                        skos:altLabel "ICOS Carbon Portal vocabularies"^^xsd:string ],
+                    [ a <https://www.wikidata.org/entity/Q6499736> ;
+                        envri:hasName "Darwin Core"^^xsd:string ;
+                        envri:hasSpecificationLanguage <https://www.wikidata.org/entity/Q54872> ;
+                        envri:hasTopic envri:General ;
+                        envri:hasVocabularyIri <http://purl.org/dc/elements/1.1/> ;
+                        skos:altLabel "ICOS Carbon Portal vocabularies"^^xsd:string ] ;
+                envri:inRegistries [ a rdf:Bag ;
+                        rdf:li envri:re3data ] ;
+                envri:searchOnData envri:planned,
+                    "false"^^xsd:bool ;
+                envri:usesIdentifier [ a <https://www.wikidata.org/entity/Q420330>,
+                            <https://www.wikidata.org/entity/Q853614> ;
+                        envri:hasLandingPage "true"^^xsd:bool ;
+                        envri:includesMetadataSchema envri:NULL ;
+                        envri:isAssigned "manually"^^xsd:string ;
+                        envri:usesIdentifierSystem <https://www.wikidata.org/entity/Q25670> ;
+                        envri:usesProvider <https://www.wikidata.org/entity/Q58333293> ;
+                        skos:altLabel "ICOS Carbon Portal identifier"^^xsd:string ],
+                    [ a <https://www.wikidata.org/entity/Q420330>,
+                            <https://www.wikidata.org/entity/Q853614> ;
+                        envri:hasLandingPage envri:NULL ;
+                        envri:includesMetadataSchema envri:none ;
+                        envri:isAssigned "automatically"^^xsd:string ;
+                        envri:usesIdentifierSystem <https://www.wikidata.org/entity/Q1575058> ;
+                        envri:usesProvider envri:PDC ;
+                        skos:altLabel "ICOS Carbon Portal identifier"^^xsd:string ] ;
+                envri:usesSoftware [ a rdf:Bag ;
+                        rdf:li <https://www.wikidata.org/entity/Q37617281> ] ;
+                skos:altLabel "ICOS repository"^^xsd:string ] ;
+        envri:website <http://www.icos-cp.eu> .
+}
+
+envri:G-2hRBZ {
+    envri:G-2hRBZ dcterms:creator [ foaf:mbox <stein.tronstad@npolar.no> ;
+                foaf:name "Stein Tronstad"^^xsd:string ] ;
+        dcterms:date "2019-04-03"^^xsd:date ;
+        dcterms:hasVersion "1"^^xsd:string .
+
+    [] a <http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure> ;
+        rdfs:label "SIOS"^^xsd:string ;
+        envri:acronym "SIOS"^^xsd:string ;
+        envri:hasDataManagementPlans [ envri:appliedDataPublishingSteps envri:none ;
+                envri:hasComplianceValidationService "true"^^xsd:bool ;
+                envri:usesSpecificDataManagementPlanTools "data policy document"^^xsd:bool ;
+                skos:altLabel "norwegian Polar Data Centre data management plans"^^xsd:string ],
+            [ envri:appliedDataPublishingSteps envri:NULL ;
+                envri:hasComplianceValidationService "true"^^xsd:bool ;
+                envri:usesSpecificDataManagementPlanTools <https://www.wikidata.org/entity/Q513000> ;
+                skos:altLabel "norwegian Meteorological Institute data management plans"^^xsd:string ] ;
+        envri:hasDataset <https://data.npolar.no/dataset/a5c33604-42ea-42f0-a8cd-3a95f1efa9fc> ;
+        envri:hasDiscoveryPortal <https://data.npolar.no/dataset/> ;
+        envri:hasDomain [ a rdf:Bag ;
+                rdf:li <http://www.wikidata.org/entity/Q8104>,
+                    <https://www.wikidata.org/entity/Q37813> ] ;
+        envri:hasRepository [ a envri:DataRepository,
+                    envri:Repository ;
+                rdfs:label "norwegian Polar Data Centre"^^xsd:string ;
+                envri:fairness [ envri:dataAccessibility [ envri:dataIsAccessible "true"^^xsd:bool ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "SIOS norwegian Polar Data Centre faireness accessibility"^^xsd:string ] ;
+                        envri:dataFindability [ envri:dataIsFindable "true"^^xsd:bool ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "SIOS norwegian Polar Data Centre faireness findability"^^xsd:string ] ;
+                        envri:dataInteroperability [ envri:gaps envri:NULL ;
+                                skos:altLabel "SIOS norwegian Polar Data Centre faireness interoperability"^^xsd:string ;
+                                ns1:Q61782522 "partially"^^xsd:bool ] ;
+                        envri:dataReusability [ envri:dataIsReusable "partially"^^xsd:bool ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "SIOS norwegian Polar Data Centre faireness reusability"^^xsd:string ] ;
+                        skos:altLabel "SIOS norwegian Polar Data Centre fairness"^^xsd:string ] ;
+                envri:hasAccessMechanisms [ a envri:AccessMechanism ;
+                        envri:AccessWithoutCosts "true"^^xsd:bool ;
+                        envri:contentAccessAuthorizationRequired "false"^^xsd:bool ;
+                        envri:dataLicenseIri envri:NULL ;
+                        envri:hasAccessProtocolUrl envri:NULL ;
+                        envri:hasAuthenticationMethod "none-open"^^xsd:string ;
+                        envri:maintainsOwnUserDatabase "true"^^xsd:bool ;
+                        envri:openAccessMetadata "true"^^xsd:bool ;
+                        envri:personIdentificationSystem envri:planned ;
+                        envri:supportsAccessTechnology <https://www.wikidata.org/entity/Q8777> ;
+                        envri:usesAuthorisationTechnique envri:none-open ;
+                        envri:usesDataLicenses [ a rdf:Bag ;
+                                rdf:li <http://www.wikidata.org/entity/Q20007257> ] ;
+                        skos:altLabel "SIOS norwegian Polar Data Centre access mechanism"^^xsd:string ] ;
+                envri:hasAllocation envri:Local ;
+                envri:hasCertificationMethods envri:none ;
+                envri:hasData [ a <https://www.wikidata.org/entity/Q42848>,
+                            <https://www.wikidata.org/entity/Q7833059> ;
+                        envri:dataSchemaIsRegistered envri:none ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li <http://envri.eu.ns/StandardNetCdfCFHeaders> ] ;
+                                envri:hasFormatName envri:NetCDF_CF ] ;
+                        skos:altLabel "SIOS norwegian Polar Data Centre data"^^xsd:string ],
+                    [ a envri:SpatialObservation,
+                            <https://www.wikidata.org/entity/Q42848> ;
+                        envri:dataSchemaIsRegistered envri:none ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li <http://envri.eu.ns/StandardNetCdfCFHeaders> ] ;
+                                envri:hasFormatName <https://www.wikidata.org/entity/Q2063> ],
+                            [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes envri:none ;
+                                envri:hasFormatName envri:shp ],
+                            [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li <http://envri.eu.ns/StandardNetCdfCFHeaders> ] ;
+                                envri:hasFormatName envri:NetCDF_CF ],
+                            [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li <http://envri.eu.ns/StandardNetCdfCFHeaders> ] ;
+                                envri:hasFormatName <http://www.wikidata.org/entity/Q935809> ],
+                            [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li <http://envri.eu.ns/StandardNetCdfCFHeaders> ] ;
+                                envri:hasFormatName <https://www.wikidata.org/entity/Q1145976> ] ;
+                        skos:altLabel "SIOS norwegian Polar Data Centre data"^^xsd:string ],
+                    [ a <https://www.wikidata.org/entity/Q186588>,
+                            <https://www.wikidata.org/entity/Q42848> ;
+                        envri:dataSchemaIsRegistered envri:none ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li <http://envri.eu.ns/StandardNetCdfCFHeaders> ] ;
+                                envri:hasFormatName envri:NetCDF_CF ] ;
+                        skos:altLabel "SIOS norwegian Polar Data Centre data"^^xsd:string ] ;
+                envri:hasDataProcessing [ envri:dataProductsOffered envri:NULL ;
+                        envri:distributedWorkflowsToolsUsed envri:none ;
+                        envri:otherAnalysisServicesOffered envri:none ;
+                        envri:specialDataProcessingStepsApplied envri:none ;
+                        envri:workflowFrameworksApplied envri:NULL ;
+                        skos:altLabel "SIOS norwegian Polar Data Centre data processing"^^xsd:string ] ;
+                envri:hasMetadata [ envri:categoriesAreDefinedInRegistries envri:none ;
+                        envri:hasHarvestingMethods [ a rdf:Bag ;
+                                rdf:li envri:OAI-PMH ] ;
+                        envri:hasLocalSearchEngineUrl <https://api.npolar.no/dataset/?q=> ;
+                        envri:hasMachineReadableDatasetMetadata <https://api.npolar.no/dataset/a5c33604-42ea-42f0-a8cd-3a95f1efa9fc> ;
+                        envri:hasMachineReadableProvenance "false"^^xsd:bool ;
+                        envri:hasMetadataLongevityPlan envri:NULL ;
+                        envri:hasPrimaryStorageFormat <https://www.wikidata.org/entity/Q2063> ;
+                        envri:hasSchema [ envri:hasSchemaName envri:GCMD-DIF ;
+                                envri:hasSchemaUrl <http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif_v9.8.4.xsd> ;
+                                envri:includesProvenanceFields <https://www.wikidata.org/entity/Q513000> ;
+                                skos:altLabel "SIOS norwegian Polar Data Centre metadata schema"^^xsd:string ] ;
+                        envri:includesAccessPolicyStatements "true"^^xsd:bool ;
+                        envri:isMachineActionable "true"^^xsd:bool ;
+                        envri:persistentIdentifiersAreIncluded "true"^^xsd:bool ;
+                        envri:searchEngineIndexing "true"^^xsd:bool ;
+                        envri:supportedExportFormats [ a rdf:Bag ;
+                                rdf:li <https://www.wikidata.org/entity/Q2115>,
+                                    <https://www.wikidata.org/entity/Q6108942> ] ;
+                        envri:supportsExternalSearchEngineTypes [ a rdf:Bag ;
+                                rdf:li envri:OAI-PMH ] ;
+                        skos:altLabel "SIOS norwegian Polar Data Centre metadata"^^xsd:string ] ;
+                envri:hasPersistencyGuaranty envri:NULL ;
+                envri:hasPolicies envri:NULL ;
+                envri:hasRepositoryUrl <https://data.npolar.no/dataset/> ;
+                envri:hasVocabularies [ a <https://www.wikidata.org/entity/Q17152639> ;
+                        envri:hasName "CF standard names"^^xsd:string ;
+                        envri:hasSpecificationLanguage envri:NULL ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://cfconventions.org/latest.html> ;
+                        skos:altLabel "SIOS norwegian Polar Data Centre vocabularies"^^xsd:string ] ;
+                envri:inRegistries [ a rdf:Bag ;
+                        rdf:li envri:re3data ] ;
+                envri:searchOnData "true"^^xsd:bool ;
+                envri:usesIdentifier [ a <https://www.wikidata.org/entity/Q420330>,
+                            <https://www.wikidata.org/entity/Q853614> ;
+                        envri:hasLandingPage "true"^^xsd:bool ;
+                        envri:includesMetadataSchema envri:NULL ;
+                        envri:isAssigned "automatically"^^xsd:string ;
+                        envri:usesIdentifierSystem envri:UUID-DOI ;
+                        envri:usesProvider <https://www.wikidata.org/entity/Q58333293> ;
+                        skos:altLabel "SIOS norwegian Polar Data Centre identifier"^^xsd:string ] ;
+                envri:usesSoftware [ a rdf:Bag ;
+                        rdf:li envri:custom ] ;
+                skos:altLabel "SIOS repository"^^xsd:string ],
+            [ a envri:DataRepository,
+                    envri:Repository ;
+                rdfs:label "norwegian Meteorological Institute"^^xsd:string ;
+                envri:fairness [ envri:dataAccessibility [ envri:dataIsAccessible "true"^^xsd:bool ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "SIOS norwegian Meteorological Institute faireness accessibility"^^xsd:string ] ;
+                        envri:dataFindability [ envri:dataIsFindable "true"^^xsd:bool ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "SIOS norwegian Meteorological Institute faireness findability"^^xsd:string ] ;
+                        envri:dataInteroperability [ envri:gaps [ a rdf:Bag ;
+                                        rdf:li envri:HarmonisingDataModels,
+                                            envri:HarmonisingVocabularies,
+                                            envri:improvingVocabularies ] ;
+                                skos:altLabel "SIOS norwegian Meteorological Institute faireness interoperability"^^xsd:string ;
+                                ns1:Q61782522 "partially"^^xsd:bool ] ;
+                        envri:dataReusability [ envri:dataIsReusable "partially"^^xsd:bool ;
+                                envri:gaps [ a rdf:Bag ;
+                                        rdf:li envri:HarmonisingVocabularies,
+                                            envri:improvingVocabularies ] ;
+                                skos:altLabel "SIOS norwegian Meteorological Institute faireness reusability"^^xsd:string ] ;
+                        skos:altLabel "SIOS norwegian Meteorological Institute fairness"^^xsd:string ] ;
+                envri:hasAccessMechanisms [ a envri:AccessMechanism ;
+                        envri:AccessWithoutCosts "true"^^xsd:bool ;
+                        envri:contentAccessAuthorizationRequired "false"^^xsd:bool ;
+                        envri:dataLicenseIri <https://www.met.no/en/free-meteorological-data/Licensing-and-crediting> ;
+                        envri:hasAccessProtocolUrl <https://www.w3.org/wiki/UriSchemes/http> ;
+                        envri:hasAuthenticationMethod "none-open"^^xsd:string ;
+                        envri:maintainsOwnUserDatabase "false"^^xsd:bool ;
+                        envri:openAccessMetadata "true"^^xsd:bool ;
+                        envri:personIdentificationSystem envri:none ;
+                        envri:supportsAccessTechnology <http> ;
+                        envri:usesAuthorisationTechnique envri:none-open ;
+                        envri:usesDataLicenses [ a rdf:Bag ;
+                                rdf:li <http://www.wikidata.org/entity/Q20007257> ] ;
+                        skos:altLabel "SIOS norwegian Meteorological Institute access mechanism"^^xsd:string ] ;
+                envri:hasAllocation envri:Local ;
+                envri:hasCertificationMethods envri:NULL ;
+                envri:hasData [ a <https://www.wikidata.org/entity/Q186588>,
+                            <https://www.wikidata.org/entity/Q42848> ;
+                        envri:dataSchemaIsRegistered envri:none ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li <http://envri.eu.ns/StandardNetCdfCFHeaders>,
+                                            envri:NetcdfAcddMetadata ] ;
+                                envri:hasFormatName envri:NetCDF_CF ] ;
+                        skos:altLabel "SIOS norwegian Meteorological Institute data"^^xsd:string ],
+                    [ a envri:ModelDataObservation,
+                            <https://www.wikidata.org/entity/Q42848> ;
+                        envri:dataSchemaIsRegistered envri:none ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li <http://envri.eu.ns/StandardNetCdfCFHeaders>,
+                                            envri:NetcdfAcddMetadata ] ;
+                                envri:hasFormatName envri:NetCDF_CF ] ;
+                        skos:altLabel "SIOS norwegian Meteorological Institute data"^^xsd:string ],
+                    [ a <https://www.wikidata.org/entity/Q42848>,
+                            <https://www.wikidata.org/entity/Q7833059> ;
+                        envri:dataSchemaIsRegistered envri:none ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li <http://envri.eu.ns/StandardNetCdfCFHeaders>,
+                                            envri:NetcdfAcddMetadata ] ;
+                                envri:hasFormatName envri:NetCDF_CF ] ;
+                        skos:altLabel "SIOS norwegian Meteorological Institute data"^^xsd:string ] ;
+                envri:hasDataProcessing [ envri:dataProductsOffered envri:NULL ;
+                        envri:distributedWorkflowsToolsUsed envri:none ;
+                        envri:otherAnalysisServicesOffered envri:none ;
+                        envri:specialDataProcessingStepsApplied envri:NULL ;
+                        envri:workflowFrameworksApplied envri:NULL ;
+                        skos:altLabel "SIOS norwegian Meteorological Institute data processing"^^xsd:string ] ;
+                envri:hasMetadata [ envri:categoriesAreDefinedInRegistries envri:none ;
+                        envri:hasHarvestingMethods [ a rdf:Bag ;
+                                rdf:li envri:OAI-PMH ] ;
+                        envri:hasLocalSearchEngineUrl <https://sios-svalbard.org/metadata_search> ;
+                        envri:hasMachineReadableDatasetMetadata <https://oaipmh.met.no/oai/?verb=GetRecord&metadataPrefix=iso&identifier=a9ffbf5a-84ea-5fc6-b933-7cda7a9ec4a7> ;
+                        envri:hasMachineReadableProvenance "false"^^xsd:bool ;
+                        envri:hasMetadataLongevityPlan <https://sios-svalbard.org/sites/sios.metsis.met.no/files/common/SIOS_Data_Management_Plan_20170428_ToBeApproved.pdf> ;
+                        envri:hasPrimaryStorageFormat <https://www.wikidata.org/entity/Q2115> ;
+                        envri:hasSchema [ envri:hasSchemaName <https://www.wikidata.org/entity/Q50377276> ;
+                                envri:hasSchemaUrl <https://www.iso.org/standard/53798.html> ;
+                                envri:includesProvenanceFields [ a rdf:Bag ;
+                                        rdf:li envri:TextOnly ] ;
+                                skos:altLabel "SIOS norwegian Meteorological Institute metadata schema"^^xsd:string ] ;
+                        envri:includesAccessPolicyStatements "true"^^xsd:bool ;
+                        envri:isMachineActionable "true"^^xsd:bool ;
+                        envri:persistentIdentifiersAreIncluded "true"^^xsd:bool ;
+                        envri:searchEngineIndexing "true"^^xsd:bool ;
+                        envri:supportedExportFormats [ a rdf:Bag ;
+                                rdf:li <https://www.wikidata.org/entity/Q2115> ] ;
+                        envri:supportsExternalSearchEngineTypes [ a rdf:Bag ;
+                                rdf:li envri:OAI-PMH ] ;
+                        skos:altLabel "SIOS norwegian Meteorological Institute metadata"^^xsd:string ] ;
+                envri:hasPersistencyGuaranty envri:NULL ;
+                envri:hasPolicies envri:none ;
+                envri:hasRepositoryUrl <http://thredds.met.no/thredds/catalog/catalog.html> ;
+                envri:hasVocabularies [ a envri:NULL ;
+                        envri:hasName envri:NULL ;
+                        envri:hasSpecificationLanguage envri:NULL ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <https://github.com/steingod/scivocab/> ;
+                        skos:altLabel "SIOS norwegian Meteorological Institute vocabularies"^^xsd:string ] ;
+                envri:inRegistries [ a rdf:Bag ;
+                        rdf:li envri:re3data ] ;
+                envri:searchOnData "true"^^xsd:bool ;
+                envri:usesIdentifier [ a <https://www.wikidata.org/entity/Q420330>,
+                            <https://www.wikidata.org/entity/Q853614> ;
+                        envri:hasLandingPage "false"^^xsd:bool ;
+                        envri:includesMetadataSchema envri:NULL ;
+                        envri:isAssigned "automatically"^^xsd:string ;
+                        envri:usesIdentifierSystem <https://www.wikidata.org/entity/Q195284> ;
+                        envri:usesProvider <https://www.wikidata.org/entity/Q513000> ;
+                        skos:altLabel "SIOS norwegian Meteorological Institute identifier"^^xsd:string ] ;
+                envri:usesSoftware [ a rdf:Bag ;
+                        rdf:li envri:custom ] ;
+                skos:altLabel "SIOS repository"^^xsd:string ] ;
+        envri:website <https://sios-svalbard.org/> .
+}
+
+envri:G0sSgapH {
+    envri:G0sSgapH dcterms:creator [ foaf:mbox <antoniopepe@crea.gov.it> ;
+                foaf:name "Antonio Pepe"^^xsd:string ] ;
+        dcterms:date "2019-09-03"^^xsd:date ;
+        dcterms:hasVersion "1"^^xsd:string .
+
+    [] a <http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure> ;
+        rdfs:label "ANAEE-France"^^xsd:string ;
+        envri:acronym "ANAEE-France"^^xsd:string ;
+        envri:hasDataManagementPlans [ envri:appliedDataPublishingSteps envri:planned ;
+                envri:hasComplianceValidationService "false"^^xsd:bool ;
+                envri:usesSpecificDataManagementPlanTools envri:planned ;
+                skos:altLabel "ANAEE-France Metadata Catalog data management plans"^^xsd:string ] ;
+        envri:hasDataset envri:NULL ;
+        envri:hasDiscoveryPortal <https://data-preproduction.inra.fr/dataverse> ;
+        envri:hasDomain [ a rdf:Bag ;
+                rdf:li <https://www.wikidata.org/entity/Q37813> ] ;
+        envri:hasRepository [ a envri:Repository,
+                    <https://www.wikidata.org/entity/Q3454922> ;
+                rdfs:label "ANAEE-France Metadata Catalog"^^xsd:string ;
+                envri:fairness [ envri:dataAccessibility [ envri:dataIsAccessible "true"^^xsd:bool ;
+                                envri:gaps envri:none ;
+                                skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog faireness accessibility"^^xsd:string ] ;
+                        envri:dataFindability [ envri:dataIsFindable "true"^^xsd:bool ;
+                                envri:gaps envri:none ;
+                                skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog faireness findability"^^xsd:string ] ;
+                        envri:dataInteroperability [ envri:gaps envri:none ;
+                                skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog faireness interoperability"^^xsd:string ;
+                                ns1:Q61782522 "true"^^xsd:bool ] ;
+                        envri:dataReusability [ envri:dataIsReusable envri:NULL ;
+                                envri:gaps envri:NULL ;
+                                skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog faireness reusability"^^xsd:string ] ;
+                        skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog fairness"^^xsd:string ] ;
+                envri:hasAccessMechanisms [ a envri:AccessMechanism ;
+                        envri:AccessWithoutCosts "true"^^xsd:bool ;
+                        envri:contentAccessAuthorizationRequired "false"^^xsd:bool ;
+                        envri:dataLicenseIri envri:NULL ;
+                        envri:hasAccessProtocolUrl <https://www.wikidata.org/entity/Q513000> ;
+                        envri:hasAuthenticationMethod "none-open"^^xsd:string ;
+                        envri:maintainsOwnUserDatabase "true"^^xsd:bool ;
+                        envri:openAccessMetadata "true"^^xsd:bool ;
+                        envri:personIdentificationSystem envri:none ;
+                        envri:supportsAccessTechnology <https://www.wikidata.org/entity/Q188816> ;
+                        envri:usesAuthorisationTechnique envri:Local ;
+                        envri:usesDataLicenses <https://www.wikidata.org/entity/Q513000> ;
+                        skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog access mechanism"^^xsd:string ] ;
+                envri:hasAllocation envri:CentralDataRepository ;
+                envri:hasCertificationMethods envri:none ;
+                envri:hasData <https://www.wikidata.org/entity/Q513000> ;
+                envri:hasDataProcessing [ envri:dataProductsOffered envri:planned ;
+                        envri:distributedWorkflowsToolsUsed [ a rdf:Bag ;
+                                rdf:li envri:Anaee-ENVRISemanticPipelines ] ;
+                        envri:otherAnalysisServicesOffered envri:none ;
+                        envri:specialDataProcessingStepsApplied envri:planned ;
+                        envri:workflowFrameworksApplied envri:planned ;
+                        skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog data processing"^^xsd:string ] ;
+                envri:hasMetadata [ envri:categoriesAreDefinedInRegistries "true"^^xsd:bool ;
+                        envri:hasHarvestingMethods [ a rdf:Bag ;
+                                rdf:li envri:OAI-PMH,
+                                    <http://www.wikidata.org/entity/Q661823> ] ;
+                        envri:hasLocalSearchEngineUrl <http://w3.avignon.inra.fr/geonetwork_anaee> ;
+                        envri:hasMachineReadableDatasetMetadata <https://www.wikidata.org/entity/Q513000> ;
+                        envri:hasMachineReadableProvenance "false"^^xsd:bool ;
+                        envri:hasMetadataLongevityPlan <https://www.wikidata.org/entity/Q513000> ;
+                        envri:hasPrimaryStorageFormat <https://www.wikidata.org/entity/Q2115> ;
+                        envri:hasSchema [ envri:hasSchemaName <https://www.wikidata.org/entity/Q50377276> ;
+                                envri:hasSchemaUrl envri:NULL ;
+                                envri:includesProvenanceFields [ a rdf:Bag ;
+                                        rdf:li envri:TextOnly ] ;
+                                skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog metadata schema"^^xsd:string ],
+                            [ envri:hasSchemaName <https://www.wikidata.org/entity/Q30079268> ;
+                                envri:hasSchemaUrl <http://schemas.opengis.net/iso/19139/20060504> ;
+                                envri:includesProvenanceFields [ a rdf:Bag ;
+                                        rdf:li envri:TextOnly ] ;
+                                skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog metadata schema"^^xsd:string ] ;
+                        envri:includesAccessPolicyStatements "true"^^xsd:bool ;
+                        envri:isMachineActionable "false"^^xsd:bool ;
+                        envri:persistentIdentifiersAreIncluded "true"^^xsd:bool ;
+                        envri:searchEngineIndexing "true"^^xsd:bool ;
+                        envri:supportedExportFormats [ a rdf:Bag ;
+                                rdf:li <https://www.wikidata.org/entity/Q2115>,
+                                    <https://www.wikidata.org/entity/Q42332>,
+                                    <https://www.wikidata.org/entity/Q54872> ] ;
+                        envri:supportsExternalSearchEngineTypes envri:NULL ;
+                        skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog metadata"^^xsd:string ] ;
+                envri:hasPersistencyGuaranty envri:planned ;
+                envri:hasPolicies envri:none ;
+                envri:hasRepositoryUrl <http://w3.avignon.inra.fr/geonetwork_anaee> ;
+                envri:hasVocabularies [ a <https://www.wikidata.org/entity/Q17152639> ;
+                        envri:hasName "ANAEETHES"^^xsd:string ;
+                        envri:hasSpecificationLanguage envri:SKOS ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://agroportal.lirmm.fr/ontologies/ANAEETHES> ;
+                        skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog vocabularies"^^xsd:string ] ;
+                envri:inRegistries envri:planned ;
+                envri:usesIdentifier [ a envri:LocalID,
+                            <https://www.wikidata.org/entity/Q853614> ;
+                        envri:hasLandingPage "false"^^xsd:bool ;
+                        envri:includesMetadataSchema <https://www.wikidata.org/entity/Q513000> ;
+                        envri:isAssigned "automatically"^^xsd:string ;
+                        envri:usesIdentifierSystem envri:NULL ;
+                        envri:usesProvider envri:NULL ;
+                        skos:altLabel "ANAEE-France ANAEE-France Metadata Catalog identifier"^^xsd:string ] ;
+                envri:usesSoftware [ a rdf:Bag ;
+                        rdf:li <https://www.wikidata.org/entity/Q477787> ] ;
+                skos:altLabel "ANAEE-France repository"^^xsd:string ] ;
+        envri:website <http://www.anaee-france.fr> .
+}
+
+envri:G0stEBH {
+    envri:G0stEBH dcterms:creator [ foaf:mbox <nicola.fiore@lifewatch.eu> ;
+                foaf:name "Nicola Fiore"^^xsd:string ] ;
+        dcterms:date "2019-06-24"^^xsd:date ;
+        dcterms:hasVersion "1"^^xsd:string .
+
+    [] a <http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure> ;
+        rdfs:label "LifeWatch ERIC"^^xsd:string ;
+        envri:acronym "LifeWatch"^^xsd:string ;
+        envri:hasDataManagementPlans [ envri:appliedDataPublishingSteps "['semi-automatic QA QC']"^^xsd:string ;
+                envri:hasComplianceValidationService envri:planned ;
+                envri:usesSpecificDataManagementPlanTools "false"^^xsd:bool ;
+                skos:altLabel "LifeWatch Italy Portal data management plans"^^xsd:string ] ;
+        envri:hasDataset <http://www.lifewatchitaly.eu/catalogue-of-resources?p_auth=LflU6bat&p_p_id=datasetsearch_WAR_lifewatchportlet&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_pos=2&p_p_col_count=3&_datasetsearch_WAR_lifewatchportlet_action=search> ;
+        envri:hasDiscoveryPortal <http://www.lifewatchitaly.eu/catalogue-of-resources> ;
+        envri:hasDomain [ a rdf:Bag ;
+                rdf:li <https://www.wikidata.org/entity/Q37813> ] ;
+        envri:hasRepository [ a envri:DataRepository,
+                    envri:Repository,
+                    <https://www.wikidata.org/entity/Q3454922> ;
+                rdfs:label "LifeWatch Italy Portal"^^xsd:string ;
+                envri:fairness [ envri:dataAccessibility [ envri:dataIsAccessible "true"^^xsd:bool ;
+                                envri:gaps envri:none ;
+                                skos:altLabel "LifeWatch LifeWatch Italy Portal faireness accessibility"^^xsd:string ] ;
+                        envri:dataFindability [ envri:dataIsFindable "partially"^^xsd:bool ;
+                                envri:gaps [ a rdf:Bag ;
+                                        rdf:li envri:PersistentIdentifier ] ;
+                                skos:altLabel "LifeWatch LifeWatch Italy Portal faireness findability"^^xsd:string ] ;
+                        envri:dataInteroperability [ envri:gaps [ a rdf:Bag ;
+                                        rdf:li <https://www.wikidata.org/entity/Q6336852> ] ;
+                                skos:altLabel "LifeWatch LifeWatch Italy Portal faireness interoperability"^^xsd:string ;
+                                ns1:Q61782522 "partially"^^xsd:bool ] ;
+                        envri:dataReusability [ envri:dataIsReusable "partially"^^xsd:bool ;
+                                envri:gaps [ a rdf:Bag ;
+                                        rdf:li envri:DataUsageLicense ] ;
+                                skos:altLabel "LifeWatch LifeWatch Italy Portal faireness reusability"^^xsd:string ] ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal fairness"^^xsd:string ] ;
+                envri:hasAccessMechanisms [ a envri:AccessMechanism ;
+                        envri:AccessWithoutCosts "true"^^xsd:bool ;
+                        envri:contentAccessAuthorizationRequired "true"^^xsd:bool ;
+                        envri:dataLicenseIri envri:none ;
+                        envri:hasAccessProtocolUrl <http://www.lifewatchitaly.eu/home?p_p_id=58&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&saveLastPath=false&_58_struts_action=%2Flogin%2Flogin> ;
+                        envri:hasAuthenticationMethod "Liferay"^^xsd:string ;
+                        envri:maintainsOwnUserDatabase "true"^^xsd:bool ;
+                        envri:openAccessMetadata "true"^^xsd:bool ;
+                        envri:personIdentificationSystem envri:planned ;
+                        envri:supportsAccessTechnology envri:LocalLDAP ;
+                        envri:usesAuthorisationTechnique <https://www.wikidata.org/entity/Q161157> ;
+                        envri:usesDataLicenses [ a rdf:Bag ;
+                                rdf:li <http://www.wikidata.org/entity/Q20007257> ] ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal access mechanism"^^xsd:string ] ;
+                envri:hasAllocation envri:CentralDataRepository ;
+                envri:hasCertificationMethods envri:none ;
+                envri:hasData [ a envri:structured,
+                            <https://www.wikidata.org/entity/Q42848> ;
+                        envri:dataSchemaIsRegistered envri:none ;
+                        envri:hasPreferredFormat [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li envri:EML2.0,
+                                            <https://www.wikidata.org/entity/Q2063> ] ;
+                                envri:hasFormatName <http://www.wikidata.org/entity/Q935809> ],
+                            [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li envri:EML2.0,
+                                            <https://www.wikidata.org/entity/Q2063> ] ;
+                                envri:hasFormatName <https://www.wikidata.org/entity/Q60886323> ],
+                            [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li envri:EML2.0,
+                                            <https://www.wikidata.org/entity/Q2063> ] ;
+                                envri:hasFormatName <https://www.wikidata.org/entity/Q2115> ],
+                            [ a envri:PreferredFormat ;
+                                envri:hasDataHeaderMetadataTypes [ a rdf:Bag ;
+                                        rdf:li envri:EML2.0,
+                                            <https://www.wikidata.org/entity/Q2063> ] ;
+                                envri:hasFormatName envri:TXT ] ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal data"^^xsd:string ] ;
+                envri:hasDataProcessing [ envri:dataProductsOffered [ a rdf:Bag ;
+                                rdf:li envri:BiologicalPrimaryData,
+                                    envri:Traits ] ;
+                        envri:distributedWorkflowsToolsUsed [ a rdf:Bag ;
+                                rdf:li envri:Taverna,
+                                    <https://www.wikidata.org/entity/Q318>,
+                                    <https://www.wikidata.org/entity/Q47272> ] ;
+                        envri:otherAnalysisServicesOffered [ a rdf:Bag ;
+                                rdf:li <https://www.wikidata.org/entity/Q2055062> ] ;
+                        envri:specialDataProcessingStepsApplied [ a rdf:Bag ;
+                                rdf:li envri:modelling,
+                                    <https://www.wikidata.org/entity/Q45045>,
+                                    <https://www.wikidata.org/entity/Q451553> ] ;
+                        envri:workflowFrameworksApplied [ a rdf:Bag ;
+                                rdf:li envri:Taverna,
+                                    <https://www.wikidata.org/entity/Q318>,
+                                    <https://www.wikidata.org/entity/Q47272> ] ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal data processing"^^xsd:string ] ;
+                envri:hasMetadata [ envri:categoriesAreDefinedInRegistries "true"^^xsd:bool ;
+                        envri:hasHarvestingMethods [ a rdf:Bag ;
+                                rdf:li <https://www.wikidata.org/entity/Property:P5305>,
+                                    <https://www.wikidata.org/entity/Q1494741> ] ;
+                        envri:hasLocalSearchEngineUrl <http://www.servicecentrelifewatch.eu/web/lifewatch-italia/catalogue-of-resources> ;
+                        envri:hasMachineReadableDatasetMetadata envri:planned ;
+                        envri:hasMachineReadableProvenance "false"^^xsd:bool ;
+                        envri:hasMetadataLongevityPlan envri:planned ;
+                        envri:hasPrimaryStorageFormat <https://www.wikidata.org/entity/Q192588> ;
+                        envri:hasSchema [ envri:hasSchemaName <https://www.wikidata.org/entity/Q50377276> ;
+                                envri:hasSchemaUrl envri:NULL ;
+                                envri:includesProvenanceFields [ a rdf:Bag ;
+                                        rdf:li envri:TextOnly ] ;
+                                skos:altLabel "LifeWatch LifeWatch Italy Portal metadata schema"^^xsd:string ],
+                            [ envri:hasSchemaName envri:EML2.0 ;
+                                envri:hasSchemaUrl envri:NULL ;
+                                envri:includesProvenanceFields envri:NULL ;
+                                skos:altLabel "LifeWatch LifeWatch Italy Portal metadata schema"^^xsd:string ],
+                            [ envri:hasSchemaName <https://www.wikidata.org/entity/Q30079268> ;
+                                envri:hasSchemaUrl <http://schemas.opengis.net/iso/19139/20060504> ;
+                                envri:includesProvenanceFields [ a rdf:Bag ;
+                                        rdf:li envri:TextOnly ] ;
+                                skos:altLabel "LifeWatch LifeWatch Italy Portal metadata schema"^^xsd:string ],
+                            [ envri:hasSchemaName <https://www.wikidata.org/entity/Q7451082> ;
+                                envri:hasSchemaUrl <http://schemas.opengis.net/sensorML/> ;
+                                envri:includesProvenanceFields [ a rdf:Bag ;
+                                        rdf:li envri:TextOnly ] ;
+                                skos:altLabel "LifeWatch LifeWatch Italy Portal metadata schema"^^xsd:string ],
+                            [ envri:hasSchemaName envri:INSPIRE_EF ;
+                                envri:hasSchemaUrl envri:NULL ;
+                                envri:includesProvenanceFields envri:NULL ;
+                                skos:altLabel "LifeWatch LifeWatch Italy Portal metadata schema"^^xsd:string ] ;
+                        envri:includesAccessPolicyStatements "true"^^xsd:bool ;
+                        envri:isMachineActionable envri:planned ;
+                        envri:persistentIdentifiersAreIncluded envri:planned ;
+                        envri:searchEngineIndexing envri:planned ;
+                        envri:supportedExportFormats [ a rdf:Bag ;
+                                rdf:li <https://www.wikidata.org/entity/Q2063>,
+                                    <https://www.wikidata.org/entity/Q2115>,
+                                    <https://www.wikidata.org/entity/Q54872>,
+                                    <https://www.wikidata.org/entity/Q8811> ] ;
+                        envri:supportsExternalSearchEngineTypes envri:none ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal metadata"^^xsd:string ] ;
+                envri:hasPersistencyGuaranty "25 years"^^xsd:string ;
+                envri:hasPolicies envri:planned ;
+                envri:hasRepositoryUrl <http://www.lifewatchitaly.eu/catalogue-of-resources> ;
+                envri:hasVocabularies [ a <https://www.wikidata.org/entity/Q17152639> ;
+                        envri:hasName "LW Endemisms"^^xsd:string ;
+                        envri:hasSpecificationLanguage envri:SKOS ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://thesauri.lifewatchitaly.eu/> ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal vocabularies"^^xsd:string ],
+                    [ a <https://www.wikidata.org/entity/Q17152639> ;
+                        envri:hasName "LW MacroZooBenthos Traits"^^xsd:string ;
+                        envri:hasSpecificationLanguage envri:SKOS ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://thesauri.lifewatchitaly.eu/> ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal vocabularies"^^xsd:string ],
+                    [ a <https://www.wikidata.org/entity/Q17152639> ;
+                        envri:hasName "LW Fish Traits"^^xsd:string ;
+                        envri:hasSpecificationLanguage envri:SKOS ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://thesauri.lifewatchitaly.eu/fishTraits/> ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal vocabularies"^^xsd:string ],
+                    [ a <https://www.wikidata.org/entity/Q17152639> ;
+                        envri:hasName "LW Acquatic Organism"^^xsd:string ;
+                        envri:hasSpecificationLanguage envri:SKOS ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://thesauri.lifewatchitaly.eu/> ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal vocabularies"^^xsd:string ],
+                    [ a <https://www.wikidata.org/entity/Q17152639> ;
+                        envri:hasName "LW MacroAlgae"^^xsd:string ;
+                        envri:hasSpecificationLanguage envri:SKOS ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://thesauri.lifewatchitaly.eu/> ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal vocabularies"^^xsd:string ],
+                    [ a <https://www.wikidata.org/entity/Q17152639> ;
+                        envri:hasName "LW Phytoplankton Traits"^^xsd:string ;
+                        envri:hasSpecificationLanguage envri:SKOS ;
+                        envri:hasTopic envri:DomainSpecific ;
+                        envri:hasVocabularyIri <http://thesauri.lifewatchitaly.eu/PhytoTraits/> ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal vocabularies"^^xsd:string ] ;
+                envri:inRegistries envri:planned ;
+                envri:searchOnData "true"^^xsd:bool ;
+                envri:usesIdentifier [ a envri:LocalID,
+                            <https://www.wikidata.org/entity/Q853614> ;
+                        envri:hasLandingPage "true"^^xsd:bool ;
+                        envri:includesMetadataSchema [ a rdf:Bag ;
+                                rdf:li envri:ISO19115_19139 ] ;
+                        envri:isAssigned "automatically"^^xsd:string ;
+                        envri:usesIdentifierSystem envri:NULL ;
+                        envri:usesProvider envri:planned ;
+                        skos:altLabel "LifeWatch LifeWatch Italy Portal identifier"^^xsd:string ] ;
+                envri:usesSoftware [ a rdf:Bag ;
+                        rdf:li <https://www.wikidata.org/entity/Q214970>,
+                            <https://www.wikidata.org/entity/Q234010>,
+                            <https://www.wikidata.org/entity/Q535307>,
+                            <https://www.wikidata.org/entity/Q850> ] ;
+                skos:altLabel "LifeWatch repository"^^xsd:string ] ;
+        envri:website <http://www.lifewatch.eu> .
+}
+
+{
+    <http://envi.eu/ns/AccessControlledServices> rdfs:label "Access Controlled Services" .
+
+    <http://envri.eu.ns/StandardNetCdfCFHeaders> rdfs:label "standard NetCDF CF headers" .
+
+    <http://envri.eu/ns/10Years> rdfs:label "10 years" .
+
+    <http://envri.eu/ns/20Years> rdfs:label "20 years" .
+
+    <http://envri.eu/ns/50Years> rdfs:label "50 years" .
+
+    envri:APHIA rdfs:label "APHIA" .
+
+    envri:AccessContent rdfs:label "Access Content" .
+
+    envri:AccessData rdfs:label "Access Data" .
+
+    envri:AccessMechanism rdfs:label "Access Mechanism" .
+
+    envri:AccessWithoutCosts rdfs:label "Access Without Costs" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/A1.1> .
+
+    envri:AccountManually rdfs:label "Account Manually" .
+
+    envri:Acknowledgements rdfs:label "Acknowledgements" .
+
+    envri:ActrisAccess rdfs:label "ACTRIS Access" .
+
+    envri:AdvancedEditing rdfs:label "Advanced Editing" .
+
+    envri:Aggregations rdfs:label "Aggregations" .
+
+    envri:Anaee-ENVRISemanticPipelines rdfs:label "Anaee-ENVRI semantic pipelines" .
+
+    envri:ArgoUserManual rdfs:label "Argo user namual" .
+
+    envri:B2ACCESS rdfs:label "B2ACCESS" .
+
+    envri:B2HANDLE rdfs:label "B2HANDLE" .
+
+    envri:B2SAFE rdfs:label "B2SAFE" .
+
+    envri:BinaryData rdfs:label "Binary data" .
+
+    envri:BiodiversityCatalogue rdfs:label "Biodiversity catalogue" .
+
+    envri:BiologicalPrimaryData rdfs:label "Biological primary data" .
+
+    envri:CDIMetadataReference rdfs:label "CDI metadata reference" .
+
+    envri:CDISystem rdfs:label "CDI system" .
+
+    envri:CEDA rdfs:label "CEDA" .
+
+    envri:CF-1.4 rdfs:label "Climate and Forecast Metadata Conventions 1.4" .
+
+    envri:CPAuth rdfs:label "ICOS Carbon Portal Auth" .
+
+    envri:CentralDataRepository rdfs:label "Central data repository" .
+
+    envri:CertificateValidation rdfs:label "Certificate validation" .
+
+    envri:ChamberExperiments rdfs:label "Chamber experiments" .
+
+    envri:Checksum rdfs:label "Checksum" .
+
+    envri:Citation rdfs:label "Citation" .
+
+    envri:Climatologies rdfs:label "Climatologies" .
+
+    envri:Codelist rdfs:label "Codelist" .
+
+    envri:CommunitySpecific rdfs:label "Community specific" .
+
+    envri:CommunityStandardisedScripts rdfs:label "Community standardised scripts" .
+
+    envri:Comparison rdfs:label "comparison" .
+
+    envri:ComplexAuthorisationMechanisms rdfs:label "complex authorisation mechanisms" .
+
+    envri:CoreTrustSeal rdfs:label "Core Trust Seal" .
+
+    envri:CustomWorkflows rdfs:label "Custom workflows" .
+
+    envri:DARE rdfs:label "DARE" .
+
+    envri:DEIMS-SDR rdfs:label "DEIMS-SDR" .
+
+    envri:DIVA rdfs:label "DIVA" .
+
+    envri:DMPonline rdfs:label "DMPonline" .
+
+    envri:DOIGeneration rdfs:label "DOI generation" .
+
+    envri:DataAccess rdfs:label "Data access" .
+
+    envri:DataDownload rdfs:label "download data" .
+
+    envri:DataExplorer rdfs:label "Data explorer" .
+
+    envri:DataGenerationTools rdfs:label "Data generation tools" .
+
+    envri:DataOriginator rdfs:label "Data originator" .
+
+    envri:DataProcess rdfs:label "data process" .
+
+    envri:DataProcessingStepsRecorded rdfs:label "data processing steps recorded" .
+
+    envri:DataProvider rdfs:label "Data provider" .
+
+    envri:DataRepository rdfs:label "data repository" .
+
+    envri:DataUpload rdfs:label "upload data" .
+
+    envri:DataUsage rdfs:label "data usage" .
+
+    envri:DataUsageLicense rdfs:label "data usage license" .
+
+    envri:DataValidationAgainstCodeLists rdfs:label "data validation against code lists" .
+
+    envri:DataValidationAgainstXSD rdfs:label "data validation against XSD" .
+
+    envri:Distributed rdfs:label "distributed" .
+
+    envri:DistributionLink rdfs:label "distribution link" .
+
+    envri:Domain rdfs:label "domain" .
+
+    envri:DomainSpecific rdfs:label "domain specific" .
+
+    envri:EDFASCII rdfs:label "EDF ASCII" .
+
+    envri:EDMED rdfs:label "EDMED" .
+
+    envri:EML2.0 rdfs:label "EML 2.0" .
+
+    envri:EPOS rdfs:label "EPOS" .
+
+    envri:EPOSAR rdfs:label "EPOSAR" .
+
+    envri:EPOSORFEUS rdfs:label "EPOS ORFEUS" .
+
+    envri:EUROBIS rdfs:label "EUROBIS" .
+
+    envri:ElaboratedProducts rdfs:label "elaborated products" .
+
+    envri:EposICS rdfs:label "EPOS ICS" .
+
+    envri:EuroArgo rdfs:label "Euro-Argo" .
+
+    envri:EuropeanGeoscienceRegistry rdfs:label "European Geoscience Registry" .
+
+    envri:FDSNStation rdfs:label "FDSN station" .
+
+    envri:FDSNStationXML rdfs:label "FDSN StationXML",
+            "StationXML",
+            "stationXML" .
+
+    envri:FTPAccessProblems rdfs:label "problem with FTP access" .
+
+    envri:FairsharingOrg rdfs:label "fairsharing.org" .
+
+    envri:FileChecksum rdfs:label "file checksum" .
+
+    envri:FileLocation rdfs:label "file location" .
+
+    envri:FinalQCObservationalData rdfs:label "final QC observational data" .
+
+    envri:FormatChecking rdfs:label "format checking" .
+
+    envri:GCMD rdfs:label "GCMD" .
+
+    envri:GCMD-DIF rdfs:label "GCMD-DIF" .
+
+    envri:General rdfs:label "general" .
+
+    envri:GeoDCAT rdfs:label "GeoDCAT" .
+
+    envri:Geoportal rdfs:label "GEO Portal",
+            "Geo portal" .
+
+    envri:GeospatialDatasets rdfs:label "geospatial datasets" .
+
+    envri:GriddedFields rdfs:label "gridded fields" .
+
+    envri:HDF rdfs:label "HDF" .
+
+    envri:HTTPURI rdfs:label "HTTP URI" .
+
+    envri:HandlePIDSuffix rdfs:label "Handle PID suffix" .
+
+    envri:HarmonisingDataModels rdfs:label "harmonisind data models",
+            "harmonising data models" .
+
+    envri:HarmonisingVocabularies rdfs:label "harmonising vocabularies" .
+
+    envri:Harmonization rdfs:label "harmonization" .
+
+    envri:ICOS rdfs:label "ICOS" .
+
+    envri:IMIS rdfs:label "IMIS" .
+
+    envri:IMIS_ID rdfs:label "IMIS ID" .
+
+    envri:INSPIRE rdfs:label "INSPIRE" .
+
+    envri:INSPIRE_EF rdfs:label "INSPIRE EF" .
+
+    envri:IODEOceanDataPortal rdfs:label "IODE Ocean Data Portal" .
+
+    envri:IRSpectra rdfs:label "IR spectra" .
+
+    envri:ISO19115_19139 rdfs:label "ISO 19115/19139" .
+
+    envri:ISO19119 rdfs:label "ISO 19119" .
+
+    envri:Image rdfs:label "images" .
+
+    envri:ImprovedWPSService rdfs:label "improved WPS service" .
+
+    envri:ImprovementsInSubsettingAccess rdfs:label "impovements in subsetting access" .
+
+    envri:IntegratedStandardisedDatasets rdfs:label "integrated standardised datasets" .
+
+    envri:Interpolations rdfs:label "interpolations" .
+
+    envri:IodeCertification rdfs:label "IODE certification" .
+
+    envri:JupiterNotebooks rdfs:label "Jupiter Notebooks" .
+
+    envri:LSR_URN rdfs:label "LSR URN" .
+
+    envri:LifeWatchMarine rdfs:label "LifeWatch (Marine)" .
+
+    envri:LifeWatchVirtualLab rdfs:label "LifeWatch virtual lab" .
+
+    envri:Local rdfs:label "local" .
+
+    envri:LocalID rdfs:label "local ID" .
+
+    envri:LocalIdentifier rdfs:label "LocalIdentifier" .
+
+    envri:LocalLDAP rdfs:label "local LDAP" .
+
+    envri:LocalLicense rdfs:label "local license" .
+
+    envri:LocalRegistry rdfs:label "local registry" .
+
+    envri:LocalSchema rdfs:label "local schema" .
+
+    envri:MDA_ID rdfs:label "MDA ID" .
+
+    envri:MachineAccessibility rdfs:label "machine accessibility" .
+
+    envri:ManualQA_QC rdfs:label "manual QA QC" .
+
+    envri:MapViewer rdfs:label "map viewer" .
+
+    envri:Marine rdfs:label "marine" .
+
+    envri:Marine-ID rdfs:label "Marine-ID",
+            "Marine.id" .
+
+    envri:MarineRegions rdfs:label "Marine regions" .
+
+    envri:MassSpectra rdfs:label "mass spectra" .
+
+    envri:MedatlasASCII rdfs:label "Medatlas ASCII" .
+
+    envri:Mesoclimate rdfs:label "mesoclimate" .
+
+    envri:MetadataChecking rdfs:label "metadata checking" .
+
+    envri:MetadataImport rdfs:label "metadata import" .
+
+    envri:MetadataPublication rdfs:label "metadata publication" .
+
+    envri:MetadataRepository rdfs:label "metadata data repository" .
+
+    envri:MetadataTemplate rdfs:label "metadata template" .
+
+    envri:MetadataValidation rdfs:label "metadata validation" .
+
+    envri:MiniSEED rdfs:label "MiniSEED" .
+
+    envri:ModelDataObservation rdfs:label "model data observation" .
+
+    envri:ModellingTools rdfs:label "modelling tools" .
+
+    envri:NERCVocabularyService rdfs:label "NERC vocabulary service" .
+
+    envri:NULL rdfs:label "NULL" .
+
+    envri:NVSP01 rdfs:label "NVS P01" .
+
+    envri:NVSP06 rdfs:label "NVS P06" .
+
+    envri:NWPmodelEvaluationService rdfs:label "NWP model evaluation service" .
+
+    envri:NasaAmes rdfs:label "Nasa Ames" .
+
+    envri:NasaAmesASCII rdfs:label "Nasa Ames ASCII" .
+
+    envri:NasaAmesFormatDataExchange rdfs:label "Nasa Ames format for data exchange" .
+
+    envri:NearRealTimeObservationalData rdfs:label "near real time observational data" .
+
+    envri:NetAPP rdfs:label "NetAPP" .
+
+    envri:NetCDFEgoFormatMetadata rdfs:label "NetCDF EGO format metadata" .
+
+    envri:NetCDF_CF rdfs:label "NetCDF CF" .
+
+    envri:NetCDF_CFArgo rdfs:label "NetCDF CF Argo" .
+
+    envri:NetCDF_CFChecker rdfs:label "NetCDF CF checker" .
+
+    envri:NetCDF_Metadata rdfs:label "NetCDF metadata" .
+
+    envri:NetCDF_OceansitesProfileMetadata rdfs:label "NetCDF Oceansites Profile metadata" .
+
+    envri:NetcdfAcddMetadata rdfs:label "NetCDF ACDD metadata" .
+
+    envri:NoPublicCatalogue rdfs:label "no public catalogue" .
+
+    envri:OAI-PMH rdfs:label "OAI PMH",
+            "OAI-PMH" .
+
+    envri:OAuthPairedEduGain rdfs:label "OAuth paired with eduGain" .
+
+    envri:OBIS rdfs:label "OBIS" .
+
+    envri:OBISEventScheme rdfs:label "OBIS event scheme" .
+
+    envri:ODVASCII rdfs:label "ODV ASCII" .
+
+    envri:ODVAggregation rdfs:label "ODV aggregation" .
+
+    envri:OGCServicesStack rdfs:label "OGC services stack" .
+
+    envri:OGC_CSW rdfs:label "OGC CSW" .
+
+    envri:Observations rdfs:label "observations" .
+
+    envri:OccuranceData rdfs:label "occurance data" .
+
+    envri:OceanDataView rdfs:label "ODV" .
+
+    envri:OctetStream rdfs:label "octet-stream" .
+
+    envri:OpenGIS rdfs:label "openGIS" .
+
+    envri:PDC rdfs:label "PDC" .
+
+    envri:PIDReplica rdfs:label "PID replica" .
+
+    envri:Pangeo rdfs:label "Pangeo" .
+
+    envri:ParametersMeasured rdfs:label "parameters measured" .
+
+    envri:PersistentIdentifier rdfs:label "PID" .
+
+    envri:PreferredFormat rdfs:label "PreferredFormat" .
+
+    envri:ProvO rdfs:label "PROV-O" .
+
+    envri:ProvenanceInformation rdfs:label "provenance information" .
+
+    envri:QA_QC rdfs:label "QA QC" .
+
+    envri:QuakeEvent rdfs:label "quake event" .
+
+    envri:QuakeML rdfs:label "quakeML" .
+
+    envri:QualityDescription rdfs:label "quality description" .
+
+    envri:QualityInformation rdfs:label "quality information" .
+
+    envri:QualityMnanagementFramework rdfs:label "quality management framework" .
+
+    envri:RRTDataProduction rdfs:label "RRT data production" .
+
+    envri:RdaTrustworthyDataRepository rdfs:label "RDA Trustworthy Data Repository" .
+
+    envri:RecordsCleaning rdfs:label "records cleaning" .
+
+    envri:RelevantMetadata rdfs:label "relevant metadata" .
+
+    envri:Repository rdfs:label "Repository" .
+
+    envri:SDNFramework rdfs:label "SDN framework" .
+
+    envri:SEANOE rdfs:label "SEANOE" .
+
+    envri:SEED rdfs:label "SEED" .
+
+    envri:SKOS rdfs:label "SKOS" .
+
+    envri:SSQLService rdfs:label "SSQL service" .
+
+    envri:SeaDataNetCommunityProfile rdfs:label "SDN community profile" .
+
+    envri:SeisComp3 rdfs:label "SEISCOMP3",
+            "SeisComp3" .
+
+    envri:Sextant rdfs:label "Sextant" .
+
+    envri:Sextant-Si rdfs:label "Sextant-Si" .
+
+    envri:SimplifiedProvO rdfs:label "simplified PROV-O" .
+
+    envri:SoundFiles rdfs:label "sound files" .
+
+    envri:Spatial rdfs:label "spatial" .
+
+    envri:SpatialObservation rdfs:label "spatial observation" .
+
+    envri:Stations rdfs:label "stations" .
+
+    envri:SubsettingMonthlySnapshots rdfs:label "subsetting monthly snapshots" .
+
+    envri:THREDDS_NcISO rdfs:label "THREDDS/NcISO" .
+
+    envri:TXT rdfs:label "TXT" .
+
+    envri:Taverna rdfs:label "Taverna" .
+
+    envri:TaxonomicRegister rdfs:label "taxonmic register" .
+
+    envri:TermsOfUse rdfs:label "Terms of Use" .
+
+    envri:TextOnly rdfs:label "text only" .
+
+    envri:Time-heightProfiles rdfs:label "time-height profiles" .
+
+    envri:Traits rdfs:label "traits" .
+
+    envri:TransformationPipelines rdfs:label "transformation pipelines" .
+
+    envri:UUID-DOI rdfs:label "UUID-DOI" .
+
+    envri:Units rdfs:label "units" .
+
+    envri:UptakeInCentralResources rdfs:label "uptake in central resources" .
+
+    envri:Usage rdfs:label "usage" .
+
+    envri:UsageLicense rdfs:label "usage licence",
+            "usage license" .
+
+    envri:VERCE rdfs:label "VERCE" .
+
+    envri:WISPortal rdfs:label "WIS Portal" .
+
+    envri:WaveformMetadataSchema rdfs:label "Waveform metadata schema" .
+
+    envri:WoRMSTaxonMatching rdfs:label "WoRMS taxon matching" .
+
+    envri:X509Certificate rdfs:label "X509 Certificate" .
+
+    envri:XLS rdfs:label "xls" .
+
+    envri:acronym rdfs:label "acronym" .
+
+    envri:allowsAccessWithoutCosts rdfs:label "allows access without costs" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/A1.1> .
+
+    envri:allowsSearchEngineIndexing rdfs:label "allows search engine indexing" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F4> .
+
+    envri:appliedDataPublishingSteps rdfs:label "applied data publishing steps" .
+
+    envri:categoriesAreDefinedInRegistries rdfs:label "categories are defined in registries" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I2> .
+
+    envri:centralized rdfs:label "Centralized" .
+
+    envri:cera rdfs:label "CERA" .
+
+    envri:codes rdfs:label "codes" .
+
+    envri:contentAccessAuthorizationRequired rdfs:label "content access authorization required" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/A1.2> .
+
+    envri:custom rdfs:label "Custom" .
+
+    envri:dataAccessibility rdfs:label "dataAccessibility" .
+
+    envri:dataFindability rdfs:label "dataFindability" .
+
+    envri:dataInteroperability rdfs:label "dataInteroperability" .
+
+    envri:dataIsAccessible rdfs:label "dataIsAccessible" .
+
+    envri:dataIsFindable rdfs:label "dataIsFindable" .
+
+    envri:dataIsReusable rdfs:label "dataIsReusable" .
+
+    envri:dataLicenseIri rdfs:label "dataLicenseIri" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/R1.1> .
+
+    envri:dataLicensesInUse rdfs:label "data licenses in use" .
+
+    envri:dataPolicy rdfs:label "data policy" .
+
+    envri:dataProcessing rdfs:label "data processing" .
+
+    envri:dataProductsOffered rdfs:label "dataProductsOffered" .
+
+    envri:dataReusability rdfs:label "dataReusability" .
+
+    envri:dataSchemaIsRegistered rdfs:label "dataSchemaIsRegistered" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I1> .
+
+    envri:distributedWorkflowsToolsUsed rdfs:label "distributedWorkflowsToolsUsed" .
+
+    envri:ePIC rdfs:label "ePIC" .
+
+    envri:ePICservice rdfs:label "ePIC service" .
+
+    envri:fairness rdfs:label "fairness" .
+
+    envri:gaps rdfs:label "gaps" .
+
+    envri:hasAccessMechanisms rdfs:label "hasAccessMechanisms" .
+
+    envri:hasAccessProtocolUrl rdfs:label "hasAccessProtocolUrl" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/A1.1> .
+
+    envri:hasAllocation rdfs:label "hasAllocation" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F4> .
+
+    envri:hasAuthenticationMethod rdfs:label "hasAuthenticationMethod" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/A1.2> .
+
+    envri:hasCertificationMethods rdfs:label "hasCertificationMethods" .
+
+    envri:hasComplianceValidationService rdfs:label "hasComplianceValidationService" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/R1.3> .
+
+    envri:hasConceptIri rdfs:label "hasConceptIri" .
+
+    envri:hasData rdfs:label "hasData" .
+
+    envri:hasDataHeaderMetadataTypes rdfs:label "hasDataHeaderMetadataTypes" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I1> .
+
+    envri:hasDataManagementPlans rdfs:label "hasDataManagementPlans" .
+
+    envri:hasDataProcessing rdfs:label "hasDataProcessing" .
+
+    envri:hasDataset rdfs:label "hasDataset" .
+
+    envri:hasDiscoveryPortal rdfs:label "hasDiscoveryPortal" .
+
+    envri:hasDomain rdfs:label "hasDomain" .
+
+    envri:hasFormatName rdfs:label "hasFormatName" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I1> .
+
+    envri:hasHarvestingMethods rdfs:label "hasHarvestingMethods" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I1> .
+
+    envri:hasIri rdfs:label "hasIri" .
+
+    envri:hasLandingPage rdfs:label "hasLandingPage" .
+
+    envri:hasLocalSearchEngine rdfs:label "hasLocalSearchEngine" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F4> .
+
+    envri:hasLocalSearchEngineUrl rdfs:label "hasLocalSearchEngineUrl" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F4> .
+
+    envri:hasMachineReadableDatasetMetadata rdfs:label "hasMachineReadableDatasetMetadata" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F2> .
+
+    envri:hasMachineReadableProvenance rdfs:label "hasMachineReadableProvenance" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/R1.2> .
+
+    envri:hasMetadata rdfs:label "hasMetadata" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F3> .
+
+    envri:hasMetadataFormatIri rdfs:label "hasMetadataFormatIri" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F2> .
+
+    envri:hasMetadataHeaders rdfs:label "hasMetadataHeaders" .
+
+    envri:hasMetadataLongevityPlan rdfs:label "hasMetadataLongevityPlan" .
+
+    envri:hasName rdfs:label "hasName" .
+
+    envri:hasPersistencyGuaranty rdfs:label "hasPersistencyGuaranty" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/A1> .
+
+    envri:hasPersistentPolicy rdfs:label "hasPersistentPolicy" .
+
+    envri:hasPolicies rdfs:label "hasPolicies" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/R1.1> .
+
+    envri:hasPreferredFormat rdfs:label "hasPreferredFormat" .
+
+    envri:hasPrimaryStorageFormat rdfs:label "hasPrimaryStorageFormat" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I1> .
+
+    envri:hasRepository rdfs:label "hasRepository" .
+
+    envri:hasRepositoryUrl rdfs:label "hasRepositoryUrl" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F4> .
+
+    envri:hasSchema rdfs:label "hasSchema" .
+
+    envri:hasSchemaName rdfs:label "hasSchemaName" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I1> .
+
+    envri:hasSchemaUrl rdfs:label "hasSchemaUrl" .
+
+    envri:hasSpecificationLanguage rdfs:label "hasSpecificationLanguage" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I1> .
+
+    envri:hasTopic rdfs:label "hasTopic" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I1> .
+
+    envri:hasVocabularies rdfs:label "hasVocabularies" .
+
+    envri:hasVocabularyIri rdfs:label "hasVocabularyIri" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I2> .
+
+    envri:improvingVocabularies rdfs:label "improving vocabularies",
+            "improving vocabulary" .
+
+    envri:inRegistries rdfs:label "inRegistries" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F4> .
+
+    envri:includedMetadata rdfs:label "includedMetadata" .
+
+    envri:includesAccessPolicyStatements rdfs:label "includesAccessPolicyStatements" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/R1.1> .
+
+    envri:includesMetadataSchema rdfs:label "includesMetadataSchema" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F2> .
+
+    envri:includesProvenanceFields rdfs:label "includesProvenanceFields" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F2> .
+
+    envri:isAssigned rdfs:label "isAssigned" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F1> .
+
+    envri:isDomain rdfs:label "isDomain" .
+
+    envri:isMachineActionable rdfs:label "isMachineActionable" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I1> .
+
+    envri:localTechnique rdfs:label "local technique" .
+
+    envri:maintainsOwnUserDatabase rdfs:label "maintainsOwnUserDatabase" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/A1.2> .
+
+    envri:metadataExtraction rdfs:label "metadata extraction" .
+
+    envri:metadataTypes rdfs:label "metadataTypes" .
+
+    envri:modelling rdfs:label "modelling" .
+
+    envri:none rdfs:label "none" .
+
+    envri:none-open rdfs:label "none-open" .
+
+    envri:nq rdfs:label "nq" .
+
+    envri:openAccessMetadata rdfs:label "openAccessMetadata" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/R1.1> .
+
+    envri:otherAnalysisServicesOffered rdfs:label "otherAnalysisServicesOffered" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/A1> .
+
+    envri:persistentIdentifiersAreIncluded rdfs:label "persistentIdentifiersAreIncluded" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F3> .
+
+    envri:personIdentificationSystem rdfs:label "personIdentificationSystem" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/A1.3> .
+
+    envri:planned rdfs:label "planned" .
+
+    envri:profiles rdfs:label "profiles" .
+
+    envri:re3data rdfs:label "re3data" .
+
+    envri:relatesTo rdfs:label "relatesTo" .
+
+    envri:searchEngineIndexing rdfs:label "searchEngineIndexing" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F4> .
+
+    envri:searchOnData rdfs:label "searchOnData" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F4> .
+
+    envri:seismicWaveform rdfs:label "seismic waveform" .
+
+    envri:shp rdfs:label "shp" .
+
+    envri:specialDataProcessingStepsApplied rdfs:label "specialDataProcessingStepsApplied" .
+
+    envri:stationIdentification rdfs:label "station identification" .
+
+    envri:structured rdfs:label "structured" .
+
+    envri:supportedExportFormats rdfs:label "supportedExportFormats" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/I1> .
+
+    envri:supportsAccessTechnology rdfs:label "supportsAccessTechnology" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/A1.1> .
+
+    envri:supportsExternalSearchEngineTypes rdfs:label "supportsExternalSearchEngineTypes" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F4> .
+
+    envri:temporalRange rdfs:label "temporal range" .
+
+    envri:testFairness rdfs:label "testFairness" .
+
+    envri:usesAuthorisationTechnique rdfs:label "usesAuthorisationTechnique" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/A1.2> .
+
+    envri:usesDataLicenses rdfs:label "usesDataLicenses" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/R1.1> .
+
+    envri:usesIdentifier rdfs:label "usesIdentifier" .
+
+    envri:usesIdentifierSystem rdfs:label "usesIdentifierSystem" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F1> .
+
+    envri:usesORCIDinAAI rdfs:label "usesORCIDinAAI" .
+
+    envri:usesProvider rdfs:label "usesProvider" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F1> .
+
+    envri:usesSoftware rdfs:label "usesSoftware" ;
+        envri:relatesTo <https://w3id.org/fair/principles/terms/F4> .
+
+    envri:usesSpecificDataManagementPlanTools rdfs:label "usesSpecificDataManagementPlanTools" .
+
+    envri:usesSystem rdfs:label "usesSystem" .
+
+    envri:various rdfs:label "various" .
+
+    envri:website rdfs:label "website" .
+
+    envri:workflowFrameworksApplied rdfs:label "workflowFrameworksApplied" .
+
+    <http://envri.eu/nx/ProjectSpecific> rdfs:label "project specific" .
+
+    <http://envri.eu/ny/AutomaticQA_QC> rdfs:label "Automatic QA/QC" .
+
+    dcterms:creator rdfs:label "creator" .
+
+    dcterms:date rdfs:label "date" .
+
+    dcterms:hasVersion rdfs:label "version" .
+
+    <http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure> rdfs:label "research infrastructure" .
+
+    rdf:Bag rdfs:label "Bag" .
+
+    rdf:li rdfs:label "li" .
+
+    rdfs:label rdfs:label "label" .
+
+    skos:altLabel rdfs:label "alternative label" .
+
+    <http://www.wikidata.org/entity/Baaa> rdfs:label "Apache HTTP Server" .
+
+    <http://www.wikidata.org/entity/Q20007257> rdfs:label "Creative Commons Attribution 4.0 International" .
+
+    <http://www.wikidata.org/entity/Q30289756> rdfs:label "52°North" .
+
+    <http://www.wikidata.org/entity/Q34179348> rdfs:label "Creative Commons Attribution-NonCommercial 4.0 License" .
+
+    <http://www.wikidata.org/entity/Q494823> rdfs:label "Data format" .
+
+    <http://www.wikidata.org/entity/Q5225954> rdfs:label "Darwin Core Archive" .
+
+    <http://www.wikidata.org/entity/Q616639> rdfs:label "Apache Cassandra" .
+
+    <http://www.wikidata.org/entity/Q628566> rdfs:label "Central Authentication Service" .
+
+    <http://www.wikidata.org/entity/Q661823> rdfs:label "Catalog Service for the Web" .
+
+    <http://www.wikidata.org/entity/Q671224> rdfs:label "Data center" .
+
+    <http://www.wikidata.org/entity/Q6905323> rdfs:label "Creative Commons Attribution" .
+
+    <http://www.wikidata.org/entity/Q6936496> rdfs:label "Creative Commons Attribution-NonCommercial" .
+
+    <http://www.wikidata.org/entity/Q6938433> rdfs:label "CC0" .
+
+    <http://www.wikidata.org/entity/Q8104> rdfs:label "Atmosphere" .
+
+    <http://www.wikidata.org/entity/Q8815> rdfs:label "ASCII" .
+
+    <http://www.wikidata.org/entity/Q9121> rdfs:label "Atom" .
+
+    <http://www.wikidata.org/entity/Q935809> rdfs:label "comma-separated values" .
+
+    foaf:mbox rdfs:label "mbox" .
+
+    foaf:name rdfs:label "name" .
+
+    <https://en.wikipedia.org/wiki/QA/QC> rdfs:label "QA/QC" .
+
+    <https://github.com/KNMI/s-provenance> rdfs:label "S-PROV" .
+
+    <https://www.wikidata.org/entity/Property:P2699> rdfs:label "URL" .
+
+    <https://www.wikidata.org/entity/Property:P276> rdfs:label "location" .
+
+    <https://www.wikidata.org/entity/Property:P5305> rdfs:label "SPARQL endpoint" .
+
+    <https://www.wikidata.org/entity/Q1006160> rdfs:label "gazetteer" .
+
+    <https://www.wikidata.org/entity/Q10718985> rdfs:label "WIS" .
+
+    <https://www.wikidata.org/entity/Q11412386> rdfs:label "Local service" .
+
+    <https://www.wikidata.org/entity/Q1145976> rdfs:label "plain text" .
+
+    <https://www.wikidata.org/entity/Q11466> rdfs:label "temperature" .
+
+    <https://www.wikidata.org/entity/Q11471> rdfs:label "time" .
+
+    <https://www.wikidata.org/entity/Q1165204> rdfs:label "MongoDB" .
+
+    <https://www.wikidata.org/entity/Q1294021> rdfs:label "OpenSearch" .
+
+    <https://www.wikidata.org/entity/Q135847> rdfs:label "Z39.50" .
+
+    <https://www.wikidata.org/entity/Q1361922> rdfs:label "NetCDF" .
+
+    <https://www.wikidata.org/entity/Q1363415> rdfs:label "MPEG" .
+
+    <https://www.wikidata.org/entity/Q1400808> rdfs:label "persistence" .
+
+    <https://www.wikidata.org/entity/Q1494741> rdfs:label "Landing page" .
+
+    <https://www.wikidata.org/entity/Q1502796> rdfs:label "GeoTIFF" .
+
+    <https://www.wikidata.org/entity/Q1503337> rdfs:label "Geoportal" .
+
+    <https://www.wikidata.org/entity/Q1531570> rdfs:label "Global Biodiversity Information Facility" .
+
+    <https://www.wikidata.org/entity/Q1543547> rdfs:label "stewardship" .
+
+    <https://www.wikidata.org/entity/Q1575058> rdfs:label "handle" .
+
+    <https://www.wikidata.org/entity/Q161157> rdfs:label "password" .
+
+    <https://www.wikidata.org/entity/Q16235208> rdfs:label "Apache Kafka" .
+
+    <https://www.wikidata.org/entity/Q166142> rdfs:label "application" .
+
+    <https://www.wikidata.org/entity/Q17088820> rdfs:label "eduGAIN" .
+
+    <https://www.wikidata.org/entity/Q17092897> rdfs:label "Joint Committee on Atomic and Molecular Physical Data" .
+
+    <https://www.wikidata.org/entity/Q17152639> rdfs:label "thesaurus" .
+
+    <https://www.wikidata.org/entity/Q178051> rdfs:label "PNG" .
+
+    <https://www.wikidata.org/entity/Q179615> rdfs:label "salinity" .
+
+    <https://www.wikidata.org/entity/Q180160> rdfs:label "Metadata" .
+
+    <https://www.wikidata.org/entity/Q185524> rdfs:label "Oracle Database" .
+
+    <https://www.wikidata.org/entity/Q186588> rdfs:label "time series" .
+
+    <https://www.wikidata.org/entity/Q187997> rdfs:label "vegetation" .
+
+    <https://www.wikidata.org/entity/Q188816> rdfs:label "Lightweight Directory Access Protocol" .
+
+    <https://www.wikidata.org/entity/Q189293> rdfs:label "FAQ" .
+
+    <https://www.wikidata.org/entity/Q189439> rdfs:label "version control" .
+
+    <https://www.wikidata.org/entity/Q192490> rdfs:label "PostgreSQL" .
+
+    <https://www.wikidata.org/entity/Q192588> rdfs:label "relational database" .
+
+    <https://www.wikidata.org/entity/Q193424> rdfs:label "web service" .
+
+    <https://www.wikidata.org/entity/Q195284> rdfs:label "UUID" .
+
+    <https://www.wikidata.org/entity/Q1987070> rdfs:label "deposition" .
+
+    <https://www.wikidata.org/entity/Q2> rdfs:label "earth" .
+
+    <https://www.wikidata.org/entity/Q20202982> rdfs:label "Web API" .
+
+    <https://www.wikidata.org/entity/Q2055062> rdfs:label "help desk" .
+
+    <https://www.wikidata.org/entity/Q2063> rdfs:label "JavaScript Object Notation" .
+
+    <https://www.wikidata.org/entity/Q2115> rdfs:label "Extensible Markup Language" .
+
+    <https://www.wikidata.org/entity/Q214970> rdfs:label "virtuoso" .
+
+    <https://www.wikidata.org/entity/Q215819> rdfs:label "Microsoft SQL Server" .
+
+    <https://www.wikidata.org/entity/Q223044> rdfs:label "turtle" .
+
+    <https://www.wikidata.org/entity/Q22661177> rdfs:label "Zenodo" .
+
+    <https://www.wikidata.org/entity/Q234010> rdfs:label "Tomcat" .
+
+    <https://www.wikidata.org/entity/Q234460> rdfs:label "text" .
+
+    <https://www.wikidata.org/entity/Q239862> rdfs:label "Global Earth Observation System of Systems" .
+
+    <https://www.wikidata.org/entity/Q25422543> rdfs:label "Data Seal of Approval" .
+
+    <https://www.wikidata.org/entity/Q25670> rdfs:label "DOI" .
+
+    <https://www.wikidata.org/entity/Q259966> rdfs:label "Sybase" .
+
+    <https://www.wikidata.org/entity/Q2764521> rdfs:label "HTTP POST" .
+
+    <https://www.wikidata.org/entity/Q28448770> rdfs:label "Thredded" .
+
+    <https://www.wikidata.org/entity/Q28600460> rdfs:label "DCAT Application Profile for Data Portals in Europe" .
+
+    <https://www.wikidata.org/entity/Q28771107> rdfs:label "MAT-file, Level 4" .
+
+    <https://www.wikidata.org/entity/Q28846483> rdfs:label "Jupyter Notebooks – a publishing format for reproducible computational workflow" .
+
+    <https://www.wikidata.org/entity/Q30079268> rdfs:label "Geographic Metadata XML" .
+
+    <https://www.wikidata.org/entity/Q3050461> rdfs:label "Elasticsearch" .
+
+    <https://www.wikidata.org/entity/Q30542074> rdfs:label "HTTP GET" .
+
+    <https://www.wikidata.org/entity/Q318> rdfs:label "galaxy" .
+
+    <https://www.wikidata.org/entity/Q324254> rdfs:label "ontology" .
+
+    <https://www.wikidata.org/entity/Q3250078> rdfs:label "depth" .
+
+    <https://www.wikidata.org/entity/Q34508> rdfs:label "video" .
+
+    <https://www.wikidata.org/entity/Q3454922> rdfs:label "metadata repository" .
+
+    <https://www.wikidata.org/entity/Q364> rdfs:label "GitHub" .
+
+    <https://www.wikidata.org/entity/Q37617281> rdfs:label "iRODS" .
+
+    <https://www.wikidata.org/entity/Q37813> rdfs:label "ecosystem" .
+
+    <https://www.wikidata.org/entity/Q3788827> rdfs:label "ISO/TC 211" .
+
+    <https://www.wikidata.org/entity/Q420330> rdfs:label "PID" .
+
+    <https://www.wikidata.org/entity/Q42283> rdfs:label "File Transfer Protocol" .
+
+    <https://www.wikidata.org/entity/Q42332> rdfs:label "Portable Document Format" .
+
+    <https://www.wikidata.org/entity/Q42722531> rdfs:label "REST API" .
+
+    <https://www.wikidata.org/entity/Q42848> rdfs:label "data" .
+
+    <https://www.wikidata.org/entity/Q45045> rdfs:label "simulation" .
+
+    <https://www.wikidata.org/entity/Q451553> rdfs:label "visualization" .
+
+    <https://www.wikidata.org/entity/Q45432> rdfs:label "Rich Site Summary" .
+
+    <https://www.wikidata.org/entity/Q47272> rdfs:label "‘Kepler\"" .
+
+    <https://www.wikidata.org/entity/Q477787> rdfs:label "GeoNetwork" .
+
+    <https://www.wikidata.org/entity/Q478798> rdfs:label "image" .
+
+    <https://www.wikidata.org/entity/Q50177245> rdfs:label "EUDAT" .
+
+    <https://www.wikidata.org/entity/Q50377276> rdfs:label "ISO 19115" .
+
+    <https://www.wikidata.org/entity/Q51044> rdfs:label "ORCID ID" .
+
+    <https://www.wikidata.org/entity/Q513000> rdfs:label "void type" .
+
+    <https://www.wikidata.org/entity/Q5225953> rdfs:label "Darwin Core" .
+
+    <https://www.wikidata.org/entity/Q535307> rdfs:label "Java Portlet Specification" .
+
+    <https://www.wikidata.org/entity/Q54872> rdfs:label "Resource Description Framework" .
+
+    <https://www.wikidata.org/entity/Q557770> rdfs:label "Web API" .
+
+    <https://www.wikidata.org/entity/Q56512593> rdfs:label "Google Dataset Search" .
+
+    <https://www.wikidata.org/entity/Q58333293> rdfs:label "DataCite" .
+
+    <https://www.wikidata.org/entity/Q604063> rdfs:label "World Register of Marine Species" .
+
+    <https://www.wikidata.org/entity/Q60886323> rdfs:label "Microsoft Excel 2000-2003 Workbook" .
+
+    <https://www.wikidata.org/entity/Q6108942> rdfs:label "JSON-LD" .
+
+    <https://www.wikidata.org/entity/Q611843> rdfs:label "Octopus" .
+
+    <https://www.wikidata.org/entity/Q6336852> rdfs:label "KRL" .
+
+    <https://www.wikidata.org/entity/Q638949> rdfs:label "geolocation" .
+
+    <https://www.wikidata.org/entity/Q6459954> rdfs:label "Life Science Identifier" .
+
+    <https://www.wikidata.org/entity/Q6498684> rdfs:label "ownership" .
+
+    <https://www.wikidata.org/entity/Q6499736> rdfs:label "vocabulary" .
+
+    <https://www.wikidata.org/entity/Q6664565> rdfs:label "local system" .
+
+    <https://www.wikidata.org/entity/Q6822475> rdfs:label "Metadata discovery" .
+
+    <https://www.wikidata.org/entity/Q7072878> rdfs:label "OPeNDAP" .
+
+    <https://www.wikidata.org/entity/Q7295261> rdfs:label "Raster data" .
+
+    <https://www.wikidata.org/entity/Q73539779> rdfs:label "R package" .
+
+    <https://www.wikidata.org/entity/Q73747105> rdfs:label "UUID version 4" .
+
+    <https://www.wikidata.org/entity/Q743238> rdfs:label "OAuth" .
+
+    <https://www.wikidata.org/entity/Q7451082> rdfs:label "SensorML" .
+
+    <https://www.wikidata.org/entity/Q7573619> rdfs:label "Apache Spark" .
+
+    <https://www.wikidata.org/entity/Q7833059> rdfs:label "trajectories" .
+
+    <https://www.wikidata.org/entity/Q79587> rdfs:label "Keyhole Markup Language" .
+
+    <https://www.wikidata.org/entity/Q8008> rdfs:label "Earth sciences" .
+
+    <https://www.wikidata.org/entity/Q826165> rdfs:label "Web Ontology Language" .
+
+    <https://www.wikidata.org/entity/Q8269924> rdfs:label "taxonomy" .
+
+    <https://www.wikidata.org/entity/Q840625> rdfs:label "shibboleth" .
+
+    <https://www.wikidata.org/entity/Q850> rdfs:label "MySQL" .
+
+    <https://www.wikidata.org/entity/Q853614> rdfs:label "identifier" .
+
+    <https://www.wikidata.org/entity/Q8777> rdfs:label "Hypertext Transfer Protocol" .
+
+    <https://www.wikidata.org/entity/Q8811> rdfs:label "HyperText Markup Language" .
+
+    <https://www.wikidata.org/entity/Q899388> rdfs:label "Data Security" .
+
+    <https://www.wikidata.org/entity/Q926165> rdfs:label "Geography Markup Language" .
+
+    <https://www.wikidata.org/entity/Q974922> rdfs:label "Web Map Service" .
+
+    ns1:Q220577 rdfs:label "Google Analytics" .
+
+    ns1:Q61782522 rdfs:label "data interoperability standard" .
+}
+
