@@ -1,0 +1,105 @@
+survey:
+  date: 2019-03-04
+  version: 1.0
+  creator:
+    name: Luca Trani
+    email: trani@knmi.nl
+infrastructure: 
+  acronym: EPOS-ORFEUS
+  name: EPOS (ORFEUS)
+  website: http://www.orfeus-eu.org/
+  domain: earth
+  URL/IRI of dataset: http://www.orfeus-eu.org/data/eida/
+  URL of discovery portal: http://orfeus-eu.org/webdc3/
+  repositories: 
+    URL: http://www.orfeus-eu.org/data/
+    name: ORFEUS
+    kind: metadata data repository
+    allocation: distributed
+    software: GitHub
+    identifier: 
+      kind: PID
+      system: DOI
+      landing page: yes
+      assigned: manually
+      provider: DataCite
+      includes metadata schema: null
+    certification methods: none
+    policies: usage
+    registries: EIDA WS Routing
+    persistency-guaranty: none
+    access mechanisms:
+      authentication method: B2ACCESS
+      access protocol URL: https://www.eosc-hub.eu/training-material/federated-aai-eida-services
+      access without costs: yes
+      own user database maintained: yes
+      person identification system: planned
+      major access technology supported: HTTP
+      authorisation technique: SeisComp
+      authorization for accessing content needed: yes
+      data licenses in use: CC-BY
+      data license IRI: https://creativecommons.org/licenses/by/2.0/it/
+      metadata openly available: yes
+    data:
+      type name: seismic waveform
+      preferred formats: 
+        format name:  - MSEED
+                      - XML
+                      - JSON
+        metadata types in data headers: - station identification
+                                        - temporal range
+      registered data schema: MiniSEED
+      search on data: yes
+    metadata:
+      schema: 
+        URL: https://www.orfeus-eu.org/documents/WFCatalog_Specification-v0.22.pdf
+        name: WFMetadata
+        provenance fields included: planned
+      machine readable provenance: no
+      categories defined in registries: planned
+      PIDs included: partially
+      primary storage format: database
+      export formats supported: - XML
+                                - JSON
+                                - RDF
+      search engine indexing: yes
+      exchange/harvesting methods: REST
+      local search engine URL: http://orfeus-eu.org/webdc3/
+      external search engine types supported: EPOS ICS
+      access policy statements included: partially
+      metadata longevity plan URL: planned
+      machine actionable: partially
+      IRI of machine readable metadata of dataset: planned
+    vocabularies: 
+      IRI: https://github.com/epos-eu/EPOS-DCAT-AP
+      name: EPOS-DCAT-AP
+      type: ontology
+      topic: domain specific
+      specification language: rdf owl
+    data management plans:
+      specific DMP tools used: DMPonline
+      data publishing steps applied: planned
+      compliance validation service: yes
+    data processing:
+      special data processing steps applied: metadata extraction
+      workflow frameworks applied: - VERCE
+                                   - DARE
+      distributed workflows tools used: - VERCE
+                                        - DARE
+      other analysis services offered: Jupyter Notebooks
+      data products offered: - strongmotion products
+                             - data quality	
+    fairness:
+      data findability:
+        data findable: yes
+        gaps: no unique identifier
+      data accessibility:
+        data accessible: yes
+        gaps: none
+      data interoperability:
+        data interoperable: partially
+        gaps: improving vocabularies
+      data re-usability:
+        data reusable: partially
+        gaps: - improving vocabularies
+              - provenance

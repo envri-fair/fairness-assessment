@@ -1,0 +1,101 @@
+survey:
+  date: 2019-03-22
+  version: 1.0
+  creator:
+    name: Jan Michalek
+    email: jan.michalek@uib.no
+infrastructure:
+  acronym: EPOS-Norway
+  name: EPOS-Norway
+  website: https://epos-no.uib.no
+  domain: earth
+  URL/IRI of dataset: http://eida.geo.uib.no/fdsnws/dataselect/1/
+  URL of discovery portal: http://epos-no.geo.uib.no:81/
+  repositories: 
+    URL: http://eida.geo.uib.no/fdsnws/dataselect/1/
+    name: EIDA server at UIB
+    kind: metadata data repository
+    allocation: local
+    software: SeisComp3
+    identifier: 
+      kind: none
+      system: none
+      landing page: no
+      assigned: none
+      provider: none
+      includes metadata schema: none
+    certification methods: none
+    policies: none
+    registries: none
+    persistency-guaranty: none
+    access mechanisms:
+      authentication method: planned
+      access protocol URL: https://www.eosc-hub.eu/training-material/federated-aai-eida-services
+      access without costs: yes
+      own user database maintained: no
+      person identification system: none
+      major access technology supported: webservice
+      authorisation technique: none 
+      authorization for accessing content needed: no
+      data licenses in use: planned
+      data license IRI: void
+      metadata openly available: yes
+    data:
+      type name: seismic waveform
+      preferred formats: 
+        format name: mseed
+        metadata types in data headers: - station identification
+                                        - temporal range
+                                        - network
+                                        - channel
+      registered data schema: MiniSEED
+      search on data: yes
+    metadata:
+      schema: 
+        URL: https://www.orfeus-eu.org/documents/WFCatalog_Specification-v0.22.pdf
+        name: WFMetadata
+        provenance fields included: none
+      machine readable provenance: no
+      categories defined in registries: yes
+      PIDs included: no
+      primary storage format: SEED
+      export formats supported: - XML
+                                - SEED
+      search engine indexing: yes
+      exchange/harvesting methods: REST
+      local search engine URL: planned
+      external search engine types supported: none
+      access policy statements included: no
+      metadata longevity plan URL: planned
+      machine actionable: partially
+      IRI of machine readable metadata of dataset: planned
+    vocabularies: 
+      IRI: https://github.com/epos-eu/EPOS-DCAT-AP
+      name: EPOS-DCAT-AP
+      type: ontology
+      topic: domain specific
+      specification language: rdf owl
+    data management plans:
+      specific DMP tools used: none
+      data publishing steps applied: none
+      compliance validation service: yes
+    data processing:
+      special data processing steps applied: none
+      workflow frameworks applied: none
+      distributed workflows tools used: Enlighten
+      other analysis services offered: Enlighten
+      data products offered: data quality
+    fairness:
+      data findability:
+        data findable: no
+        gaps: no unique identifier
+      data accessibility:
+        data accessible: yes
+        gaps: none
+      data interoperability:
+        data interoperable: no
+        gaps: missing semantic information
+      data re-usability:
+        data reusable: no
+        gaps: - usage license	
+              - provenance information
