@@ -278,7 +278,7 @@ dataIsFindable:
   uri: http://envri.eu/ns/dataIsFindable
   label: "dataIsFindable"
 dataIsInteroperable:
-  uri: https://www.wikidata.org/entityi/Q61782522
+  uri: https://www.wikidata.org/entity/Q61782522
   label: "data interoperability standard"
 dataIsReusable: 
   uri: http://envri.eu/ns/dataIsReusable
@@ -491,7 +491,7 @@ GitHub:
   uri: https://www.wikidata.org/entity/Q364
   label: "GitHub"
 Google Analytics: 
-  uri: https://www.wikidata.org/entityi/Q220577
+  uri: https://www.wikidata.org/entity/Q220577
   label: "Google Analytics"
 Google dataset search: 
   uri: https://www.wikidata.org/entity/Q56512593

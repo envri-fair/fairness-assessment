@@ -79,26 +79,26 @@ def translate(s, d, v):
     
     
 def survey(g, d, v):
-    n = BNode()
+    n = get_uri() # BNode()
     _l(g, d, v, g.identifier, 'date', XSD.date)
     _l(g, d, v, g.identifier, 'version', XSD.string)
     creator(g, d['creator'], v, g.identifier)
     
     
 def creator(g, d, v, n):
-    n1 = BNode()
+    n1 = get_uri() # BNode()
     _b(g, v, n, 'creator', n1)
     _l(g, d, v, n1, 'name', XSD.string)
     _r(g, d, v, n1, 'email')
     
     
 def infrastructure(g, d, v):
-    n = BNode()
+    n = get_uri() # BNode()
     _t(g, d, v, n, 'ResearchInfrastructure')
     _l(g, d, v, n, 'acronym', XSD.string)
     _l(g, d, v, n, ['label', 'name'], XSD.string)
     _r(g, d, v, n, ['website', 'website'])
-    _c(g, d['domain'], v, n, BNode(), 'hasDomain')
+    _c(g, d['domain'], v, n, get_uri(), 'hasDomain')
     _r(g, d, v, n, ['hasDataset', 'URL/IRI of dataset'])
     _r(g, d, v, n, ['hasDiscoveryPortal', 'URL of discovery portal'])
     for r in d['repositories']:
@@ -108,7 +108,7 @@ def infrastructure(g, d, v):
 def repository(g, d, v, n, i):
     if (handle_special_cases(g, d, v, n, 'hasRepository')):
         return
-    n1 = BNode()
+    n1 = get_uri() # BNode()
     _b(g, v, n, 'hasRepository', n1)
     _t(g, d, v, n1, 'Repository')
     _r(g, d, v, n1, ['hasRepositoryUrl', 'URL'])
@@ -116,11 +116,11 @@ def repository(g, d, v, n, i):
     _l(g, d, v, n1, ['altLabel', '{} repository'.format(i)], XSD.string)
     _t(g, d, v, n1, 'kind')
     _r(g, d, v, n1, ['hasAllocation', 'allocation'])
-    _c(g, d['software'], v, n1, BNode(), 'usesSoftware')
+    _c(g, d['software'], v, n1, get_uri(), 'usesSoftware')
     identifier(g, d['identifier'], v, n1, i, d['name'])
-    _c(g, d['certification methods'], v, n1, BNode(), 'hasCertificationMethods')
-    _c(g, d['policies'], v, n1, BNode(), 'hasPolicies')
-    _c(g, d['registries'], v, n1, BNode(), 'inRegistries')
+    _c(g, d['certification methods'], v, n1, get_uri(), 'hasCertificationMethods')
+    _c(g, d['policies'], v, n1, get_uri(), 'hasPolicies')
+    _c(g, d['registries'], v, n1, get_uri(), 'inRegistries')
     _l(g, d, v, n1, ['hasPersistencyGuaranty', 'persistency-guaranty'], XSD.string)
     access(g, d['access mechanisms'], v, n1, i, d['name'])
     data(g, d['data'], v, n1, i, d['name'])
@@ -135,7 +135,7 @@ def identifier(g, d, v, n, i, r):
     if (handle_special_cases(g, d, v, n, 'usesIdentifier')):
         return
     for e in d:
-        n1 = BNode()
+        n1 = get_uri() # BNode()
         _b(g, v, n, 'usesIdentifier', n1)
         _t(g, e, v, n1, 'Identifier')
         _l(g, e, v, n1, ['altLabel', '{} {} identifier'.format(i, r)], XSD.string)
@@ -144,13 +144,13 @@ def identifier(g, d, v, n, i, r):
         _l(g, e, v, n1, ['hasLandingPage','landing page'], XSD.bool)
         _l(g, e, v, n1, ['isAssigned', 'assigned'], XSD.string)
         _r(g, e, v, n1, ['usesProvider', 'provider'])
-        _c(g, e['includes metadata schema'], v, n1, BNode(), 'includesMetadataSchema')
+        _c(g, e['includes metadata schema'], v, n1, get_uri(), 'includesMetadataSchema')
         
 
 def access(g, d, v, n, i, r):
     if (handle_special_cases(g, d, v, n, 'hasAccessMechanisms')):
         return
-    n1 = BNode()
+    n1 = get_uri() # BNode()
     _b(g, v, n, 'hasAccessMechanisms', n1)
     _t(g, d, v, n1, 'AccessMechanism')
     _l(g, d, v, n1, ['altLabel', '{} {} access mechanism'.format(i, r)], XSD.string)
@@ -162,7 +162,7 @@ def access(g, d, v, n, i, r):
     _r(g, d, v, n1, ['supportsAccessTechnology', 'major access technology supported'])
     _r(g, d, v, n1, ['usesAuthorisationTechnique', 'authorisation technique'])
     _l(g, d, v, n1, ['contentAccessAuthorizationRequired', 'authorization for accessing content needed'], XSD.bool)
-    _c(g, d['data licenses in use'], v, n1, BNode(), 'usesDataLicenses')
+    _c(g, d['data licenses in use'], v, n1, get_uri(), 'usesDataLicenses')
     _r(g, d, v, n1, ['dataLicenseIri', 'data license IRI'])
     _l(g, d, v, n1, ['openAccessMetadata', 'metadata openly available'], XSD.bool)
     
@@ -171,25 +171,25 @@ def data(g, d, v, n, i, r):
     if (handle_special_cases(g, d, v, n, 'hasData')):
         return
     for e1 in d:
-        n1 = BNode()
+        n1 = get_uri() # BNode()
         _b(g, v, n, 'hasData', n1)
         _t(g, e1, v, n1, 'Data')
         _l(g, e1, v, n1, ['altLabel', '{} {} data'.format(i, r)], XSD.string)
         _t(g, e1, v, n1, 'type name')
-        _c(g, e1['registered data schema'], v, n1, BNode(), 'dataSchemaIsRegistered')        
+        _c(g, e1['registered data schema'], v, n1, get_uri(), 'dataSchemaIsRegistered')        
         _l(g, e1, v, n, ['searchOnData', 'search on data'], XSD.bool)
         for e2 in e1['preferred formats']:
-            n2 = BNode()
+            n2 = get_uri() # BNode()
             _b(g, v, n1, 'hasPreferredFormat', n2)
             _t(g, e2, v, n2, 'PreferredFormat')
             _r(g, e2, v, n2, ['hasFormatName', 'format name'])
-            _c(g, e2['metadata types in data headers'], v, n2, BNode(), 'hasDataHeaderMetadataTypes')
+            _c(g, e2['metadata types in data headers'], v, n2, get_uri(), 'hasDataHeaderMetadataTypes')
             
     
 def metadata(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'hasMetadata'):
         return
-    n1 = BNode()
+    n1 = get_uri()
     _b(g, v, n, 'hasMetadata', n1)
     _l(g, d, v, n1, ['altLabel', '{} {} metadata'.format(i, r)], XSD.string)
     metadata_schema(g, d['schema'], v, n1, i, r)
@@ -197,11 +197,11 @@ def metadata(g, d, v, n, i, r):
     _l(g, d, v, n1, ['categoriesAreDefinedInRegistries', 'categories defined in registries'], XSD.bool)
     _l(g, d, v, n1, ['persistentIdentifiersAreIncluded', 'PIDs included'], XSD.bool)
     _r(g, d, v, n1, ['hasPrimaryStorageFormat', 'primary storage format'])
-    _c(g, d['export formats supported'], v, n1, BNode(), 'supportedExportFormats')
+    _c(g, d['export formats supported'], v, n1, get_uri(), 'supportedExportFormats')
     _l(g, d, v, n1, ['searchEngineIndexing', 'search engine indexing'], XSD.bool)
-    _c(g, d['exchange/harvesting methods'], v, n1, BNode(), 'hasHarvestingMethods')
+    _c(g, d['exchange/harvesting methods'], v, n1, get_uri(), 'hasHarvestingMethods')
     _r(g, d, v, n1, ['hasLocalSearchEngineUrl', 'local search engine URL'])
-    _c(g, d['external search engine types supported'], v, n1, BNode(), 'supportsExternalSearchEngineTypes')
+    _c(g, d['external search engine types supported'], v, n1, get_uri(), 'supportsExternalSearchEngineTypes')
     _l(g, d, v, n1, ['includesAccessPolicyStatements', 'access policy statements included'], XSD.bool)
     _r(g, d, v, n1, ['hasMetadataLongevityPlan', 'metadata longevity plan URL'])
     _l(g, d, v, n1, ['isMachineActionable', 'machine actionable'], XSD.bool)
@@ -212,19 +212,19 @@ def metadata_schema(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'hasSchema'):
         return
     for e1 in d:
-        n1 = BNode()
+        n1 = get_uri() # BNode()
         _b(g, v, n, 'hasSchema', n1)
         _l(g, e1, v, n1, ['altLabel', '{} {} metadata schema'.format(i, r)], XSD.string)
         _r(g, e1, v, n1, ['hasSchemaUrl', 'URL'])
         _r(g, e1, v, n1, ['hasSchemaName', 'name'])
-        _c(g, e1['provenance fields included'], v, n1, BNode(), 'includesProvenanceFields')
+        _c(g, e1['provenance fields included'], v, n1, get_uri(), 'includesProvenanceFields')
 
     
 def vocabularies(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'hasVocabularies'):
         return
     for e1 in d:
-        n1 = BNode()
+        n1 = get_uri() # BNode()
         _b(g, v, n, 'hasVocabularies', n1)
         _l(g, e1, v, n1, ['altLabel', '{} {} vocabularies'.format(i, r)], XSD.string)
         _r(g, e1, v, n1, ['hasVocabularyIri', 'IRI'])
@@ -237,7 +237,7 @@ def vocabularies(g, d, v, n, i, r):
 def datamanagementplans(g, d, v, n, i):
     if (handle_special_cases(g, d, v, n, 'hasDataManagementPlans')):
         return
-    n1 = BNode()
+    n1 = get_uri() # BNode()
     _b(g, v, n, 'hasDataManagementPlans', n1)
     _l(g, d, v, n1, ['altLabel', '{} data management plans'.format(i)], XSD.string)
     _l(g, d, v, n1, ['usesSpecificDataManagementPlanTools', 'specific DMP tools used'], XSD.bool)
@@ -248,20 +248,20 @@ def datamanagementplans(g, d, v, n, i):
 def dataprocessing(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'hasDataProcessing'):
         return
-    n1 = BNode()
+    n1 = get_uri() # BNode()
     _b(g, v, n, 'hasDataProcessing', n1)
     _l(g, d, v, n1, ['altLabel', '{} {} data processing'.format(i, r)], XSD.string)
-    _c(g, d['special data processing steps applied'], v, n1, BNode(), 'specialDataProcessingStepsApplied')
-    _c(g, d['workflow frameworks applied'], v, n1, BNode(), 'workflowFrameworksApplied')
-    _c(g, d['distributed workflows tools used'], v, n1, BNode(), 'distributedWorkflowsToolsUsed')
-    _c(g, d['other analysis services offered'], v, n1, BNode(), 'otherAnalysisServicesOffered')
-    _c(g, d['data products offered'], v, n1, BNode(), 'dataProductsOffered')
+    _c(g, d['special data processing steps applied'], v, n1, get_uri(), 'specialDataProcessingStepsApplied')
+    _c(g, d['workflow frameworks applied'], v, n1, get_uri(), 'workflowFrameworksApplied')
+    _c(g, d['distributed workflows tools used'], v, n1, get_uri(), 'distributedWorkflowsToolsUsed')
+    _c(g, d['other analysis services offered'], v, n1, get_uri(), 'otherAnalysisServicesOffered')
+    _c(g, d['data products offered'], v, n1, get_uri(), 'dataProductsOffered')
 
     
 def fairness(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'fairness'):
         return
-    n1 = BNode()
+    n1 = get_uri() # BNode()
     _b(g, v, n, 'fairness', n1)
     _l(g, d, v, n1, ['altLabel', '{} {} fairness'.format(i, r)], XSD.string)
     fairness_findability(g, d['data findability'], v, n1, i, r)
@@ -273,41 +273,41 @@ def fairness(g, d, v, n, i, r):
 def fairness_findability(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'dataFindability'):
         return
-    n1 = BNode()
+    n1 = get_uri() # BNode()
     _b(g, v, n, 'dataFindability', n1)
     _l(g, d, v, n1, ['altLabel', '{} {} faireness findability'.format(i, r)], XSD.string)
     _l(g, d, v, n1, ['dataIsFindable', 'data findable'], XSD.bool)
-    _c(g, d['gaps'], v, n1, BNode(), 'gaps')
+    _c(g, d['gaps'], v, n1, get_uri(), 'gaps')
 
     
 def fairness_accessibility(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'dataAccessibility'):
         return
-    n1 = BNode()
+    n1 = get_uri() # BNode()
     _b(g, v, n, 'dataAccessibility', n1)
     _l(g, d, v, n1, ['altLabel', '{} {} faireness accessibility'.format(i, r)], XSD.string)
     _l(g, d, v, n1, ['dataIsAccessible', 'data accessible'], XSD.bool)
-    _c(g, d['gaps'], v, n1, BNode(), 'gaps')
+    _c(g, d['gaps'], v, n1, get_uri(), 'gaps')
 
     
 def fairness_interoperability(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'dataInteroperability'):
         return
-    n1 = BNode()
+    n1 = get_uri() # BNode()
     _b(g, v, n, 'dataInteroperability', n1)
     _l(g, d, v, n1, ['altLabel', '{} {} faireness interoperability'.format(i, r)], XSD.string)
     _l(g, d, v, n1, ['dataIsInteroperable', 'data interoperable'], XSD.bool)
-    _c(g, d['gaps'], v, n1, BNode(), 'gaps')
+    _c(g, d['gaps'], v, n1, get_uri(), 'gaps')
 
     
 def fairness_reusability(g, d, v, n, i, r):
     if handle_special_cases(g, d, v, n, 'dataReusability'):
         return
-    n1 = BNode()
+    n1 = get_uri() # BNode()
     _b(g, v, n, 'dataReusability', n1)
     _l(g, d, v, n1, ['altLabel', '{} {} faireness reusability'.format(i, r)], XSD.string)
     _l(g, d, v, n1, ['dataIsReusable', 'data reusable'], XSD.bool)
-    _c(g, d['gaps'], v, n1, BNode(), 'gaps')
+    _c(g, d['gaps'], v, n1, get_uri(), 'gaps')
     
 
 def handle_special_cases(g, d, v, n, k):
@@ -327,3 +327,7 @@ def handle_special_cases(g, d, v, n, k):
         g.add((n, v[k]['uri'], v['planned']['uri']))
         return True
     return False
+
+
+def get_uri():
+    return URIRef('{}R{}'.format('http://envri.eu/ns/', sid.generate()))
