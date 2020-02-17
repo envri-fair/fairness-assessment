@@ -5,6 +5,7 @@ survey:
     name: xx Cxx
     email: xx.xx@x.xx
 infrastructure:
+  uri: http://envri.eu/entity/QIqjnYHdF
   acronym: Euro-Argo
   name: Euro-Argo ERIC
   website: http://www.euro-argo.eu

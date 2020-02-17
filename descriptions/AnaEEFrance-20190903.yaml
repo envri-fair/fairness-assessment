@@ -4,7 +4,8 @@ survey:
   creator: 
     name: xx pxx
     email: xx.xx@x.xx
-infrastructure:   
+infrastructure:
+  uri: http://envri.eu/entity/QRy7SOXs2
   acronym: ANAEE-France 
   name: ANAEE-France 
   website: http://www.anaee-france.fr

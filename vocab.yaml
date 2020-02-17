@@ -34,6 +34,9 @@ acknowledgements:
 acronym: 
   uri: http://envri.eu/ns/acronym
   label: "acronym"
+infrastructure: 
+  uri: http://envri.eu/ns/infrastructure
+  label: "infrastructure"
 ACTRIS ACCESS: 
   uri: http://envri.eu/ns/ActrisAccess
   label: "ACTRIS Access"
@@ -1168,6 +1171,9 @@ Repository:
 ResearchInfrastructure: 
   uri: http://www.oil-e.net/ontology/envri-rm.owl#ResearchInfrastructure
   label: "research infrastructure"
+FAIRAssessment: 
+  uri: http://envri.eu/ns/FAIRAssessment
+  label: "FAIR assessment"
 RESTful_API: 
   uri: https://www.wikidata.org/entity/Q557770
   label: "Web API"

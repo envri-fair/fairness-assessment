@@ -5,6 +5,7 @@ survey:
     name: xx Cxx
     email: xx.xx@x.xx
 infrastructure:
+  uri: http://envri.eu/entity/QD9kcMKyU
   acronym: EPOS
   name: Istituto Nazionale di Geofisica e Vulcanologia (INGV)
   website: http://www.ingv.it/it/

@@ -5,6 +5,7 @@ survey:
     name: xx Txx
     email: xx.xx@x.xx
 infrastructure:
+  uri: http://envri.eu/entity/QD9kcMKyU
   acronym: EPOS
   name: EPOS ORFEUS
   website: NULL

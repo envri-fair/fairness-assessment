@@ -5,6 +5,7 @@ survey:
     name: xx Txx
     email: xx.xx@x.xx
 infrastructure:
+  uri: http://envri.eu/entity/QKi8ENKG8
   acronym: EISCAT
   name: EISCAT
   website: https://www.eiscat.se/

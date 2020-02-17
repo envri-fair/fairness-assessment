@@ -5,6 +5,7 @@ survey:
     name: xx Pxx
     email: xx.xx@x.xx
 infrastructure:
+  uri: http://envri.eu/entity/Q84MqPmjE
   acronym: eLTER
   name: Integrated European Long-Term Ecosystem & Socio-Ecological Research Infrastructure
   website: http://www.lter-europe.net/elter

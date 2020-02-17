@@ -4,7 +4,8 @@ survey:
   creator: 
     name: xx Fxx
     email: xx.xx@x.xx
-infrastructure:   
+infrastructure:  
+  uri: http://envri.eu/entity/QnEtqeTMQ
   acronym: LifeWatch 
   name: LifeWatch ERIC 
   website: http://www.lifewatch.eu

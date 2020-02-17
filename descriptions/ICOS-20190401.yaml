@@ -4,7 +4,8 @@ survey:
   creator: 
     name: xx Vxx
     email: xx.xx@x.xx
-infrastructure:   
+infrastructure:
+  uri: http://envri.eu/entity/Q5NKGDX70
   acronym: ICOS 
   name: Integrated Carbon Observation System 
   website: http://www.icos-cp.eu

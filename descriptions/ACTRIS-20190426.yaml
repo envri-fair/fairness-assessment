@@ -5,6 +5,7 @@ survey:
     name: xx rxx
     email: xx.xx@x.xx
 infrastructure:
+  uri: http://envri.eu/entity/Q9BcgOzo4
   acronym: ACTRIS
   name: ACTRIS
   website: http://actris.nilu.no

@@ -94,11 +94,12 @@ def creator(g, d, v, n):
     
 def infrastructure(g, d, v):
     n = get_uri() # BNode()
-    _t(g, d, v, n, 'ResearchInfrastructure')
-    _l(g, d, v, n, 'acronym', XSD.string)
-    _l(g, d, v, n, ['label', 'name'], XSD.string)
-    _r(g, d, v, n, ['website', 'website'])
-    _c(g, d['domain'], v, n, get_uri(), 'hasDomain')
+    _t(g, d, v, n, 'FAIRAssessment')
+    _r(g, d, v, n, ['infrastructure', 'uri'])
+    #_l(g, d, v, n, 'acronym', XSD.string)
+    #_l(g, d, v, n, ['label', 'name'], XSD.string)
+    #_r(g, d, v, n, ['website', 'website'])
+    #_c(g, d['domain'], v, n, get_uri(), 'hasDomain')
     _r(g, d, v, n, ['hasDataset', 'URL/IRI of dataset'])
     _r(g, d, v, n, ['hasDiscoveryPortal', 'URL of discovery portal'])
     for r in d['repositories']:

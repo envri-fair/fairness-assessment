@@ -5,6 +5,7 @@ survey:
     name: xx Sxx
     email: xx.xx@x.xx
 infrastructure:
+  uri: http://envri.eu/entity/Qxf0zfFWR
   acronym: SDN
   name: SeaDataNet
   website: http://www.seadatanet.org

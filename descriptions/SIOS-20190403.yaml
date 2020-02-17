@@ -5,6 +5,7 @@ survey:
     name: xx Txx
     email: xx.xx@x.xx
 infrastructure:
+  uri: http://envri.eu/entity/QorUcf1SJ
   acronym: SIOS
   name: SIOS
   website: https://sios-svalbard.org/

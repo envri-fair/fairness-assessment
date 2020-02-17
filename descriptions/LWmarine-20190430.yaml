@@ -5,6 +5,7 @@ survey:
     name: xx Dxx
     email: xx.xx@x.xx
 infrastructure:
+  uri: http://envri.eu/entity/QnEtqeTMQ
   acronym: LW (Marine)
   name: LifeWatch (Marine)
   website: http://www.euro-argo.eu

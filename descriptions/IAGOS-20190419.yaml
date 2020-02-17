@@ -5,6 +5,7 @@ survey:
     name: xx Bxx
     email: xx.xx@x.xx
 infrastructure:
+  uri: http://envri.eu/entity/QgDVLQQS2
   acronym: IAGOS
   name: IAGOS
   website: https://www.iagos.org/
