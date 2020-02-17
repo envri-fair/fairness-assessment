@@ -95,6 +95,7 @@ def creator(g, d, v, n):
 def infrastructure(g, d, v):
     n = get_uri() # BNode()
     _t(g, d, v, n, 'FAIRAssessment')
+    _l(g, d, v, n, ['altLabel', '{} FAIR assessment'.format(d['acronym'])], XSD.string)
     _r(g, d, v, n, ['infrastructure', 'uri'])
     #_l(g, d, v, n, 'acronym', XSD.string)
     #_l(g, d, v, n, ['label', 'name'], XSD.string)
