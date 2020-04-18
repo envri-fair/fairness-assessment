@@ -10,7 +10,7 @@ infrastructure:
   website: 
   domain: list ref 
   URL/IRI of dataset: 
-  URL of discovery portal:   
+  URL of discovery portal: F4  
   repositories: list
     URL: F4
     name: free
@@ -27,7 +27,7 @@ infrastructure:
     certification methods: list ref
     policies: list ref R1.1
     registries: list ref F4
-    persistency-guaranty: ref A1
+    persistency-guaranty: ref A2
     access mechanisms: 
       authentication method: ref A1.2
       access protocol URL: A1.1
@@ -49,9 +49,9 @@ infrastructure:
       search on data: bool F4
     metadata: 
       schema: list
-        URL: 
+        URL: I1
         name: ref I1
-        provenance fields included: list ref F2
+        provenance fields included: list ref R1.2
       machine readable provenance: bool R1.2        
       categories defined in registries: bool I2
       PIDs included: bool F3
@@ -66,8 +66,8 @@ infrastructure:
       machine actionable: bool I1
       IRI of machine readable metadata of dataset: F2A 
     vocabularies: list
-      IRI: I2
-      name: ref      
+      IRI: I1
+      name: ref I1     
       type: ref I1
       topic: ref I1
       specification language: ref I1 
