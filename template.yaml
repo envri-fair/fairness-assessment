@@ -64,7 +64,7 @@ infrastructure:
       access policy statements included: bool R1.1
       metadata longevity plan URL: 
       machine actionable: bool I1
-      IRI of machine readable metadata of dataset: F2A 
+      IRI of machine readable metadata of dataset: F2 
     vocabularies: list
       IRI: I1
       name: ref I1     
