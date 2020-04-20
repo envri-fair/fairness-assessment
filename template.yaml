@@ -12,20 +12,20 @@ infrastructure:
   URL/IRI of dataset: 
   URL of discovery portal: F4  
   repositories: list
-    URL: F4
+    URL: 
     name: free
     kind: list ref 
-    allocation: ref F4 
-    software: list ref F4
+    allocation: ref  
+    software: list ref 
     identifier: list
       kind: ref F1
       system: ref F1
       landing page: bool F1
       assigned: ref F1
       provider: ref F1
-      includes metadata schema: list ref F2 
+      includes metadata schema: list ref F2
     certification methods: list ref
-    policies: list ref R1.1
+    policies: list ref A2
     registries: list ref F4
     persistency-guaranty: ref A2
     access mechanisms: 
@@ -39,21 +39,21 @@ infrastructure:
       authorization for accessing content needed: bool A1.2
       data licenses in use: list ref R1.1
       data license IRI: R1.1
-      metadata openly available: bool R1.1 
+      metadata openly available: bool A2
     data:
       type name: list ref I1
       preferred formats: list
         format name: ref I1
         metadata types in data headers: list ref I1
-      registered data schema: ref I1
+      registered data schema: ref I3
       search on data: bool F4
     metadata: 
       schema: list
-        URL: I1
-        name: ref I1
+        URL: I2
+        name: ref I2
         provenance fields included: list ref R1.2
       machine readable provenance: bool R1.2        
-      categories defined in registries: bool I2
+      categories defined in registries: bool I3
       PIDs included: bool F3
       primary storage format: ref I1
       export formats supported: list ref I1
@@ -61,15 +61,15 @@ infrastructure:
       exchange/harvesting methods: list ref I1
       local search engine URL: F4
       external search engine types supported: list ref F4
-      access policy statements included: bool R1.1
-      metadata longevity plan URL: 
+      access policy statements included: bool A1.2
+      metadata longevity plan URL: A2
       machine actionable: bool I1
       IRI of machine readable metadata of dataset: F2 
     vocabularies: list
-      IRI: I1
-      name: ref I1     
-      type: ref I1
-      topic: ref I1
+      IRI: I2
+      name: ref I2     
+      type: ref I2
+      topic: ref I2
       specification language: ref I1 
     data management plans:
       specific DMP tools used: ref
@@ -79,7 +79,7 @@ infrastructure:
       special data processing steps applied: list ref 
       workflow frameworks applied: list ref
       distributed workflows tools used: list ref
-      other analysis services offered: list ref A1
+      other analysis services offered: list ref 
       data products offered: list ref
     fairness: 
       data findability:  
@@ -93,9 +93,4 @@ infrastructure:
         gaps: list ref
       data re-usability: 
         data reusable: bool
-        gaps: list ref       
-
-            
-            
-            
-         
+        gaps: list ref   
